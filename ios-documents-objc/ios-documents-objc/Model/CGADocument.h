@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CGADocument : NSObject
 
+@property NSString *title;
+@property NSString *text;
+@property int *wordCount;
+
 @end
 
 NS_ASSUME_NONNULL_END
