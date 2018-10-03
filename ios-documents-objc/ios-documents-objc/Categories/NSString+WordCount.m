@@ -10,4 +10,8 @@
 
 @implementation NSString (WordCount)
 
+- (int)wordCount:(NSString *)string {
+    return (int)[string length];
+}
+
 @end
