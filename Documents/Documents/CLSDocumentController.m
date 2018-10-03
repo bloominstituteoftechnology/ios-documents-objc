@@ -36,12 +36,17 @@
 
 -(void)updateDocument:(CLSDocument *)document title:(NSString *)title text:(NSString *)text
 {
-    
+    document.documentTitle = title;
+    document.documentText = text;
+    [self saveDocument];
 }
 
 -(void)deleteDocument:(CLSDocument *)document
 {
-    
+    if (_document == document)
+    {
+        [_documents removeObject:_document];
+    }
 }
 
 -(void)saveDocument
