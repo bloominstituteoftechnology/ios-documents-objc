@@ -11,7 +11,7 @@
 
 @implementation CLSDocument
 
--(void)setDocumentWordCount:(int)documentWordCount
+-(void)setDocumentWordCount:(NSUInteger)documentWordCount
 {
     NSString *stringToCount = _documentText;
     NSUInteger wordCount = [[stringToCount componentsSeparatedByString:@" "] count];

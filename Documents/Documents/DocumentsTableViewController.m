@@ -7,12 +7,43 @@
 //
 
 #import "DocumentsTableViewController.h"
+#import "CLSDocumentController.h"
+#import "DocumentsDetailViewController.h"
 
 @interface DocumentsTableViewController ()
 
 @end
 
 @implementation DocumentsTableViewController
+
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if(self)
+    {
+        _document = [[CLSDocument alloc] init];
+        _documentController = [[CLSDocumentController alloc] init];
+    }
+    return self;
+}
+
+-(instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if(self)
+    {
+        _documentController = [[CLSDocumentController alloc] init];
+    }
+    return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
+}
 
 - (void)viewDidLoad
 {
@@ -23,7 +54,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return _documentController.documents.count;
 }
 
 
@@ -31,7 +62,9 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentListCell" forIndexPath:indexPath];
     
-    
+    _document = _documentController.documents[indexPath.row];
+    cell.textLabel.text = _document.documentTitle;
+    cell.detailTextLabel.text = _document.documentText;
     
     return cell;
 }
@@ -54,6 +87,18 @@
  //ShowEditView
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    DocumentsDetailViewController *detailController = segue.destinationViewController;
+    
+    if ([[segue identifier] isEqualToString:@"ShowAddView"])
+    {
+        detailController.documentController = _documentController;
+    }
+    else if ([[segue identifier] isEqualToString:@"ShowEditView"])
+    {
+        detailController.documentController = _documentController;
+        NSIndexPath *selectedIndexPath = self.tableView.indexPathForSelectedRow;
+        detailController.document = self.documentController.documents[selectedIndexPath.row];
+    }
     
 }
 

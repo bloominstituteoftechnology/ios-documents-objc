@@ -7,10 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CLSDocument.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CLSDocumentController : NSObject
+
+@property NSMutableArray *documents;
+
+-(void)createDocument:(NSString *)title text:(NSString *)text;
+-(void)updateDocument:(CLSDocument *)document title:(NSString *)title text:(NSString *)text;
+-(void)deleteDocument:(CLSDocument *)document;
+-(void)saveDocument;
 
 @end
 

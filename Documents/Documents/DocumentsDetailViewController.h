@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CLSDocument.h"
+#import "CLSDocumentController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DocumentsDetailViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UILabel *countLabel;
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+@property CLSDocument *document;
+@property CLSDocumentController *documentController;
 
 @end
 

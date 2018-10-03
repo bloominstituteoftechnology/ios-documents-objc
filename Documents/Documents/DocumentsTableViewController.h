@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class CLSDocumentController;
+@class CLSDocument;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DocumentsTableViewController : UITableViewController
+
+@property CLSDocumentController *documentController;
+@property CLSDocument *document;
 
 @end
 
