@@ -30,7 +30,6 @@
     tempDoc.title = title;
     tempDoc.text = text;
     
-    
     NSUInteger index = [[self documents] indexOfObject:document];
     [[self documents] replaceObjectAtIndex:index withObject:tempDoc];
 }

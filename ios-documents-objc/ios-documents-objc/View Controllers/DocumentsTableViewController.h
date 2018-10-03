@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class CGADocumentController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DocumentsTableViewController : UITableViewController
+
+@property CGADocumentController *documentController;
 
 @end
 
