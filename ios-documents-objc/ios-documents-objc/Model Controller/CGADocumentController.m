@@ -10,6 +10,13 @@
 
 @implementation CGADocumentController
 
-@property NSMutableArray *documents;
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _documents = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
 
 @end

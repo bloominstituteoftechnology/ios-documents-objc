@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CGADocumentController : NSObject
 
+@property NSMutableArray *documents;
+
 @end
 
 NS_ASSUME_NONNULL_END
