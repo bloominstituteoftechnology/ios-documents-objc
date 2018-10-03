@@ -7,10 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CGADocument.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CGADocumentController : NSObject
+
+- (void)createDocumentWithTitle:(NSString *)title text:(NSString *)text;
+- (void)updateDocument:(CGADocument *)document title:(NSString *)title text:(NSString *)text;
+- (void)deleteDocument:(CGADocument *)document;
 
 @property NSMutableArray *documents;
 
