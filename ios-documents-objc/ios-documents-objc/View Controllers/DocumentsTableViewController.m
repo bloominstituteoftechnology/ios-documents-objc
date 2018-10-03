@@ -50,7 +50,7 @@
     NSMutableArray<CGADocument *> *documents = [[self documentController] documents];
     
     [[cell textLabel] setText:[[documents objectAtIndex:[indexPath row]] title]];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", documents[indexPath.row].documentWordCount];
+    [[cell detailTextLabel] setText:[NSString stringWithFormat:@"%i", documents[indexPath.row].documentWordCount]];
     
     return cell;
 }

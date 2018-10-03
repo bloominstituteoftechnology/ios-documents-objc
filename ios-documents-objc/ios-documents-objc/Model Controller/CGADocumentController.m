@@ -26,10 +26,7 @@
 }
 
 - (void)updateDocument:(CGADocument *)document title:(NSString *)title text:(NSString *)text {
-    CGADocument *tempDoc;
-    tempDoc.title = title;
-    tempDoc.text = text;
-    
+    CGADocument *tempDoc = [[CGADocument alloc] initWithTitle:title text:text];
     NSUInteger index = [[self documents] indexOfObject:document];
     [[self documents] replaceObjectAtIndex:index withObject:tempDoc];
 }

@@ -39,7 +39,13 @@
 - (void)saveDocument:(id)sender {
     NSString *title = [[self documentTitleTextField] text];
     NSString *text = [[self documentTextView] text];
-    [[self documentController] createDocumentWithTitle:title text:text];
+    
+    if ([self document]) {
+        [[self documentController] updateDocument:[self document] title:title text:text];
+    } else {
+        [[self documentController] createDocumentWithTitle:title text:text];
+    }
+    
     [[self navigationController] popViewControllerAnimated:true];
 }
 

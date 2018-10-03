@@ -21,7 +21,7 @@
 }
 
 - (int)documentWordCount {
-    return self.text.wordCount;
+    return [[self text] wordCount];
 }
 
 @end
