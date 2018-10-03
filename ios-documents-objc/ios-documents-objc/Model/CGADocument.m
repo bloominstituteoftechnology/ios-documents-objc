@@ -7,6 +7,7 @@
 //
 
 #import "CGADocument.h"
+#import "NSString+WordCount.h"
 
 @implementation CGADocument
 
@@ -17,6 +18,10 @@
         _text = text;
     }
     return self;
+}
+
+- (int)documentWordCount {
+    return self.text.wordCount;
 }
 
 @end

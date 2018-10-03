@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithTitle:(NSString *)title text:(NSString *)text;
 
 @property NSString *title;
-@property NSString *text;
-@property int *wordCount;
+@property (nonatomic) NSString *text;
+@property (readonly, nonatomic) int documentWordCount;
 
 @end
 
