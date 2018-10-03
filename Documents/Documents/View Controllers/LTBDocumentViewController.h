@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LTBDocumentViewController.h
 //  Documents
 //
 //  Created by Linh Bouniol on 10/3/18.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface LTBDocumentViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
