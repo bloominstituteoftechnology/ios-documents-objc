@@ -117,6 +117,11 @@
                     <navigationItem key="navigationItem" title="New Document" id="X9N-10-ac6">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="gVk-jb-D1K"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="documentTextView" destination="7jR-8d-ntM" id="pWS-ne-AM3"/>
+                        <outlet property="documentTitleTextField" destination="MGp-b1-p8e" id="u4p-WV-G1j"/>
+                        <outlet property="wordCountLabel" destination="C43-Nq-0H3" id="a2O-MJ-ylc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5f-V4-fsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

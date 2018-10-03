@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DocumentDetailViewController : UIViewController
+@interface DocumentDetailViewController : UIViewController <UITextViewDelegate>
 
 @property CGADocumentController *documentController;
 @property CGADocument *document;

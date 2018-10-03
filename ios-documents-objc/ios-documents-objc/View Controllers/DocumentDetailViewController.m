@@ -7,8 +7,13 @@
 //
 
 #import "DocumentDetailViewController.h"
+#import "NSString+WordCount.h"
 
 @interface DocumentDetailViewController ()
+
+@property (strong, nonatomic) IBOutlet UILabel *wordCountLabel;
+@property (strong, nonatomic) IBOutlet UITextField *documentTitleTextField;
+@property (strong, nonatomic) IBOutlet UITextView *documentTextView;
 
 @end
 
@@ -16,17 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [[self documentTextView] setDelegate:self];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)textViewDidChange:(UITextView *)textView {
+    NSString *wordCount = [NSString stringWithFormat:@"%i", [[textView text] wordCount]];
+    [[self wordCountLabel] setText:wordCount];
 }
-*/
 
 @end
