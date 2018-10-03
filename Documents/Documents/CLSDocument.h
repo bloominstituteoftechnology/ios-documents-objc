@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CLSDocument : NSObject
 
+@property NSString *documentTitle;
+@property NSString *documentText;
+@property (nonatomic) NSUInteger documentWordCount;
+
+-(instancetype)initWithTitle:(NSString *)documentTitle text:(NSString *)documentText;
+
 @end
 
 NS_ASSUME_NONNULL_END

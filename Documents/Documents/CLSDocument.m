@@ -7,7 +7,26 @@
 //
 
 #import "CLSDocument.h"
+#import "NSString+WordCount.h"
 
 @implementation CLSDocument
+
+-(void)setDocumentWordCount:(int)documentWordCount
+{
+    NSString *stringToCount = _documentText;
+    NSUInteger wordCount = [[stringToCount componentsSeparatedByString:@" "] count];
+    NSLog(@"%lu", (unsigned long)wordCount);
+}
+
+-(instancetype)initWithTitle:(NSString *)documentTitle text:(NSString *)documentText
+{
+    self = [super init];
+    if (self)
+    {
+        _documentTitle = documentTitle;
+        _documentText = documentText;
+    }
+    return self;
+}
 
 @end
