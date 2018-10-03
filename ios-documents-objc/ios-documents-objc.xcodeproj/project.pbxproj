@@ -57,13 +57,21 @@
 			children = (
 				1394CF7621654E9200E572C0 /* AppDelegate.h */,
 				1394CF7721654E9200E572C0 /* AppDelegate.m */,
+				1394CF8C2165562C00E572C0 /* Resources */,
+			);
+			path = "ios-documents-objc";
+			sourceTree = "<group>";
+		};
+		1394CF8C2165562C00E572C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1394CF7C21654E9200E572C0 /* Main.storyboard */,
 				1394CF7F21654E9300E572C0 /* Assets.xcassets */,
 				1394CF8121654E9300E572C0 /* LaunchScreen.storyboard */,
 				1394CF8421654E9300E572C0 /* Info.plist */,
 				1394CF8521654E9300E572C0 /* main.m */,
 			);
-			path = "ios-documents-objc";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +288,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "ios-documents-objc/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-documents-objc/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "ios-documents-objc/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-documents-objc/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
