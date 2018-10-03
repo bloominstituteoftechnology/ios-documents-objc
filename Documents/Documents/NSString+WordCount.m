@@ -10,4 +10,10 @@
 
 @implementation NSString (WordCount)
 
+-(NSUInteger)wordCount:(NSString *)string
+{
+    return [[string componentsSeparatedByString:@" "] count];
+}
+
+
 @end
