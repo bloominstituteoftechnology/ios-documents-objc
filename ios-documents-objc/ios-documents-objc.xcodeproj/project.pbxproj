@@ -16,6 +16,7 @@
 		1394CF9321655B2E00E572C0 /* DocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF9221655B2E00E572C0 /* DocumentDetailViewController.m */; };
 		1394CF9621655C3600E572C0 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF9521655C3600E572C0 /* NSString+WordCount.m */; };
 		1394CF9B216563A500E572C0 /* CGADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF9A216563A500E572C0 /* CGADocument.m */; };
+		1394CF9E21656B8F00E572C0 /* CGADocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF9D21656B8F00E572C0 /* CGADocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		1394CF9521655C3600E572C0 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 		1394CF99216563A500E572C0 /* CGADocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGADocument.h; sourceTree = "<group>"; };
 		1394CF9A216563A500E572C0 /* CGADocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGADocument.m; sourceTree = "<group>"; };
+		1394CF9C21656B8F00E572C0 /* CGADocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGADocumentController.h; sourceTree = "<group>"; };
+		1394CF9D21656B8F00E572C0 /* CGADocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGADocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 				1394CF7621654E9200E572C0 /* AppDelegate.h */,
 				1394CF7721654E9200E572C0 /* AppDelegate.m */,
 				1394CF8D216556DE00E572C0 /* View Controllers */,
+				1394CF9F21656B9500E572C0 /* Model Controller */,
 				1394CF982165636C00E572C0 /* Model */,
 				1394CF9721655C3F00E572C0 /* Categories */,
 				1394CF8C2165562C00E572C0 /* Resources */,
@@ -116,6 +120,15 @@
 				1394CF9A216563A500E572C0 /* CGADocument.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1394CF9F21656B9500E572C0 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1394CF9C21656B8F00E572C0 /* CGADocumentController.h */,
+				1394CF9D21656B8F00E572C0 /* CGADocumentController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1394CF9E21656B8F00E572C0 /* CGADocumentController.m in Sources */,
 				1394CF9621655C3600E572C0 /* NSString+WordCount.m in Sources */,
 				1394CF902165572900E572C0 /* DocumentsTableViewController.m in Sources */,
 				1394CF8621654E9300E572C0 /* main.m in Sources */,
