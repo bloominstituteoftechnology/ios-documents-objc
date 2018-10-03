@@ -10,4 +10,13 @@
 
 @implementation CGADocument
 
+- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text {
+    self = [super init];
+    if (self) {
+        _title = title;
+        _text = text;
+    }
+    return self;
+}
+
 @end
