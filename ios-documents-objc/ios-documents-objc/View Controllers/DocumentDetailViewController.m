@@ -28,6 +28,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[[self documentTextView] layer] setBorderColor:[[UIColor
+                                                      colorWithRed: 186.0 / 255.0
+                                                      green: 186.0 / 255.0
+                                                      blue: 186.0 / 255.0
+                                                      alpha: 1.0]
+                                                     CGColor]];
     [[self documentTextView] setDelegate:self];
 }
 
