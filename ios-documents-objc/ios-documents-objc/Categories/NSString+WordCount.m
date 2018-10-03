@@ -11,7 +11,11 @@
 @implementation NSString (WordCount)
 
 - (int)wordCount {
-    return (int)[self length];
+    if ([self length] == 0) {
+        return 0;
+    }
+    NSArray *words = [self componentsSeparatedByString:@" "];
+    return (int)[words count];
 }
 
 @end
