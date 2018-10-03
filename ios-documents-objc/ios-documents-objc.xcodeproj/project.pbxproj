@@ -12,6 +12,7 @@
 		1394CF8021654E9300E572C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1394CF7F21654E9300E572C0 /* Assets.xcassets */; };
 		1394CF8321654E9300E572C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1394CF8121654E9300E572C0 /* LaunchScreen.storyboard */; };
 		1394CF8621654E9300E572C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF8521654E9300E572C0 /* main.m */; };
+		1394CF902165572900E572C0 /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF8F2165572900E572C0 /* DocumentsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		1394CF8221654E9300E572C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1394CF8421654E9300E572C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1394CF8521654E9300E572C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1394CF8E2165572900E572C0 /* DocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentsTableViewController.h; sourceTree = "<group>"; };
+		1394CF8F2165572900E572C0 /* DocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 		1394CF7521654E9200E572C0 /* ios-documents-objc */ = {
 			isa = PBXGroup;
 			children = (
+				1394CF8D216556DE00E572C0 /* View Controllers */,
 				1394CF7621654E9200E572C0 /* AppDelegate.h */,
 				1394CF7721654E9200E572C0 /* AppDelegate.m */,
 				1394CF8C2165562C00E572C0 /* Resources */,
@@ -72,6 +76,15 @@
 				1394CF8521654E9300E572C0 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1394CF8D216556DE00E572C0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1394CF8E2165572900E572C0 /* DocumentsTableViewController.h */,
+				1394CF8F2165572900E572C0 /* DocumentsTableViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1394CF902165572900E572C0 /* DocumentsTableViewController.m in Sources */,
 				1394CF8621654E9300E572C0 /* main.m in Sources */,
 				1394CF7821654E9200E572C0 /* AppDelegate.m in Sources */,
 			);
