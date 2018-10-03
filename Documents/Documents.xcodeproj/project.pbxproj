@@ -14,6 +14,9 @@
 		39034FA7216558BC00A249E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39034FA6216558BC00A249E3 /* main.m */; };
 		39034FB3216559C700A249E3 /* LTBDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39034FB2216559C700A249E3 /* LTBDocumentsTableViewController.m */; };
 		39034FB621655C2400A249E3 /* LTBDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39034FB521655C2400A249E3 /* LTBDocumentViewController.m */; };
+		39034FBC216560C500A249E3 /* NSString+LTBWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 39034FBB216560C500A249E3 /* NSString+LTBWordCount.m */; };
+		39034FBF2165636300A249E3 /* LTBDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 39034FBE2165636300A249E3 /* LTBDocument.m */; };
+		39034FC221656F9F00A249E3 /* LTBDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39034FC121656F9F00A249E3 /* LTBDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		39034FB2216559C700A249E3 /* LTBDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBDocumentsTableViewController.m; sourceTree = "<group>"; };
 		39034FB421655C2400A249E3 /* LTBDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBDocumentViewController.h; sourceTree = "<group>"; };
 		39034FB521655C2400A249E3 /* LTBDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBDocumentViewController.m; sourceTree = "<group>"; };
+		39034FBA216560C500A249E3 /* NSString+LTBWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LTBWordCount.h"; sourceTree = "<group>"; };
+		39034FBB216560C500A249E3 /* NSString+LTBWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LTBWordCount.m"; sourceTree = "<group>"; };
+		39034FBD2165636300A249E3 /* LTBDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBDocument.h; sourceTree = "<group>"; };
+		39034FBE2165636300A249E3 /* LTBDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBDocument.m; sourceTree = "<group>"; };
+		39034FC021656F9F00A249E3 /* LTBDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBDocumentController.h; sourceTree = "<group>"; };
+		39034FC121656F9F00A249E3 /* LTBDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				39034FAD216558CC00A249E3 /* App Lifecycle */,
+				39034FB92165609800A249E3 /* Category */,
+				39034FB72165606100A249E3 /* Model */,
+				39034FB82165606D00A249E3 /* Model Controller */,
 				39034FAE216558D900A249E3 /* View Controllers */,
 				39034FAF216558E400A249E3 /* Storyboards */,
 				39034FB0216558EF00A249E3 /* Resources */,
@@ -106,6 +118,33 @@
 				39034FA6216558BC00A249E3 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		39034FB72165606100A249E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39034FBD2165636300A249E3 /* LTBDocument.h */,
+				39034FBE2165636300A249E3 /* LTBDocument.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39034FB82165606D00A249E3 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39034FC021656F9F00A249E3 /* LTBDocumentController.h */,
+				39034FC121656F9F00A249E3 /* LTBDocumentController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		39034FB92165609800A249E3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				39034FBA216560C500A249E3 /* NSString+LTBWordCount.h */,
+				39034FBB216560C500A249E3 /* NSString+LTBWordCount.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				39034FA7216558BC00A249E3 /* main.m in Sources */,
+				39034FBC216560C500A249E3 /* NSString+LTBWordCount.m in Sources */,
+				39034FC221656F9F00A249E3 /* LTBDocumentController.m in Sources */,
 				39034F99216558BB00A249E3 /* AppDelegate.m in Sources */,
 				39034FB621655C2400A249E3 /* LTBDocumentViewController.m in Sources */,
 				39034FB3216559C700A249E3 /* LTBDocumentsTableViewController.m in Sources */,
+				39034FBF2165636300A249E3 /* LTBDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
