@@ -6,6 +6,7 @@
 //  Copyright © 2018 Conner. All rights reserved.
 //
 #import "DocumentsTableViewController.h"
+#import "DocumentDetailViewController.h"
 #import "CGADocumentController.h"
 #import "CGADocument.h"
 
@@ -65,14 +66,22 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"AddDocumentSegue"]) {
+        DocumentDetailViewController *vc = [segue destinationViewController];
+        [vc setDocumentController:[self documentController]];
+    } else if ([[segue identifier] isEqualToString:@"ViewDocumentSegue"]) {
+        DocumentDetailViewController *vc = [segue destinationViewController];
+        NSIndexPath *index = [[self tableView] indexPathForSelectedRow];
+        CGADocument *document = [[[self documentController] documents] objectAtIndex:[index row]];
+        
+        [vc setDocumentController:[self documentController]];
+        [vc setDocument:document];
+    }
 }
-*/
+
 
 @end
