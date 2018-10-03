@@ -42,6 +42,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="YJX-3V-H3h" kind="show" identifier="ViewDocumentSegue" id="eyd-CU-wE7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -52,7 +55,7 @@
                     <navigationItem key="navigationItem" title="Documents" id="LPo-eL-1Vc">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="kD6-tg-v3P">
                             <connections>
-                                <segue destination="YJX-3V-H3h" kind="show" identifier="DocumentDetailSegue" id="ABW-o5-ZHH"/>
+                                <segue destination="YJX-3V-H3h" kind="show" identifier="AddDocumentSegue" id="ABW-o5-ZHH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -136,4 +139,7 @@
             <point key="canvasLocation" x="-660" y="38"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eyd-CU-wE7"/>
+    </inferredMetricsTieBreakers>
 </document>
