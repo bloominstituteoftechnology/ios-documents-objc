@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateDocument:(CGADocument *)document title:(NSString *)title text:(NSString *)text;
 - (void)deleteDocument:(CGADocument *)document;
 
-@property NSMutableArray *documents;
+@property NSMutableArray<CGADocument *> *documents;
 
 @end
 

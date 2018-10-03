@@ -5,7 +5,6 @@
 //  Created by Conner on 10/3/18.
 //  Copyright © 2018 Conner. All rights reserved.
 //
-
 #import "DocumentsTableViewController.h"
 #import "CGADocumentController.h"
 #import "CGADocument.h"
@@ -40,20 +39,16 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [[[self documentController] documents] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
+    NSMutableArray<CGADocument *> *documents = [[self documentController] documents];
     
-    // Configure the cell...
+    [[cell textLabel] setText:[[documents objectAtIndex:[indexPath row]] title]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", documents[indexPath.row].documentWordCount];
     
     return cell;
 }
