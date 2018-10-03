@@ -15,6 +15,7 @@
 		1394CF902165572900E572C0 /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF8F2165572900E572C0 /* DocumentsTableViewController.m */; };
 		1394CF9321655B2E00E572C0 /* DocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF9221655B2E00E572C0 /* DocumentDetailViewController.m */; };
 		1394CF9621655C3600E572C0 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF9521655C3600E572C0 /* NSString+WordCount.m */; };
+		1394CF9B216563A500E572C0 /* CGADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF9A216563A500E572C0 /* CGADocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		1394CF9221655B2E00E572C0 /* DocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDetailViewController.m; sourceTree = "<group>"; };
 		1394CF9421655C3600E572C0 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		1394CF9521655C3600E572C0 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		1394CF99216563A500E572C0 /* CGADocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGADocument.h; sourceTree = "<group>"; };
+		1394CF9A216563A500E572C0 /* CGADocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGADocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 				1394CF7621654E9200E572C0 /* AppDelegate.h */,
 				1394CF7721654E9200E572C0 /* AppDelegate.m */,
 				1394CF8D216556DE00E572C0 /* View Controllers */,
+				1394CF982165636C00E572C0 /* Model */,
 				1394CF9721655C3F00E572C0 /* Categories */,
 				1394CF8C2165562C00E572C0 /* Resources */,
 			);
@@ -105,6 +109,15 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		1394CF982165636C00E572C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1394CF99216563A500E572C0 /* CGADocument.h */,
+				1394CF9A216563A500E572C0 /* CGADocument.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +144,7 @@
 		1394CF6B21654E9200E572C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CGA;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = Conner;
 				TargetAttributes = {
@@ -179,6 +193,7 @@
 				1394CF902165572900E572C0 /* DocumentsTableViewController.m in Sources */,
 				1394CF8621654E9300E572C0 /* main.m in Sources */,
 				1394CF9321655B2E00E572C0 /* DocumentDetailViewController.m in Sources */,
+				1394CF9B216563A500E572C0 /* CGADocument.m in Sources */,
 				1394CF7821654E9200E572C0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
