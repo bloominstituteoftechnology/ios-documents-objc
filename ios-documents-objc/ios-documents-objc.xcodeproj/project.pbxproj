@@ -13,6 +13,7 @@
 		1394CF8321654E9300E572C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1394CF8121654E9300E572C0 /* LaunchScreen.storyboard */; };
 		1394CF8621654E9300E572C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF8521654E9300E572C0 /* main.m */; };
 		1394CF902165572900E572C0 /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF8F2165572900E572C0 /* DocumentsTableViewController.m */; };
+		1394CF9321655B2E00E572C0 /* DocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF9221655B2E00E572C0 /* DocumentDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1394CF8521654E9300E572C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1394CF8E2165572900E572C0 /* DocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentsTableViewController.h; sourceTree = "<group>"; };
 		1394CF8F2165572900E572C0 /* DocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableViewController.m; sourceTree = "<group>"; };
+		1394CF9121655B2E00E572C0 /* DocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDetailViewController.h; sourceTree = "<group>"; };
+		1394CF9221655B2E00E572C0 /* DocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				1394CF8E2165572900E572C0 /* DocumentsTableViewController.h */,
 				1394CF8F2165572900E572C0 /* DocumentsTableViewController.m */,
+				1394CF9121655B2E00E572C0 /* DocumentDetailViewController.h */,
+				1394CF9221655B2E00E572C0 /* DocumentDetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			files = (
 				1394CF902165572900E572C0 /* DocumentsTableViewController.m in Sources */,
 				1394CF8621654E9300E572C0 /* main.m in Sources */,
+				1394CF9321655B2E00E572C0 /* DocumentDetailViewController.m in Sources */,
 				1394CF7821654E9200E572C0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
