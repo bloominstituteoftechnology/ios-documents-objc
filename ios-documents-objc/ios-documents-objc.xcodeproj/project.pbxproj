@@ -14,6 +14,7 @@
 		1394CF8621654E9300E572C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF8521654E9300E572C0 /* main.m */; };
 		1394CF902165572900E572C0 /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF8F2165572900E572C0 /* DocumentsTableViewController.m */; };
 		1394CF9321655B2E00E572C0 /* DocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF9221655B2E00E572C0 /* DocumentDetailViewController.m */; };
+		1394CF9621655C3600E572C0 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394CF9521655C3600E572C0 /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		1394CF8F2165572900E572C0 /* DocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableViewController.m; sourceTree = "<group>"; };
 		1394CF9121655B2E00E572C0 /* DocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDetailViewController.h; sourceTree = "<group>"; };
 		1394CF9221655B2E00E572C0 /* DocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDetailViewController.m; sourceTree = "<group>"; };
+		1394CF9421655C3600E572C0 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		1394CF9521655C3600E572C0 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +64,10 @@
 		1394CF7521654E9200E572C0 /* ios-documents-objc */ = {
 			isa = PBXGroup;
 			children = (
-				1394CF8D216556DE00E572C0 /* View Controllers */,
 				1394CF7621654E9200E572C0 /* AppDelegate.h */,
 				1394CF7721654E9200E572C0 /* AppDelegate.m */,
+				1394CF8D216556DE00E572C0 /* View Controllers */,
+				1394CF9721655C3F00E572C0 /* Categories */,
 				1394CF8C2165562C00E572C0 /* Resources */,
 			);
 			path = "ios-documents-objc";
@@ -90,6 +94,15 @@
 				1394CF9221655B2E00E572C0 /* DocumentDetailViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1394CF9721655C3F00E572C0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1394CF9421655C3600E572C0 /* NSString+WordCount.h */,
+				1394CF9521655C3600E572C0 /* NSString+WordCount.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1394CF9621655C3600E572C0 /* NSString+WordCount.m in Sources */,
 				1394CF902165572900E572C0 /* DocumentsTableViewController.m in Sources */,
 				1394CF8621654E9300E572C0 /* main.m in Sources */,
 				1394CF9321655B2E00E572C0 /* DocumentDetailViewController.m in Sources */,
