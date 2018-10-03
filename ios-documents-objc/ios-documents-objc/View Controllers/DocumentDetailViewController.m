@@ -15,6 +15,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *documentTitleTextField;
 @property (strong, nonatomic) IBOutlet UITextView *documentTextView;
 
+- (IBAction)saveDocument:(id)sender;
+
 @end
 
 @implementation DocumentDetailViewController
@@ -34,9 +36,17 @@
     [[self wordCountLabel] setText:wordCount];
 }
 
+- (void)saveDocument:(id)sender {
+    NSString *title = [[self documentTitleTextField] text];
+    NSString *text = [[self documentTextView] text];
+    [[self documentController] createDocumentWithTitle:title text:text];
+    [[self navigationController] popViewControllerAnimated:true];
+}
+
 - (void)updateViews {
     if ([self document]) {
         NSString *title = [[self document] title];
+        self.title = title;
         NSString *documentText = [[self document] text];
         NSString *wordCount = [NSString stringWithFormat:@"%i", [[self document] documentWordCount]];
         [[self documentTitleTextField] setText:title];
