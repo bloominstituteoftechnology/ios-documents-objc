@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class LTBDocumentController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LTBDocumentsTableViewController : UITableViewController
+
+@property (nonatomic) LTBDocumentController *documentController;
 
 @end
 

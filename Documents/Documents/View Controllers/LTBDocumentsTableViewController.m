@@ -7,6 +7,9 @@
 //
 
 #import "LTBDocumentsTableViewController.h"
+#import "LTBDocumentViewController.h"
+#import "LTBDocumentController.h"
+#import "LTBDocument.h"
 
 @interface LTBDocumentsTableViewController ()
 
@@ -14,75 +17,80 @@
 
 @implementation LTBDocumentsTableViewController
 
+- (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        _documentController = [[LTBDocumentController alloc] init];
+    }
+    return self;
+}
+
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        _documentController = [[LTBDocumentController alloc] init];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // Want it here, b/c as the table view comes in and out of view, it will reload
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.documentController.documents.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    LTBDocument *document = [self.documentController.documents objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = document.title;
+    cell.detailTextLabel.text = document.text;
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+        
+        LTBDocument *document = [self.documentController.documents objectAtIndex:indexPath.row];
+        [self.documentController deleteDocument:document];
+        
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    // cast
+    LTBDocumentViewController *detailVC = [segue destinationViewController];
+    
+    // checking the cast
+    if ([detailVC isKindOfClass:[LTBDocumentViewController class]]) {
+        detailVC.documentController = self.documentController;
+        
+        if ([segue.identifier isEqualToString:@"ShowDocumentDetail"]) {
+            // Look at the type of the last property in the chain to know what the type of the variable should be
+            NSInteger index = self.tableView.indexPathForSelectedRow.row;
+            detailVC.document = self.documentController.documents[index];
+        }
+    }
 }
-*/
-
 @end

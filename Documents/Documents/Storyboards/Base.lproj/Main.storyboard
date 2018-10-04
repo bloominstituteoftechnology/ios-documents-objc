@@ -41,6 +41,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="d4k-ct-Ncn" kind="show" identifier="ShowDocumentDetail" id="9ck-hA-1vg"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -68,12 +71,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prA-TW-sp6">
-                                <rect key="frame" x="157" y="152" width="60" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wUe-Fv-DDj">
                                 <rect key="frame" x="16" y="208" width="343" height="30"/>
                                 <nil key="textColor"/>
@@ -88,29 +85,44 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="d4k-ct-Ncn" id="gJP-gO-OpO"/>
+                                </connections>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prA-TW-sp6">
+                                <rect key="frame" x="157" y="152" width="60" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Rsl-WH-zX4" firstAttribute="trailing" secondItem="UO9-9T-jN8" secondAttribute="trailing" constant="16" id="110-f0-2Wd"/>
                             <constraint firstItem="wUe-Fv-DDj" firstAttribute="leading" secondItem="Rsl-WH-zX4" secondAttribute="leading" constant="16" id="4kw-3p-nBs"/>
                             <constraint firstItem="wUe-Fv-DDj" firstAttribute="top" secondItem="prA-TW-sp6" secondAttribute="bottom" constant="26" id="4zJ-1N-rxP"/>
-                            <constraint firstItem="prA-TW-sp6" firstAttribute="leading" secondItem="Rsl-WH-zX4" secondAttribute="leading" constant="157" id="785-dp-nyA"/>
                             <constraint firstItem="UO9-9T-jN8" firstAttribute="top" secondItem="wUe-Fv-DDj" secondAttribute="bottom" constant="23" id="7sg-Vv-hzT"/>
-                            <constraint firstItem="Rsl-WH-zX4" firstAttribute="trailing" secondItem="prA-TW-sp6" secondAttribute="trailing" constant="158" id="7sn-kM-MpW"/>
                             <constraint firstItem="prA-TW-sp6" firstAttribute="top" secondItem="Rsl-WH-zX4" secondAttribute="top" constant="36" id="KGM-Rm-Mj9"/>
+                            <constraint firstItem="Rsl-WH-zX4" firstAttribute="trailing" secondItem="prA-TW-sp6" secondAttribute="trailing" constant="158" id="Qwh-Eg-EoF"/>
                             <constraint firstItem="UO9-9T-jN8" firstAttribute="leading" secondItem="Rsl-WH-zX4" secondAttribute="leading" constant="16" id="esI-Kv-v1O"/>
+                            <constraint firstItem="prA-TW-sp6" firstAttribute="leading" secondItem="Rsl-WH-zX4" secondAttribute="leading" constant="157" id="gwm-r0-bbK"/>
                             <constraint firstItem="Rsl-WH-zX4" firstAttribute="trailing" secondItem="wUe-Fv-DDj" secondAttribute="trailing" constant="16" id="wOq-z2-Dv6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rsl-WH-zX4"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="New Document" id="5AZ-lW-I34">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="wdN-vG-vyg"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="wdN-vG-vyg">
+                            <connections>
+                                <action selector="save:" destination="d4k-ct-Ncn" id="q2J-xb-lOQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="textView" destination="UO9-9T-jN8" id="JLY-kE-2ba"/>
+                        <outlet property="textField" destination="wUe-Fv-DDj" id="3zX-71-jcq"/>
+                        <outlet property="textView" destination="UO9-9T-jN8" id="fGw-nE-aXG"/>
+                        <outlet property="wordCountLabel" destination="prA-TW-sp6" id="ciN-Ec-BTW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7b-eI-arJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -134,4 +146,7 @@
             <point key="canvasLocation" x="-617" y="130"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9ck-hA-1vg"/>
+    </inferredMetricsTieBreakers>
 </document>

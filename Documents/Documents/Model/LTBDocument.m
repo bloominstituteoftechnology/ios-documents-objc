@@ -37,7 +37,7 @@
  }
  
  When we create a property, getter/setter/instanceVariable are created for us under the hood in .m file.
- @synthesize is only neccessary when we have a setter as well, if we just have a getter, we don't need @synthesize.
+ @synthesize is neccessary when we have a custom getter and setter, otherwise, it comes for free when using just a getter or a setter
  
  _property vc. self.property
  _property will get the value directly, where as every time we use self.property, the system will call on the getter method to get the return of the method.

@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class LTBDocumentController, LTBDocument;
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LTBDocumentViewController : UIViewController
+@interface LTBDocumentViewController : UIViewController <UITextViewDelegate>
+
+@property (nonatomic) LTBDocumentController *documentController;
+@property (nonatomic) LTBDocument *document;
+
+- (void)updateViews;
 
 @end
 
