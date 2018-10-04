@@ -57,16 +57,14 @@
 
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"AddDocumentSegue"]) {
-        DocumentDetailViewController *vc = [segue destinationViewController];
+    DocumentDetailViewController *vc = [segue destinationViewController];
+    if ([vc isKindOfClass:[DocumentDetailViewController class]]) {
         [vc setDocumentController:[self documentController]];
-    } else if ([[segue identifier] isEqualToString:@"ViewDocumentSegue"]) {
-        DocumentDetailViewController *vc = [segue destinationViewController];
-        NSIndexPath *index = [[self tableView] indexPathForSelectedRow];
-        CGADocument *document = [[[self documentController] documents] objectAtIndex:[index row]];
-        
-        [vc setDocumentController:[self documentController]];
-        [vc setDocument:document];
+        if ([[segue identifier] isEqualToString:@"ViewDocumentSegue"]) {
+            NSIndexPath *index = [[self tableView] indexPathForSelectedRow];
+            CGADocument *document = [[[self documentController] documents] objectAtIndex:[index row]];
+            [vc setDocument:document];
+        }
     }
 }
 
