@@ -13,7 +13,7 @@
         <!--Documents-->
         <scene sceneID="SWO-9Q-ynR">
             <objects>
-                <tableViewController id="Yxg-oy-wSr" customClass="DocumentsTableViewController" sceneMemberID="viewController">
+                <tableViewController id="Yxg-oy-wSr" customClass="IIDocumentsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qti-KU-9po">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,7 +82,7 @@
         <!--Title-->
         <scene sceneID="s7e-mr-g4s">
             <objects>
-                <viewController id="Wyr-zg-crP" customClass="DocumentDetailViewController" sceneMemberID="viewController">
+                <viewController id="Wyr-zg-crP" customClass="IIDocumentDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c2P-sO-BCK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

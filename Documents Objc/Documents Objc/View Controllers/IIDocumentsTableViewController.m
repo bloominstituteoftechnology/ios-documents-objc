@@ -1,18 +1,18 @@
 //
-//  DocumentsTableViewController.m
+//  IIDocumentsTableViewController.m
 //  Documents Objc
 //
 //  Created by Ilgar Ilyasov on 11/14/18.
 //  Copyright © 2018 Lambda School. All rights reserved.
 //
 
-#import "DocumentsTableViewController.h"
+#import "IIDocumentsTableViewController.h"
 
-@interface DocumentsTableViewController ()
+@interface IIDocumentsTableViewController ()
 
 @end
 
-@implementation DocumentsTableViewController
+@implementation IIDocumentsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,7 +34,10 @@
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
+    if ([[segue identifier] isEqualToString:@"AddDocumentSegue"])
+    {
+        
+    }
 }
 
 @end

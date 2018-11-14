@@ -1,5 +1,5 @@
 //
-//  DocumentDetailViewController.h
+//  IIDocumentDetailViewController.h
 //  Documents Objc
 //
 //  Created by Ilgar Ilyasov on 11/14/18.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DocumentDetailViewController : UIViewController
+@interface IIDocumentDetailViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
 @property (weak, nonatomic) IBOutlet UITextField *documentTitleTextField;

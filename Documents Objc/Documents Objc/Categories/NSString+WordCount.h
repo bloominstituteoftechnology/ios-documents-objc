@@ -1,16 +1,18 @@
 //
-//  DocumentsTableViewController.h
+//  NSString+WordCount.h
 //  Documents Objc
 //
 //  Created by Ilgar Ilyasov on 11/14/18.
 //  Copyright © 2018 Lambda School. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DocumentsTableViewController : UITableViewController
+@interface NSString (WordCount)
+
+- (int)wordCount;
 
 @end
 

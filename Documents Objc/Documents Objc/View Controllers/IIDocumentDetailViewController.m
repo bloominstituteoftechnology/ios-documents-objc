@@ -1,18 +1,18 @@
 //
-//  DocumentDetailViewController.m
+//  IIDocumentDetailViewController.m
 //  Documents Objc
 //
 //  Created by Ilgar Ilyasov on 11/14/18.
 //  Copyright © 2018 Lambda School. All rights reserved.
 //
 
-#import "DocumentDetailViewController.h"
+#import "IIDocumentDetailViewController.h"
 
-@interface DocumentDetailViewController ()
+@interface IIDocumentDetailViewController ()
 
 @end
 
-@implementation DocumentDetailViewController
+@implementation IIDocumentDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
