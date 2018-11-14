@@ -13,7 +13,7 @@
         <!--Documents-->
         <scene sceneID="SWO-9Q-ynR">
             <objects>
-                <tableViewController id="Yxg-oy-wSr" sceneMemberID="viewController">
+                <tableViewController id="Yxg-oy-wSr" customClass="DocumentsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qti-KU-9po">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
                     <navigationItem key="navigationItem" title="Documents" id="02n-rj-wbC">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="UJx-fr-gBu">
                             <connections>
-                                <segue destination="Wyr-zg-crP" kind="show" id="C7p-xL-JMf"/>
+                                <segue destination="Wyr-zg-crP" kind="show" identifier="AddDocumentSegue" id="C7p-xL-JMf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -82,7 +82,7 @@
         <!--Title-->
         <scene sceneID="s7e-mr-g4s">
             <objects>
-                <viewController id="Wyr-zg-crP" sceneMemberID="viewController">
+                <viewController id="Wyr-zg-crP" customClass="DocumentDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c2P-sO-BCK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,8 +123,17 @@
                         <viewLayoutGuide key="safeArea" id="bnN-iM-VAf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="X8e-jH-nOR">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Z2t-dF-Wke"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Z2t-dF-Wke">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="Wyr-zg-crP" id="3xV-vP-TQd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="documentBodyTextView" destination="adN-i0-kGH" id="5Tc-J0-RMs"/>
+                        <outlet property="documentTitleTextField" destination="gsg-a0-SDD" id="WSX-th-hOO"/>
+                        <outlet property="wordCountLabel" destination="96s-rz-P9d" id="qA7-lc-mPo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YA3-NQ-zRy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

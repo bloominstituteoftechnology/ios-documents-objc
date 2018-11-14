@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		82EF11B4219CC84B00047E0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EF11B3219CC84B00047E0F /* AppDelegate.m */; };
-		82EF11B7219CC84B00047E0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EF11B6219CC84B00047E0F /* ViewController.m */; };
 		82EF11BA219CC84B00047E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EF11B8219CC84B00047E0F /* Main.storyboard */; };
 		82EF11BC219CC84C00047E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EF11BB219CC84C00047E0F /* Assets.xcassets */; };
 		82EF11BF219CC84C00047E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EF11BD219CC84C00047E0F /* LaunchScreen.storyboard */; };
 		82EF11C2219CC84C00047E0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EF11C1219CC84C00047E0F /* main.m */; };
+		82EF11CD219CC9F400047E0F /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EF11CC219CC9F400047E0F /* DocumentsTableViewController.m */; };
+		82EF11D0219CCA2200047E0F /* DocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EF11CF219CCA2200047E0F /* DocumentDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82EF11AF219CC84B00047E0F /* Documents Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Documents Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EF11B2219CC84B00047E0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82EF11B3219CC84B00047E0F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		82EF11B5219CC84B00047E0F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		82EF11B6219CC84B00047E0F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		82EF11B9219CC84B00047E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82EF11BB219CC84C00047E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82EF11BE219CC84C00047E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82EF11C0219CC84C00047E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82EF11C1219CC84C00047E0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82EF11CB219CC9F400047E0F /* DocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentsTableViewController.h; sourceTree = "<group>"; };
+		82EF11CC219CC9F400047E0F /* DocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableViewController.m; sourceTree = "<group>"; };
+		82EF11CE219CCA2200047E0F /* DocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDetailViewController.h; sourceTree = "<group>"; };
+		82EF11CF219CCA2200047E0F /* DocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +92,10 @@
 		82EF11CA219CC87400047E0F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				82EF11B5219CC84B00047E0F /* ViewController.h */,
-				82EF11B6219CC84B00047E0F /* ViewController.m */,
+				82EF11CB219CC9F400047E0F /* DocumentsTableViewController.h */,
+				82EF11CC219CC9F400047E0F /* DocumentsTableViewController.m */,
+				82EF11CE219CCA2200047E0F /* DocumentDetailViewController.h */,
+				82EF11CF219CCA2200047E0F /* DocumentDetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -165,8 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82EF11B7219CC84B00047E0F /* ViewController.m in Sources */,
+				82EF11CD219CC9F400047E0F /* DocumentsTableViewController.m in Sources */,
 				82EF11C2219CC84C00047E0F /* main.m in Sources */,
+				82EF11D0219CCA2200047E0F /* DocumentDetailViewController.m in Sources */,
 				82EF11B4219CC84B00047E0F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Documents Objc/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Documents Objc/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,7 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Documents Objc/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Documents Objc/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
