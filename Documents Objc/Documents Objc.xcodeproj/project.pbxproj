@@ -16,6 +16,7 @@
 		82EF11D0219CCA2200047E0F /* IIDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EF11CF219CCA2200047E0F /* IIDocumentDetailViewController.m */; };
 		82EF11D3219CCCA600047E0F /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EF11D2219CCCA600047E0F /* NSString+WordCount.m */; };
 		82EF11D7219CCDAD00047E0F /* IIDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EF11D6219CCDAD00047E0F /* IIDocument.m */; };
+		82EF11DB219CD78400047E0F /* IIDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EF11DA219CD78400047E0F /* IIDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		82EF11D2219CCCA600047E0F /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 		82EF11D5219CCDAD00047E0F /* IIDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIDocument.h; sourceTree = "<group>"; };
 		82EF11D6219CCDAD00047E0F /* IIDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIDocument.m; sourceTree = "<group>"; };
+		82EF11D9219CD78400047E0F /* IIDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIDocumentController.h; sourceTree = "<group>"; };
+		82EF11DA219CD78400047E0F /* IIDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				82EF11D8219CCDB000047E0F /* Models */,
+				82EF11DC219CD78700047E0F /* Model Controllers */,
 				82EF11D4219CCCAA00047E0F /* Categories */,
 				82EF11CA219CC87400047E0F /* View Controllers */,
 				82EF11C9219CC85E00047E0F /* Storyboards */,
@@ -124,6 +128,15 @@
 				82EF11D6219CCDAD00047E0F /* IIDocument.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		82EF11DC219CD78700047E0F /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				82EF11D9219CD78400047E0F /* IIDocumentController.h */,
+				82EF11DA219CD78400047E0F /* IIDocumentController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +212,7 @@
 				82EF11D3219CCCA600047E0F /* NSString+WordCount.m in Sources */,
 				82EF11CD219CC9F400047E0F /* IIDocumentsTableViewController.m in Sources */,
 				82EF11D7219CCDAD00047E0F /* IIDocument.m in Sources */,
+				82EF11DB219CD78400047E0F /* IIDocumentController.m in Sources */,
 				82EF11C2219CC84C00047E0F /* main.m in Sources */,
 				82EF11D0219CCA2200047E0F /* IIDocumentDetailViewController.m in Sources */,
 				82EF11B4219CC84B00047E0F /* AppDelegate.m in Sources */,
