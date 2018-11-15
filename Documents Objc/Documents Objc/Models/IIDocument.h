@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface IIDocument : NSObject
 
-@property (nonatomic, copy) NSString *documentTitle;
-@property (nonatomic, copy) NSString *documentBody;
+@property (nonatomic) NSString *documentTitle;
+@property (nonatomic) NSString *documentBody;
 @property (nonatomic) int wordCount;
 
 - (instancetype)initWithTitle: (NSString *)title body:(NSString *)body;

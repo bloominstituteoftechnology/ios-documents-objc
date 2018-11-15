@@ -30,9 +30,7 @@
 - (IBAction)saveButtonTapped:(id)sender
 {
     if (self.document) {
-//        [[self documentController] updateDocument:self.document title:self.documentTitleTextField.text body:self.documentBodyTextView.text];
-        [[self document] setDocumentTitle:self.documentTitleTextField.text];
-        [[self document] setDocumentBody:self.documentBodyTextView.text];
+        [[self documentController] updateDocument:self.document title:self.documentTitleTextField.text body:self.documentBodyTextView.text];
     } else {
         [[self documentController] createWithTitle:self.documentTitleTextField.text body:self.documentBodyTextView.text];
     }
@@ -66,6 +64,12 @@
 - (void)textViewDidChange:(UITextView *)textView
 {
     [self updateWordCountLabel];
+}
+
+- (void)setDocument:(IIDocument *)document
+{
+    _document = document;
+    [self updateViews];
 }
 
 @end

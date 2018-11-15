@@ -31,9 +31,6 @@
     int index = (int)[self.documents indexOfObject:document];
     IIDocument *newDocument = [[IIDocument alloc] initWithTitle:title body:body];
     [self.documents replaceObjectAtIndex:index withObject:newDocument];
-    
-//    [document setDocumentTitle:title];
-//    [document setDocumentBody:body];
 }
 
 - (void)deleteDocument:(IIDocument *)document

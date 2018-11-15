@@ -94,10 +94,11 @@
         
     } else if ([[segue identifier] isEqualToString:@"DocumentCellSegue"]){
         IIDocumentDetailViewController *destVC = [segue destinationViewController];
-        
         NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
         IIDocument *document = self.documentController.documents[indexPath.row];
-        destVC.document = document;
+        
+        [destVC setDocument:document];
+        [destVC setDocumentController:self.documentController];
     }
 }
 

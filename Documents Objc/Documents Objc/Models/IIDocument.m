@@ -15,8 +15,8 @@
 {
     self = [super init];
     if (self) {
-        _documentTitle = [title copy];
-        _documentBody = [body copy];
+        _documentTitle = title;
+        _documentBody = body;
     }
     return self;
 }
