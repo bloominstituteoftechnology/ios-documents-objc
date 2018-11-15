@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DocumentDetailViewController : UIViewController
+@interface DocumentDetailViewController : UIViewController<UITextViewDelegate>
 
 @property (nonatomic) DYPDocument *document;
 @property (nonatomic) DYPDocumentController *documentController;

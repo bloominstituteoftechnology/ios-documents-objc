@@ -9,6 +9,7 @@
 #import "DocumentDetailViewController.h"
 #import "DYPDocumentController.h"
 #import "DYPDocument.h"
+#import "NSString+WordCount.h"
 
 @interface DocumentDetailViewController ()
 
@@ -24,7 +25,14 @@
 
 - (void)viewDidLoad
 {
+    [self.bodyTextView setDelegate:self];
     [self updateViews];
+}
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    NSString *wordCountString = [NSString stringWithFormat:@"%d words", [self.bodyTextView.text wordCount]];
+    [self.wordCountLabel setText:wordCountString];
 }
 
 - (IBAction)save:(id)sender {
@@ -42,6 +50,8 @@
         [self.navigationController setTitle:self.document.title];
         [self.titleTextField setText:self.document.title];
         [self.bodyTextView setText:self.document.bodyText];
+        NSString *wordCountString = [NSString stringWithFormat:@"%d", self.document.wordCount];
+        [self.wordCountLabel setText:wordCountString];
     }
 }
 
