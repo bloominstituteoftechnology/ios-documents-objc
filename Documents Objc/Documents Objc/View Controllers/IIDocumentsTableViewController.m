@@ -44,10 +44,6 @@
     return self;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -57,13 +53,13 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _documentController.documents.count;
+    return self.documentController.documents.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
     
-    IIDocument *document = [[_documentController documents] objectAtIndex:[indexPath row]];
+    IIDocument *document = [[self.documentController documents] objectAtIndex:[indexPath row]];
     [[cell textLabel] setText:[document documentTitle]];
     
     NSString *wordCountString = [NSString stringWithFormat:@"%d", document.wordCount];
@@ -81,8 +77,8 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
-        IIDocument *document = [[_documentController documents] objectAtIndex:[indexPath row]];
-        [_documentController deleteDocument:document];
+        IIDocument *document = [[self.documentController documents] objectAtIndex:[indexPath row]];
+        [self.documentController deleteDocument:document];
         [[self tableView] reloadData];
     }
 }
@@ -94,13 +90,13 @@
     if ([[segue identifier] isEqualToString:@"AddDocumentSegue"])
     {
         IIDocumentDetailViewController *destVC = [segue destinationViewController];
-        destVC.documentController = _documentController;
+        destVC.documentController = self.documentController;
         
     } else if ([[segue identifier] isEqualToString:@"DocumentCellSegue"]){
         IIDocumentDetailViewController *destVC = [segue destinationViewController];
         
         NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
-        IIDocument *document = _documentController.documents[indexPath.row];
+        IIDocument *document = self.documentController.documents[indexPath.row];
         destVC.document = document;
     }
 }

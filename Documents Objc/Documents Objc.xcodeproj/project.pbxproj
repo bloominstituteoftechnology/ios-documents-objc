@@ -72,9 +72,9 @@
 			children = (
 				82EF11D8219CCDB000047E0F /* Models */,
 				82EF11DC219CD78700047E0F /* Model Controllers */,
-				82EF11D4219CCCAA00047E0F /* Categories */,
 				82EF11CA219CC87400047E0F /* View Controllers */,
 				82EF11C9219CC85E00047E0F /* Storyboards */,
+				82EF11D4219CCCAA00047E0F /* Categories */,
 				82EF11C8219CC85600047E0F /* Resources */,
 			);
 			path = "Documents Objc";

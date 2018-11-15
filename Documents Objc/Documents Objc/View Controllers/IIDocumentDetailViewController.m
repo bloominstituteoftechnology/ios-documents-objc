@@ -34,13 +34,10 @@
     } else {
         [[self documentController] createWithTitle:self.documentTitleTextField.text body:self.documentBodyTextView.text];
     }
-    [[self navigationController] popViewControllerAnimated:true];
+    [[self navigationController] popViewControllerAnimated:YES];
 }
 
-- (void)textViewDidChange:(UITextView *)textView
-{
-    [self updateWordCountLabel];
-}
+#pragma Update Views
 
 - (void)updateViews
 {
@@ -60,7 +57,13 @@
     } else {
         self.wordCountLabel.text = [NSString stringWithFormat:@"%d words", self.documentBodyTextView.text.wordCount];
     }
-    
+}
+
+#pragma UITextViewDelegate
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    [self updateWordCountLabel];
 }
 
 @end

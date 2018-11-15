@@ -15,7 +15,7 @@
 {
     self = [super init];
     if (self) {
-        _documents = [[NSMutableArray alloc] init];
+        self.documents = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -23,22 +23,20 @@
 - (void)createWithTitle:(NSString *)title body:(NSString *)body
 {
     IIDocument *document = [[IIDocument alloc] initWithTitle:title body:body];
-    [_documents addObject:document];
+    [self.documents addObject:document];
 }
 
 - (void)updateDocument:(IIDocument *)document title:(NSString *)title body:(NSString *)body
 {
-    int index = (int)[_documents indexOfObject:document];
-    [_documents removeObjectAtIndex:index];
-    
+    int index = (int)[self.documents indexOfObject:document];
     IIDocument *newDocument = [[IIDocument alloc] initWithTitle:title body:body];
-    [_documents addObject:newDocument];
+    [self.documents replaceObjectAtIndex:index withObject:newDocument];
 }
 
 - (void)deleteDocument:(IIDocument *)document
 {
     int index = (int)[_documents indexOfObject:document];
-    [_documents removeObjectAtIndex:index];
+    [self.documents removeObjectAtIndex:index];
 }
 
 @end
