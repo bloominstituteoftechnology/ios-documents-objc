@@ -15,6 +15,8 @@
 		7B6B05AE219CD0BA00C345C8 /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B05AD219CD0BA00C345C8 /* DocumentsTableViewController.m */; };
 		7B6B05B1219CD12D00C345C8 /* DocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B05B0219CD12D00C345C8 /* DocumentDetailViewController.m */; };
 		7B6B05B4219CD25A00C345C8 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B05B3219CD25A00C345C8 /* NSString+WordCount.m */; };
+		7B6B05B7219CD3F900C345C8 /* DYPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B05B6219CD3F900C345C8 /* DYPDocument.m */; };
+		7B6B05BA219CD73B00C345C8 /* DYPDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B05B9219CD73B00C345C8 /* DYPDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		7B6B05B0219CD12D00C345C8 /* DocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDetailViewController.m; sourceTree = "<group>"; };
 		7B6B05B2219CD25A00C345C8 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		7B6B05B3219CD25A00C345C8 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		7B6B05B5219CD3F900C345C8 /* DYPDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYPDocument.h; sourceTree = "<group>"; };
+		7B6B05B6219CD3F900C345C8 /* DYPDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYPDocument.m; sourceTree = "<group>"; };
+		7B6B05B8219CD73B00C345C8 /* DYPDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYPDocumentController.h; sourceTree = "<group>"; };
+		7B6B05B9219CD73B00C345C8 /* DYPDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYPDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				7B6B0596219CCDFC00C345C8 /* AppDelegate.h */,
 				7B6B0597219CCDFC00C345C8 /* AppDelegate.m */,
 				7B6B059C219CCDFC00C345C8 /* Main.storyboard */,
+				7B6B05B8219CD73B00C345C8 /* DYPDocumentController.h */,
+				7B6B05B9219CD73B00C345C8 /* DYPDocumentController.m */,
+				7B6B05B5219CD3F900C345C8 /* DYPDocument.h */,
+				7B6B05B6219CD3F900C345C8 /* DYPDocument.m */,
 				7B6B05AF219CD12D00C345C8 /* DocumentDetailViewController.h */,
 				7B6B05B0219CD12D00C345C8 /* DocumentDetailViewController.m */,
 				7B6B05AC219CD0BA00C345C8 /* DocumentsTableViewController.h */,
@@ -112,6 +122,7 @@
 				TargetAttributes = {
 					7B6B0592219CCDFC00C345C8 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -151,10 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6B05B7219CD3F900C345C8 /* DYPDocument.m in Sources */,
 				7B6B05B4219CD25A00C345C8 /* NSString+WordCount.m in Sources */,
 				7B6B05AE219CD0BA00C345C8 /* DocumentsTableViewController.m in Sources */,
 				7B6B05A6219CCE0000C345C8 /* main.m in Sources */,
 				7B6B05B1219CD12D00C345C8 /* DocumentDetailViewController.m in Sources */,
+				7B6B05BA219CD73B00C345C8 /* DYPDocumentController.m in Sources */,
 				7B6B0598219CCDFC00C345C8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Documents/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,6 +319,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Daniela.Documents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Documents/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +338,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Daniela.Documents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

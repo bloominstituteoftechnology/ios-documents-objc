@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class DYPDocument;
+@class DYPDocumentController;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DocumentDetailViewController : UIViewController
+
+@property (nonatomic) DYPDocument *document;
+@property (nonatomic) DYPDocumentController *documentController;
 
 @end
 
