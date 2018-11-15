@@ -55,7 +55,12 @@
 
 - (void)updateWordCountLabel
 {
-    self.wordCountLabel.text = [NSString stringWithFormat:@"%d words", self.documentBodyTextView.text.wordCount];
+    if ([self.documentBodyTextView.text isEqualToString:@""]) {
+        self.wordCountLabel.text = @"0 words";
+    } else {
+        self.wordCountLabel.text = [NSString stringWithFormat:@"%d words", self.documentBodyTextView.text.wordCount];
+    }
+    
 }
 
 @end
