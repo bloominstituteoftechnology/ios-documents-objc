@@ -14,6 +14,7 @@
 		A15EFA4E219CE6EA00B9CD66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A15EFA4D219CE6EA00B9CD66 /* main.m */; };
 		A15EFA56219CE8EF00B9CD66 /* MUDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15EFA55219CE8EF00B9CD66 /* MUDocumentsTableViewController.m */; };
 		A15EFA59219CEC8200B9CD66 /* MUDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15EFA58219CEC8200B9CD66 /* MUDocumentDetailViewController.m */; };
+		A15EFA5C219CF8F100B9CD66 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = A15EFA5B219CF8F100B9CD66 /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		A15EFA55219CE8EF00B9CD66 /* MUDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUDocumentsTableViewController.m; sourceTree = "<group>"; };
 		A15EFA57219CEC8200B9CD66 /* MUDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUDocumentDetailViewController.h; sourceTree = "<group>"; };
 		A15EFA58219CEC8200B9CD66 /* MUDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUDocumentDetailViewController.m; sourceTree = "<group>"; };
+		A15EFA5A219CF8F100B9CD66 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		A15EFA5B219CF8F100B9CD66 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				A15EFA3E219CE6E900B9CD66 /* AppDelegate.h */,
 				A15EFA3F219CE6E900B9CD66 /* AppDelegate.m */,
 				A15EFA44219CE6E900B9CD66 /* Main.storyboard */,
+				A15EFA5A219CF8F100B9CD66 /* NSString+WordCount.h */,
+				A15EFA5B219CF8F100B9CD66 /* NSString+WordCount.m */,
 				A15EFA57219CEC8200B9CD66 /* MUDocumentDetailViewController.h */,
 				A15EFA58219CEC8200B9CD66 /* MUDocumentDetailViewController.m */,
 				A15EFA54219CE8EF00B9CD66 /* MUDocumentsTableViewController.h */,
@@ -146,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15EFA5C219CF8F100B9CD66 /* NSString+WordCount.m in Sources */,
 				A15EFA59219CEC8200B9CD66 /* MUDocumentDetailViewController.m in Sources */,
 				A15EFA4E219CE6EA00B9CD66 /* main.m in Sources */,
 				A15EFA40219CE6E900B9CD66 /* AppDelegate.m in Sources */,
