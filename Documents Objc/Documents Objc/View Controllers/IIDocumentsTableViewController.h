@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class IIDocumentController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface IIDocumentsTableViewController : UITableViewController
+
+@property (nonatomic) IIDocumentController *documentController;
 
 @end
 

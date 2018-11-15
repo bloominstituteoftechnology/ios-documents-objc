@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateDocument:(IIDocument *)document title:(NSString *)title body:(NSString *)body;
 - (void)deleteDocument:(IIDocument *)document;
 
-@property (nonatomic, readonly) NSMutableArray *documents;
+@property (nonatomic, readwrite) NSMutableArray *documents;
 
 @end
 

@@ -7,6 +7,9 @@
 //
 
 #import "IIDocumentDetailViewController.h"
+#import "IIDocumentController.h"
+#import "IIDOcument.h"
+#import "NSString+WordCount.h"
 
 @interface IIDocumentDetailViewController ()
 
@@ -16,12 +19,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [[self documentBodyTextView] setDelegate:self];
+    
+    if (self.isViewLoaded) {
+        [self updateViews];
+        [self updateWordCountLabel];
+    }
 }
 
 - (IBAction)saveButtonTapped:(id)sender
 {
-    
+    if (self.document) {
+        [[self documentController] updateDocument:self.document title:self.documentTitleTextField.text body:self.documentBodyTextView.text];
+    } else {
+        [[self documentController] createWithTitle:self.documentTitleTextField.text body:self.documentBodyTextView.text];
+    }
+    [[self navigationController] popViewControllerAnimated:true];
+}
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    [self updateWordCountLabel];
+}
+
+- (void)updateViews
+{
+    if (self.document) {
+        self.documentTitleTextField.text = self.document.documentTitle;
+        self.documentBodyTextView.text = self.document.documentBody;
+        self.navigationItem.title = self.document.documentTitle;
+    } else {
+        [[self navigationItem] setTitle:@"New Document"];
+    }
+}
+
+- (void)updateWordCountLabel
+{
+    self.wordCountLabel.text = [NSString stringWithFormat:@"%d words", self.documentBodyTextView.text.wordCount];
 }
 
 @end
