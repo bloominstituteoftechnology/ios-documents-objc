@@ -7,7 +7,8 @@
 //
 
 #import "MUDocumentDetailViewController.h"
-
+#import "MUDocumentController.h"
+#import "NSString+WordCount.h"
 @interface MUDocumentDetailViewController ()
 
 @end
@@ -16,7 +17,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.documentBodyTextView setDelegate:self];
+    [self updateViews];
+}
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    NSString *body = self.documentBodyTextView.text;
+    [self.wordCountLabel setText: [NSString stringWithFormat:@"%d Words", [body wordCount]]];
+}
+
+- (void)updateViews
+{
+    if (self.document) {
+        self.title = self.document.title;
+        self.documentBodyTextView.text = self.document.body;
+        self.documentTitleTextField.text = self.document.title;
+        NSString *body = self.documentBodyTextView.text;
+        [self.wordCountLabel setText: [NSString stringWithFormat:@"%d Word(s)", [body wordCount]]];
+    } else {
+        self.title = @"New Document";
+    }
 }
 
 /*
@@ -30,5 +51,12 @@
 */
 
 - (IBAction)saveDocument:(id)sender {
+    if (!self.document) {
+        [self.documentController createDocumentWithTitle:self.documentTitleTextField.text body:self.documentBodyTextView.text];
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        [self.documentController updateDocumentWithDocument:self.document title:self.documentTitleTextField.text body:self.documentBodyTextView.text];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 @end
