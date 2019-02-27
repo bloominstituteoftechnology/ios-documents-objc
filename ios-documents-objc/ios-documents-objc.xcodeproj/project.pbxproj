@@ -17,6 +17,7 @@
 		D1767EA922271E3900BFEF5E /* BHDocumentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1767EA822271E3900BFEF5E /* BHDocumentsTableViewCell.m */; };
 		D1767EAC2227236C00BFEF5E /* BHDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D1767EAB2227236C00BFEF5E /* BHDocument.m */; };
 		D1767EAF2227256300BFEF5E /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = D1767EAE2227256300BFEF5E /* NSString+WordCount.m */; };
+		D1767EB22227319E00BFEF5E /* BHModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1767EB12227319E00BFEF5E /* BHModelController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		D1767EAB2227236C00BFEF5E /* BHDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHDocument.m; sourceTree = "<group>"; };
 		D1767EAD2227256300BFEF5E /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		D1767EAE2227256300BFEF5E /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		D1767EB02227319E00BFEF5E /* BHModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHModelController.h; sourceTree = "<group>"; };
+		D1767EB12227319E00BFEF5E /* BHModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHModelController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 		D146DA1A22271A23006DA6CB /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D1767EB02227319E00BFEF5E /* BHModelController.h */,
+				D1767EB12227319E00BFEF5E /* BHModelController.m */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				D146DA11222716DA006DA6CB /* main.m in Sources */,
 				D1767EA022271D4A00BFEF5E /* BHDocumentDetailViewController.m in Sources */,
 				D1767EAF2227256300BFEF5E /* NSString+WordCount.m in Sources */,
+				D1767EB22227319E00BFEF5E /* BHModelController.m in Sources */,
 				D1767EA322271D5B00BFEF5E /* BHDocumentTableViewController.m in Sources */,
 				D146DA03222716D9006DA6CB /* AppDelegate.m in Sources */,
 			);
