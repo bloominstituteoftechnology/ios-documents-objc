@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self != nil) {
-        _documentsArray = @[];
+        _documentsArray = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -22,7 +22,8 @@
 - (void)createDocument:(NSString *)title withBody:(NSString *)body {
     ABCDocument *newDocument = [[ABCDocument alloc] initWithTitle:title andWith:body];
     [newDocument setWordCount:body];
-    [_documentsArray arrayByAddingObject: newDocument];
+    [_documentsArray addObject: newDocument];
+    
     }
 
 - (void)updateDocument:(ABCDocument *)document withTitle:(NSString *)title withBody:(NSString *)body {

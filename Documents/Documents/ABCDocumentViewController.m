@@ -7,8 +7,11 @@
 //
 
 #import "ABCDocumentViewController.h"
+#import "NSString+WordCount.h"
 
 @interface ABCDocumentViewController ()
+
+- (void)updateViews;
 
 @end
 
@@ -16,7 +19,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _documentBodyTextView.delegate = self;
+    [self updateViews];
+    
+}
+
+//MARK: UITextViewDelegate
+- (void)textViewDidChange:(UITextView *)textView {
+    //I am converting the result of the `wordCount` method from the NSString  + WordCount files, which is an NSUInteger, to an NSString so that it can be used in the label
+    _wordCountLabel.text = [NSString stringWithFormat: @"%lu", [_documentBodyTextView.text wordCount:_documentBodyTextView.text]];
+}
+
+//MARK: Other Methods
+- (void)updateViews {
+    _wordCountLabel.text = [NSString stringWithFormat: @"%lu", _document.wordCount];
+    _documentBodyTextView.text = _document.body;
+    _documentTitleTextField.text = _document.title;
 }
 
 /*
@@ -30,5 +48,10 @@
 */
 
 - (IBAction)saveButtonWasTapped:(id)sender {
+    if (_document != nil && _documentTitleTextField.text != nil && _documentBodyTextView.text != nil) {
+        [_documentController updateDocument:_document withTitle:_documentTitleTextField.text withBody:_documentBodyTextView.text];
+    } else {
+        [_documentController createDocument:_documentTitleTextField.text withBody:_documentBodyTextView.text];
+    }
 }
 @end

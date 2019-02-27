@@ -18,12 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _documentController = [[ABCDocumentController alloc] init];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[self tableView] reloadData];
 }
 
 #pragma mark - Table view data source
@@ -85,8 +83,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSIndexPath *tappedIndexPath = [self.tableView indexPathForSelectedRow];
     ABCDocumentViewController *destinationVC = segue.destinationViewController;
+    destinationVC.documentController = self.documentController;
     if ([segue.identifier  isEqual: @"viewDocumentDetailsSegue"]) {
-        [destinationVC document] = [_documentController.documentsArray objectAtIndex: tappedIndexPath.row]
+        destinationVC.document = [[self.documentController documentsArray] objectAtIndex:tappedIndexPath.row];
     }
 }
 

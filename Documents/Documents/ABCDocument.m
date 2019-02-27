@@ -21,7 +21,7 @@
 }
 
 - (void)setWordCount:(NSString *)documentBody {
-    [documentBody wordCount: documentBody];
+    _wordCount = [documentBody wordCount: documentBody];
 }
 
 @end

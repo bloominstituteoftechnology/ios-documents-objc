@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ABCDocumentViewController : UIViewController
+@interface ABCDocumentViewController : UIViewController<UITextViewDelegate>
 
 //MARK: IBOutlets
 @property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
