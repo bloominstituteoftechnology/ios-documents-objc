@@ -7,6 +7,7 @@
 //
 
 #import "ABCDocumentsTableViewController.h"
+#import "ABCDocumentViewController.h"
 
 @interface ABCDocumentsTableViewController ()
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _documentController = [[ABCDocumentController alloc] init];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -27,24 +29,21 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [[_documentController documentsArray] count ];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"DocumentsCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.textLabel.text = [[[_documentController documentsArray] objectAtIndex:indexPath.row] title];
+    cell.detailTextLabel.text = [NSString stringWithFormat: @"%lu", [[[_documentController documentsArray] objectAtIndex:indexPath.row] wordCount]];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -80,14 +79,15 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    NSIndexPath *tappedIndexPath = [self.tableView indexPathForSelectedRow];
+    ABCDocumentViewController *destinationVC = segue.destinationViewController;
+    if ([segue.identifier  isEqual: @"viewDocumentDetailsSegue"]) {
+        [destinationVC document] = [_documentController.documentsArray objectAtIndex: tappedIndexPath.row]
+    }
 }
-*/
 
 @end

@@ -17,6 +17,8 @@
 		A2D11F4722272BF500EDF579 /* ABCDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D11F4622272BF500EDF579 /* ABCDocumentsTableViewController.m */; };
 		A2D11F4A22272DC500EDF579 /* ABCDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D11F4922272DC500EDF579 /* ABCDocumentViewController.m */; };
 		A2D11F4D22272EDC00EDF579 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D11F4C22272EDC00EDF579 /* NSString+WordCount.m */; };
+		A2D11F50222730D300EDF579 /* ABCDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D11F4F222730D300EDF579 /* ABCDocument.m */; };
+		A2D11F53222733B800EDF579 /* ABCDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D11F52222733B800EDF579 /* ABCDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		A2D11F4922272DC500EDF579 /* ABCDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDocumentViewController.m; sourceTree = "<group>"; };
 		A2D11F4B22272EDC00EDF579 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		A2D11F4C22272EDC00EDF579 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		A2D11F4E222730D300EDF579 /* ABCDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDocument.h; sourceTree = "<group>"; };
+		A2D11F4F222730D300EDF579 /* ABCDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDocument.m; sourceTree = "<group>"; };
+		A2D11F51222733B800EDF579 /* ABCDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDocumentController.h; sourceTree = "<group>"; };
+		A2D11F52222733B800EDF579 /* ABCDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				A2D11F4322272B6900EDF579 /* README.md */,
 				A2D11F4B22272EDC00EDF579 /* NSString+WordCount.h */,
 				A2D11F4C22272EDC00EDF579 /* NSString+WordCount.m */,
+				A2D11F4E222730D300EDF579 /* ABCDocument.h */,
+				A2D11F4F222730D300EDF579 /* ABCDocument.m */,
+				A2D11F51222733B800EDF579 /* ABCDocumentController.h */,
+				A2D11F52222733B800EDF579 /* ABCDocumentController.m */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -163,9 +173,11 @@
 				A2D11F4A22272DC500EDF579 /* ABCDocumentViewController.m in Sources */,
 				A2D11F3222272B5300EDF579 /* ViewController.m in Sources */,
 				A2D11F4722272BF500EDF579 /* ABCDocumentsTableViewController.m in Sources */,
+				A2D11F53222733B800EDF579 /* ABCDocumentController.m in Sources */,
 				A2D11F4D22272EDC00EDF579 /* NSString+WordCount.m in Sources */,
 				A2D11F3D22272B5400EDF579 /* main.m in Sources */,
 				A2D11F2F22272B5300EDF579 /* AppDelegate.m in Sources */,
+				A2D11F50222730D300EDF579 /* ABCDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -53,7 +53,7 @@ You will create a simple master-detail layout in the "Main.storyboard".
 ### Part 3 - View Controllers
 
 1. Add a property with property attributes for an instance of your model controller in the table view controller subclass.
-2. In the two initializers of the table view controller, instantiate the model controller property.
+2. In the two initializers of the table view controller, instantiate the model controller property.*************************
 3. Implement the required `UITableViewDataSourceMethods`.
 4. In your detail view controller, add two properties with property attributes; one for your model and one for your model controller.
 5. In the `prepareForSegue` and depending on whether the user tapped the add button or a cell, pass the necessary properties to the detail view controller.

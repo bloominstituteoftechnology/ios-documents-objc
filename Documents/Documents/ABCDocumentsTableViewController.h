@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ABCDocumentController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ABCDocumentsTableViewController : UITableViewController
+
+@property ABCDocumentController *documentController;
 
 @end
 

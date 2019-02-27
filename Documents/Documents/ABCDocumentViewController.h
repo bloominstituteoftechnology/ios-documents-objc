@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ABCDocumentController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 //MARK: IBActions
 - (IBAction)saveButtonWasTapped:(id)sender;
+
+//MARK: Other Properties
+@property ABCDocument *document;
+@property ABCDocumentController *documentController;
 
 
 @end
