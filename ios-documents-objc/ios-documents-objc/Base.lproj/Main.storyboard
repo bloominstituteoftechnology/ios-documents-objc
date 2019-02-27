@@ -42,6 +42,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="KeB-7c-YhO" kind="show" identifier="ViewExistingDocumentSegue" id="2nI-6b-o1l"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -53,6 +56,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="YS0-Ct-qWH">
                             <connections>
                                 <action selector="addNewDocumentButtonClicked:" destination="BFC-x6-0k0" id="cV2-iv-VGF"/>
+                                <segue destination="KeB-7c-YhO" kind="show" identifier="AddNewDocumentSegue" id="RRl-BK-cc4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -70,7 +74,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JCi-8S-07K">
-                                <rect key="frame" x="8" y="28" width="359" height="587"/>
+                                <rect key="frame" x="8" y="72" width="359" height="543"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trJ-e7-TwE">
                                         <rect key="frame" x="8" y="0.0" width="343" height="30"/>
@@ -91,7 +95,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8AR-PB-n5C">
-                                        <rect key="frame" x="8" y="90" width="343" height="497"/>
+                                        <rect key="frame" x="8" y="90" width="343" height="453"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -153,4 +157,7 @@
             <point key="canvasLocation" x="-686" y="88"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="RRl-BK-cc4"/>
+    </inferredMetricsTieBreakers>
 </document>
