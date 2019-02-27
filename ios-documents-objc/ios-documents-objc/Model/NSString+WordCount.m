@@ -10,9 +10,9 @@
 
 @implementation NSString (WordCount)
 
-- (NSUInteger)wordCount {
+- (int)wordCount {
     
-    NSUInteger words = 0;
+    int words = 0;
     
     NSScanner *scanner = [NSScanner scannerWithString: self];
     

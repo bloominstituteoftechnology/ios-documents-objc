@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BHDocument : NSObject
 
-@property int wordCount;
+@property (nonatomic) int wordCount;
+@property NSString* UUID;
 @property NSString* title;
 @property NSString* bodyText;
 
