@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.tableView.allowsMultipleSelectionDuringEditing = NO;
     _modelController = [[BHModelController alloc] init];
     
 }
@@ -56,6 +56,22 @@
     // Configure the cell...
     
     return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return YES - we will be able to delete all rows
+    return YES;
+}
+// Override to support editing the table view.
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //add code here for when you hit delete
+        // Delete the row from the data source
+        [_modelController.documents removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+    }
 }
 
 #pragma mark - Navigation

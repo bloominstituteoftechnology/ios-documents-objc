@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BHDocumentTableViewController : UITableViewController
+@interface BHDocumentTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 
 - (IBAction)addNewDocumentButtonClicked:(id)sender;
