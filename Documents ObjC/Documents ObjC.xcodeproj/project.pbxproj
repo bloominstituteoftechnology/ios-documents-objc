@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		EB1A12E7222723B500333303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1A12E6222723B500333303 /* AppDelegate.m */; };
-		EB1A12EA222723B500333303 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1A12E9222723B500333303 /* ViewController.m */; };
 		EB1A12ED222723B500333303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1A12EB222723B500333303 /* Main.storyboard */; };
 		EB1A12EF222723B800333303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1A12EE222723B800333303 /* Assets.xcassets */; };
 		EB1A12F2222723B800333303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1A12F0222723B800333303 /* LaunchScreen.storyboard */; };
 		EB1A12F5222723B800333303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1A12F4222723B800333303 /* main.m */; };
+		EB1A1303222729D800333303 /* XYZDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1A1302222729D800333303 /* XYZDocumentsTableViewController.m */; };
+		EB1A1306222729FB00333303 /* XYZDocumentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1A1305222729FB00333303 /* XYZDocumentsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB1A12E2222723B500333303 /* Documents ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Documents ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1A12E5222723B500333303 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB1A12E6222723B500333303 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EB1A12E8222723B500333303 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EB1A12E9222723B500333303 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB1A12EC222723B500333303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB1A12EE222723B800333303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB1A12F1222723B800333303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB1A12F3222723B800333303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB1A12F4222723B800333303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB1A1301222729D800333303 /* XYZDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZDocumentsTableViewController.h; sourceTree = "<group>"; };
+		EB1A1302222729D800333303 /* XYZDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZDocumentsTableViewController.m; sourceTree = "<group>"; };
+		EB1A1304222729FB00333303 /* XYZDocumentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZDocumentsViewController.h; sourceTree = "<group>"; };
+		EB1A1305222729FB00333303 /* XYZDocumentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZDocumentsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +61,51 @@
 		EB1A12E4222723B500333303 /* Documents ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				EB1A12E5222723B500333303 /* AppDelegate.h */,
-				EB1A12E6222723B500333303 /* AppDelegate.m */,
-				EB1A12E8222723B500333303 /* ViewController.h */,
-				EB1A12E9222723B500333303 /* ViewController.m */,
+				EB1A12FE222724DF00333303 /* Resources */,
+				EB1A12FD222724C800333303 /* View Controllers */,
+				EB1A12FC222724BD00333303 /* Model Controller */,
+				EB1A12FB222724B100333303 /* Model */,
 				EB1A12EB222723B500333303 /* Main.storyboard */,
-				EB1A12EE222723B800333303 /* Assets.xcassets */,
-				EB1A12F0222723B800333303 /* LaunchScreen.storyboard */,
 				EB1A12F3222723B800333303 /* Info.plist */,
-				EB1A12F4222723B800333303 /* main.m */,
 			);
 			path = "Documents ObjC";
+			sourceTree = "<group>";
+		};
+		EB1A12FB222724B100333303 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB1A12FC222724BD00333303 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		EB1A12FD222724C800333303 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A1301222729D800333303 /* XYZDocumentsTableViewController.h */,
+				EB1A1302222729D800333303 /* XYZDocumentsTableViewController.m */,
+				EB1A1304222729FB00333303 /* XYZDocumentsViewController.h */,
+				EB1A1305222729FB00333303 /* XYZDocumentsViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EB1A12FE222724DF00333303 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A12E5222723B500333303 /* AppDelegate.h */,
+				EB1A12E6222723B500333303 /* AppDelegate.m */,
+				EB1A12EE222723B800333303 /* Assets.xcassets */,
+				EB1A12F0222723B800333303 /* LaunchScreen.storyboard */,
+				EB1A12F4222723B800333303 /* main.m */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1A12EA222723B500333303 /* ViewController.m in Sources */,
 				EB1A12F5222723B800333303 /* main.m in Sources */,
 				EB1A12E7222723B500333303 /* AppDelegate.m in Sources */,
+				EB1A1303222729D800333303 /* XYZDocumentsTableViewController.m in Sources */,
+				EB1A1306222729FB00333303 /* XYZDocumentsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
