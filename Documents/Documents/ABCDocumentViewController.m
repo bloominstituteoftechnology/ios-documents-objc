@@ -35,6 +35,11 @@
     _wordCountLabel.text = [NSString stringWithFormat: @"%lu", _document.wordCount];
     _documentBodyTextView.text = _document.body;
     _documentTitleTextField.text = _document.title;
+    if (_document == nil) {
+        [_documentNavigationItem setTitle: @"New Document"];
+    } else {
+        [_documentNavigationItem setTitle: _document.title];
+    }
 }
 
 /*
