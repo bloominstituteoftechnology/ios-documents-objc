@@ -15,6 +15,7 @@
 		340E59FE222727A40073249B /* Documents_ObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E59FD222727A40073249B /* Documents_ObjcTests.m */; };
 		340E5A0A22272A370073249B /* DRMDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E5A0922272A370073249B /* DRMDocumentsTableViewController.m */; };
 		340E5A0D22272A4A0073249B /* DRMDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E5A0C22272A4A0073249B /* DRMDocumentDetailViewController.m */; };
+		34296CBD222749FF00158330 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 34296CBC222749FF00158330 /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		340E5A0922272A370073249B /* DRMDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRMDocumentsTableViewController.m; sourceTree = "<group>"; };
 		340E5A0B22272A4A0073249B /* DRMDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRMDocumentDetailViewController.h; sourceTree = "<group>"; };
 		340E5A0C22272A4A0073249B /* DRMDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRMDocumentDetailViewController.m; sourceTree = "<group>"; };
+		34296CBB222749FF00158330 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		34296CBC222749FF00158330 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				340E5A0922272A370073249B /* DRMDocumentsTableViewController.m */,
 				340E5A0B22272A4A0073249B /* DRMDocumentDetailViewController.h */,
 				340E5A0C22272A4A0073249B /* DRMDocumentDetailViewController.m */,
+				34296CBB222749FF00158330 /* NSString+WordCount.h */,
+				34296CBC222749FF00158330 /* NSString+WordCount.m */,
 				340E59ED222727A40073249B /* Assets.xcassets */,
 				340E59EF222727A40073249B /* LaunchScreen.storyboard */,
 				340E59F2222727A40073249B /* Info.plist */,
@@ -208,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34296CBD222749FF00158330 /* NSString+WordCount.m in Sources */,
 				340E5A0D22272A4A0073249B /* DRMDocumentDetailViewController.m in Sources */,
 				340E59F4222727A40073249B /* main.m in Sources */,
 				340E5A0A22272A370073249B /* DRMDocumentsTableViewController.m in Sources */,
