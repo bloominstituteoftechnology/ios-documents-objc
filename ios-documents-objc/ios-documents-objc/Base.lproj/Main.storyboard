@@ -13,16 +13,16 @@
         <!--Documents-->
         <scene sceneID="lPs-De-eSS">
             <objects>
-                <tableViewController id="BFC-x6-0k0" sceneMemberID="viewController">
+                <tableViewController id="BFC-x6-0k0" customClass="BHDocumentTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="luZ-4n-VyI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="erY-Sw-74R" detailTextLabel="qos-bP-F25" style="IBUITableViewCellStyleSubtitle" id="lLj-FM-oWJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DocumentCell" textLabel="erY-Sw-74R" detailTextLabel="qos-bP-F25" style="IBUITableViewCellStyleSubtitle" id="lLj-FM-oWJ" customClass="BHDocumentsTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lLj-FM-oWJ" id="O9O-vp-fX5">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lLj-FM-oWJ" id="O9O-vp-fX5" customClass="BHDocumentsTableViewCell">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -50,9 +50,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Documents" id="Xta-kA-2gi">
-                        <barButtonItem key="rightBarButtonItem" title="Save" systemItem="add" id="rKm-0d-rZT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YS0-Ct-qWH">
                             <connections>
-                                <segue destination="KeB-7c-YhO" kind="show" id="sCJ-71-neC"/>
+                                <action selector="addNewDocumentButtonClicked:" destination="BFC-x6-0k0" id="cV2-iv-VGF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -64,13 +64,13 @@
         <!--New Document-->
         <scene sceneID="how-gU-8ua">
             <objects>
-                <viewController id="KeB-7c-YhO" sceneMemberID="viewController">
+                <viewController id="KeB-7c-YhO" customClass="BHDocumentDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RfJ-Rw-hAH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JCi-8S-07K">
-                                <rect key="frame" x="8" y="72" width="359" height="543"/>
+                                <rect key="frame" x="8" y="28" width="359" height="587"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trJ-e7-TwE">
                                         <rect key="frame" x="8" y="0.0" width="343" height="30"/>
@@ -91,7 +91,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8AR-PB-n5C">
-                                        <rect key="frame" x="8" y="90" width="343" height="453"/>
+                                        <rect key="frame" x="8" y="90" width="343" height="497"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -118,9 +118,19 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="New Document" id="Szh-y1-pKX">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Axy-0T-z8W"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Axy-0T-z8W">
+                            <connections>
+                                <action selector="saveButtonClicked:" destination="KeB-7c-YhO" id="m4q-1Z-hIf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="documentBodyTextView" destination="8AR-PB-n5C" id="YBd-Do-1hH"/>
+                        <outlet property="documentTitleTextField" destination="qfW-hq-dOf" id="yg6-LE-rma"/>
+                        <outlet property="saveButton" destination="Axy-0T-z8W" id="nXI-so-tmq"/>
+                        <outlet property="wordCountLabel" destination="trJ-e7-TwE" id="8PS-oF-lKQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JqU-aR-8ss" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

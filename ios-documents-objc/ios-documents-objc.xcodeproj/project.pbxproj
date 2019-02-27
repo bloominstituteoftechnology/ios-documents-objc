@@ -12,6 +12,9 @@
 		D146DA0B222716DA006DA6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D146DA0A222716DA006DA6CB /* Assets.xcassets */; };
 		D146DA0E222716DA006DA6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D146DA0C222716DA006DA6CB /* LaunchScreen.storyboard */; };
 		D146DA11222716DA006DA6CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D146DA10222716DA006DA6CB /* main.m */; };
+		D1767EA022271D4A00BFEF5E /* BHDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1767E9F22271D4A00BFEF5E /* BHDocumentDetailViewController.m */; };
+		D1767EA322271D5B00BFEF5E /* BHDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1767EA222271D5B00BFEF5E /* BHDocumentTableViewController.m */; };
+		D1767EA922271E3900BFEF5E /* BHDocumentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1767EA822271E3900BFEF5E /* BHDocumentsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,12 @@
 		D146DA0D222716DA006DA6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D146DA0F222716DA006DA6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D146DA10222716DA006DA6CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1767E9E22271D4A00BFEF5E /* BHDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHDocumentDetailViewController.h; sourceTree = "<group>"; };
+		D1767E9F22271D4A00BFEF5E /* BHDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHDocumentDetailViewController.m; sourceTree = "<group>"; };
+		D1767EA122271D5B00BFEF5E /* BHDocumentTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHDocumentTableViewController.h; sourceTree = "<group>"; };
+		D1767EA222271D5B00BFEF5E /* BHDocumentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHDocumentTableViewController.m; sourceTree = "<group>"; };
+		D1767EA722271E3900BFEF5E /* BHDocumentsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHDocumentsTableViewCell.h; sourceTree = "<group>"; };
+		D1767EA822271E3900BFEF5E /* BHDocumentsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHDocumentsTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +64,10 @@
 		D146DA00222716D9006DA6CB /* ios-documents-objc */ = {
 			isa = PBXGroup;
 			children = (
+				D146DA1A22271A23006DA6CB /* ModelControllers */,
+				D146DA1922271A18006DA6CB /* Model */,
+				D1767E9D22271D2C00BFEF5E /* ViewControllers */,
+				D146DA1822271A12006DA6CB /* Views */,
 				D146DA01222716D9006DA6CB /* AppDelegate.h */,
 				D146DA02222716D9006DA6CB /* AppDelegate.m */,
 				D146DA07222716D9006DA6CB /* Main.storyboard */,
@@ -64,6 +77,40 @@
 				D146DA10222716DA006DA6CB /* main.m */,
 			);
 			path = "ios-documents-objc";
+			sourceTree = "<group>";
+		};
+		D146DA1822271A12006DA6CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1767EA722271E3900BFEF5E /* BHDocumentsTableViewCell.h */,
+				D1767EA822271E3900BFEF5E /* BHDocumentsTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D146DA1922271A18006DA6CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D146DA1A22271A23006DA6CB /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		D1767E9D22271D2C00BFEF5E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1767E9E22271D4A00BFEF5E /* BHDocumentDetailViewController.h */,
+				D1767E9F22271D4A00BFEF5E /* BHDocumentDetailViewController.m */,
+				D1767EA122271D5B00BFEF5E /* BHDocumentTableViewController.h */,
+				D1767EA222271D5B00BFEF5E /* BHDocumentTableViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1767EA922271E3900BFEF5E /* BHDocumentsTableViewCell.m in Sources */,
 				D146DA11222716DA006DA6CB /* main.m in Sources */,
+				D1767EA022271D4A00BFEF5E /* BHDocumentDetailViewController.m in Sources */,
+				D1767EA322271D5B00BFEF5E /* BHDocumentTableViewController.m in Sources */,
 				D146DA03222716D9006DA6CB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
