@@ -14,6 +14,7 @@
 		84169E11222726DC007F7A33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169E10222726DC007F7A33 /* main.m */; };
 		84169E1A222727E2007F7A33 /* ALWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169E19222727E2007F7A33 /* ALWTableViewController.m */; };
 		84169E1D222728E3007F7A33 /* ALWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169E1C222728E3007F7A33 /* ALWDetailViewController.m */; };
+		84169E2122272F0F007F7A33 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169E2022272F0F007F7A33 /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		84169E19222727E2007F7A33 /* ALWTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWTableViewController.m; sourceTree = "<group>"; };
 		84169E1B222728E3007F7A33 /* ALWDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWDetailViewController.h; sourceTree = "<group>"; };
 		84169E1C222728E3007F7A33 /* ALWDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWDetailViewController.m; sourceTree = "<group>"; };
+		84169E1F22272F0F007F7A33 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		84169E2022272F0F007F7A33 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		84169E00222726DB007F7A33 /* Documents-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				84169E1E22272EDA007F7A33 /* Model */,
 				84169E1722272787007F7A33 /* View Controllers */,
 				84169E01222726DB007F7A33 /* AppDelegate.h */,
 				84169E02222726DB007F7A33 /* AppDelegate.m */,
@@ -82,6 +86,15 @@
 				84169E1C222728E3007F7A33 /* ALWDetailViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		84169E1E22272EDA007F7A33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84169E1F22272F0F007F7A33 /* NSString+WordCount.h */,
+				84169E2022272F0F007F7A33 /* NSString+WordCount.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84169E2122272F0F007F7A33 /* NSString+WordCount.m in Sources */,
 				84169E11222726DC007F7A33 /* main.m in Sources */,
 				84169E1A222727E2007F7A33 /* ALWTableViewController.m in Sources */,
 				84169E1D222728E3007F7A33 /* ALWDetailViewController.m in Sources */,
