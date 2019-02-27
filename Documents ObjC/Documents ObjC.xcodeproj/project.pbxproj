@@ -14,6 +14,9 @@
 		EB1A12F5222723B800333303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1A12F4222723B800333303 /* main.m */; };
 		EB1A1303222729D800333303 /* XYZDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1A1302222729D800333303 /* XYZDocumentsTableViewController.m */; };
 		EB1A1306222729FB00333303 /* XYZDocumentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1A1305222729FB00333303 /* XYZDocumentsViewController.m */; };
+		EB1A130922272B9700333303 /* XYZDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1A130822272B9700333303 /* XYZDocument.m */; };
+		EB1A130C22272D7D00333303 /* XYZDocController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1A130B22272D7D00333303 /* XYZDocController.m */; };
+		EB1A130F222745FF00333303 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1A130E222745FF00333303 /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		EB1A1302222729D800333303 /* XYZDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZDocumentsTableViewController.m; sourceTree = "<group>"; };
 		EB1A1304222729FB00333303 /* XYZDocumentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZDocumentsViewController.h; sourceTree = "<group>"; };
 		EB1A1305222729FB00333303 /* XYZDocumentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZDocumentsViewController.m; sourceTree = "<group>"; };
+		EB1A130722272B9700333303 /* XYZDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZDocument.h; sourceTree = "<group>"; };
+		EB1A130822272B9700333303 /* XYZDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZDocument.m; sourceTree = "<group>"; };
+		EB1A130A22272D7D00333303 /* XYZDocController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZDocController.h; sourceTree = "<group>"; };
+		EB1A130B22272D7D00333303 /* XYZDocController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZDocController.m; sourceTree = "<group>"; };
+		EB1A130D222745FF00333303 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		EB1A130E222745FF00333303 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,8 @@
 		EB1A12FB222724B100333303 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EB1A130722272B9700333303 /* XYZDocument.h */,
+				EB1A130822272B9700333303 /* XYZDocument.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -81,6 +92,10 @@
 		EB1A12FC222724BD00333303 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EB1A130A22272D7D00333303 /* XYZDocController.h */,
+				EB1A130B22272D7D00333303 /* XYZDocController.m */,
+				EB1A130D222745FF00333303 /* NSString+WordCount.h */,
+				EB1A130E222745FF00333303 /* NSString+WordCount.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -180,6 +195,9 @@
 			files = (
 				EB1A12F5222723B800333303 /* main.m in Sources */,
 				EB1A12E7222723B500333303 /* AppDelegate.m in Sources */,
+				EB1A130C22272D7D00333303 /* XYZDocController.m in Sources */,
+				EB1A130922272B9700333303 /* XYZDocument.m in Sources */,
+				EB1A130F222745FF00333303 /* NSString+WordCount.m in Sources */,
 				EB1A1303222729D800333303 /* XYZDocumentsTableViewController.m in Sources */,
 				EB1A1306222729FB00333303 /* XYZDocumentsViewController.m in Sources */,
 			);
