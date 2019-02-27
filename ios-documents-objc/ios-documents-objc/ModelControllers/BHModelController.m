@@ -12,7 +12,7 @@
 @implementation BHModelController
 
 
--(instancetype)initWithArray:(NSMutableArray *)array{
+-(instancetype)init{
     self = [super init];
     if (self) {
         _documents = [[NSMutableArray<BHDocument *> alloc] init];

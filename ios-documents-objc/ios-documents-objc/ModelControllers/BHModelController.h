@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSMutableArray<BHDocument *> *documents;
 
--(instancetype)initWithArray:(NSMutableArray *)array;
+-(instancetype)init;
 
 // create
 -(void)createDocument: (BHDocument *)document;

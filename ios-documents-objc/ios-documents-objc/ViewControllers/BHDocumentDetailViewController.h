@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BHModelController.h"
+#import "BHDocument.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UITextField *documentTitleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *documentBodyTextView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+
+@property BHModelController *modelController;
+@property BHDocument *document;
 
 - (IBAction)saveButtonClicked:(id)sender;
 

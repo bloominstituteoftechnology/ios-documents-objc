@@ -17,18 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+                            
+    NSString *wordCountString = [NSString stringWithFormat:@"%i Words", [_document wordCount]];
+    _wordCountLabel.text = wordCountString;
+    _documentTitleTextField.text = [_document title];
+    _documentBodyTextView.text = [_document bodyText];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)saveButtonClicked:(id)sender {
+    
+    _document.title = [_documentTitleTextField text];
+    _document.bodyText = [_documentBodyTextView text];
+
+    [_modelController createDocument:_document];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end
