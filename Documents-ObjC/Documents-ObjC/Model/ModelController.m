@@ -18,7 +18,7 @@
     }
     
 // Create a document
-- (ALWDocument *)createDoc:(NSString *)title text:(NSString *)text {
+- (void)createDoc:(NSString *)title text:(NSString *)text {
     // DO I ADD THIS? wordCount:(NSInteger *)wordCount
     
     // SWIFT:
@@ -28,22 +28,25 @@
     [_documents addObject: newDocument];
     
     //return newDoc
-    return newDocument;
+    //return newDocument;
 }
     
 // Update a document
-- (ALWDocument *)updateDoc:(ALWDocument *)document title:(NSString *)title text:(NSString *)text {
+- (void)updateDoc:(ALWDocument *)document title:(NSString *)title text:(NSString *)text {
     // DO I ADD THIS? wordCount:(NSInteger *)wordCount
     
     document.title = title;
     document.text = text;
     
-    return document;
+    //return document;
 }
  
 // Delete a document
-- (ALWDocument *)deleteDoc:(ALWDocument *)document {
+- (void)deleteDoc:(ALWDocument *)document {
     
+    [_documents removeObject: document];
+    
+    //return _documents;
 }
     
 
