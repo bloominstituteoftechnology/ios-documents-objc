@@ -7,8 +7,10 @@
 //
 
 #import "XYZDocumentsViewController.h"
+#import "XYZDocController.h"
 
 @interface XYZDocumentsViewController ()
+
 
 @end
 
@@ -16,8 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.docController = [[XYZDocController alloc] init];
+    _doc = [[XYZDocument alloc]init];
 }
+
 
 
 - (IBAction)save:(id)sender {

@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="docCell" textLabel="6gF-hl-c0c" detailTextLabel="4Dk-Jb-Rsw" rowHeight="66" style="IBUITableViewCellStyleSubtitle" id="lK4-g4-DwP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="docCell" textLabel="6gF-hl-c0c" detailTextLabel="4Dk-Jb-Rsw" rowHeight="66" style="IBUITableViewCellStyleSubtitle" id="lK4-g4-DwP" customClass="docCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lK4-g4-DwP" id="Brf-1G-p3L">
@@ -121,7 +121,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="DocTextField" destination="ipb-85-xhl" id="Wyq-FI-tfC"/>
                         <outlet property="DoctextField" destination="cYU-64-Kg0" id="aqs-g2-6MX"/>
                         <outlet property="countLabel" destination="Ji4-ID-B3p" id="I3s-in-jVP"/>
                     </connections>
