@@ -90,7 +90,7 @@
         BHDocument *newDocument = [[BHDocument alloc] init];
         destVC.document = newDocument;
         
-    } else if ([segue.identifier  isEqual: @"DocumentCell"]){
+    } else if ([segue.identifier  isEqual: @"ViewExistingDocumentSegue"]){
         // do something else
         destVC.modelController = _modelController;
         destVC.document = [_modelController.documents objectAtIndex:indexPath.row];
