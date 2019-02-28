@@ -16,6 +16,7 @@
 		84169E1D222728E3007F7A33 /* ALWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169E1C222728E3007F7A33 /* ALWDetailViewController.m */; };
 		84169E2122272F0F007F7A33 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169E2022272F0F007F7A33 /* NSString+WordCount.m */; };
 		84169E2422273D32007F7A33 /* ALWDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169E2322273D32007F7A33 /* ALWDocument.m */; };
+		84169E2822274C0F007F7A33 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169E2722274C0F007F7A33 /* ModelController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		84169E2022272F0F007F7A33 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 		84169E2222273D32007F7A33 /* ALWDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWDocument.h; sourceTree = "<group>"; };
 		84169E2322273D32007F7A33 /* ALWDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWDocument.m; sourceTree = "<group>"; };
+		84169E2622274C0F007F7A33 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		84169E2722274C0F007F7A33 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 			children = (
 				84169E2222273D32007F7A33 /* ALWDocument.h */,
 				84169E2322273D32007F7A33 /* ALWDocument.m */,
+				84169E2622274C0F007F7A33 /* ModelController.h */,
+				84169E2722274C0F007F7A33 /* ModelController.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84169E2822274C0F007F7A33 /* ModelController.m in Sources */,
 				84169E2122272F0F007F7A33 /* NSString+WordCount.m in Sources */,
 				84169E11222726DC007F7A33 /* main.m in Sources */,
 				84169E1A222727E2007F7A33 /* ALWTableViewController.m in Sources */,
