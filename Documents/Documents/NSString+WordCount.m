@@ -10,7 +10,7 @@
 
 @implementation NSString (WordCount)
 
-- (NSUInteger)wordCount:(NSString *)text {
++ (NSUInteger)wordCount:(NSString *)text {
     if (text == nil) {
         return 0;
     }

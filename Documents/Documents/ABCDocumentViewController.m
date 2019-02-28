@@ -27,7 +27,7 @@
 //MARK: UITextViewDelegate
 - (void)textViewDidChange:(UITextView *)textView {
     //I am converting the result of the `wordCount` method from the NSString  + WordCount files, which is an NSUInteger, to an NSString so that it can be used in the label
-    _wordCountLabel.text = [NSString stringWithFormat: @"%lu", [_documentBodyTextView.text wordCount:_documentBodyTextView.text]];
+    _wordCountLabel.text = [NSString stringWithFormat: @"%lu", [NSString wordCount:_documentBodyTextView.text]];
 }
 
 //MARK: Other Methods
@@ -55,7 +55,7 @@
 - (IBAction)saveButtonWasTapped:(id)sender {
     if (_document != nil && _documentTitleTextField.text != nil && _documentBodyTextView.text != nil) {
         [_documentController updateDocument:_document withTitle:_documentTitleTextField.text withBody:_documentBodyTextView.text];
-    } else {
+    } else if (_documentTitleTextField.text != nil && _documentBodyTextView.text != nil) {
         [_documentController createDocument:_documentTitleTextField.text withBody:_documentBodyTextView.text];
     }
 }
