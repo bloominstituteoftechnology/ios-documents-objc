@@ -20,6 +20,7 @@
     // Do any additional setup after loading the view.
     _documentBodyTextView.delegate = self;
     [self updateViews];
+    
 }
 
 -(void)updateViews{
@@ -42,8 +43,14 @@
     
     _document.title = [_documentTitleTextField text];
     _document.bodyText = [_documentBodyTextView text];
+    
+    if (_isUpdatingView) {
+        [_modelController updateDocument:_document];
+    } else {
+        [_modelController createDocument:_document];
+    }
 
-    [_modelController createDocument:_document];
+    
     
     [self.navigationController popViewControllerAnimated:YES];
 }

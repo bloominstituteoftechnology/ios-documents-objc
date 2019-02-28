@@ -87,12 +87,14 @@
     if([segue.identifier  isEqual: @"AddNewDocumentSegue"]){
         // do something
         destVC.modelController = _modelController;
+        [destVC setIsUpdatingView: NO];
         BHDocument *newDocument = [[BHDocument alloc] init];
         destVC.document = newDocument;
         
     } else if ([segue.identifier  isEqual: @"ViewExistingDocumentSegue"]){
         // do something else
         destVC.modelController = _modelController;
+        destVC.isUpdatingView = @YES;
         destVC.document = [_modelController.documents objectAtIndex:indexPath.row];
         
     } else {

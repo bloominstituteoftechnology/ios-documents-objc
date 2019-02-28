@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property BHModelController *modelController;
 @property BHDocument *document;
+@property BOOL isUpdatingView;
 
 - (IBAction)saveButtonClicked:(id)sender;
 
