@@ -7,8 +7,9 @@
 //
 
 #import "LMSDocumentsTableViewController.h"
+// #import "CoreData/CoreData.h"
 
-@interface LMSDocumentsTableViewController ()
+@interface LMSDocumentsTableViewController () // <NSFetchedResultsControllerDelegate>
 
 @end
 
@@ -89,5 +90,50 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+//- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+//    [self.tableView beginUpdates];
+//}
+//
+//-(void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+//    [self.tableView endUpdates];
+//}
+//
+//-(void)controller:(NSFetchedResultsController *)controller didChangeSection:(id<NSFetchedResultsSectionInfo>)sectionInfo atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
+//
+//    switch (type) {
+//        case NSFetchedResultsChangeInsert:
+//            <#statements#>
+//            break;
+//        case NSFetchedResultsChangeDelete:
+//            <#code#>
+//            break;
+//        case NSFetchedResultsChangeMove:
+//            <#code#>
+//            break;
+//        case NSFetchedResultsChangeUpdate:
+//            <#code#>
+//            break;
+//    }
+//}
+//
+//-(void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
+//
+//    switch (type) {
+//        case NSFetchedResultsChangeInsert:
+//            <#statements#>
+//            break;
+//        case NSFetchedResultsChangeDelete:
+//            <#code#>
+//            break;
+//        case NSFetchedResultsChangeMove:
+//            <#code#>
+//            break;
+//        case NSFetchedResultsChangeUpdate:
+//            <#code#>
+//            break;
+//    }
+
+}
 
 @end

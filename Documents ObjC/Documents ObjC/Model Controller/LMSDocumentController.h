@@ -7,12 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LMSDocument.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LMSDocumentController : NSObject
 
 @property (readonly) NSMutableArray *documents;
+
+-(void) createWithTitle: (NSString *)title andBody: (NSString *)body;
+-(void) updateDoc: (LMSDocument *)document withTitle:(NSString *)title andBody: (NSString *)body;
+-(void) deleteDoc: (LMSDocument *)document;
 
 @end
 

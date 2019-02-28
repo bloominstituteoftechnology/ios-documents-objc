@@ -21,4 +21,19 @@
     return self;
 }
 
+-(void)createWithTitle:(NSString *)title andBody:(NSString *)body {
+    LMSDocument *document = [[LMSDocument alloc] initWithTitle:title andBody:body];
+    [self.documents addObject:document];
+}
+
+-(void)updateDoc:(LMSDocument *)document withTitle:(NSString *)title andBody:(NSString *)body {
+    NSUInteger index = [[self documents] indexOfObject:document];
+    [[self.documents objectAtIndex:index] setTitle:title];
+    [[self.documents objectAtIndex:index] setBody:body];
+}
+
+-(void)deleteDoc:(LMSDocument *)document {
+    [self.documents removeObject:document];
+}
+
 @end
