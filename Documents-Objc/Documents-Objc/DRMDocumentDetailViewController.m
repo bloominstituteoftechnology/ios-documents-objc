@@ -16,25 +16,50 @@
 
 - (IBAction)saveDocument:(id)sender;
 
+- (void)updateViews;
+- (void)updateWordCountLabel;
+
 @end
 
 @implementation DRMDocumentDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self updateViews];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)saveDocument:(id)sender {
+    NSString *title = _titleTextField.text;
+    NSString *bodyText = _documentTextView.text;
+    if ([title isEqualToString: @""] || [bodyText isEqualToString: @""]) { return; }
+    if (_document) {
+        [self.documentController updateDocument: _document withTitle: title andBodyText: bodyText];
+    } else {
+        [self.documentController createDocumentWithTitle: title andBodyText: bodyText];
+    }
+    [self.navigationController popViewControllerAnimated:true];
 }
-*/
 
-- (IBAction)saveDocument:(id)sender {
+#pragma mark - UI Text View Delegate
+- (void)textViewDidChange:(UITextView *)textView {
+    [self updateWordCountLabel];
 }
+
+- (void)updateViews {
+    if (_document) {
+        [self setTitle: _document.title];
+        [self.titleTextField setText: _document.title];
+        [self.documentTextView setText: _document.bodyText];
+    } else {
+        [self setTitle: @"New Document"];
+    }
+    [self updateWordCountLabel];
+}
+
+- (void)updateWordCountLabel {
+    int wordCount = self.documentTextView.text.wordCount;
+    [_wordcountLabel setText:[NSString stringWithFormat: @"%d words", wordCount]];
+}
+
 @end

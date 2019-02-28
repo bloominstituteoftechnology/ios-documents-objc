@@ -12,7 +12,9 @@
 
 - (int)wordCount {
     NSArray *array = [self componentsSeparatedByString:@" "];
-    return (int)array.count;
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF != %@", @""];
+    
+    return (int)[array filteredArrayUsingPredicate:predicate].count;
 }
 
 @end

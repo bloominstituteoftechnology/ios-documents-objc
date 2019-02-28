@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DRMDocumentModelController.h"
+#import "DRMDocumentDetailViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

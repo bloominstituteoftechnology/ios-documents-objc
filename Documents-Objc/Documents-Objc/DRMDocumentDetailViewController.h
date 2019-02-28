@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DRMDocumentModelController.h"
+#import "NSString+WordCount.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DRMDocumentDetailViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
+
+@property DRMDocumentModelController *documentController;
+@property DRMDocument *document;
 
 @end
 
