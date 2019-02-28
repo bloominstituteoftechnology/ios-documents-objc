@@ -12,14 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OSIDocument : NSObject
 
-@property NSInteger *count;
+@property (nonatomic) NSUInteger *count;
 @property NSString *title;
 @property NSString *text;
 
 
 
 - (instancetype)initWithName:(NSString *)text title:(NSString *)title;
-
+- (void)setCount:(NSString *)bodyText;
 
 @end
 

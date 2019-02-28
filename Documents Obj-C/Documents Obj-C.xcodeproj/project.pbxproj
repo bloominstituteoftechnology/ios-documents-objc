@@ -16,6 +16,7 @@
 		A5229B9A2227300F0024454D /* OSIDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A5229B992227300F0024454D /* OSIDocument.m */; };
 		A5229B9E222739730024454D /* OSIDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5229B9D222739730024454D /* OSIDocumentController.m */; };
 		A5229BA222274ECB0024454D /* NSObject+OSIWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = A5229BA122274ECB0024454D /* NSObject+OSIWordCount.m */; };
+		A5229BA52227CDBF0024454D /* OSIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5229BA42227CDBF0024454D /* OSIDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		A5229B9D222739730024454D /* OSIDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSIDocumentController.m; sourceTree = "<group>"; };
 		A5229BA022274ECB0024454D /* NSObject+OSIWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+OSIWordCount.h"; sourceTree = "<group>"; };
 		A5229BA122274ECB0024454D /* NSObject+OSIWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OSIWordCount.m"; sourceTree = "<group>"; };
+		A5229BA32227CDBF0024454D /* OSIDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSIDetailViewController.h; sourceTree = "<group>"; };
+		A5229BA42227CDBF0024454D /* OSIDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSIDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 			children = (
 				A5229B9522272A340024454D /* OSIDocumentsTableViewController.h */,
 				A5229B9622272A340024454D /* OSIDocumentsTableViewController.m */,
+				A5229BA32227CDBF0024454D /* OSIDetailViewController.h */,
+				A5229BA42227CDBF0024454D /* OSIDetailViewController.m */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			files = (
 				A5229B9E222739730024454D /* OSIDocumentController.m in Sources */,
 				A5229B8E222729A90024454D /* main.m in Sources */,
+				A5229BA52227CDBF0024454D /* OSIDetailViewController.m in Sources */,
 				A5229B80222729A80024454D /* AppDelegate.m in Sources */,
 				A5229BA222274ECB0024454D /* NSObject+OSIWordCount.m in Sources */,
 				A5229B9A2227300F0024454D /* OSIDocument.m in Sources */,

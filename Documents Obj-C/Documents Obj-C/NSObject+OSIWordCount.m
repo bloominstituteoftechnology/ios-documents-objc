@@ -10,9 +10,9 @@
 
 @implementation NSObject (OSIWordCount)
 
-- (NSInteger)wordCount:(NSString *)text {
+- (NSUInteger)wordCount:(NSString *)text {
 
-        NSInteger count = text ? ([text stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet.invertedSet].length + 1) : 0;
+        NSUInteger count = text ? ([text stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet.invertedSet].length + 1) : 0;
     return count;
 }
 

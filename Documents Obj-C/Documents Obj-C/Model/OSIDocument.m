@@ -22,10 +22,10 @@
         return self;
     
     }
--(instancetype)initWithNumber:(NSInteger)count
+-(void)setCount:(NSString *)bodyText
 {
     
-    NSInteger value = [_text wordCount:_text];
+    _count = [bodyText wordCount:bodyText];
     
    
 }

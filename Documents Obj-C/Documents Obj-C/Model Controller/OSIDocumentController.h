@@ -7,12 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "OSIDocument.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OSIDocumentController : NSObject
 
-@property (readonly) NSArray *documents;
+@property NSMutableArray *documents;
+
+- (void)createDocument: (NSString *)title withBody: (NSString *)text;
+- (void)updateDocument: (OSIDocument *)document withTitle: (NSString *)title bodyText: (NSString *)bodyText;
+- (void)deleteDocument: (OSIDocument *)document;
 
 @end
 
