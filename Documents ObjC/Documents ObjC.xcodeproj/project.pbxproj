@@ -8,24 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		FFB24C402227524D0096E395 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C3F2227524D0096E395 /* AppDelegate.m */; };
-		FFB24C432227524D0096E395 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C422227524D0096E395 /* ViewController.m */; };
 		FFB24C462227524D0096E395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB24C442227524D0096E395 /* Main.storyboard */; };
 		FFB24C482227524E0096E395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB24C472227524E0096E395 /* Assets.xcassets */; };
 		FFB24C4B2227524E0096E395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB24C492227524E0096E395 /* LaunchScreen.storyboard */; };
 		FFB24C4E2227524E0096E395 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C4D2227524E0096E395 /* main.m */; };
+		FFB24C5B222757C60096E395 /* LMSDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C5A222757C60096E395 /* LMSDocumentsTableViewController.m */; };
+		FFB24C5E222757F40096E395 /* LMSDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C5D222757F40096E395 /* LMSDocumentViewController.m */; };
+		FFB24C612227594D0096E395 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C602227594D0096E395 /* NSString+WordCount.m */; };
+		FFB24C6522275FD70096E395 /* LMSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C6422275FD70096E395 /* LMSDocument.m */; };
+		FFB24C682227629F0096E395 /* LMSDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C672227629F0096E395 /* LMSDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FFB24C3B2227524D0096E395 /* Documents ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Documents ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB24C3E2227524D0096E395 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFB24C3F2227524D0096E395 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FFB24C412227524D0096E395 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FFB24C422227524D0096E395 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FFB24C452227524D0096E395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFB24C472227524E0096E395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFB24C4A2227524E0096E395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFB24C4C2227524E0096E395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB24C4D2227524E0096E395 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFB24C59222757C60096E395 /* LMSDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSDocumentsTableViewController.h; sourceTree = "<group>"; };
+		FFB24C5A222757C60096E395 /* LMSDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSDocumentsTableViewController.m; sourceTree = "<group>"; };
+		FFB24C5C222757F40096E395 /* LMSDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSDocumentViewController.h; sourceTree = "<group>"; };
+		FFB24C5D222757F40096E395 /* LMSDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSDocumentViewController.m; sourceTree = "<group>"; };
+		FFB24C5F2227594D0096E395 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		FFB24C602227594D0096E395 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		FFB24C6322275FD70096E395 /* LMSDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSDocument.h; sourceTree = "<group>"; };
+		FFB24C6422275FD70096E395 /* LMSDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSDocument.m; sourceTree = "<group>"; };
+		FFB24C662227629F0096E395 /* LMSDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSDocumentController.h; sourceTree = "<group>"; };
+		FFB24C672227629F0096E395 /* LMSDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +70,73 @@
 		FFB24C3D2227524D0096E395 /* Documents ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				FFB24C582227579F0096E395 /* Model */,
+				FFB24C57222757950096E395 /* Model Controller */,
+				FFB24C56222757810096E395 /* View Controllers */,
+				FFB24C622227599A0096E395 /* Category */,
+				FFB24C542227536B0096E395 /* Storyboards */,
+				FFB24C552227537A0096E395 /* Resources */,
+			);
+			path = "Documents ObjC";
+			sourceTree = "<group>";
+		};
+		FFB24C542227536B0096E395 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C442227524D0096E395 /* Main.storyboard */,
+				FFB24C492227524E0096E395 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FFB24C552227537A0096E395 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				FFB24C3E2227524D0096E395 /* AppDelegate.h */,
 				FFB24C3F2227524D0096E395 /* AppDelegate.m */,
-				FFB24C412227524D0096E395 /* ViewController.h */,
-				FFB24C422227524D0096E395 /* ViewController.m */,
-				FFB24C442227524D0096E395 /* Main.storyboard */,
 				FFB24C472227524E0096E395 /* Assets.xcassets */,
-				FFB24C492227524E0096E395 /* LaunchScreen.storyboard */,
 				FFB24C4C2227524E0096E395 /* Info.plist */,
 				FFB24C4D2227524E0096E395 /* main.m */,
 			);
-			path = "Documents ObjC";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFB24C56222757810096E395 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C59222757C60096E395 /* LMSDocumentsTableViewController.h */,
+				FFB24C5A222757C60096E395 /* LMSDocumentsTableViewController.m */,
+				FFB24C5C222757F40096E395 /* LMSDocumentViewController.h */,
+				FFB24C5D222757F40096E395 /* LMSDocumentViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FFB24C57222757950096E395 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C662227629F0096E395 /* LMSDocumentController.h */,
+				FFB24C672227629F0096E395 /* LMSDocumentController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		FFB24C582227579F0096E395 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C6322275FD70096E395 /* LMSDocument.h */,
+				FFB24C6422275FD70096E395 /* LMSDocument.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFB24C622227599A0096E395 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C5F2227594D0096E395 /* NSString+WordCount.h */,
+				FFB24C602227594D0096E395 /* NSString+WordCount.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB24C432227524D0096E395 /* ViewController.m in Sources */,
+				FFB24C612227594D0096E395 /* NSString+WordCount.m in Sources */,
+				FFB24C5B222757C60096E395 /* LMSDocumentsTableViewController.m in Sources */,
+				FFB24C5E222757F40096E395 /* LMSDocumentViewController.m in Sources */,
 				FFB24C4E2227524E0096E395 /* main.m in Sources */,
 				FFB24C402227524D0096E395 /* AppDelegate.m in Sources */,
+				FFB24C682227629F0096E395 /* LMSDocumentController.m in Sources */,
+				FFB24C6522275FD70096E395 /* LMSDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
