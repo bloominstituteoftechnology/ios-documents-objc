@@ -67,7 +67,7 @@
         <!--Title-->
         <scene sceneID="wX1-1u-hmz">
             <objects>
-                <viewController id="ziH-u5-eil" sceneMemberID="viewController">
+                <viewController id="ziH-u5-eil" customClass="OSIDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e1X-fG-YtL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,8 +108,18 @@
                         <viewLayoutGuide key="safeArea" id="dNC-EY-Cxw"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="g3w-FQ-O92">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Hto-s0-h9W"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Hto-s0-h9W">
+                            <connections>
+                                <action selector="saveButton:" destination="ziH-u5-eil" id="x3i-XA-dKV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="documentNavigationItem" destination="g3w-FQ-O92" id="AZT-Kt-AJq"/>
+                        <outlet property="documentTitle" destination="U99-IF-26O" id="8kv-hB-K0F"/>
+                        <outlet property="textBody" destination="xgy-nM-AbV" id="ciz-le-lsR"/>
+                        <outlet property="titleField" destination="oID-52-po6" id="fi5-Ql-Ztx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYJ-HI-hBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

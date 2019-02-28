@@ -26,13 +26,13 @@
 
 -(void)createDocument:(NSString *)title withBody:(NSString *)text {
     OSIDocument *newDocument = [[OSIDocument alloc] initWithName:text title:title];
-    [newDocument setCount:text];
+    [newDocument setWordCount:text];
     [_documents addObject: newDocument];
 }
 
 - (void)updateDocument:(id)document withTitle:(NSString *)title bodyText:(NSString *)bodyText {
     OSIDocument *updateDocument = [[OSIDocument alloc] initWithName:bodyText title:title];
-    [updateDocument setCount:bodyText];
+    [updateDocument setWordCount:bodyText];
     NSUInteger index = [_documents indexOfObject:document];
     [_documents replaceObjectAtIndex:index withObject:updateDocument];
 }

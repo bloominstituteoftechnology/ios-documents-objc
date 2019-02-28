@@ -22,12 +22,12 @@
         return self;
     
     }
--(void)setCount:(NSString *)bodyText
+@synthesize wordCount = _wordCount;
+
+-(void)setWordCount:(NSString *)bodyText
 {
-    
-    _count = [bodyText wordCount:bodyText];
-    
-   
+    _wordCount = [bodyText wordCount: bodyText];
+ 
 }
 
 

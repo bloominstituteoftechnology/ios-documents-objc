@@ -9,6 +9,7 @@
 #import "OSIDocumentsTableViewController.h"
 #import "OSIDocument.h"
 #import "OSIDocumentController.h"
+#import "OSIDetailViewController.h"
 
 
 @interface OSIDocumentsTableViewController ()
@@ -46,6 +47,11 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[self tableView] reloadData];
+}
+
 #pragma mark - Table view data source
 
 
@@ -61,15 +67,11 @@
     
     OSIDocument *document = [_osiDocumentController.documents objectAtIndex:[indexPath row]];
     cell.textLabel.text = document.title;
+    cell.detailTextLabel.text = [NSString stringWithFormat: @"%lu", [[[_osiDocumentController documents] objectAtIndex:indexPath.row] count]];
     
     
     return cell;
 }
-
-
-
-
-
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -86,9 +88,12 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    OSIDetailViewController * destination = segue.destinationViewController;
+    destination.osiDocumentController = self.osiDocumentController;
     if ([segue.identifier  isEqual: @"showCell"]) {
         
-        
+        destination.createNewDocument = [[self.osiDocumentController documents] objectAtIndex:indexPath.row];
     }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.

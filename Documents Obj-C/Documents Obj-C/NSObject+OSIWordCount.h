@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (OSIWordCount)
+@interface NSString (OSIWordCount)
 
 - (NSUInteger)wordCount:(NSString *)text;
 

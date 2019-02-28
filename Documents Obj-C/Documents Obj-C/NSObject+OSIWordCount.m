@@ -8,12 +8,14 @@
 
 #import "NSObject+OSIWordCount.h"
 
-@implementation NSObject (OSIWordCount)
+@implementation NSString (OSIWordCount)
 
 - (NSUInteger)wordCount:(NSString *)text {
-
-        NSUInteger count = text ? ([text stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet.invertedSet].length + 1) : 0;
-    return count;
+    if (text == nil) {
+        return 0;
+    }
+    NSArray *arrayOfWords = [text componentsSeparatedByString:@" "];
+    return arrayOfWords.count;
 }
 
 
