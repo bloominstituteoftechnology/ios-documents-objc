@@ -7,6 +7,7 @@
 //
 
 #import "LMSDocumentViewController.h"
+#import "NSString+WordCount.h"
 
 @interface LMSDocumentViewController ()
 

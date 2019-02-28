@@ -42,6 +42,12 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -77,7 +83,8 @@
     if ([segue.identifier  isEqualToString: @"EditDocSegue"]) {
         NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
         destinationVC.document = [self.documentController.documents objectAtIndex:indexPath.row];
-    }}
+    }
+}
 
 
 
