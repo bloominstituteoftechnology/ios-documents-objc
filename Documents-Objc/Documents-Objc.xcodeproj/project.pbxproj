@@ -16,6 +16,8 @@
 		340E5A0A22272A370073249B /* DRMDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E5A0922272A370073249B /* DRMDocumentsTableViewController.m */; };
 		340E5A0D22272A4A0073249B /* DRMDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E5A0C22272A4A0073249B /* DRMDocumentDetailViewController.m */; };
 		34296CBD222749FF00158330 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 34296CBC222749FF00158330 /* NSString+WordCount.m */; };
+		34C0913C22275C48007BF542 /* DRMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C0913B22275C48007BF542 /* DRMDocument.m */; };
+		34C0913F22275F01007BF542 /* DRMDocumentModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C0913E22275F01007BF542 /* DRMDocumentModelController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		340E5A0C22272A4A0073249B /* DRMDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRMDocumentDetailViewController.m; sourceTree = "<group>"; };
 		34296CBB222749FF00158330 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		34296CBC222749FF00158330 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		34C0913A22275C48007BF542 /* DRMDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRMDocument.h; sourceTree = "<group>"; };
+		34C0913B22275C48007BF542 /* DRMDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRMDocument.m; sourceTree = "<group>"; };
+		34C0913D22275F01007BF542 /* DRMDocumentModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRMDocumentModelController.h; sourceTree = "<group>"; };
+		34C0913E22275F01007BF542 /* DRMDocumentModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRMDocumentModelController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 		340E59E3222727A20073249B /* Documents-Objc */ = {
 			isa = PBXGroup;
 			children = (
+				34C0913922275C2E007BF542 /* Model */,
 				340E59E4222727A20073249B /* AppDelegate.h */,
 				340E59E5222727A20073249B /* AppDelegate.m */,
 				340E59EA222727A20073249B /* Main.storyboard */,
@@ -94,8 +101,7 @@
 				340E5A0922272A370073249B /* DRMDocumentsTableViewController.m */,
 				340E5A0B22272A4A0073249B /* DRMDocumentDetailViewController.h */,
 				340E5A0C22272A4A0073249B /* DRMDocumentDetailViewController.m */,
-				34296CBB222749FF00158330 /* NSString+WordCount.h */,
-				34296CBC222749FF00158330 /* NSString+WordCount.m */,
+				34C0913822275C12007BF542 /* Catagories */,
 				340E59ED222727A40073249B /* Assets.xcassets */,
 				340E59EF222727A40073249B /* LaunchScreen.storyboard */,
 				340E59F2222727A40073249B /* Info.plist */,
@@ -111,6 +117,26 @@
 				340E59FF222727A40073249B /* Info.plist */,
 			);
 			path = "Documents-ObjcTests";
+			sourceTree = "<group>";
+		};
+		34C0913822275C12007BF542 /* Catagories */ = {
+			isa = PBXGroup;
+			children = (
+				34296CBB222749FF00158330 /* NSString+WordCount.h */,
+				34296CBC222749FF00158330 /* NSString+WordCount.m */,
+			);
+			path = Catagories;
+			sourceTree = "<group>";
+		};
+		34C0913922275C2E007BF542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34C0913A22275C48007BF542 /* DRMDocument.h */,
+				34C0913B22275C48007BF542 /* DRMDocument.m */,
+				34C0913D22275F01007BF542 /* DRMDocumentModelController.h */,
+				34C0913E22275F01007BF542 /* DRMDocumentModelController.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +243,8 @@
 				340E5A0D22272A4A0073249B /* DRMDocumentDetailViewController.m in Sources */,
 				340E59F4222727A40073249B /* main.m in Sources */,
 				340E5A0A22272A370073249B /* DRMDocumentsTableViewController.m in Sources */,
+				34C0913F22275F01007BF542 /* DRMDocumentModelController.m in Sources */,
+				34C0913C22275C48007BF542 /* DRMDocument.m in Sources */,
 				340E59E6222727A20073249B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
