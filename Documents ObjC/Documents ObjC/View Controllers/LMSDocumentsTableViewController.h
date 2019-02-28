@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LMSDocumentController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LMSDocumentsTableViewController : UITableViewController
+
+@property LMSDocumentController *documentController;
 
 @end
 

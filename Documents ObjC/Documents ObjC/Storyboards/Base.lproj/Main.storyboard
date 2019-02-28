@@ -106,7 +106,11 @@
                         <viewLayoutGuide key="safeArea" id="UJ6-Vv-rsY"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Document" id="uax-3a-0MW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ekn-Cf-y4s"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ekn-Cf-y4s">
+                            <connections>
+                                <action selector="tapSaveDoc:" destination="eWU-nb-hgx" id="Oaj-cJ-KMm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="docTextView" destination="faZ-H5-jWh" id="O6b-H1-kaD"/>

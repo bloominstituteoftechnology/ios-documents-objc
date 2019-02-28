@@ -16,17 +16,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self updateViews];
+    
+    self.docTextView.delegate = self;
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)textViewDidChange:(UITextView *)textView {
+    self.wordCount.text = [NSString stringWithFormat:@"%d words", [self.docTextView.text wordCount]];
+    
 }
-*/
+
+- (void)updateViews {
+    
+    if (self.document) {
+        self.title = self.document.title;
+        self.titleTextField.text = self.document.title;
+        self.docTextView.text = self.document.body;
+    } else {
+        self.title = @"New Document";
+    }
+    
+    self.wordCount.text = [NSString stringWithFormat:@"%d words", [self.docTextView.text wordCount]];
+}
+
+- (IBAction)tapSaveDoc:(id)sender {
+    
+    NSString *title = self.titleTextField.text;
+    NSString *body = self.docTextView.text;
+    
+    if (self.document) {
+        [self.documentController updateDoc:self.document withTitle:title andBody:body];
+    } else {
+        [self.documentController createWithTitle:title andBody:body];
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end
