@@ -94,14 +94,11 @@
 			isa = PBXGroup;
 			children = (
 				34C0913922275C2E007BF542 /* Model */,
+				34C09140222774EA007BF542 /* View Controllers */,
+				34C0913822275C12007BF542 /* Catagories */,
 				340E59E4222727A20073249B /* AppDelegate.h */,
 				340E59E5222727A20073249B /* AppDelegate.m */,
 				340E59EA222727A20073249B /* Main.storyboard */,
-				340E5A0822272A370073249B /* DRMDocumentsTableViewController.h */,
-				340E5A0922272A370073249B /* DRMDocumentsTableViewController.m */,
-				340E5A0B22272A4A0073249B /* DRMDocumentDetailViewController.h */,
-				340E5A0C22272A4A0073249B /* DRMDocumentDetailViewController.m */,
-				34C0913822275C12007BF542 /* Catagories */,
 				340E59ED222727A40073249B /* Assets.xcassets */,
 				340E59EF222727A40073249B /* LaunchScreen.storyboard */,
 				340E59F2222727A40073249B /* Info.plist */,
@@ -137,6 +134,17 @@
 				34C0913E22275F01007BF542 /* DRMDocumentModelController.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		34C09140222774EA007BF542 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				340E5A0822272A370073249B /* DRMDocumentsTableViewController.h */,
+				340E5A0922272A370073249B /* DRMDocumentsTableViewController.m */,
+				340E5A0B22272A4A0073249B /* DRMDocumentDetailViewController.h */,
+				340E5A0C22272A4A0073249B /* DRMDocumentDetailViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

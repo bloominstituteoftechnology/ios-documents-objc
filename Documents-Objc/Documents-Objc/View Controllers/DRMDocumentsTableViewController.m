@@ -17,6 +17,7 @@
 
 @implementation DRMDocumentsTableViewController
 
+#pragma mark - Lifecycle Methods
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -48,7 +49,6 @@
     return cell;
 }
 
-
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         DRMDocument *document = self.documentController.documents[indexPath.row];
@@ -75,6 +75,5 @@
         [destinationVC setDocument: document];
     }
 }
-
 
 @end
