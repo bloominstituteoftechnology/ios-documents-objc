@@ -13,19 +13,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Set as textView's delegate
+    _documentTextView.delegate = self;
 }
-
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+- (void)textViewDidChange:(UITextView *)textView {
+    //_numberOfWordsLabel.text = _document.bodyText.wordCount;
+    [_numberOfWordsLabel setText:[NSString stringWithFormat:@"%d words", _document.bodyText.wordCount]];
+    //[cell.detailTextLabel setText:[NSString stringWithFormat:@"%d words", document.wordCount]];
+}
+    
+- (void)updateViews {
+    self.navigationController.title = _document.title;
+    [_titleTextField setText: _document.title];
+    [_numberOfWordsLabel setText: [NSString stringWithFormat:@"%d words", _document.bodyText.wordCount]];
+    [_documentTextView setText: _document.bodyText];
+}
+ 
+// Resign keyboard when background is tapped
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"touchesBegan:withEvent:");
+    [self.view endEditing: YES];
+    [super touchesBegan:touches withEvent:event];
 }
 
 
 - (IBAction)save:(id)sender {
+    
+    _modelController.createDoc;
+    
 }
     
     

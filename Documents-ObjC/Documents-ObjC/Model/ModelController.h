@@ -13,13 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSMutableArray *documents;
     
 // Create a document
-- (ALWDocument *)createDoc:(NSString *)title text:(NSString *)text wordCount:(NSInteger *)wordCount;
+- (void)createDoc:(NSString *)title text:(NSString *)text wordCount:(NSInteger *)wordCount;
     
 // Update a document
-- (ALWDocument *)updateDoc:(ALWDocument *)document title:(NSString *)title text:(NSString *)text wordCount:(NSInteger *)wordCount;
+- (void)updateDoc:(ALWDocument *)document title:(NSString *)title text:(NSString *)text wordCount:(NSInteger *)wordCount;
     
 // Delete a document
-- (ALWDocument *)deleteDoc:(ALWDocument *)document;
+- (void)deleteDoc:(ALWDocument *)document;
     
 
 @end

@@ -18,12 +18,12 @@
     }
     
 // Create a document
-- (void)createDoc:(NSString *)title text:(NSString *)text {
+- (void)createDoc:(NSString *)title bodyText:(NSString *)bodyText {
     // DO I ADD THIS? wordCount:(NSInteger *)wordCount
     
     // SWIFT:
-    // let newDoc = Document(title: title, text: text, wordCount: wordCount)
-    ALWDocument *newDocument = [[ALWDocument alloc] initWithTitle:title text:text];
+    // let newDoc = Document(title: title, bodyText: bodyText, wordCount: wordCount)
+    ALWDocument *newDocument = [[ALWDocument alloc] initWithTitle:title bodyText:bodyText];
     
     [_documents addObject: newDocument];
     
@@ -32,11 +32,11 @@
 }
     
 // Update a document
-- (void)updateDoc:(ALWDocument *)document title:(NSString *)title text:(NSString *)text {
+- (void)updateDoc:(ALWDocument *)document title:(NSString *)title bodyText:(NSString *)bodyText {
     // DO I ADD THIS? wordCount:(NSInteger *)wordCount
     
     document.title = title;
-    document.text = text;
+    document.bodyText = bodyText;
     
     //return document;
 }

@@ -13,14 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 // var text: String
 // var wordCount: Int
     
-@property (nonatomic) NSString *title;
-@property (nonatomic) NSString *text;
-@property (nonatomic) NSInteger *wordCount;
+@property NSString *title;
+@property NSString *bodyText;
+@property (readonly) NSInteger *wordCount;
     
 // SWIFT:
 // init(title: String, text: String)
     
-- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text;
+- (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText;
     
 
 @end

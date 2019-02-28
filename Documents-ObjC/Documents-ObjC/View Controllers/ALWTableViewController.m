@@ -15,9 +15,6 @@
 @end
 
 @implementation ALWTableViewController
-    
-// Create an instance variable directly (not a property)
-// ModelController *_modelController;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,6 +24,12 @@
     
     [self setModelController: [[ModelController alloc] init]];
 
+}
+    
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [ self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -49,8 +52,9 @@
     // let document = documents[indexPath.row]
     ALWDocument *document = [_modelController.documents objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = document.title;
-    cell.detailTextLabel.text = document.text;
+    [cell.textLabel setText: document.title];
+    [cell.detailTextLabel setText:[NSString stringWithFormat:@"%d words", document.wordCount]];
+    //cell.detailTextLabel.text = document.bodyText;
     
     return cell;
 }
@@ -64,12 +68,23 @@
     // Add
     if ([segue.identifier isEqualToString:@"addDocumentSegue"]) {
         
-        //
+        // Set destination as detail view controller
         ALWDetailViewController *detailViewController = [segue destinationViewController];
+        [detailViewController setModelController: _modelController];
     }
     
+    // Show
     if ([segue.identifier isEqualToString:@"showDocumentSegue"]) {
         
+        // Set destination as detail view controller
+        ALWDetailViewController *detailViewController = [segue destinationViewController];
+        
+        // Pass information
+        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+        ALWDocument *document = self.modelController.documents[indexPath.row];
+        
+        [detailViewController setModelController: _modelController];
+        [detailViewController setDocument: document];
     }
     
     // Pass the selected object to the new view controller.
