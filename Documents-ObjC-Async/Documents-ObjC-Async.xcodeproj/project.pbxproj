@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		842C01F422306CC700BBBFAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C01F322306CC700BBBFAD /* AppDelegate.m */; };
-		842C01F722306CC700BBBFAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C01F622306CC700BBBFAD /* ViewController.m */; };
 		842C01FA22306CC700BBBFAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842C01F822306CC700BBBFAD /* Main.storyboard */; };
 		842C01FC22306CC800BBBFAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842C01FB22306CC800BBBFAD /* Assets.xcassets */; };
 		842C01FF22306CC800BBBFAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842C01FD22306CC800BBBFAD /* LaunchScreen.storyboard */; };
 		842C020222306CC900BBBFAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C020122306CC900BBBFAD /* main.m */; };
+		842C020E22306E0200BBBFAD /* ALWDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C020D22306E0200BBBFAD /* ALWDocumentsTableViewController.m */; };
+		842C021122306EBA00BBBFAD /* ALWDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C021022306EBA00BBBFAD /* ALWDocumentDetailViewController.m */; };
+		842C0215223071F300BBBFAD /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C0214223071F300BBBFAD /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		842C01EF22306CC700BBBFAD /* Documents-ObjC-Async.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Documents-ObjC-Async.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842C01F222306CC700BBBFAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		842C01F322306CC700BBBFAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		842C01F522306CC700BBBFAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		842C01F622306CC700BBBFAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		842C01F922306CC700BBBFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		842C01FB22306CC800BBBFAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842C01FE22306CC800BBBFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842C020022306CC800BBBFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842C020122306CC900BBBFAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		842C020C22306E0200BBBFAD /* ALWDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWDocumentsTableViewController.h; sourceTree = "<group>"; };
+		842C020D22306E0200BBBFAD /* ALWDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWDocumentsTableViewController.m; sourceTree = "<group>"; };
+		842C020F22306EBA00BBBFAD /* ALWDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWDocumentDetailViewController.h; sourceTree = "<group>"; };
+		842C021022306EBA00BBBFAD /* ALWDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWDocumentDetailViewController.m; sourceTree = "<group>"; };
+		842C0213223071F300BBBFAD /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		842C0214223071F300BBBFAD /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,61 @@
 		842C01F122306CC700BBBFAD /* Documents-ObjC-Async */ = {
 			isa = PBXGroup;
 			children = (
-				842C01F222306CC700BBBFAD /* AppDelegate.h */,
-				842C01F322306CC700BBBFAD /* AppDelegate.m */,
-				842C01F522306CC700BBBFAD /* ViewController.h */,
-				842C01F622306CC700BBBFAD /* ViewController.m */,
-				842C01F822306CC700BBBFAD /* Main.storyboard */,
-				842C01FB22306CC800BBBFAD /* Assets.xcassets */,
-				842C01FD22306CC800BBBFAD /* LaunchScreen.storyboard */,
 				842C020022306CC800BBBFAD /* Info.plist */,
-				842C020122306CC900BBBFAD /* main.m */,
+				842C0212223071DB00BBBFAD /* Categories */,
+				842C020922306D7500BBBFAD /* Model */,
+				842C020822306D6C00BBBFAD /* View Controllers */,
+				842C020A22306D7A00BBBFAD /* Storyboards */,
+				842C020B22306D8200BBBFAD /* Resources */,
 			);
 			path = "Documents-ObjC-Async";
+			sourceTree = "<group>";
+		};
+		842C020822306D6C00BBBFAD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				842C020C22306E0200BBBFAD /* ALWDocumentsTableViewController.h */,
+				842C020D22306E0200BBBFAD /* ALWDocumentsTableViewController.m */,
+				842C020F22306EBA00BBBFAD /* ALWDocumentDetailViewController.h */,
+				842C021022306EBA00BBBFAD /* ALWDocumentDetailViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		842C020922306D7500BBBFAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		842C020A22306D7A00BBBFAD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				842C01F822306CC700BBBFAD /* Main.storyboard */,
+				842C01FD22306CC800BBBFAD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		842C020B22306D8200BBBFAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				842C01F222306CC700BBBFAD /* AppDelegate.h */,
+				842C01F322306CC700BBBFAD /* AppDelegate.m */,
+				842C020122306CC900BBBFAD /* main.m */,
+				842C01FB22306CC800BBBFAD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		842C0212223071DB00BBBFAD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				842C0213223071F300BBBFAD /* NSString+WordCount.h */,
+				842C0214223071F300BBBFAD /* NSString+WordCount.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842C01F722306CC700BBBFAD /* ViewController.m in Sources */,
+				842C0215223071F300BBBFAD /* NSString+WordCount.m in Sources */,
+				842C020E22306E0200BBBFAD /* ALWDocumentsTableViewController.m in Sources */,
 				842C020222306CC900BBBFAD /* main.m in Sources */,
 				842C01F422306CC700BBBFAD /* AppDelegate.m in Sources */,
+				842C021122306EBA00BBBFAD /* ALWDocumentDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
