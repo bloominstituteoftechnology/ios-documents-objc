@@ -26,7 +26,7 @@
     return [self.internalDocuments copy];
 }
 
-- (void)createDocument:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger)wordCount {
+- (void)createDocument:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger *)wordCount {
     
     ALWDocument *newDocument = [[ALWDocument alloc] initWithTitle:documentTitle documentText:documentText];
     
@@ -36,7 +36,7 @@
     
 }
 
-- (void)updateDocument:(ALWDocument *)document documentTitle:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger)wordCount {
+- (void)updateDocument:(ALWDocument *)document documentTitle:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger *)wordCount {
     
     document.documentTitle = documentTitle;
     document.documentText = documentText;

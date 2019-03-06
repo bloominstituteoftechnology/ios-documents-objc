@@ -3,6 +3,9 @@
 //  
 
 #import "ALWDocumentDetailViewController.h"
+#import "ALWDocumentController.h"
+#import "NSString+WordCount.h"
+#import "ALWDocument.h"
 
 @interface ALWDocumentDetailViewController ()
 
@@ -12,21 +15,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    _documentTextView.delegate = self;
+    [self updateViews];
+}
+
+- (void)textViewDidChange:(UITextView *)textView {
+    [_numberOfWordsLabel setText: [NSString stringWithFormat:@"%d words", _document.documentText.wordCount]];
+}
+
+- (void)updateViews {
+    if (!self.isViewLoaded || !self.document) { return; }
+    
+    self.title = self.document.documentTitle ?: @"Create Document";
+    
+    self.numberOfWordsLabel.text = [NSString stringWithFormat:@"%ld words", _document.documentText.wordCount];
+    //self.numberOfWordsLabel.text = [NSString stringWithFormat:@"%ld words", self.document.documentText.wordCount];
+    self.titleTextField.text = self.document.documentTitle;
+    self.documentTextView.text = self.document.documentText;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"touchesBegan:withEvent:");
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
 }
 
 - (IBAction)save:(id)sender {
+    
+    // Are we editing a document? or creating a new one?
+    BOOL isEditingDocument = self.document != nil;
+    
+    // The doc we're working with is either self.document if editing OR nil, so we create a new one
+    ALWDocument *newDocument = self.document ?: [[ALWDocument alloc] init];
+    newDocument.wordCount = self.document.wordCount;
+    newDocument.documentTitle = self.titleTextField.text;
+    newDocument.documentText = self.documentTextView.text;
+    
+    if (!isEditingDocument) {
+        //self.documentController.createDocument
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
