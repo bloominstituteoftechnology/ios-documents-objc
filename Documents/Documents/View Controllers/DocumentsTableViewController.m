@@ -32,11 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
 #pragma mark - Table view data source
@@ -61,19 +57,27 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
+        
+        Document *document = self.documentController.documents[indexPath.row];
+        [self.documentController removeDocument:document];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 
 #pragma mark - Navigation
-//addDocument //documentDetail
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"documentDetail"]) { // documentDetail
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        DetailViewController *detailVC = segue.destinationViewController;
+        detailVC.documentController = self.documentController;
+        detailVC.document = self.documentController.documents[indexPath.row];
+    }
+    if ([segue.identifier isEqualToString:@"addDocument"]) { // addDocument
+        DetailViewController *detailVC = segue.destinationViewController;
+        detailVC.documentController = self.documentController;
+    }
 }
-
 
 @end

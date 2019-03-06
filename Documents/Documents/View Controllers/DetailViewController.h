@@ -7,16 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DocumentController.h"
+#import "Document.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
-@property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
-@property (weak, nonatomic) IBOutlet UITextView *documentTextView;
-
-- (IBAction)saveDocument:(id)sender;
+@property (nonatomic, strong) Document *document;
+@property (nonatomic, strong) DocumentController *documentController;
 
 @end
 

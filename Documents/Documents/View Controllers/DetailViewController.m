@@ -8,27 +8,35 @@
 
 #import "DetailViewController.h"
 
-@interface DetailViewController ()
+@interface DetailViewController () <UITextViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+@property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
+@property (weak, nonatomic) IBOutlet UITextView *documentTextView;
 
 @end
 
 @implementation DetailViewController
 
+- (IBAction)saveDocument:(id)sender {
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self updateViews];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)updateViews {
+    
+    if(!self.isViewLoaded || !self.document) { return; }
+    
+    self.title = self.document.title ?: @"Create New Document";
+    self.titleTextField.text = self.document.title;
+    self.documentTextView.text = self.document.text;
+    
+    //self.wordCountLabel.text = self.document
+    // WordCount here which will need help converting to string and interpolating
 }
-*/
 
-- (IBAction)saveDocument:(id)sender {
-}
 @end
