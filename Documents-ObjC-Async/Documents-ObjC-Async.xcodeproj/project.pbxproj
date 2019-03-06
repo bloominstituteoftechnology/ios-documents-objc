@@ -15,6 +15,8 @@
 		842C020E22306E0200BBBFAD /* ALWDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C020D22306E0200BBBFAD /* ALWDocumentsTableViewController.m */; };
 		842C021122306EBA00BBBFAD /* ALWDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C021022306EBA00BBBFAD /* ALWDocumentDetailViewController.m */; };
 		842C0215223071F300BBBFAD /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C0214223071F300BBBFAD /* NSString+WordCount.m */; };
+		842C02182230734600BBBFAD /* ALWDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C02172230734600BBBFAD /* ALWDocument.m */; };
+		842C021B2230780200BBBFAD /* ALWDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C021A2230780200BBBFAD /* ALWDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		842C021022306EBA00BBBFAD /* ALWDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWDocumentDetailViewController.m; sourceTree = "<group>"; };
 		842C0213223071F300BBBFAD /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		842C0214223071F300BBBFAD /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		842C02162230734600BBBFAD /* ALWDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWDocument.h; sourceTree = "<group>"; };
+		842C02172230734600BBBFAD /* ALWDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWDocument.m; sourceTree = "<group>"; };
+		842C02192230780200BBBFAD /* ALWDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWDocumentController.h; sourceTree = "<group>"; };
+		842C021A2230780200BBBFAD /* ALWDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,10 @@
 		842C020922306D7500BBBFAD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				842C02162230734600BBBFAD /* ALWDocument.h */,
+				842C02172230734600BBBFAD /* ALWDocument.m */,
+				842C02192230780200BBBFAD /* ALWDocumentController.h */,
+				842C021A2230780200BBBFAD /* ALWDocumentController.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,7 +205,9 @@
 				842C020E22306E0200BBBFAD /* ALWDocumentsTableViewController.m in Sources */,
 				842C020222306CC900BBBFAD /* main.m in Sources */,
 				842C01F422306CC700BBBFAD /* AppDelegate.m in Sources */,
+				842C021B2230780200BBBFAD /* ALWDocumentController.m in Sources */,
 				842C021122306EBA00BBBFAD /* ALWDocumentDetailViewController.m in Sources */,
+				842C02182230734600BBBFAD /* ALWDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
