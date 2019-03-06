@@ -8,6 +8,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (WordCount)
 
+// Instance method that returns an int to the category
+- (NSInteger)wordCount;
+
 @end
 
 NS_ASSUME_NONNULL_END

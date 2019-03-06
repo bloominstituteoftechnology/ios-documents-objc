@@ -6,4 +6,8 @@
 
 @implementation NSString (WordCount)
 
+- (NSInteger)wordCount {
+    return [[self componentsSeparatedByString:@" "] count];
+}
+
 @end
