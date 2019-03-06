@@ -12,10 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XYZDocument : NSObject
 
-- (instancetype)initDoc: (NSString *)DocTitle DocDetails: (NSMutableString *)DocDetails;
+- (instancetype)initDoc: (NSString *)DocTitle DocDetails: (NSString *)DocDetails;
 
 @property NSString *DocTitle;
-@property NSMutableString *DocDetails;
+@property NSString *DocDetails;
 @property (nonatomic, readonly) int wordCount;
 
 @end

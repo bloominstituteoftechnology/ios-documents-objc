@@ -11,7 +11,7 @@
 
 @implementation XYZDocument
 
-- (instancetype)initDoc:(NSString *)DocTitle DocDetails:(NSMutableString *)DocDetails {
+- (instancetype)initDoc:(NSString *)DocTitle DocDetails:(NSString *)DocDetails {
     self = [super self];
     if (self) {
         _DocTitle = DocTitle;

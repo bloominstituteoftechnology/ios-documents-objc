@@ -21,12 +21,12 @@
 }
 
 
-- (void)createDoc:(NSString *)DocTitle DocDetails:(NSMutableString *)DocDetails {
+- (void)createDoc:(NSString *)DocTitle DocDetails:(NSString *)DocDetails {
     XYZDocument *document = [[XYZDocument alloc] initDoc:DocTitle DocDetails:DocDetails];
     [self.documents addObject:document];
 }
 
-- (void)updateDoc:(XYZDocument *)document Doctitle:(NSString *)DocTitle DocDetails:(NSMutableString *)DocDetails {
+- (void)updateDoc:(XYZDocument *)document Doctitle:(NSString *)DocTitle DocDetails:(NSString *)DocDetails {
     [document setDocTitle:DocTitle];
     [document setDocDetails:DocDetails];
 }

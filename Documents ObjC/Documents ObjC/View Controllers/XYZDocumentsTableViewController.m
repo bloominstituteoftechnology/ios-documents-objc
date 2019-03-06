@@ -36,21 +36,15 @@
     return self;
 }
 
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 1;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return _docController.documents.count;
 }
 
@@ -71,13 +65,13 @@
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier  isEqual: @"addSegue"]) {
-        XYZDocumentsViewController *detailVc = segue.destinationViewController;
+        XYZDocumentsViewController *detailVc = (XYZDocumentsViewController *) [segue destinationViewController];
         detailVc.docController = _docController;
     }else if ( [segue.identifier isEqual:@"showSegue"]) {
-        XYZDocumentsViewController *detailVC = segue.destinationViewController;
+        XYZDocumentsViewController *detailVc = (XYZDocumentsViewController *) [segue destinationViewController];
         NSIndexPath *index = [self.tableView indexPathForSelectedRow];
         XYZDocument *doc = _docController.documents[index.row];
-        detailVC.doc = doc;
+        detailVc.doc = doc;
     }
     
 }

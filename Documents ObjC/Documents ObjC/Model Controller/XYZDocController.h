@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XYZDocController : NSObject
 
--(void) createDoc: (NSString *)DocTitle DocDetails: (NSMutableString *)DocDetails;
--(void) updateDoc: (XYZDocument *)document Doctitle: (NSString *)DocTitle DocDetails: (NSMutableString *)DocDetails;
+-(void) createDoc: (NSString *)DocTitle DocDetails: (NSString *)DocDetails;
+-(void) updateDoc: (XYZDocument *)document Doctitle: (NSString *)DocTitle DocDetails: (NSString *)DocDetails;
 @property (nonatomic) NSMutableArray *documents;
 
 @end

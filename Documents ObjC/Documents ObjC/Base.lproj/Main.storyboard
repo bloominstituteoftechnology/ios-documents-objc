@@ -77,7 +77,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="z65-eB-cpg">
                                 <rect key="frame" x="15" y="126" width="345" height="291"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji4-ID-B3p">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji4-ID-B3p">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="25.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25.5" id="ZWb-ln-qsM"/>
@@ -123,6 +123,7 @@
                     <connections>
                         <outlet property="DoctextField" destination="cYU-64-Kg0" id="aqs-g2-6MX"/>
                         <outlet property="countLabel" destination="Ji4-ID-B3p" id="I3s-in-jVP"/>
+                        <outlet property="detailTextView" destination="ipb-85-xhl" id="gP8-CC-jdd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUz-Nl-mx4" userLabel="First Responder" sceneMemberID="firstResponder"/>

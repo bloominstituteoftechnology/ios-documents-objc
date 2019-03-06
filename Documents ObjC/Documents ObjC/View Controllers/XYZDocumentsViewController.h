@@ -12,13 +12,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XYZDocumentsViewController : UIViewController
+@interface XYZDocumentsViewController : UIViewController <UITextViewDelegate>
+
+
 - (IBAction)save:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *countLabel;
 @property (weak, nonatomic) IBOutlet UITextField *DoctextField;
-@property (weak, nonatomic) IBOutlet UITextView *DocTextField;
-@property XYZDocController *docController;
-@property XYZDocument *doc;
+
+@property (weak, nonatomic) IBOutlet UITextView *detailTextView;
+
+
+@property (nonatomic) XYZDocController *docController;
+@property (nonatomic) XYZDocument *doc;
 @end
 
 NS_ASSUME_NONNULL_END
