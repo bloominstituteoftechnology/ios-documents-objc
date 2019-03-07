@@ -12,11 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) NSArray *documents;
 
-- (void)createDocument:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger *)wordCount;
+- (void)createDocument:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger)wordCount; // removed * here for test
 
-- (void)updateDocument:(ALWDocument *)document documentTitle:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger *)wordCount;
+- (void)updateDocument:(ALWDocument *)document documentTitle:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger)wordCount; // removed * here for test
 
 - (void)deleteDocument:(ALWDocument *)document;
+
+- (void)addDocument:(ALWDocument *)document;
 
 @end
 

@@ -21,6 +21,11 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self != nil) {
@@ -54,7 +59,7 @@
     
     // Configure the cell...
     cell.textLabel.text = document.documentTitle;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld words", (long)document.wordCount];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld words", document.wordCount];
     
     return cell;
 }
@@ -79,6 +84,7 @@
     if ([segue.identifier isEqualToString:@"addDocumentSegue"]) {
         ALWDocumentDetailViewController *detailVC = segue.destinationViewController;
         detailVC.documentController = self.documentController;
+        
         
     }
 }

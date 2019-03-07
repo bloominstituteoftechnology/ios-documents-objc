@@ -19,6 +19,7 @@
 // Getter method
 - (NSInteger)wordCount {
     return [self.documentText wordCount];
+    //return [_documentText wordCount]; // this returns one extra word in the count
 }
 
 @end

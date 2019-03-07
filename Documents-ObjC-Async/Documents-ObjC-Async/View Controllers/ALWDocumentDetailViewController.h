@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property ALWDocument *document;
 @property ALWDocumentController *documentController;
 
-- (void)textViewDidChange:(UITextView *)textView;
+
 
 
 @end

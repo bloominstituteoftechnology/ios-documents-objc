@@ -16,12 +16,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _documentTextView.delegate = self;
+    [self.documentTextView setDelegate: self];
     [self updateViews];
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
-    [_numberOfWordsLabel setText: [NSString stringWithFormat:@"%d words", _document.documentText.wordCount]];
+    
+    NSString *wordCountText = [self.documentTextView text];
+    NSInteger newWordCount = [wordCountText wordCount];
+    [_numberOfWordsLabel setText: [NSString stringWithFormat:@"%ld words", newWordCount]];
 }
 
 - (void)updateViews {
@@ -29,7 +32,7 @@
     
     self.title = self.document.documentTitle ?: @"Create Document";
     
-    self.numberOfWordsLabel.text = [NSString stringWithFormat:@"%ld words", _document.documentText.wordCount];
+    //self.numberOfWordsLabel.text = [NSString stringWithFormat:@"%ld words", _document.documentText.wordCount];
     //self.numberOfWordsLabel.text = [NSString stringWithFormat:@"%ld words", self.document.documentText.wordCount];
     self.titleTextField.text = self.document.documentTitle;
     self.documentTextView.text = self.document.documentText;
@@ -53,7 +56,10 @@
     newDocument.documentText = self.documentTextView.text;
     
     if (!isEditingDocument) {
-        //self.documentController.createDocument
+        [self.documentController addDocument:newDocument];
+        
+        NSLog(@"%@", newDocument);
+        NSLog(@"%@", _documentController.documents);
     }
     
     [self.navigationController popViewControllerAnimated:YES];

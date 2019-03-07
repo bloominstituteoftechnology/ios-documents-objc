@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) NSString *documentTitle;
 @property (nonatomic) NSString *documentText;
-@property (nonatomic) NSInteger *wordCount;
+@property (nonatomic) NSInteger wordCount; // removed * here for test
 
 - (instancetype)initWithTitle:(NSString *)documentTitle documentText:(NSString *)documentText;
 

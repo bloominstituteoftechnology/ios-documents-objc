@@ -26,7 +26,7 @@
     return [self.internalDocuments copy];
 }
 
-- (void)createDocument:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger *)wordCount {
+- (void)createDocument:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger)wordCount { // removed * here for test
     
     ALWDocument *newDocument = [[ALWDocument alloc] initWithTitle:documentTitle documentText:documentText];
     
@@ -36,15 +36,21 @@
     
 }
 
-- (void)updateDocument:(ALWDocument *)document documentTitle:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger *)wordCount {
+- (void)updateDocument:(ALWDocument *)document documentTitle:(NSString *)documentTitle documentText:(NSString *)documentText wordCount:(NSInteger)wordCount { // removed * here for test
     
     document.documentTitle = documentTitle;
     document.documentText = documentText;
     document.wordCount = wordCount;
+    
+    // replaceObjectAtIndex:index with Object:newDocument
 }
 
 - (void)deleteDocument:(ALWDocument *)document {
     [self.internalDocuments removeObject:document];
+}
+
+- (void)addDocument:(ALWDocument *)document {
+    [self.internalDocuments addObject:document];
 }
 
 @end
