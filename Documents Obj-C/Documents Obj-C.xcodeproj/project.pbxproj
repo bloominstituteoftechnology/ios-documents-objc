@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C76FEF4223089480017AC04 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C76FEF3223089480017AC04 /* NSString+WordCount.m */; };
+		2C76FF192231C13C0017AC04 /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2C76FF182231C13B0017AC04 /* Notes.rtf */; };
+		2C76FF1C2231C3920017AC04 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C76FF1B2231C3920017AC04 /* Document.m */; };
+		2C76FF1F2231D5A60017AC04 /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C76FF1E2231D5A60017AC04 /* DocumentController.m */; };
 		2CBDDAA4222787330077AC73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDDAA3222787330077AC73 /* AppDelegate.m */; };
-		2CBDDAA7222787330077AC73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDDAA6222787330077AC73 /* ViewController.m */; };
 		2CBDDAAA222787330077AC73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBDDAA8222787330077AC73 /* Main.storyboard */; };
 		2CBDDAAD222787330077AC73 /* Documents_Obj_C.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDDAAB222787330077AC73 /* Documents_Obj_C.xcdatamodeld */; };
 		2CBDDAAF2227874C0077AC73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBDDAAE2227874C0077AC73 /* Assets.xcassets */; };
@@ -16,6 +19,8 @@
 		2CBDDAB52227874C0077AC73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDDAB42227874C0077AC73 /* main.m */; };
 		2CBDDABF2227874F0077AC73 /* Documents_Obj_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDDABE2227874F0077AC73 /* Documents_Obj_CTests.m */; };
 		2CBDDACA2227874F0077AC73 /* Documents_Obj_CUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDDAC92227874F0077AC73 /* Documents_Obj_CUITests.m */; };
+		2CBDDADF222837D40077AC73 /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDDADE222837D40077AC73 /* DocumentsTableViewController.m */; };
+		2CBDDAE222283C130077AC73 /* DocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDDAE122283C130077AC73 /* DocumentDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C76FEF2223089480017AC04 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		2C76FEF3223089480017AC04 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		2C76FF182231C13B0017AC04 /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
+		2C76FF1A2231C3920017AC04 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		2C76FF1B2231C3920017AC04 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		2C76FF1D2231D5A50017AC04 /* DocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
+		2C76FF1E2231D5A60017AC04 /* DocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
 		2CBDDA9F222787330077AC73 /* Documents Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Documents Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBDDAA2222787330077AC73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2CBDDAA3222787330077AC73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2CBDDAA5222787330077AC73 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2CBDDAA6222787330077AC73 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2CBDDAA9222787330077AC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CBDDAAC222787330077AC73 /* Documents_Obj_C.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Documents_Obj_C.xcdatamodel; sourceTree = "<group>"; };
 		2CBDDAAE2227874C0077AC73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +63,10 @@
 		2CBDDAC52227874F0077AC73 /* Documents Obj-CUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Documents Obj-CUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBDDAC92227874F0077AC73 /* Documents_Obj_CUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Documents_Obj_CUITests.m; sourceTree = "<group>"; };
 		2CBDDACB2227874F0077AC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CBDDADD222837D40077AC73 /* DocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentsTableViewController.h; sourceTree = "<group>"; };
+		2CBDDADE222837D40077AC73 /* DocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableViewController.m; sourceTree = "<group>"; };
+		2CBDDAE022283C130077AC73 /* DocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDetailViewController.h; sourceTree = "<group>"; };
+		2CBDDAE122283C130077AC73 /* DocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C76FF172231C1080017AC04 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				2C76FF182231C13B0017AC04 /* Notes.rtf */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
 		2CBDDA96222787320077AC73 = {
 			isa = PBXGroup;
 			children = (
@@ -103,16 +125,16 @@
 		2CBDDAA1222787330077AC73 /* Documents Obj-C */ = {
 			isa = PBXGroup;
 			children = (
-				2CBDDAA2222787330077AC73 /* AppDelegate.h */,
-				2CBDDAA3222787330077AC73 /* AppDelegate.m */,
-				2CBDDAA5222787330077AC73 /* ViewController.h */,
-				2CBDDAA6222787330077AC73 /* ViewController.m */,
-				2CBDDAA8222787330077AC73 /* Main.storyboard */,
-				2CBDDAAE2227874C0077AC73 /* Assets.xcassets */,
-				2CBDDAB02227874C0077AC73 /* LaunchScreen.storyboard */,
-				2CBDDAB32227874C0077AC73 /* Info.plist */,
+				2C76FEF2223089480017AC04 /* NSString+WordCount.h */,
+				2C76FEF3223089480017AC04 /* NSString+WordCount.m */,
 				2CBDDAB42227874C0077AC73 /* main.m */,
-				2CBDDAAB222787330077AC73 /* Documents_Obj_C.xcdatamodeld */,
+				2C76FF172231C1080017AC04 /* Notes */,
+				2CBDDADC222837050077AC73 /* Document Controller */,
+				2CBDDADB222836F30077AC73 /* Model */,
+				2CBDDADA222836DB0077AC73 /* View Controllers */,
+				2CBDDAD7222836A50077AC73 /* Resources */,
+				2CBDDAD8222836B40077AC73 /* Views */,
+				2CBDDAD9222836C20077AC73 /* CoreData */,
 			);
 			path = "Documents Obj-C";
 			sourceTree = "<group>";
@@ -133,6 +155,63 @@
 				2CBDDACB2227874F0077AC73 /* Info.plist */,
 			);
 			path = "Documents Obj-CUITests";
+			sourceTree = "<group>";
+		};
+		2CBDDAD7222836A50077AC73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDDAA2222787330077AC73 /* AppDelegate.h */,
+				2CBDDAA3222787330077AC73 /* AppDelegate.m */,
+				2CBDDAAE2227874C0077AC73 /* Assets.xcassets */,
+				2CBDDAB32227874C0077AC73 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2CBDDAD8222836B40077AC73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDDAA8222787330077AC73 /* Main.storyboard */,
+				2CBDDAB02227874C0077AC73 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CBDDAD9222836C20077AC73 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDDAAB222787330077AC73 /* Documents_Obj_C.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2CBDDADA222836DB0077AC73 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDDADD222837D40077AC73 /* DocumentsTableViewController.h */,
+				2CBDDADE222837D40077AC73 /* DocumentsTableViewController.m */,
+				2CBDDAE022283C130077AC73 /* DocumentDetailViewController.h */,
+				2CBDDAE122283C130077AC73 /* DocumentDetailViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2CBDDADB222836F30077AC73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C76FF1A2231C3920017AC04 /* Document.h */,
+				2C76FF1B2231C3920017AC04 /* Document.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CBDDADC222837050077AC73 /* Document Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C76FF1D2231D5A50017AC04 /* DocumentController.h */,
+				2C76FF1E2231D5A60017AC04 /* DocumentController.m */,
+			);
+			path = "Document Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C76FF192231C13C0017AC04 /* Notes.rtf in Resources */,
 				2CBDDAB22227874C0077AC73 /* LaunchScreen.storyboard in Resources */,
 				2CBDDAAF2227874C0077AC73 /* Assets.xcassets in Resources */,
 				2CBDDAAA222787330077AC73 /* Main.storyboard in Resources */,
@@ -265,9 +345,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CBDDAA7222787330077AC73 /* ViewController.m in Sources */,
+				2CBDDADF222837D40077AC73 /* DocumentsTableViewController.m in Sources */,
 				2CBDDAAD222787330077AC73 /* Documents_Obj_C.xcdatamodeld in Sources */,
+				2C76FF1F2231D5A60017AC04 /* DocumentController.m in Sources */,
 				2CBDDAB52227874C0077AC73 /* main.m in Sources */,
+				2C76FF1C2231C3920017AC04 /* Document.m in Sources */,
+				2C76FEF4223089480017AC04 /* NSString+WordCount.m in Sources */,
+				2CBDDAE222283C130077AC73 /* DocumentDetailViewController.m in Sources */,
 				2CBDDAA4222787330077AC73 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,7 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Documents Obj-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Documents Obj-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Documents Obj-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Documents Obj-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
