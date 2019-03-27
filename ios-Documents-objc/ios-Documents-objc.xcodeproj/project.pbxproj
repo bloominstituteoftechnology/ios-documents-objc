@@ -16,6 +16,7 @@
 		7A1129E2224C055800BDE686 /* NELAddDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1129E1224C055800BDE686 /* NELAddDocumentViewController.m */; };
 		7A1129E6224C0BF900BDE686 /* NSString+NELWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1129E5224C0BF900BDE686 /* NSString+NELWordCount.m */; };
 		7A1129EA224C12C500BDE686 /* NELDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1129E9224C12C500BDE686 /* NELDocument.m */; };
+		7A1129EE224C16F400BDE686 /* NELDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1129ED224C16F400BDE686 /* NELDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		7A1129E5224C0BF900BDE686 /* NSString+NELWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+NELWordCount.m"; sourceTree = "<group>"; };
 		7A1129E8224C12C500BDE686 /* NELDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NELDocument.h; sourceTree = "<group>"; };
 		7A1129E9224C12C500BDE686 /* NELDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NELDocument.m; sourceTree = "<group>"; };
+		7A1129EC224C16F400BDE686 /* NELDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NELDocumentController.h; sourceTree = "<group>"; };
+		7A1129ED224C16F400BDE686 /* NELDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NELDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +72,9 @@
 			children = (
 				7A1129C7224C02DF00BDE686 /* AppDelegate.h */,
 				7A1129C8224C02DF00BDE686 /* AppDelegate.m */,
-				7A1129EB224C12CD00BDE686 /* Model */,
 				7A1129E7224C12AD00BDE686 /* Category */,
+				7A1129EB224C12CD00BDE686 /* Model */,
+				7A1129EF224C16F800BDE686 /* Model Controller */,
 				7A1129E3224C064A00BDE686 /* View Controllers */,
 				7A1129CD224C02DF00BDE686 /* Main.storyboard */,
 				7A1129D0224C02E100BDE686 /* Assets.xcassets */,
@@ -108,6 +112,15 @@
 				7A1129E9224C12C500BDE686 /* NELDocument.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7A1129EF224C16F800BDE686 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7A1129EC224C16F400BDE686 /* NELDocumentController.h */,
+				7A1129ED224C16F400BDE686 /* NELDocumentController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A1129D7224C02E100BDE686 /* main.m in Sources */,
+				7A1129EE224C16F400BDE686 /* NELDocumentController.m in Sources */,
 				7A1129C9224C02DF00BDE686 /* AppDelegate.m in Sources */,
 				7A1129DF224C03FD00BDE686 /* NELDocumentTableViewController.m in Sources */,
 				7A1129E2224C055800BDE686 /* NELAddDocumentViewController.m in Sources */,
