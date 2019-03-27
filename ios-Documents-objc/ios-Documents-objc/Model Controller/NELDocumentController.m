@@ -32,19 +32,21 @@
     return self;
 }
 
-- (void)createDocumentWithTitle:(NSString *)title text:(NSString *)text wordCount:(NSInteger)wordCount
+
+- (void)createDocumentWithTitle:(NSString *)title text:(NSString *)text
 {
-    NELDocument *document = [[NELDocument alloc] initWithTitle:title text:text wordCount:wordCount];
+    NELDocument *document = [[NELDocument alloc] initWithTitle:title text:text];
+    
     
     [self.internalDocuments addObject:document];
     
 }
 
-- (void)updateDocument:(NELDocument *)document withTitle:(NSString *)title text:(NSString *)text wordCount:(NSInteger)wordCount
+
+- (void)updateDocument:(NELDocument *)document withTitle:(NSString *)title text:(NSString *)text
 {
     document.title = title;
     document.text = text;
-    document.wordCount = wordCount;
 }
 
 - (void)removeDocument:(NELDocument *)document
@@ -52,6 +54,9 @@
     [self.internalDocuments removeObject:document];
 }
 
-
+- (NSArray *)documentsArray
+{
+    return self.internalDocuments;
+}
 
 @end

@@ -22,7 +22,7 @@
 }
 
 
-- (NSInteger)wordCount {
+- (int)wordCount {
     return [self.text wordCount];
 }
 

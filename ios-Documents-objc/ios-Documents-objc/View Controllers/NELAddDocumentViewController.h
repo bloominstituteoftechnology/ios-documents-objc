@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NELDocument.h"
+#import "NELDocumentController.h"
+#import "NSString+NELWordCount.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NELAddDocumentViewController : UIViewController
+@interface NELAddDocumentViewController : UIViewController <UITextViewDelegate>
+
+
+@property (nonatomic) NELDocument *documents;
+@property NELDocumentController *documentController;
 
 @end
 

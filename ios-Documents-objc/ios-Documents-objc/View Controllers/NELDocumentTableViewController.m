@@ -7,10 +7,14 @@
 //
 
 #import "NELDocumentTableViewController.h"
+#import "NELDocumentController.h"
+#import "NELDocument.h"
+#import "NELAddDocumentViewController.h"
 
 @interface NELDocumentTableViewController ()
 
 @end
+
 
 @implementation NELDocumentTableViewController
 
@@ -20,18 +24,27 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear: YES];
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 0;
+    return self.documentController.documentsArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"documentCell" forIndexPath:indexPath];
     
+    NELDocument *documents = self.documentController.documentsArray[indexPath.row];
     
+    cell.textLabel.text = documents.title;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d words", documents.wordCount];
     
     return cell;
 }
@@ -57,7 +70,33 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
+    if ([segue.identifier isEqualToString:@"fromCell"]) {
+        //Passing the task and task controller
+        NELAddDocumentViewController *destinationVC = segue.destinationViewController;
+        
+        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+        
+        destinationVC.documentController = self.documentController;
+        destinationVC.documents = self.documentController.documentsArray[indexPath.row];
+    } else if ([segue.identifier isEqualToString:@"fromBarButton"]) {
+        
+        NELAddDocumentViewController *destinationVC = segue.destinationViewController;
+        destinationVC.documentController = self.documentController;
+    }
 }
+
+
+@synthesize documentController = _documentController;
+
+//the getter for taskController
+- (NELDocumentController *)documentController
+{
+    if (!_documentController) {
+        _documentController = [[NELDocumentController alloc] init];
+    }
+    return _documentController;
+}
+
 
 
 @end

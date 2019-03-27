@@ -14,14 +14,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NELDocumentController : NSObject
 
-- (void)createDocumentWithTitle:(NSString *)title text: (NSString *)text wordCount:(NSInteger)wordCount;
 
-- (void)updateDocument:(NELDocument *)document withTitle:(NSString *)title text:(NSString *)text wordCount:(NSInteger)wordCount;
+- (void)createDocumentWithTitle:(NSString *)title text: (NSString *)text;
+
+
+- (void)updateDocument:(NELDocument *)document withTitle:(NSString *)title text:(NSString *)text;
+
+
 
 //Remove a document
 - (void)removeDocument:(NELDocument *)document;
-
-
 
 @property (nonatomic, readonly) NSArray *documentsArray;
 

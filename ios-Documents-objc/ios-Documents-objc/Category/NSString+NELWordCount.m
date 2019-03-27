@@ -10,8 +10,11 @@
 
 @implementation NSString (NELWordCount)
 
-- (NSInteger)wordCount {
-    return [[self componentsSeparatedByString:@" "] count];
+- (int)wordCount {
+   // return [[self componentsSeparatedByString:@" "] count];
+    NSArray *array = [self componentsSeparatedByString:@" "];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF != %@", @""];
+    return (int)[array filteredArrayUsingPredicate:predicate].count;
 }
 
 @end

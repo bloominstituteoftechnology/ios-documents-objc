@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NELDocumentController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NELDocumentTableViewController : UITableViewController
+
+@property (nonatomic) NELDocumentController *documentController;
 
 @end
 

@@ -14,12 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 //Initializer
 
-- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text wordCount:(NSInteger )wordCount;
+- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text;
+
 
 //Properties
 @property (nonatomic) NSString *title;
 @property (nonatomic) NSString *text;
-@property (nonatomic) NSInteger wordCount;
+@property (nonatomic) int wordCount;
 
 
 @end
