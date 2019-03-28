@@ -70,9 +70,9 @@
 		39708404224C4E9A0021B132 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				3970841C224C4F110021B132 /* Storyboards */,
 				39708424224CA1C40021B132 /* Model */,
 				39708425224CA1CD0021B132 /* Model Controllers */,
-				3970841C224C4F110021B132 /* Storyboards */,
 				3970841D224C4F5C0021B132 /* View Controllers */,
 				3970841B224C4F050021B132 /* Resources */,
 				39708413224C4E9B0021B132 /* Info.plist */,

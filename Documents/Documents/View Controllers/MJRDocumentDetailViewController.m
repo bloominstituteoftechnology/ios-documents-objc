@@ -24,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.documentTextView.delegate = self;
     [self updateViews];
 }
 
@@ -48,14 +49,16 @@
     if (!self.isViewLoaded || !self.document) { return; }
     
     self.title = self.document.title;
-    self.wordCountLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)self.document.wordCount];
+    NSString *wordCountString = [NSString stringWithFormat:@"%lu words", (unsigned long)self.document.wordCount];
+    self.wordCountLabel.text = wordCountString;
     self.titleTextField.text = self.document.title;
     self.documentTextView.text = self.document.bodyText;
 }
 
 - (void)textViewDidChange:(UITextView *)textView
 {
-    self.document.wordCount = [textView.text wordCount];
+    NSString *wordCountString = [NSString stringWithFormat:@"%lu words", [textView.text wordCount]];
+    self.wordCountLabel.text = wordCountString;
 }
 
 - (void)setDocument:(MJRDocument *)document
