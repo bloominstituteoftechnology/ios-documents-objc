@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MJRDocument : NSObject
 
--(instancetype)initWithTitle:(NSString *)title document:(NSString *)document;
+-(instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText;
 
 @property (nonatomic) NSUInteger wordCount;
 @property (nonatomic) NSString *title;
-@property (nonatomic) NSString *document;
+@property (nonatomic) NSString *bodyText;
 
 @end
 

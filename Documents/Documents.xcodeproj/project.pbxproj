@@ -16,6 +16,7 @@
 		39708423224CA05A0021B132 /* MJRDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39708422224CA05A0021B132 /* MJRDocumentDetailViewController.m */; };
 		39708428224CA2A20021B132 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 39708427224CA2A20021B132 /* NSString+WordCount.m */; };
 		3970842B224CA4C60021B132 /* MJRDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970842A224CA4C60021B132 /* MJRDocument.m */; };
+		3970842E224CAA7E0021B132 /* MJRDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970842D224CAA7E0021B132 /* MJRDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		39708427224CA2A20021B132 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 		39708429224CA4C60021B132 /* MJRDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRDocument.h; sourceTree = "<group>"; };
 		3970842A224CA4C60021B132 /* MJRDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocument.m; sourceTree = "<group>"; };
+		3970842C224CAA7E0021B132 /* MJRDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRDocumentController.h; sourceTree = "<group>"; };
+		3970842D224CAA7E0021B132 /* MJRDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 		39708425224CA1CD0021B132 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3970842C224CAA7E0021B132 /* MJRDocumentController.h */,
+				3970842D224CAA7E0021B132 /* MJRDocumentController.m */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			files = (
 				3970842B224CA4C60021B132 /* MJRDocument.m in Sources */,
 				39708428224CA2A20021B132 /* NSString+WordCount.m in Sources */,
+				3970842E224CAA7E0021B132 /* MJRDocumentController.m in Sources */,
 				39708415224C4E9B0021B132 /* main.m in Sources */,
 				39708420224C4F7F0021B132 /* MJRDocumentsTableViewController.m in Sources */,
 				39708423224CA05A0021B132 /* MJRDocumentDetailViewController.m in Sources */,

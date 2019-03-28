@@ -11,20 +11,20 @@
 
 @implementation MJRDocument
 
-- (instancetype)initWithTitle:(NSString *)title document:(NSString *)document
+- (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText
 {
     self = [super init];
     
     if (self != nil) {
         _title = title;
-        _document = document;
+        _bodyText = bodyText;
     }
     return self;
 }
 
 - (NSUInteger)wordCount
 {
-    return [self.document wordCount];
+    return [self.bodyText wordCount];
 }
 
 @end
