@@ -50,6 +50,7 @@
     
     self.title = self.document.title;
     NSString *wordCountString = [NSString stringWithFormat:@"%lu words", (unsigned long)self.document.wordCount];
+    
     self.wordCountLabel.text = wordCountString;
     self.titleTextField.text = self.document.title;
     self.documentTextView.text = self.document.bodyText;

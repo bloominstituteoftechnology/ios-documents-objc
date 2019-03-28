@@ -71,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				3970841C224C4F110021B132 /* Storyboards */,
+				3970842F224CBFA00021B132 /* Category */,
 				39708424224CA1C40021B132 /* Model */,
 				39708425224CA1CD0021B132 /* Model Controllers */,
 				3970841D224C4F5C0021B132 /* View Controllers */,
@@ -114,8 +115,6 @@
 		39708424224CA1C40021B132 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				39708426224CA2A20021B132 /* NSString+WordCount.h */,
-				39708427224CA2A20021B132 /* NSString+WordCount.m */,
 				39708429224CA4C60021B132 /* MJRDocument.h */,
 				3970842A224CA4C60021B132 /* MJRDocument.m */,
 			);
@@ -129,6 +128,15 @@
 				3970842D224CAA7E0021B132 /* MJRDocumentController.m */,
 			);
 			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		3970842F224CBFA00021B132 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				39708426224CA2A20021B132 /* NSString+WordCount.h */,
+				39708427224CA2A20021B132 /* NSString+WordCount.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
