@@ -13,6 +13,7 @@
 		39708412224C4E9B0021B132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39708410224C4E9B0021B132 /* LaunchScreen.storyboard */; };
 		39708415224C4E9B0021B132 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39708414224C4E9B0021B132 /* main.m */; };
 		39708420224C4F7F0021B132 /* MJRDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970841F224C4F7F0021B132 /* MJRDocumentsTableViewController.m */; };
+		39708423224CA05A0021B132 /* MJRDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39708422224CA05A0021B132 /* MJRDocumentDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		39708414224C4E9B0021B132 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3970841E224C4F7F0021B132 /* MJRDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRDocumentsTableViewController.h; sourceTree = "<group>"; };
 		3970841F224C4F7F0021B132 /* MJRDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocumentsTableViewController.m; sourceTree = "<group>"; };
+		39708421224CA05A0021B132 /* MJRDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRDocumentDetailViewController.h; sourceTree = "<group>"; };
+		39708422224CA05A0021B132 /* MJRDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocumentDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 			children = (
 				3970841E224C4F7F0021B132 /* MJRDocumentsTableViewController.h */,
 				3970841F224C4F7F0021B132 /* MJRDocumentsTableViewController.m */,
+				39708421224CA05A0021B132 /* MJRDocumentDetailViewController.h */,
+				39708422224CA05A0021B132 /* MJRDocumentDetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			files = (
 				39708415224C4E9B0021B132 /* main.m in Sources */,
 				39708420224C4F7F0021B132 /* MJRDocumentsTableViewController.m in Sources */,
+				39708423224CA05A0021B132 /* MJRDocumentDetailViewController.m in Sources */,
 				39708407224C4E9A0021B132 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
