@@ -7,6 +7,9 @@
 //
 
 #import "MJRDocumentDetailViewController.h"
+#import "MJRDocumentController.h"
+#import "MJRDocument.h"
+#import "NSString+WordCount.h"
 
 @interface MJRDocumentDetailViewController ()
 
@@ -21,9 +24,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    [self updateViews];
 }
 
+- (IBAction)save:(id)sender {
+    
+    NSString *title = self.titleTextField.text;
+    NSString *bodyText = self.documentTextView.text;
+    
+    if (!self.document) {
+        
+        [self.documentController createDocWithTitle:title bodyText:bodyText];
+    } else {
+        
+        [self.documentController updateDoc:self.document title:title bodyText:bodyText];
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
+- (void)updateViews
+{
+    if (!self.isViewLoaded || !self.document) { return; }
+    
+    self.title = self.document.title;
+    self.wordCountLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)self.document.wordCount];
+    self.titleTextField.text = self.document.title;
+    self.documentTextView.text = self.document.bodyText;
+}
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    self.document.wordCount = [textView.text wordCount];
+}
+
+- (void)setDocument:(MJRDocument *)document
+{
+    if (document != _document) {
+        
+        _document = document;
+        [self updateViews];
+    }
+}
 
 @end

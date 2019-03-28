@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class MJRDocumentController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MJRDocumentsTableViewController : UITableViewController
+
+@property (nonatomic) MJRDocumentController *documentController;
 
 @end
 

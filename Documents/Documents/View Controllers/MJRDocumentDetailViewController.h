@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class MJRDocument;
+@class MJRDocumentController;
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MJRDocumentDetailViewController : UIViewController
+@interface MJRDocumentDetailViewController : UIViewController <UITextViewDelegate>
+
+@property (nonatomic) MJRDocumentController *documentController;
+@property (nonatomic) MJRDocument *document;
 
 @end
 

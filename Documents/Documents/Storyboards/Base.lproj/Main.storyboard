@@ -107,7 +107,11 @@
                         <viewLayoutGuide key="safeArea" id="vBJ-dm-UBE"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Document" id="tjY-ms-tEG">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="HV5-lP-gId"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="HV5-lP-gId">
+                            <connections>
+                                <action selector="save:" destination="icV-AT-sV8" id="SVw-ap-WW0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="documentTextView" destination="D3B-eZ-tF0" id="2cw-dU-gHo"/>
