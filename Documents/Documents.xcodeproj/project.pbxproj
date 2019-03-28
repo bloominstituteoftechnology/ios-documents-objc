@@ -15,6 +15,7 @@
 		39708420224C4F7F0021B132 /* MJRDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970841F224C4F7F0021B132 /* MJRDocumentsTableViewController.m */; };
 		39708423224CA05A0021B132 /* MJRDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39708422224CA05A0021B132 /* MJRDocumentDetailViewController.m */; };
 		39708428224CA2A20021B132 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 39708427224CA2A20021B132 /* NSString+WordCount.m */; };
+		3970842B224CA4C60021B132 /* MJRDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970842A224CA4C60021B132 /* MJRDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		39708422224CA05A0021B132 /* MJRDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocumentDetailViewController.m; sourceTree = "<group>"; };
 		39708426224CA2A20021B132 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		39708427224CA2A20021B132 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		39708429224CA4C60021B132 /* MJRDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRDocument.h; sourceTree = "<group>"; };
+		3970842A224CA4C60021B132 /* MJRDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 			children = (
 				39708426224CA2A20021B132 /* NSString+WordCount.h */,
 				39708427224CA2A20021B132 /* NSString+WordCount.m */,
+				39708429224CA4C60021B132 /* MJRDocument.h */,
+				3970842A224CA4C60021B132 /* MJRDocument.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3970842B224CA4C60021B132 /* MJRDocument.m in Sources */,
 				39708428224CA2A20021B132 /* NSString+WordCount.m in Sources */,
 				39708415224C4E9B0021B132 /* main.m in Sources */,
 				39708420224C4F7F0021B132 /* MJRDocumentsTableViewController.m in Sources */,
