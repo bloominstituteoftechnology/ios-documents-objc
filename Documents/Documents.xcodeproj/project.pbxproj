@@ -14,6 +14,7 @@
 		39708415224C4E9B0021B132 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39708414224C4E9B0021B132 /* main.m */; };
 		39708420224C4F7F0021B132 /* MJRDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970841F224C4F7F0021B132 /* MJRDocumentsTableViewController.m */; };
 		39708423224CA05A0021B132 /* MJRDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39708422224CA05A0021B132 /* MJRDocumentDetailViewController.m */; };
+		39708428224CA2A20021B132 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 39708427224CA2A20021B132 /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		3970841F224C4F7F0021B132 /* MJRDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocumentsTableViewController.m; sourceTree = "<group>"; };
 		39708421224CA05A0021B132 /* MJRDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRDocumentDetailViewController.h; sourceTree = "<group>"; };
 		39708422224CA05A0021B132 /* MJRDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocumentDetailViewController.m; sourceTree = "<group>"; };
+		39708426224CA2A20021B132 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		39708427224CA2A20021B132 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 		39708404224C4E9A0021B132 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				39708424224CA1C40021B132 /* Model */,
+				39708425224CA1CD0021B132 /* Model Controllers */,
 				3970841C224C4F110021B132 /* Storyboards */,
 				3970841D224C4F5C0021B132 /* View Controllers */,
 				3970841B224C4F050021B132 /* Resources */,
@@ -98,6 +103,22 @@
 				39708422224CA05A0021B132 /* MJRDocumentDetailViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		39708424224CA1C40021B132 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39708426224CA2A20021B132 /* NSString+WordCount.h */,
+				39708427224CA2A20021B132 /* NSString+WordCount.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39708425224CA1CD0021B132 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39708428224CA2A20021B132 /* NSString+WordCount.m in Sources */,
 				39708415224C4E9B0021B132 /* main.m in Sources */,
 				39708420224C4F7F0021B132 /* MJRDocumentsTableViewController.m in Sources */,
 				39708423224CA05A0021B132 /* MJRDocumentDetailViewController.m in Sources */,
