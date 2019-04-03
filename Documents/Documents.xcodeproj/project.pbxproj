@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C4B976C522557B0200F90B17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B976C422557B0200F90B17 /* AppDelegate.m */; };
-		C4B976C822557B0200F90B17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B976C722557B0200F90B17 /* ViewController.m */; };
 		C4B976CB22557B0200F90B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B976C922557B0200F90B17 /* Main.storyboard */; };
 		C4B976CD22557B0300F90B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B976CC22557B0300F90B17 /* Assets.xcassets */; };
 		C4B976D022557B0300F90B17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B976CE22557B0300F90B17 /* LaunchScreen.storyboard */; };
 		C4B976D322557B0300F90B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B976D222557B0300F90B17 /* main.m */; };
+		C4B976DB22557CCA00F90B17 /* GLITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B976DA22557CCA00F90B17 /* GLITableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4B976C022557B0200F90B17 /* Documents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Documents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B976C322557B0200F90B17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4B976C422557B0200F90B17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C4B976C622557B0200F90B17 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C4B976C722557B0200F90B17 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C4B976CA22557B0200F90B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4B976CC22557B0300F90B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4B976CF22557B0300F90B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4B976D122557B0300F90B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4B976D222557B0300F90B17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4B976D922557CCA00F90B17 /* GLITableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLITableViewController.h; sourceTree = "<group>"; };
+		C4B976DA22557CCA00F90B17 /* GLITableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLITableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +58,10 @@
 		C4B976C222557B0200F90B17 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				C4B976D922557CCA00F90B17 /* GLITableViewController.h */,
+				C4B976DA22557CCA00F90B17 /* GLITableViewController.m */,
 				C4B976C322557B0200F90B17 /* AppDelegate.h */,
 				C4B976C422557B0200F90B17 /* AppDelegate.m */,
-				C4B976C622557B0200F90B17 /* ViewController.h */,
-				C4B976C722557B0200F90B17 /* ViewController.m */,
 				C4B976C922557B0200F90B17 /* Main.storyboard */,
 				C4B976CC22557B0300F90B17 /* Assets.xcassets */,
 				C4B976CE22557B0300F90B17 /* LaunchScreen.storyboard */,
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4B976C822557B0200F90B17 /* ViewController.m in Sources */,
+				C4B976DB22557CCA00F90B17 /* GLITableViewController.m in Sources */,
 				C4B976D322557B0300F90B17 /* main.m in Sources */,
 				C4B976C522557B0200F90B17 /* AppDelegate.m in Sources */,
 			);
