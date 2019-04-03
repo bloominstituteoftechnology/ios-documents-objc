@@ -16,6 +16,7 @@
 		771937D02255465500A3912D /* NYCNewDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771937CF2255465500A3912D /* NYCNewDocumentViewController.m */; };
 		771937D42255480A00A3912D /* NSString+NYCWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 771937D32255480A00A3912D /* NSString+NYCWordCount.m */; };
 		771937D822554A0500A3912D /* NYCDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 771937D722554A0500A3912D /* NYCDocument.m */; };
+		771937DB22554D3B00A3912D /* NYCDocumentsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771937DA22554D3B00A3912D /* NYCDocumentsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		771937D32255480A00A3912D /* NSString+NYCWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+NYCWordCount.m"; sourceTree = "<group>"; };
 		771937D622554A0500A3912D /* NYCDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYCDocument.h; sourceTree = "<group>"; };
 		771937D722554A0500A3912D /* NYCDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCDocument.m; sourceTree = "<group>"; };
+		771937D922554D3B00A3912D /* NYCDocumentsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYCDocumentsController.h; sourceTree = "<group>"; };
+		771937DA22554D3B00A3912D /* NYCDocumentsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCDocumentsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +79,9 @@
 				771937C42255445B00A3912D /* main.m */,
 				771937D1225547E900A3912D /* View Controllers */,
 				771937D5225549ED00A3912D /* Categories */,
-				771937D622554A0500A3912D /* NYCDocument.h */,
-				771937D722554A0500A3912D /* NYCDocument.m */,
+				771937DC22554D4000A3912D /* Models */,
+				771937D922554D3B00A3912D /* NYCDocumentsController.h */,
+				771937DA22554D3B00A3912D /* NYCDocumentsController.m */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -100,6 +104,15 @@
 				771937D32255480A00A3912D /* NSString+NYCWordCount.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		771937DC22554D4000A3912D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				771937D622554A0500A3912D /* NYCDocument.h */,
+				771937D722554A0500A3912D /* NYCDocument.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +191,7 @@
 				771937CD2255464100A3912D /* NYCDocumentsTableViewController.m in Sources */,
 				771937B72255445B00A3912D /* AppDelegate.m in Sources */,
 				771937D02255465500A3912D /* NYCNewDocumentViewController.m in Sources */,
+				771937DB22554D3B00A3912D /* NYCDocumentsController.m in Sources */,
 				771937D42255480A00A3912D /* NSString+NYCWordCount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,9 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithTitle:(NSString *)title andText:(NSString *)text;
 
-@property (nonatomic, readonly) NSString *title;
-@property (nonatomic, readonly) NSString *text;
-@property (nonatomic, readonly) int wordCount;
+@property (nonatomic) NSString *title;
+@property (nonatomic) NSString *text;
+@property (nonatomic) int wordCount;
 
 @end
 
