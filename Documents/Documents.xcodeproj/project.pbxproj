@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		48294A81225548BF003362B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A80225548BF003362B1 /* AppDelegate.m */; };
-		48294A84225548BF003362B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A83225548BF003362B1 /* ViewController.m */; };
+		48294A84225548BF003362B1 /* FCCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A83225548BF003362B1 /* FCCDetailViewController.m */; };
 		48294A87225548BF003362B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48294A85225548BF003362B1 /* Main.storyboard */; };
 		48294A89225548C0003362B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48294A88225548C0003362B1 /* Assets.xcassets */; };
 		48294A8C225548C0003362B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48294A8A225548C0003362B1 /* LaunchScreen.storyboard */; };
 		48294A8F225548C0003362B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A8E225548C0003362B1 /* main.m */; };
+		48294A9822554C88003362B1 /* FCCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A9722554C88003362B1 /* FCCTableViewController.m */; };
+		48294A9C22554CED003362B1 /* FCCDocuments.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A9B22554CED003362B1 /* FCCDocuments.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48294A7C225548BF003362B1 /* Documents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Documents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48294A7F225548BF003362B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48294A80225548BF003362B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		48294A82225548BF003362B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		48294A83225548BF003362B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		48294A82225548BF003362B1 /* FCCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCDetailViewController.h; sourceTree = "<group>"; };
+		48294A83225548BF003362B1 /* FCCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCDetailViewController.m; sourceTree = "<group>"; };
 		48294A86225548BF003362B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48294A88225548C0003362B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48294A8B225548C0003362B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48294A8D225548C0003362B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48294A8E225548C0003362B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48294A9622554C88003362B1 /* FCCTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCTableViewController.h; sourceTree = "<group>"; };
+		48294A9722554C88003362B1 /* FCCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCTableViewController.m; sourceTree = "<group>"; };
+		48294A9A22554CED003362B1 /* FCCDocuments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCDocuments.h; sourceTree = "<group>"; };
+		48294A9B22554CED003362B1 /* FCCDocuments.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCDocuments.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,8 @@
 			children = (
 				48294A7F225548BF003362B1 /* AppDelegate.h */,
 				48294A80225548BF003362B1 /* AppDelegate.m */,
-				48294A82225548BF003362B1 /* ViewController.h */,
-				48294A83225548BF003362B1 /* ViewController.m */,
+				48294A9922554CD1003362B1 /* Model */,
+				48294A9522554ACD003362B1 /* View Controllers */,
 				48294A85225548BF003362B1 /* Main.storyboard */,
 				48294A88225548C0003362B1 /* Assets.xcassets */,
 				48294A8A225548C0003362B1 /* LaunchScreen.storyboard */,
@@ -69,6 +75,26 @@
 				48294A8E225548C0003362B1 /* main.m */,
 			);
 			path = Documents;
+			sourceTree = "<group>";
+		};
+		48294A9522554ACD003362B1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48294A82225548BF003362B1 /* FCCDetailViewController.h */,
+				48294A83225548BF003362B1 /* FCCDetailViewController.m */,
+				48294A9622554C88003362B1 /* FCCTableViewController.h */,
+				48294A9722554C88003362B1 /* FCCTableViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		48294A9922554CD1003362B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48294A9A22554CED003362B1 /* FCCDocuments.h */,
+				48294A9B22554CED003362B1 /* FCCDocuments.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48294A84225548BF003362B1 /* ViewController.m in Sources */,
+				48294A84225548BF003362B1 /* FCCDetailViewController.m in Sources */,
 				48294A8F225548C0003362B1 /* main.m in Sources */,
+				48294A9C22554CED003362B1 /* FCCDocuments.m in Sources */,
+				48294A9822554C88003362B1 /* FCCTableViewController.m in Sources */,
 				48294A81225548BF003362B1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

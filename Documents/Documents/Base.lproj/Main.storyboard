@@ -13,7 +13,7 @@
         <!--Documents-->
         <scene sceneID="3bw-aA-9n9">
             <objects>
-                <tableViewController id="KrR-EF-wKn" sceneMemberID="viewController">
+                <tableViewController id="KrR-EF-wKn" customClass="FCCTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Yda-02-dSu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="-1358" y="61"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FCCDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,8 +121,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="puD-nC-p2H">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="13y-VQ-AIg"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="13y-VQ-AIg">
+                            <connections>
+                                <action selector="save:" destination="BYZ-38-t0r" id="7ba-Nf-OVo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="notesTextView" destination="EoD-IG-4Qt" id="Ymn-al-dfl"/>
+                        <outlet property="titleTextField" destination="WG9-3n-n0P" id="aW1-NB-nrW"/>
+                        <outlet property="wordCountLabel" destination="u4q-re-Vem" id="fBP-mJ-iu2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -6,13 +6,16 @@
 //  Copyright © 2019 Frulwinn. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FCCDetailViewController.h"
 
-@interface ViewController ()
+@interface FCCDetailViewController ()
 
 @end
 
-@implementation ViewController
+@implementation FCCDetailViewController
+
+//outlets
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,4 +23,6 @@
 }
 
 
+- (IBAction)save:(id)sender {
+}
 @end
