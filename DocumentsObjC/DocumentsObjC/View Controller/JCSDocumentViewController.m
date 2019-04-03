@@ -7,6 +7,9 @@
 //
 
 #import "JCSDocumentViewController.h"
+#import "NSString+WordCount.h"
+#import "JCSDocument.h"
+#import "JCSDocumentController.h"
 
 @interface JCSDocumentViewController ()
 
@@ -17,6 +20,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _docContentsTextView.delegate = self;
+    [self updateViews];
+}
+
+- (void)textViewDidChange:(UITextView *)textView {
+    int wordyCount = [textView.text jcs_wordCount];
+    _wordCountLabel.text = [NSString stringWithFormat:@"%d words",wordyCount];
+}
+
+- (void)updateViews {
+    
+    if (_document) {
+        self.title = _document.title;
+        _docTitleTextField.text = _document.title;
+        _docContentsTextView.text = _document.contents;
+        _wordCountLabel.text = [NSString stringWithFormat:@"%d words",_document.wordCount];
+    } else {
+        self.title = @"New Document";
+    }
+    
+    
 }
 
 /*
@@ -30,5 +54,30 @@
 */
 
 - (IBAction)saveTapped:(UIBarButtonItem *)sender {
+    NSString *title = _docTitleTextField.text;
+    NSString *contents = _docContentsTextView.text;
+    
+   // NSString * str = @"Hi Hello How Are You ?";
+    NSArray * arr = [_wordCountLabel.text componentsSeparatedByString:@" "];
+    int wordCount = [arr[0] integerValue];
+    NSLog(@"%d", wordCount);
+    
+    if (_document) {
+        [_documentController updateADocument:_document title:title contents:contents wordCount:wordCount];
+        [self.navigationController popViewControllerAnimated:true];
+    } else {
+        JCSDocument *doc = [[JCSDocument alloc] initWithTitle:title contents:contents];
+        
+       // doc.title = title;
+        NSLog(@"Doc title: %@", doc.title);
+       // doc.contents = contents;
+        doc.wordCount = wordCount;
+        [_documentController addNewDocument:doc];
+        
+        NSLog(@"Documents: %@", _documentController.documents);
+        [self.navigationController popViewControllerAnimated:true];
+    }
 }
+
+
 @end

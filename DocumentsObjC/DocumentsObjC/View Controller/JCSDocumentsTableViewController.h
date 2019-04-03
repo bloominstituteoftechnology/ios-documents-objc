@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class JCSDocumentController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JCSDocumentsTableViewController : UITableViewController
 
-
+@property JCSDocumentController *documentController;
 
 // segues: DocumentDetail
 // segues: NewDocument

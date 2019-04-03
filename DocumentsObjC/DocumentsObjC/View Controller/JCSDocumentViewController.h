@@ -8,15 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+@class JCSDocument;
+@class JCSDocumentController;
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JCSDocumentViewController : UIViewController
+@interface JCSDocumentViewController : UIViewController<UITextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
 
 @property (weak, nonatomic) IBOutlet UITextField *docTitleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *docContentsTextView;
 - (IBAction)saveTapped:(UIBarButtonItem *)sender;
+
+@property JCSDocumentController *documentController;
+@property JCSDocument *document;
+
+-(void)updateViews;
+
 
 
 @end
