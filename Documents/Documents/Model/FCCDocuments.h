@@ -12,10 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FCCDocuments : NSObject
 
+-(instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText;
 
-//properties
-@property (nonatomic) NSString *
-
+@property (nonatomic) NSInteger wordCount;
+@property (nonatomic) NSString *title;
+@property (nonatomic) NSString *bodyText;
 
 @end
 

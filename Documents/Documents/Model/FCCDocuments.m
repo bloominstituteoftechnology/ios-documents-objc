@@ -10,6 +10,15 @@
 
 @implementation FCCDocuments
 
-
+- (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText
+{
+    self = [super init];
+    
+    if (self != nil) {
+        _title = title;
+        _bodyText = bodyText;
+    }
+    return self;
+}
 
 @end

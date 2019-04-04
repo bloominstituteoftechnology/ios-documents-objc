@@ -15,6 +15,7 @@
 		48294A8F225548C0003362B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A8E225548C0003362B1 /* main.m */; };
 		48294A9822554C88003362B1 /* FCCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A9722554C88003362B1 /* FCCTableViewController.m */; };
 		48294A9C22554CED003362B1 /* FCCDocuments.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A9B22554CED003362B1 /* FCCDocuments.m */; };
+		48294A9F22556AA7003362B1 /* NSString+FCCWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A9E22556AA7003362B1 /* NSString+FCCWordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		48294A9722554C88003362B1 /* FCCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCTableViewController.m; sourceTree = "<group>"; };
 		48294A9A22554CED003362B1 /* FCCDocuments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCDocuments.h; sourceTree = "<group>"; };
 		48294A9B22554CED003362B1 /* FCCDocuments.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCDocuments.m; sourceTree = "<group>"; };
+		48294A9D22556AA7003362B1 /* NSString+FCCWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FCCWordCount.h"; sourceTree = "<group>"; };
+		48294A9E22556AA7003362B1 /* NSString+FCCWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FCCWordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 			children = (
 				48294A7F225548BF003362B1 /* AppDelegate.h */,
 				48294A80225548BF003362B1 /* AppDelegate.m */,
+				48294A9D22556AA7003362B1 /* NSString+FCCWordCount.h */,
+				48294A9E22556AA7003362B1 /* NSString+FCCWordCount.m */,
 				48294A9922554CD1003362B1 /* Model */,
 				48294A9522554ACD003362B1 /* View Controllers */,
 				48294A85225548BF003362B1 /* Main.storyboard */,
@@ -172,6 +177,7 @@
 				48294A8F225548C0003362B1 /* main.m in Sources */,
 				48294A9C22554CED003362B1 /* FCCDocuments.m in Sources */,
 				48294A9822554C88003362B1 /* FCCTableViewController.m in Sources */,
+				48294A9F22556AA7003362B1 /* NSString+FCCWordCount.m in Sources */,
 				48294A81225548BF003362B1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
