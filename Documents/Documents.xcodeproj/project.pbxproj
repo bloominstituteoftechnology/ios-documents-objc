@@ -13,6 +13,7 @@
 		C4B976D022557B0300F90B17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B976CE22557B0300F90B17 /* LaunchScreen.storyboard */; };
 		C4B976D322557B0300F90B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B976D222557B0300F90B17 /* main.m */; };
 		C4B976DB22557CCA00F90B17 /* GLITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B976DA22557CCA00F90B17 /* GLITableViewController.m */; };
+		C4B976DE22559ABF00F90B17 /* GLIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B976DD22559ABF00F90B17 /* GLIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C4B976D222557B0300F90B17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4B976D922557CCA00F90B17 /* GLITableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLITableViewController.h; sourceTree = "<group>"; };
 		C4B976DA22557CCA00F90B17 /* GLITableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLITableViewController.m; sourceTree = "<group>"; };
+		C4B976DC22559ABF00F90B17 /* GLIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLIViewController.h; sourceTree = "<group>"; };
+		C4B976DD22559ABF00F90B17 /* GLIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				C4B976C322557B0200F90B17 /* AppDelegate.h */,
 				C4B976C422557B0200F90B17 /* AppDelegate.m */,
 				C4B976C922557B0200F90B17 /* Main.storyboard */,
+				C4B976DC22559ABF00F90B17 /* GLIViewController.h */,
+				C4B976DD22559ABF00F90B17 /* GLIViewController.m */,
 				C4B976CC22557B0300F90B17 /* Assets.xcassets */,
 				C4B976CE22557B0300F90B17 /* LaunchScreen.storyboard */,
 				C4B976D122557B0300F90B17 /* Info.plist */,
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B976DB22557CCA00F90B17 /* GLITableViewController.m in Sources */,
+				C4B976DE22559ABF00F90B17 /* GLIViewController.m in Sources */,
 				C4B976D322557B0300F90B17 /* main.m in Sources */,
 				C4B976C522557B0200F90B17 /* AppDelegate.m in Sources */,
 			);
