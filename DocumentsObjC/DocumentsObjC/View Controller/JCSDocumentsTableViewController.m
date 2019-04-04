@@ -96,10 +96,11 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"DocumentDetail"]) {
         JCSDocumentViewController *cellDetailController = [segue destinationViewController];
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        if (indexPath) {
-            cellDetailController.document = [self.documentController.documents objectAtIndex:indexPath];
-        }
+        NSInteger *index = [[self.tableView indexPathForSelectedRow] row];
+        
+        cellDetailController.document = [self.documentController.documents objectAtIndex:index];
+           // NSLog(@"Document at indePath: %d", index);
+        
         cellDetailController.documentController = self.documentController;
     
     }

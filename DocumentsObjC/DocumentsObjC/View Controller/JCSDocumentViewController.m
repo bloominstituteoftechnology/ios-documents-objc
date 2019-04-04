@@ -30,7 +30,7 @@
 }
 
 - (void)updateViews {
-    
+    NSLog(@"Document in detail view: %@", _document);
     if (_document) {
         self.title = _document.title;
         _docTitleTextField.text = _document.title;
