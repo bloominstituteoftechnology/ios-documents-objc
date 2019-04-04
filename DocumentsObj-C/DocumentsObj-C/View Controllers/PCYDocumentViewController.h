@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class PCYDocumentController, PCYDocument;
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PCYDocumentViewController : UIViewController
+@interface PCYDocumentViewController : UIViewController <UITextViewDelegate>
+
+@property (nonatomic) PCYDocumentController *documentController;
+@property (nonatomic) PCYDocument *document;
+
+
 
 @end
 
