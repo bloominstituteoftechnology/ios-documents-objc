@@ -16,6 +16,7 @@
 		4B26DADA2255618500851C94 /* PCYDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B26DAD92255618500851C94 /* PCYDocumentViewController.m */; };
 		4B26DADE2255653B00851C94 /* NSString+PCYWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B26DADD2255653B00851C94 /* NSString+PCYWordCount.m */; };
 		4B26DAE32255677800851C94 /* PCYDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B26DAE22255677800851C94 /* PCYDocument.m */; };
+		4B26DAE72255DD8700851C94 /* PCYDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B26DAE62255DD8700851C94 /* PCYDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		4B26DADD2255653B00851C94 /* NSString+PCYWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PCYWordCount.m"; sourceTree = "<group>"; };
 		4B26DAE12255677800851C94 /* PCYDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCYDocument.h; sourceTree = "<group>"; };
 		4B26DAE22255677800851C94 /* PCYDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCYDocument.m; sourceTree = "<group>"; };
+		4B26DAE52255DD8700851C94 /* PCYDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCYDocumentController.h; sourceTree = "<group>"; };
+		4B26DAE62255DD8700851C94 /* PCYDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCYDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +72,10 @@
 			children = (
 				4B26DABF22555F0200851C94 /* AppDelegate.h */,
 				4B26DAC022555F0200851C94 /* AppDelegate.m */,
-				4B26DAE42255677F00851C94 /* Model */,
-				4B26DAE0225566B700851C94 /* Storyboards */,
 				4B26DADF225566A000851C94 /* Category */,
+				4B26DAE42255677F00851C94 /* Model */,
+				4B26DAE82255DD9300851C94 /* Model Controller */,
+				4B26DAE0225566B700851C94 /* Storyboards */,
 				4B26DADB2255619200851C94 /* View Controllers */,
 				4B26DAC822555F0400851C94 /* Assets.xcassets */,
 				4B26DACD22555F0400851C94 /* Info.plist */,
@@ -116,6 +120,15 @@
 				4B26DAE22255677800851C94 /* PCYDocument.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4B26DAE82255DD9300851C94 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B26DAE52255DD8700851C94 /* PCYDocumentController.h */,
+				4B26DAE62255DD8700851C94 /* PCYDocumentController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B26DADE2255653B00851C94 /* NSString+PCYWordCount.m in Sources */,
+				4B26DAE72255DD8700851C94 /* PCYDocumentController.m in Sources */,
 				4B26DAE32255677800851C94 /* PCYDocument.m in Sources */,
 				4B26DADA2255618500851C94 /* PCYDocumentViewController.m in Sources */,
 				4B26DACF22555F0400851C94 /* main.m in Sources */,

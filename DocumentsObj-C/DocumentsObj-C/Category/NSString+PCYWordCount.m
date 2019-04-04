@@ -12,6 +12,7 @@
 
 - (int)wordCount {
     NSArray *words = [self componentsSeparatedByString:@" "];
+    // return amount of words in the string
     return words.count;
 }
 

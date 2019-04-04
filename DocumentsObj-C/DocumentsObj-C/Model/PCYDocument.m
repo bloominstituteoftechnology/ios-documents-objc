@@ -10,7 +10,7 @@
 #import "NSString+PCYWordCount.h"
 
 @implementation PCYDocument
-    
+    // Create a custom property accessor for the word count property
 - (int)wordCount {
     return [_text wordCount];
 }
@@ -20,7 +20,7 @@
         self.title = title;
         self.text = text;
     }
-    return self;
+    return self;  
 }
 
 
