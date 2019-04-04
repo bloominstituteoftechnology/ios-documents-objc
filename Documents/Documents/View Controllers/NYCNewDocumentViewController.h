@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NYCDocument.h"
+#import "NYCDocumentsController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,9 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (IBAction)saveButtonTapped:(UIBarButtonItem *)sender;
 
+- (void)updateViews;
+
 @property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
 @property (weak, nonatomic) IBOutlet UITextField *documentTitleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *documentTextView;
+
+@property (nonatomic) NYCDocument *document;
+
+@property (nonatomic) NYCDocumentsController *documentController;
 
 @end
 

@@ -21,7 +21,7 @@
 {
     self = [super init];
     if (self) {
-        _internalDocuments = [@[] mutableCopy];
+        _internalDocuments = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -40,8 +40,15 @@
     document.wordCount = [text nyc_wordCount];
 }
 
+@synthesize documents = _documents;
+
 - (void)setDocuments:(NSArray *)documents {
     _documents = [self internalDocuments];
 }
+
+- (NSArray *)documents {
+    return [self internalDocuments];
+}
+
 
 @end

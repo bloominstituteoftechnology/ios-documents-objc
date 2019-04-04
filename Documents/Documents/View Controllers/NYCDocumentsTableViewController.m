@@ -7,6 +7,7 @@
 //
 
 #import "NYCDocumentsTableViewController.h"
+#import "NYCNewDocumentViewController.h"
 
 @interface NYCDocumentsTableViewController ()
 
@@ -14,80 +15,74 @@
 
 @implementation NYCDocumentsTableViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _documentsController = [[NYCDocumentsController alloc] init];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _documentsController = [[NYCDocumentsController alloc] init];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [[self tableView] reloadData];
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [[[self documentsController] documents] count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
+    NYCDocument *document = [[self documentsController] documents][indexPath.row];
     
-    // Configure the cell...
+    NSString *wordString = [document wordCount] == 1 ? @"word" : @"words";
+    
+    cell.textLabel.text = [document title];
+    cell.detailTextLabel.text = [[NSString alloc] initWithFormat:@"%i %@", [document wordCount], wordString];
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
+        NYCDocument *document = [[self documentsController] documents][indexPath.row];
+        [[self documentsController] removeDocument:document];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ( [[segue identifier] isEqualToString:@"Edit"] ) {
+      NYCNewDocumentViewController *editVC = [segue destinationViewController];
+      NSIndexPath *index = [[self tableView] indexPathForSelectedRow];
+      editVC.documentController = [self documentsController];
+      editVC.document = [[self documentsController] documents][index.row];
+    }
+    
+    if ( [[segue identifier] isEqualToString:@"Add"] ) {
+        NYCNewDocumentViewController *editVC = [segue destinationViewController];
+        editVC.documentController = [self documentsController];
+    }
 }
-*/
 
 @end

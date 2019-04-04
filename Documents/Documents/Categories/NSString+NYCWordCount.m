@@ -11,7 +11,19 @@
 @implementation NSString (NYCWordCount)
 
 - (int)nyc_wordCount {
-    return [[self componentsSeparatedByCharactersInSet:@" "] count];
+    
+    NSCharacterSet *seperators = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    
+    NSArray *words = [self componentsSeparatedByCharactersInSet:seperators];
+    
+    NSMutableArray *justWords = [[NSMutableArray alloc] init];
+    
+    for (NSString *word in words) {
+        NSString *justWord = [word stringByTrimmingCharactersInSet:seperators];
+        [justWords addObject:justWord];
+    }
+    
+    return (int)[justWords count];
 }
 
 @end

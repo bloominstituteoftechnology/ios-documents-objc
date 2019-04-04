@@ -11,8 +11,6 @@
 
 @interface NYCDocument ()
 
-@property (nonatomic) int internalWordCount;
-
 @end
 
 @implementation NYCDocument
@@ -26,12 +24,14 @@
     return self;
 }
 
-- (void)setInternalWordCount:(int)internalWordCount {
-    _internalWordCount = [[self text] nyc_wordCount];
-}
+@synthesize wordCount = _wordCount;
 
 - (int)wordCount {
-    return [self internalWordCount];
+    return [[self text] nyc_wordCount];
+}
+
+- (void)setWordCount:(int)wordCount {
+    _wordCount = wordCount;
 }
 
 @end

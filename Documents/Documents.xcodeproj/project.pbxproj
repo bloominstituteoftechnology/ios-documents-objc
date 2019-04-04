@@ -80,8 +80,7 @@
 				771937D1225547E900A3912D /* View Controllers */,
 				771937D5225549ED00A3912D /* Categories */,
 				771937DC22554D4000A3912D /* Models */,
-				771937D922554D3B00A3912D /* NYCDocumentsController.h */,
-				771937DA22554D3B00A3912D /* NYCDocumentsController.m */,
+				771937DD2255505000A3912D /* Model Controllers */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -113,6 +112,15 @@
 				771937D722554A0500A3912D /* NYCDocument.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		771937DD2255505000A3912D /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				771937D922554D3B00A3912D /* NYCDocumentsController.h */,
+				771937DA22554D3B00A3912D /* NYCDocumentsController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
