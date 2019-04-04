@@ -16,6 +16,7 @@
 		48294A9822554C88003362B1 /* FCCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A9722554C88003362B1 /* FCCTableViewController.m */; };
 		48294A9C22554CED003362B1 /* FCCDocuments.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A9B22554CED003362B1 /* FCCDocuments.m */; };
 		48294A9F22556AA7003362B1 /* NSString+FCCWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294A9E22556AA7003362B1 /* NSString+FCCWordCount.m */; };
+		48294AA32256317C003362B1 /* FCCDocumentsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48294AA22256317C003362B1 /* FCCDocumentsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		48294A9B22554CED003362B1 /* FCCDocuments.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCDocuments.m; sourceTree = "<group>"; };
 		48294A9D22556AA7003362B1 /* NSString+FCCWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FCCWordCount.h"; sourceTree = "<group>"; };
 		48294A9E22556AA7003362B1 /* NSString+FCCWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FCCWordCount.m"; sourceTree = "<group>"; };
+		48294AA12256317C003362B1 /* FCCDocumentsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCDocumentsController.h; sourceTree = "<group>"; };
+		48294AA22256317C003362B1 /* FCCDocumentsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCDocumentsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 				48294A80225548BF003362B1 /* AppDelegate.m */,
 				48294A9D22556AA7003362B1 /* NSString+FCCWordCount.h */,
 				48294A9E22556AA7003362B1 /* NSString+FCCWordCount.m */,
+				48294AA022563141003362B1 /* Model Controllers */,
 				48294A9922554CD1003362B1 /* Model */,
 				48294A9522554ACD003362B1 /* View Controllers */,
 				48294A85225548BF003362B1 /* Main.storyboard */,
@@ -100,6 +104,15 @@
 				48294A9B22554CED003362B1 /* FCCDocuments.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		48294AA022563141003362B1 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48294AA12256317C003362B1 /* FCCDocumentsController.h */,
+				48294AA22256317C003362B1 /* FCCDocumentsController.m */,
+			);
+			name = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +191,7 @@
 				48294A9C22554CED003362B1 /* FCCDocuments.m in Sources */,
 				48294A9822554C88003362B1 /* FCCTableViewController.m in Sources */,
 				48294A9F22556AA7003362B1 /* NSString+FCCWordCount.m in Sources */,
+				48294AA32256317C003362B1 /* FCCDocumentsController.m in Sources */,
 				48294A81225548BF003362B1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
