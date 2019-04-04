@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class FCCDocumentsController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FCCTableViewController : UITableViewController
+
+@property (nonatomic) FCCDocumentsController *documentController;
 
 @end
 

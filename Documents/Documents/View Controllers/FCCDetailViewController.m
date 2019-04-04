@@ -7,6 +7,9 @@
 //
 
 #import "FCCDetailViewController.h"
+#import "FCCDocumentsController.h"
+#import "FCCDocuments.h"
+#import "NSString+FCCWordCount.h"
 
 @interface FCCDetailViewController ()
 

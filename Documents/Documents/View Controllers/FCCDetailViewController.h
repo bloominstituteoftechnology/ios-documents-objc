@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class FCCDocuments;
+@class FCCDocumentsController;
+
 @interface FCCDetailViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;

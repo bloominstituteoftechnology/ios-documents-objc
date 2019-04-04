@@ -7,6 +7,7 @@
 //
 
 #import "FCCDocuments.h"
+#import "NSString+FCCWordCount.h"
 
 @implementation FCCDocuments
 
