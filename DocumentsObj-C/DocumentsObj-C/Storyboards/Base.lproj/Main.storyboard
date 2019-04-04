@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Documents Table View Controller-->
+        <!--Documents-->
         <scene sceneID="ucy-9B-QZe">
             <objects>
                 <tableViewController id="3Mu-56-BUn" customClass="PCYDocumentsTableViewController" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                             <outlet property="delegate" destination="3Mu-56-BUn" id="dI3-Ew-uaF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AwA-Gn-iCS">
+                    <navigationItem key="navigationItem" title="Documents" id="AwA-Gn-iCS">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4HN-QO-flm">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" identifier="AddNewDocument" id="E2J-Tu-dt8"/>
@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="184" y="96"/>
         </scene>
-        <!--Title-->
+        <!--New Document-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PCYDocumentViewController" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVT-EJ-Uje">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVT-EJ-Uje">
                                 <rect key="frame" x="20" y="140" width="374" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -97,7 +97,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="Qli-8s-yre">
+                    <navigationItem key="navigationItem" title="New Document" id="Qli-8s-yre">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="uJl-JB-eFC">
                             <connections>
                                 <action selector="save:" destination="BYZ-38-t0r" id="lDE-EI-qD5"/>

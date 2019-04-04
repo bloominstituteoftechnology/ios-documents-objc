@@ -51,7 +51,7 @@
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
-    self.wordCountLabel.text = [NSString stringWithFormat:@"%i", [textView.text wordCount]];
+    self.wordCountLabel.text = [NSMutableString stringWithFormat:@"%i", [textView.text wordCount]];
 }
 
 -(void)updateViews {
