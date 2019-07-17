@@ -11,6 +11,7 @@
 		EF149B4722DFD0BF00385572 /* HHDetailDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF149B4622DFD0BF00385572 /* HHDetailDocumentViewController.m */; };
 		EF149B4A22DFD1FC00385572 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = EF149B4922DFD1FC00385572 /* NSString+WordCount.m */; };
 		EF149B4D22DFD66300385572 /* HHDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EF149B4C22DFD66300385572 /* HHDocument.m */; };
+		EF149B5022DFD8AB00385572 /* HHDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF149B4F22DFD8AB00385572 /* HHDocumentController.m */; };
 		EFF5A28C22DFCAB1003FDEBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF5A28B22DFCAB1003FDEBF /* AppDelegate.m */; };
 		EFF5A29222DFCAB1003FDEBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF5A29022DFCAB1003FDEBF /* Main.storyboard */; };
 		EFF5A29422DFCAB2003FDEBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF5A29322DFCAB2003FDEBF /* Assets.xcassets */; };
@@ -27,6 +28,8 @@
 		EF149B4922DFD1FC00385572 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 		EF149B4B22DFD66300385572 /* HHDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDocument.h; sourceTree = "<group>"; };
 		EF149B4C22DFD66300385572 /* HHDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDocument.m; sourceTree = "<group>"; };
+		EF149B4E22DFD8AB00385572 /* HHDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDocumentController.h; sourceTree = "<group>"; };
+		EF149B4F22DFD8AB00385572 /* HHDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDocumentController.m; sourceTree = "<group>"; };
 		EFF5A28722DFCAB1003FDEBF /* Documents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Documents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF5A28A22DFCAB1003FDEBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFF5A28B22DFCAB1003FDEBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 		EF149B4022DFCE4B00385572 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				EF149B4E22DFD8AB00385572 /* HHDocumentController.h */,
+				EF149B4F22DFD8AB00385572 /* HHDocumentController.m */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF149B4A22DFD1FC00385572 /* NSString+WordCount.m in Sources */,
+				EF149B5022DFD8AB00385572 /* HHDocumentController.m in Sources */,
 				EF149B4722DFD0BF00385572 /* HHDetailDocumentViewController.m in Sources */,
 				EFF5A29A22DFCAB2003FDEBF /* main.m in Sources */,
 				EFF5A28C22DFCAB1003FDEBF /* AppDelegate.m in Sources */,
