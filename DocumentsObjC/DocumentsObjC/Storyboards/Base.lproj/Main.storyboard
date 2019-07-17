@@ -13,18 +13,34 @@
         <!--Documents-->
         <scene sceneID="Nzc-qs-HWx">
             <objects>
-                <tableViewController storyboardIdentifier="DocumentListController" id="90S-Mn-GiV" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DocumentListController" id="90S-Mn-GiV" customClass="SLRDocumentsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FCs-Fk-vqa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DocumentListCell" id="qH2-2Y-VHY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DocumentListCell" textLabel="4wk-Z3-eQX" detailTextLabel="yGF-hL-NgJ" style="IBUITableViewCellStyleSubtitle" id="qH2-2Y-VHY">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qH2-2Y-VHY" id="SMo-HP-S57">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4wk-Z3-eQX">
+                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yGF-hL-NgJ">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -36,7 +52,7 @@
                     <navigationItem key="navigationItem" title="Documents" id="YIR-8S-mND">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="c3M-CF-Lmh">
                             <connections>
-                                <segue destination="fE6-jr-2rm" kind="show" id="fNh-tE-nC3"/>
+                                <segue destination="fE6-jr-2rm" kind="show" identifier="ShowDetailView" id="fNh-tE-nC3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -48,40 +64,57 @@
         <!--New Document-->
         <scene sceneID="7l9-Tc-cuc">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="fE6-jr-2rm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="fE6-jr-2rm" customClass="SLRDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wbH-Kw-nzE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSr-MO-cp1">
-                                <rect key="frame" x="172" y="175" width="71" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ipr-2b-iiH">
-                                <rect key="frame" x="38" y="240" width="341" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NLL-K9-dXk">
-                                <rect key="frame" x="38" y="293" width="341" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VpA-Rv-era">
+                                <rect key="frame" x="16" y="175" width="382" height="671"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSr-MO-cp1">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ipr-2b-iiH">
+                                        <rect key="frame" x="0.0" y="44" width="382" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NLL-K9-dXk">
+                                        <rect key="frame" x="0.0" y="82" width="382" height="589"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QvK-17-Tzw" firstAttribute="bottom" secondItem="VpA-Rv-era" secondAttribute="bottom" constant="16" id="6zq-Qf-qSG"/>
+                            <constraint firstItem="VpA-Rv-era" firstAttribute="top" secondItem="QvK-17-Tzw" secondAttribute="top" constant="35" id="Mub-EN-xdD"/>
+                            <constraint firstItem="QvK-17-Tzw" firstAttribute="trailing" secondItem="VpA-Rv-era" secondAttribute="trailing" constant="16" id="S0E-jG-bj0"/>
+                            <constraint firstItem="VpA-Rv-era" firstAttribute="leading" secondItem="QvK-17-Tzw" secondAttribute="leading" constant="16" id="dlD-gg-PrH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QvK-17-Tzw"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Document" id="mqv-4Z-VOl">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="B1M-uq-iF3"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="B1M-uq-iF3">
+                            <connections>
+                                <action selector="detailSaveButtonTapped:" destination="fE6-jr-2rm" id="gIq-9D-Hb5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="documentTitleTextField" destination="ipr-2b-iiH" id="nHT-bK-BMW"/>
+                        <outlet property="wordCountLabel" destination="jSr-MO-cp1" id="CRn-DH-N6h"/>
+                        <outlet property="wordsTextField" destination="NLL-K9-dXk" id="ZYi-fQ-8Va"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zll-bt-6OO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -36,7 +36,7 @@
     return 0;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
@@ -44,7 +44,7 @@
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

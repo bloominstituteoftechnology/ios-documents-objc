@@ -13,8 +13,9 @@
 		37CE363D22DFC55100C983FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CE363B22DFC55100C983FA /* LaunchScreen.storyboard */; };
 		37CE364022DFC55100C983FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE363F22DFC55100C983FA /* main.m */; };
 		37CE364E22DFC8A000C983FA /* SLRDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE364D22DFC8A000C983FA /* SLRDocumentsTableViewController.m */; };
-		37CE365122DFC8F500C983FA /* SLRDocumentListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE365022DFC8F500C983FA /* SLRDocumentListCell.m */; };
 		37CE365422DFC98400C983FA /* SLRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE365322DFC98400C983FA /* SLRDetailViewController.m */; };
+		37CE365722DFD38300C983FA /* SLRDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE365622DFD38300C983FA /* SLRDocument.m */; };
+		37CE366122DFD68800C983FA /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE366022DFD68800C983FA /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +29,12 @@
 		37CE363F22DFC55100C983FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37CE364C22DFC8A000C983FA /* SLRDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLRDocumentsTableViewController.h; sourceTree = "<group>"; };
 		37CE364D22DFC8A000C983FA /* SLRDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLRDocumentsTableViewController.m; sourceTree = "<group>"; };
-		37CE364F22DFC8F500C983FA /* SLRDocumentListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLRDocumentListCell.h; sourceTree = "<group>"; };
-		37CE365022DFC8F500C983FA /* SLRDocumentListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLRDocumentListCell.m; sourceTree = "<group>"; };
 		37CE365222DFC98400C983FA /* SLRDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLRDetailViewController.h; sourceTree = "<group>"; };
 		37CE365322DFC98400C983FA /* SLRDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLRDetailViewController.m; sourceTree = "<group>"; };
+		37CE365522DFD38300C983FA /* SLRDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLRDocument.h; sourceTree = "<group>"; };
+		37CE365622DFD38300C983FA /* SLRDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLRDocument.m; sourceTree = "<group>"; };
+		37CE365F22DFD68800C983FA /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		37CE366022DFD68800C983FA /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +67,9 @@
 		37CE362F22DFC54F00C983FA /* DocumentsObjC */ = {
 			isa = PBXGroup;
 			children = (
-				37CE364A22DFC6F000C983FA /* Model */,
 				37CE364622DFC56600C983FA /* Startup */,
+				37CE365822DFD5D300C983FA /* Categories */,
+				37CE364A22DFC6F000C983FA /* Model */,
 				37CE364922DFC6A900C983FA /* View Controllers */,
 				37CE364722DFC59D00C983FA /* Storyboards */,
 				37CE364822DFC5AD00C983FA /* Resources */,
@@ -106,8 +110,6 @@
 			children = (
 				37CE364C22DFC8A000C983FA /* SLRDocumentsTableViewController.h */,
 				37CE364D22DFC8A000C983FA /* SLRDocumentsTableViewController.m */,
-				37CE364F22DFC8F500C983FA /* SLRDocumentListCell.h */,
-				37CE365022DFC8F500C983FA /* SLRDocumentListCell.m */,
 				37CE365222DFC98400C983FA /* SLRDetailViewController.h */,
 				37CE365322DFC98400C983FA /* SLRDetailViewController.m */,
 			);
@@ -117,6 +119,8 @@
 		37CE364A22DFC6F000C983FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				37CE365522DFD38300C983FA /* SLRDocument.h */,
+				37CE365622DFD38300C983FA /* SLRDocument.m */,
 				37CE364B22DFC70700C983FA /* Model Controller */,
 			);
 			path = Model;
@@ -127,6 +131,15 @@
 			children = (
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		37CE365822DFD5D300C983FA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				37CE365F22DFD68800C983FA /* NSString+WordCount.h */,
+				37CE366022DFD68800C983FA /* NSString+WordCount.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				37CE365422DFC98400C983FA /* SLRDetailViewController.m in Sources */,
-				37CE365122DFC8F500C983FA /* SLRDocumentListCell.m in Sources */,
 				37CE364022DFC55100C983FA /* main.m in Sources */,
+				37CE365722DFD38300C983FA /* SLRDocument.m in Sources */,
+				37CE366122DFD68800C983FA /* NSString+WordCount.m in Sources */,
 				37CE363222DFC55000C983FA /* AppDelegate.m in Sources */,
 				37CE364E22DFC8A000C983FA /* SLRDocumentsTableViewController.m in Sources */,
 			);

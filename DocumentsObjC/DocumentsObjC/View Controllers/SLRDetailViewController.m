@@ -10,13 +10,23 @@
 
 @interface SLRDetailViewController ()
 
+#pragma mark - Outlets
+@property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
+@property (weak, nonatomic) IBOutlet UITextField *documentTitleTextField;
+@property (weak, nonatomic) IBOutlet UITextView *wordsTextField;
+
 @end
 
 @implementation SLRDetailViewController
 
+#pragma mark - View states
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+#pragma mark - Actions
+- (IBAction)detailSaveButtonTapped:(id)sender {
 }
 
 /*
@@ -28,5 +38,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end
