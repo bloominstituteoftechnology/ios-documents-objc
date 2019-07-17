@@ -10,7 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class KRCDocumentController;
+@class KRCDocument;
+
 @interface KRCDocumentTableViewController : UITableViewController
+
+@property (nonatomic) KRCDocumentController *documentController;
 
 @end
 

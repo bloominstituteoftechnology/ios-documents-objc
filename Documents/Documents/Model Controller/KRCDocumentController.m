@@ -44,6 +44,10 @@
     [_internalDocuments removeObject:document];
 }
 
+- (NSInteger)getCount {
+    return [_internalDocuments count];
+}
+
 #pragma mark Test data - Remove later
 - (void)addTestData {
     

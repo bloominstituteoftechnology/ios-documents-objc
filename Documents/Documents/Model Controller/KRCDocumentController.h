@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateDocument:(KRCDocument *)document atIndex:(NSInteger)index;
 - (void)removeDocument:(KRCDocument *)document;
 
+- (NSInteger)getCount;
+
 @end
 
 NS_ASSUME_NONNULL_END
