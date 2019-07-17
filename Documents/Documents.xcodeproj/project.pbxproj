@@ -14,6 +14,8 @@
 		3D34960222DF8E0300953A4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34960122DF8E0300953A4D /* main.m */; };
 		3D34961222DF90F200953A4D /* MGBDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34961122DF90F200953A4D /* MGBDocumentDetailViewController.m */; };
 		3D34961522DF90FF00953A4D /* MGBDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34961422DF90FF00953A4D /* MGBDocumentsTableViewController.m */; };
+		3D34961922DF9CB800953A4D /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34961822DF9CB800953A4D /* NSString+WordCount.m */; };
+		3D34961D22DF9FE400953A4D /* MGBDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34961C22DF9FE400953A4D /* MGBDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		3D34961122DF90F200953A4D /* MGBDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGBDocumentDetailViewController.m; sourceTree = "<group>"; };
 		3D34961322DF90FF00953A4D /* MGBDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGBDocumentsTableViewController.h; sourceTree = "<group>"; };
 		3D34961422DF90FF00953A4D /* MGBDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGBDocumentsTableViewController.m; sourceTree = "<group>"; };
+		3D34961722DF9CB800953A4D /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		3D34961822DF9CB800953A4D /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		3D34961B22DF9FE400953A4D /* MGBDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGBDocument.h; sourceTree = "<group>"; };
+		3D34961C22DF9FE400953A4D /* MGBDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGBDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,8 @@
 		3D3495F122DF8E0100953A4D /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				3D34961E22DF9FE800953A4D /* Model */,
+				3D34961A22DF9CC300953A4D /* Helpers */,
 				3D34961622DF910600953A4D /* View Controllers */,
 				3D34960E22DF90C600953A4D /* Storyboards */,
 				3D34960F22DF90D900953A4D /* Resources */,
@@ -98,6 +106,24 @@
 				3D34961122DF90F200953A4D /* MGBDocumentDetailViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3D34961A22DF9CC300953A4D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D34961722DF9CB800953A4D /* NSString+WordCount.h */,
+				3D34961822DF9CB800953A4D /* NSString+WordCount.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3D34961E22DF9FE800953A4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D34961B22DF9FE400953A4D /* MGBDocument.h */,
+				3D34961C22DF9FE400953A4D /* MGBDocument.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D34961922DF9CB800953A4D /* NSString+WordCount.m in Sources */,
+				3D34961D22DF9FE400953A4D /* MGBDocument.m in Sources */,
 				3D34960222DF8E0300953A4D /* main.m in Sources */,
 				3D34961522DF90FF00953A4D /* MGBDocumentsTableViewController.m in Sources */,
 				3D34961222DF90F200953A4D /* MGBDocumentDetailViewController.m in Sources */,
