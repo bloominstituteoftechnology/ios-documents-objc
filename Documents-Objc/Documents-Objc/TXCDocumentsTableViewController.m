@@ -7,6 +7,9 @@
 //
 
 #import "TXCDocumentsTableViewController.h"
+#import "TXCDocument.h"
+#import "TXCDocumentController.h"
+#import "TXCDocumentDetailViewController.h"
 
 @interface TXCDocumentsTableViewController ()
 
@@ -17,34 +20,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (TXCDocumentController *)documentController {
+    if (_documentController ==  nil) {
+        _documentController = [[TXCDocumentController alloc] init];
+    }
+    return _documentController;
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.documentController.documents.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    TXCDocument *document = self.documentController.documents[indexPath.row];
+    cell.textLabel.text = document.title;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%li", (long)document.wordCount];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

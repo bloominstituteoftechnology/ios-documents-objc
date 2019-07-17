@@ -16,6 +16,7 @@
 		42F9EB0422DFBA5D004AFC97 /* TXCDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F9EB0322DFBA5D004AFC97 /* TXCDocumentDetailViewController.m */; };
 		42F9EB0722DFBCB5004AFC97 /* NSString+TXCWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F9EB0622DFBCB5004AFC97 /* NSString+TXCWordCount.m */; };
 		42F9EB0A22DFBFF3004AFC97 /* TXCDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F9EB0922DFBFF3004AFC97 /* TXCDocument.m */; };
+		42F9EB0D22DFC96F004AFC97 /* TXCDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F9EB0C22DFC96F004AFC97 /* TXCDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		42F9EB0622DFBCB5004AFC97 /* NSString+TXCWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TXCWordCount.m"; sourceTree = "<group>"; };
 		42F9EB0822DFBFF3004AFC97 /* TXCDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXCDocument.h; sourceTree = "<group>"; };
 		42F9EB0922DFBFF3004AFC97 /* TXCDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXCDocument.m; sourceTree = "<group>"; };
+		42F9EB0B22DFC96F004AFC97 /* TXCDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXCDocumentController.h; sourceTree = "<group>"; };
+		42F9EB0C22DFC96F004AFC97 /* TXCDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXCDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				42F9EB0622DFBCB5004AFC97 /* NSString+TXCWordCount.m */,
 				42F9EB0822DFBFF3004AFC97 /* TXCDocument.h */,
 				42F9EB0922DFBFF3004AFC97 /* TXCDocument.m */,
+				42F9EB0B22DFC96F004AFC97 /* TXCDocumentController.h */,
+				42F9EB0C22DFC96F004AFC97 /* TXCDocumentController.m */,
 				42F9EAEF22DFB8D7004AFC97 /* Main.storyboard */,
 				42F9EAF222DFB8D8004AFC97 /* Assets.xcassets */,
 				42F9EAF422DFB8D8004AFC97 /* LaunchScreen.storyboard */,
@@ -159,6 +164,7 @@
 			files = (
 				42F9EB0122DFB96A004AFC97 /* TXCDocumentsTableViewController.m in Sources */,
 				42F9EAF922DFB8D8004AFC97 /* main.m in Sources */,
+				42F9EB0D22DFC96F004AFC97 /* TXCDocumentController.m in Sources */,
 				42F9EB0722DFBCB5004AFC97 /* NSString+TXCWordCount.m in Sources */,
 				42F9EB0422DFBA5D004AFC97 /* TXCDocumentDetailViewController.m in Sources */,
 				42F9EB0A22DFBFF3004AFC97 /* TXCDocument.m in Sources */,
