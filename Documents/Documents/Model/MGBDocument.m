@@ -10,4 +10,14 @@
 
 @implementation MGBDocument
 
+- (instancetype)initWithTitle:(NSString *)title
+                         text:(NSString *)text {
+    self = [super init];
+    if(self != nil) {
+        _title = title;
+        _text = text;
+    }
+    return self;
+}
+
 @end

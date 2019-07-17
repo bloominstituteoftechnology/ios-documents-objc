@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *text;
 @property (nonatomic) int wordCount;
 
+- (instancetype)initWithTitle:(NSString *)title
+                     text:(NSString *)text;
+
 @end
 
 NS_ASSUME_NONNULL_END
