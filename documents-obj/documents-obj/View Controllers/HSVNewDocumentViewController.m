@@ -7,6 +7,7 @@
 //
 
 #import "HSVNewDocumentViewController.h"
+#import "../NSString+hsvWordCount.h"
 
 @interface HSVNewDocumentViewController ()
 
@@ -22,7 +23,8 @@
     [super viewDidLoad];
 	//self.documentTextView.delegate = self;
 	
-    // Do any additional setup after loading the view.
+	NSString *str = @"count this";
+	NSLog(@"%@", [str hsv_wordCount]);
 }
 
 /*
