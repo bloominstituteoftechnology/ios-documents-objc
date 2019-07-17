@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MGBDocumentsTableViewController.h
 //  Documents
 //
 //  Created by Mitchell Budge on 7/17/19.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface MGBDocumentsTableViewController : UITableViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
