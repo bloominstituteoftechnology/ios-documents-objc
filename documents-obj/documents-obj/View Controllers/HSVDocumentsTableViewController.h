@@ -1,5 +1,5 @@
 //
-//  NewDocumentViewController.h
+//  HSVDocumentsTableViewController.h
 //  documents-obj
 //
 //  Created by Hector Steven on 7/17/19.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NewDocumentViewController : UIViewController
+@interface HSVDocumentsTableViewController : UITableViewController
 
 @end
 

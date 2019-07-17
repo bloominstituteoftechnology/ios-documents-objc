@@ -12,8 +12,8 @@
 		E894091322DFC5230081062E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E894091222DFC5230081062E /* Assets.xcassets */; };
 		E894091622DFC5240081062E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E894091422DFC5240081062E /* LaunchScreen.storyboard */; };
 		E894091922DFC5240081062E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E894091822DFC5240081062E /* main.m */; };
-		E894092122DFC8160081062E /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E894092022DFC8160081062E /* DocumentsTableViewController.m */; };
-		E894092522DFC8BD0081062E /* NewDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E894092422DFC8BD0081062E /* NewDocumentViewController.m */; };
+		E894092822DFCAEC0081062E /* HSVNewDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E894092722DFCAEC0081062E /* HSVNewDocumentViewController.m */; };
+		E894092B22DFCB070081062E /* HSVDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E894092A22DFCB070081062E /* HSVDocumentsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +25,10 @@
 		E894091522DFC5240081062E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E894091722DFC5240081062E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E894091822DFC5240081062E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E894091F22DFC8160081062E /* DocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentsTableViewController.h; sourceTree = "<group>"; };
-		E894092022DFC8160081062E /* DocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableViewController.m; sourceTree = "<group>"; };
-		E894092322DFC8BD0081062E /* NewDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewDocumentViewController.h; sourceTree = "<group>"; };
-		E894092422DFC8BD0081062E /* NewDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewDocumentViewController.m; sourceTree = "<group>"; };
+		E894092622DFCAEC0081062E /* HSVNewDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSVNewDocumentViewController.h; sourceTree = "<group>"; };
+		E894092722DFCAEC0081062E /* HSVNewDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSVNewDocumentViewController.m; sourceTree = "<group>"; };
+		E894092922DFCB070081062E /* HSVDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSVDocumentsTableViewController.h; sourceTree = "<group>"; };
+		E894092A22DFCB070081062E /* HSVDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSVDocumentsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +76,10 @@
 		E894092222DFC81A0081062E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E894091F22DFC8160081062E /* DocumentsTableViewController.h */,
-				E894092022DFC8160081062E /* DocumentsTableViewController.m */,
-				E894092322DFC8BD0081062E /* NewDocumentViewController.h */,
-				E894092422DFC8BD0081062E /* NewDocumentViewController.m */,
+				E894092922DFCB070081062E /* HSVDocumentsTableViewController.h */,
+				E894092A22DFCB070081062E /* HSVDocumentsTableViewController.m */,
+				E894092622DFCAEC0081062E /* HSVNewDocumentViewController.h */,
+				E894092722DFCAEC0081062E /* HSVNewDocumentViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -110,6 +110,7 @@
 		E89408FE22DFC5220081062E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HSV;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Hector Steven";
 				TargetAttributes = {
@@ -154,9 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E894092122DFC8160081062E /* DocumentsTableViewController.m in Sources */,
 				E894091922DFC5240081062E /* main.m in Sources */,
-				E894092522DFC8BD0081062E /* NewDocumentViewController.m in Sources */,
+				E894092822DFCAEC0081062E /* HSVNewDocumentViewController.m in Sources */,
+				E894092B22DFCB070081062E /* HSVDocumentsTableViewController.m in Sources */,
 				E894090B22DFC5220081062E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

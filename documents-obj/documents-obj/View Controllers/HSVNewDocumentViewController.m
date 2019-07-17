@@ -1,23 +1,27 @@
 //
-//  NewDocumentViewController.m
+//  HSVNewDocumentViewController.m
 //  documents-obj
 //
 //  Created by Hector Steven on 7/17/19.
 //  Copyright © 2019 Hector Steven. All rights reserved.
 //
 
-#import "NewDocumentViewController.h"
+#import "HSVNewDocumentViewController.h"
 
-@interface NewDocumentViewController ()
+@interface HSVNewDocumentViewController ()
 
-
+@property (strong, nonatomic) IBOutlet UILabel *countLabel;
+@property (strong, nonatomic) IBOutlet UITextField *titleTextField;
+@property (strong, nonatomic) IBOutlet UITextView *documentTextView;
 
 @end
 
-@implementation NewDocumentViewController
+@implementation HSVNewDocumentViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	//self.documentTextView.delegate = self;
+	
     // Do any additional setup after loading the view.
 }
 
