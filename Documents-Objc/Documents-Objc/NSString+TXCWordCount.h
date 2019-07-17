@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (TXCWordCount)
 
-- (NSInteger)wordCount;
+- (NSInteger)txc_wordCount;
 
 @end
 

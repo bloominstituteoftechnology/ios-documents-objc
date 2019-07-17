@@ -10,7 +10,7 @@
 
 @implementation NSString (TXCWordCount)
 
-- (NSInteger)wordCount {
+- (NSInteger)txc_wordCount {
     NSCharacterSet *separators = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     NSArray *words = [self componentsSeparatedByCharactersInSet:separators];
     
