@@ -13,6 +13,9 @@
 		FC6B9E2022DFB46C00C0090C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6B9E1E22DFB46C00C0090C /* LaunchScreen.storyboard */; };
 		FC6B9E2322DFB46C00C0090C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6B9E2222DFB46C00C0090C /* main.m */; };
 		FC6B9E2B22DFB68C00C0090C /* LSIDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6B9E2A22DFB68C00C0090C /* LSIDocument.m */; };
+		FC6B9E2E22DFB82F00C0090C /* LSIDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6B9E2D22DFB82F00C0090C /* LSIDocumentController.m */; };
+		FC6B9E3222DFB87100C0090C /* LSIDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6B9E3122DFB87100C0090C /* LSIDocumentTableViewController.m */; };
+		FC6B9E3522DFB9DA00C0090C /* LSIDetailAddDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6B9E3422DFB9DA00C0090C /* LSIDetailAddDocumentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		FC6B9E2222DFB46C00C0090C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC6B9E2922DFB68C00C0090C /* LSIDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDocument.h; sourceTree = "<group>"; };
 		FC6B9E2A22DFB68C00C0090C /* LSIDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocument.m; sourceTree = "<group>"; };
+		FC6B9E2C22DFB82F00C0090C /* LSIDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDocumentController.h; sourceTree = "<group>"; };
+		FC6B9E2D22DFB82F00C0090C /* LSIDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocumentController.m; sourceTree = "<group>"; };
+		FC6B9E3022DFB87100C0090C /* LSIDocumentTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDocumentTableViewController.h; sourceTree = "<group>"; };
+		FC6B9E3122DFB87100C0090C /* LSIDocumentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocumentTableViewController.m; sourceTree = "<group>"; };
+		FC6B9E3322DFB9DA00C0090C /* LSIDetailAddDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDetailAddDocumentViewController.h; sourceTree = "<group>"; };
+		FC6B9E3422DFB9DA00C0090C /* LSIDetailAddDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDetailAddDocumentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				FC6B9E1922DFB46B00C0090C /* Main.storyboard */,
-				FC6B9E2922DFB68C00C0090C /* LSIDocument.h */,
-				FC6B9E2A22DFB68C00C0090C /* LSIDocument.m */,
+				FC6B9E3322DFB9DA00C0090C /* LSIDetailAddDocumentViewController.h */,
+				FC6B9E3422DFB9DA00C0090C /* LSIDetailAddDocumentViewController.m */,
+				FC6B9E3022DFB87100C0090C /* LSIDocumentTableViewController.h */,
+				FC6B9E3122DFB87100C0090C /* LSIDocumentTableViewController.m */,
+				FC6B9E2F22DFB83E00C0090C /* MODEL */,
 				FC6B9E1322DFB46B00C0090C /* AppDelegate.h */,
 				FC6B9E1422DFB46B00C0090C /* AppDelegate.m */,
 				FC6B9E1C22DFB46C00C0090C /* Assets.xcassets */,
@@ -69,6 +81,17 @@
 				FC6B9E2222DFB46C00C0090C /* main.m */,
 			);
 			path = DocumentsObjC1Wed;
+			sourceTree = "<group>";
+		};
+		FC6B9E2F22DFB83E00C0090C /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B9E2C22DFB82F00C0090C /* LSIDocumentController.h */,
+				FC6B9E2D22DFB82F00C0090C /* LSIDocumentController.m */,
+				FC6B9E2922DFB68C00C0090C /* LSIDocument.h */,
+				FC6B9E2A22DFB68C00C0090C /* LSIDocument.m */,
+			);
+			path = MODEL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6B9E3222DFB87100C0090C /* LSIDocumentTableViewController.m in Sources */,
+				FC6B9E3522DFB9DA00C0090C /* LSIDetailAddDocumentViewController.m in Sources */,
 				FC6B9E2B22DFB68C00C0090C /* LSIDocument.m in Sources */,
+				FC6B9E2E22DFB82F00C0090C /* LSIDocumentController.m in Sources */,
 				FC6B9E2322DFB46C00C0090C /* main.m in Sources */,
 				FC6B9E1522DFB46B00C0090C /* AppDelegate.m in Sources */,
 			);

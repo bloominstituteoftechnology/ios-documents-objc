@@ -13,7 +13,7 @@
         <!--Documents-->
         <scene sceneID="yab-v3-sVg">
             <objects>
-                <tableViewController id="Dj4-5F-Spf" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TableDocumentVC" id="Dj4-5F-Spf" customClass="LSIDocumentTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zq2-0U-RIM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
         <!--New Document-->
         <scene sceneID="KiE-gn-7S3">
             <objects>
-                <viewController id="LcN-5x-ldO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VCDocumentAddDetail" id="LcN-5x-ldO" customClass="LSIDetailAddDocumentViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C6G-b0-QbQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,8 +95,17 @@
                         <viewLayoutGuide key="safeArea" id="gCJ-Tm-Od6"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Document" largeTitleDisplayMode="always" id="6Db-5e-NZ7">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="hRm-0G-eiT"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="hRm-0G-eiT">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="LcN-5x-ldO" id="TXk-54-JDj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="titleTextField" destination="ORu-o6-JKf" id="wPc-bV-MpA"/>
+                        <outlet property="titleTextView" destination="F7Q-9t-10A" id="WjA-Bx-fhV"/>
+                        <outlet property="wordCountLabel" destination="cUA-Xz-NuR" id="wXy-Hj-T7Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCH-ku-aXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
