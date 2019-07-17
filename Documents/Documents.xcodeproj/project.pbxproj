@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ECC355A022DFD89000C5F7D1 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC3559F22DFD89000C5F7D1 /* NSString+WordCount.m */; };
+		ECC355A422DFE09C00C5F7D1 /* KRCDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC355A322DFE09C00C5F7D1 /* KRCDocumentController.m */; };
 		ECCF3CFD22DFBFA100C1E0B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCF3CFC22DFBFA100C1E0B9 /* AppDelegate.m */; };
 		ECCF3D0322DFBFA100C1E0B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCF3D0122DFBFA100C1E0B9 /* Main.storyboard */; };
 		ECCF3D0522DFBFA200C1E0B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCF3D0422DFBFA200C1E0B9 /* Assets.xcassets */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		ECC3559E22DFD89000C5F7D1 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+WordCount.h"; path = "Documents/Resources/NSString+WordCount.h"; sourceTree = SOURCE_ROOT; };
 		ECC3559F22DFD89000C5F7D1 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+WordCount.m"; path = "Documents/Resources/NSString+WordCount.m"; sourceTree = SOURCE_ROOT; };
+		ECC355A222DFE09C00C5F7D1 /* KRCDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRCDocumentController.h; sourceTree = "<group>"; };
+		ECC355A322DFE09C00C5F7D1 /* KRCDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRCDocumentController.m; sourceTree = "<group>"; };
 		ECCF3CF822DFBFA100C1E0B9 /* Documents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Documents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCF3CFB22DFBFA100C1E0B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECCF3CFC22DFBFA100C1E0B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 		ECC355A122DFDFEA00C5F7D1 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ECC355A222DFE09C00C5F7D1 /* KRCDocumentController.h */,
+				ECC355A322DFE09C00C5F7D1 /* KRCDocumentController.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCF3D0B22DFBFA200C1E0B9 /* main.m in Sources */,
+				ECC355A422DFE09C00C5F7D1 /* KRCDocumentController.m in Sources */,
 				ECCF3CFD22DFBFA100C1E0B9 /* AppDelegate.m in Sources */,
 				ECCF3D1322DFD12900C1E0B9 /* KRCDocumentDetailViewController.m in Sources */,
 				ECC355A022DFD89000C5F7D1 /* NSString+WordCount.m in Sources */,
