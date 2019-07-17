@@ -13,7 +13,7 @@
         <!--Documents-->
         <scene sceneID="xhZ-Me-aex">
             <objects>
-                <tableViewController id="hEm-uH-5Jd" sceneMemberID="viewController">
+                <tableViewController id="hEm-uH-5Jd" customClass="DocumentsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zh8-gZ-CA9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="1343.4782608695652" y="14.732142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--New Document View Controller-->
         <scene sceneID="XYV-9b-xn1">
             <objects>
-                <viewController id="cCM-hY-pfJ" sceneMemberID="viewController">
+                <viewController id="cCM-hY-pfJ" customClass="NewDocumentViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KlD-3J-lTC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
