@@ -42,6 +42,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="LcN-5x-ldO" kind="show" identifier="DocumentDetail" id="jgS-JT-WPG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -52,7 +55,7 @@
                     <navigationItem key="navigationItem" title="Documents" largeTitleDisplayMode="always" id="cpP-sg-Cve">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="PIp-Q4-xjE">
                             <connections>
-                                <segue destination="LcN-5x-ldO" kind="show" id="EcL-lm-fbm"/>
+                                <segue destination="LcN-5x-ldO" kind="show" identifier="AddDocument" id="EcL-lm-fbm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -130,4 +133,7 @@
             <point key="canvasLocation" x="278" y="125"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jgS-JT-WPG"/>
+    </inferredMetricsTieBreakers>
 </document>
