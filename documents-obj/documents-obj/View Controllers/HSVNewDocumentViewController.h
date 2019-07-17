@@ -10,8 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HSVNewDocumentViewController : UIViewController <UITextFieldDelegate>
+@interface HSVNewDocumentViewController : UIViewController <UITextViewDelegate>
 
+
+- (void) print_l:(NSString *)str;
 @end
 
 NS_ASSUME_NONNULL_END

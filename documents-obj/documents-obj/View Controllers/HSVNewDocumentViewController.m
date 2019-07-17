@@ -21,11 +21,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	//self.documentTextView.delegate = self;
+	self.documentTextView.delegate = self;
 	
+	self.documentTextView.text = @"";
 	NSString *str = @"count this";
 	NSLog(@"%@", [str hsv_wordCount]);
 }
+
+- (void)textViewDidChange:(UITextView *)textView {
+	NSLog(@"tectViewDidChange %@", [textView.text hsv_wordCount]);
+	self.countLabel.text = [textView.text hsv_wordCount];
+}
+
+- (void) print_l:(NSString *)str{
+	NSLog(@"%@", str);
+}
+
 
 /*
 #pragma mark - Navigation
