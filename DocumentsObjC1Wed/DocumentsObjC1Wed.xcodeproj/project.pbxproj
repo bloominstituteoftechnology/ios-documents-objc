@@ -16,6 +16,7 @@
 		FC6B9E2E22DFB82F00C0090C /* LSIDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6B9E2D22DFB82F00C0090C /* LSIDocumentController.m */; };
 		FC6B9E3222DFB87100C0090C /* LSIDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6B9E3122DFB87100C0090C /* LSIDocumentTableViewController.m */; };
 		FC6B9E3522DFB9DA00C0090C /* LSIDetailAddDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6B9E3422DFB9DA00C0090C /* LSIDetailAddDocumentViewController.m */; };
+		FC6B9E3822DFC2F800C0090C /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6B9E3722DFC2F800C0090C /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		FC6B9E3122DFB87100C0090C /* LSIDocumentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocumentTableViewController.m; sourceTree = "<group>"; };
 		FC6B9E3322DFB9DA00C0090C /* LSIDetailAddDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDetailAddDocumentViewController.h; sourceTree = "<group>"; };
 		FC6B9E3422DFB9DA00C0090C /* LSIDetailAddDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDetailAddDocumentViewController.m; sourceTree = "<group>"; };
+		FC6B9E3622DFC2F800C0090C /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		FC6B9E3722DFC2F800C0090C /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				FC6B9E2D22DFB82F00C0090C /* LSIDocumentController.m */,
 				FC6B9E2922DFB68C00C0090C /* LSIDocument.h */,
 				FC6B9E2A22DFB68C00C0090C /* LSIDocument.m */,
+				FC6B9E3722DFC2F800C0090C /* NSString+WordCount.m */,
+				FC6B9E3622DFC2F800C0090C /* NSString+WordCount.h */,
 			);
 			path = MODEL;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				FC6B9E3522DFB9DA00C0090C /* LSIDetailAddDocumentViewController.m in Sources */,
 				FC6B9E2B22DFB68C00C0090C /* LSIDocument.m in Sources */,
 				FC6B9E2E22DFB82F00C0090C /* LSIDocumentController.m in Sources */,
+				FC6B9E3822DFC2F800C0090C /* NSString+WordCount.m in Sources */,
 				FC6B9E2322DFB46C00C0090C /* main.m in Sources */,
 				FC6B9E1522DFB46B00C0090C /* AppDelegate.m in Sources */,
 			);
