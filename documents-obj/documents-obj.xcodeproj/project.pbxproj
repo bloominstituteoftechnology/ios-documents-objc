@@ -14,6 +14,7 @@
 		E894091922DFC5240081062E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E894091822DFC5240081062E /* main.m */; };
 		E894092822DFCAEC0081062E /* HSVNewDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E894092722DFCAEC0081062E /* HSVNewDocumentViewController.m */; };
 		E894092B22DFCB070081062E /* HSVDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E894092A22DFCB070081062E /* HSVDocumentsTableViewController.m */; };
+		E894093122DFD8EC0081062E /* NSString+hsvWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = E894093022DFD8EC0081062E /* NSString+hsvWordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		E894092722DFCAEC0081062E /* HSVNewDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSVNewDocumentViewController.m; sourceTree = "<group>"; };
 		E894092922DFCB070081062E /* HSVDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSVDocumentsTableViewController.h; sourceTree = "<group>"; };
 		E894092A22DFCB070081062E /* HSVDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSVDocumentsTableViewController.m; sourceTree = "<group>"; };
+		E894092F22DFD8EC0081062E /* NSString+hsvWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+hsvWordCount.h"; sourceTree = "<group>"; };
+		E894093022DFD8EC0081062E /* NSString+hsvWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+hsvWordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				E894091422DFC5240081062E /* LaunchScreen.storyboard */,
 				E894091722DFC5240081062E /* Info.plist */,
 				E894091822DFC5240081062E /* main.m */,
+				E894092F22DFD8EC0081062E /* NSString+hsvWordCount.h */,
+				E894093022DFD8EC0081062E /* NSString+hsvWordCount.m */,
 			);
 			path = "documents-obj";
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E894091922DFC5240081062E /* main.m in Sources */,
+				E894093122DFD8EC0081062E /* NSString+hsvWordCount.m in Sources */,
 				E894092822DFCAEC0081062E /* HSVNewDocumentViewController.m in Sources */,
 				E894092B22DFCB070081062E /* HSVDocumentsTableViewController.m in Sources */,
 				E894090B22DFC5220081062E /* AppDelegate.m in Sources */,
