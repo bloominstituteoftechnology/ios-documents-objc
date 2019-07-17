@@ -20,4 +20,9 @@
     return self;
 }
 
+- (int)wordCount
+{
+    return [self.text wordCount];
+}
+
 @end
