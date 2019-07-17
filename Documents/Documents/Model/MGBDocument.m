@@ -20,7 +20,7 @@
     return self;
 }
 
-- (int)wordCount
+- (NSUInteger)wordCount
 {
     return [self.text wordCount];
 }
