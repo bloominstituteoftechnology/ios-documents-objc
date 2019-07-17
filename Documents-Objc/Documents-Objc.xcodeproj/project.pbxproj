@@ -15,6 +15,7 @@
 		42F9EAF922DFB8D8004AFC97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F9EAF822DFB8D8004AFC97 /* main.m */; };
 		42F9EB0122DFB96A004AFC97 /* TXCDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F9EB0022DFB96A004AFC97 /* TXCDocumentsTableViewController.m */; };
 		42F9EB0422DFBA5D004AFC97 /* TXCDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F9EB0322DFBA5D004AFC97 /* TXCDocumentDetailViewController.m */; };
+		42F9EB0722DFBCB5004AFC97 /* NSString+TXCWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F9EB0622DFBCB5004AFC97 /* NSString+TXCWordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		42F9EB0022DFB96A004AFC97 /* TXCDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXCDocumentsTableViewController.m; sourceTree = "<group>"; };
 		42F9EB0222DFBA5D004AFC97 /* TXCDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXCDocumentDetailViewController.h; sourceTree = "<group>"; };
 		42F9EB0322DFBA5D004AFC97 /* TXCDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXCDocumentDetailViewController.m; sourceTree = "<group>"; };
+		42F9EB0522DFBCB5004AFC97 /* NSString+TXCWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TXCWordCount.h"; sourceTree = "<group>"; };
+		42F9EB0622DFBCB5004AFC97 /* NSString+TXCWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TXCWordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				42F9EB0022DFB96A004AFC97 /* TXCDocumentsTableViewController.m */,
 				42F9EB0222DFBA5D004AFC97 /* TXCDocumentDetailViewController.h */,
 				42F9EB0322DFBA5D004AFC97 /* TXCDocumentDetailViewController.m */,
+				42F9EB0522DFBCB5004AFC97 /* NSString+TXCWordCount.h */,
+				42F9EB0622DFBCB5004AFC97 /* NSString+TXCWordCount.m */,
 				42F9EAEF22DFB8D7004AFC97 /* Main.storyboard */,
 				42F9EAF222DFB8D8004AFC97 /* Assets.xcassets */,
 				42F9EAF422DFB8D8004AFC97 /* LaunchScreen.storyboard */,
@@ -155,6 +160,7 @@
 				42F9EB0122DFB96A004AFC97 /* TXCDocumentsTableViewController.m in Sources */,
 				42F9EAEE22DFB8D7004AFC97 /* ViewController.m in Sources */,
 				42F9EAF922DFB8D8004AFC97 /* main.m in Sources */,
+				42F9EB0722DFBCB5004AFC97 /* NSString+TXCWordCount.m in Sources */,
 				42F9EB0422DFBA5D004AFC97 /* TXCDocumentDetailViewController.m in Sources */,
 				42F9EAEB22DFB8D7004AFC97 /* AppDelegate.m in Sources */,
 			);
