@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HHDocumentController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HHDocumentsTableViewController : UITableViewController
+
+@property HHDocumentController *documentController;
 
 @end
 
