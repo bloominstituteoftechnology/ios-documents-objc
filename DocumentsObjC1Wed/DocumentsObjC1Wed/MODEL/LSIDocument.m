@@ -10,4 +10,18 @@
 
 @implementation LSIDocument
 
+- (instancetype)initWithTitle:(NSString *)title
+                         body:(NSString *)body
+                numberOfWords:(int *)numberOfWords {
+    if (self = [super init]) {
+        
+        _title = title;
+        _body = body;
+        _numberOfWords = numberOfWords;
+    }
+    return self;
+    
+    
+}
+
 @end

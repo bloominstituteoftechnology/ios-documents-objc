@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LSIDocumentController : NSObject
 
+
+
 @end
 
 NS_ASSUME_NONNULL_END

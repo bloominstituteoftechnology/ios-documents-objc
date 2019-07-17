@@ -12,7 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LSIDocument : NSObject
 
-@property NSString]
+@property NSString *title;
+@property NSString *body;
+@property int *numberOfWords;
+
+- (instancetype)initWithTitle:(NSString *)title
+                         body:(NSString *)body
+                numberOfWords:(int *)numberOfWords;
 
 @end
 

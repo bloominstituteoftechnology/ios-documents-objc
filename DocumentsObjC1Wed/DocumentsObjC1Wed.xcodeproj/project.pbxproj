@@ -91,8 +91,8 @@
 			children = (
 				FC6B9E2C22DFB82F00C0090C /* LSIDocumentController.h */,
 				FC6B9E2D22DFB82F00C0090C /* LSIDocumentController.m */,
-				FC6B9E2922DFB68C00C0090C /* LSIDocument.h */,
 				FC6B9E2A22DFB68C00C0090C /* LSIDocument.m */,
+				FC6B9E2922DFB68C00C0090C /* LSIDocument.h */,
 				FC6B9E3722DFC2F800C0090C /* NSString+WordCount.m */,
 				FC6B9E3622DFC2F800C0090C /* NSString+WordCount.h */,
 			);
