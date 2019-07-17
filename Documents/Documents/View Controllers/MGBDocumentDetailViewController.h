@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MGBDocument.h"
+#import "MGBDocumentController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MGBDocumentDetailViewController : UIViewController
+
+@property MGBDocument *document;
+@property MGBDocumentController *documentController;
 
 @property (weak, nonatomic) IBOutlet UILabel *numberOfWordsLabel;
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
