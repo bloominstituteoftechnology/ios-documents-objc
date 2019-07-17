@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ECCF3CFD22DFBFA100C1E0B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCF3CFC22DFBFA100C1E0B9 /* AppDelegate.m */; };
-		ECCF3D0022DFBFA100C1E0B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCF3CFF22DFBFA100C1E0B9 /* ViewController.m */; };
 		ECCF3D0322DFBFA100C1E0B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCF3D0122DFBFA100C1E0B9 /* Main.storyboard */; };
 		ECCF3D0522DFBFA200C1E0B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCF3D0422DFBFA200C1E0B9 /* Assets.xcassets */; };
 		ECCF3D0822DFBFA200C1E0B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCF3D0622DFBFA200C1E0B9 /* LaunchScreen.storyboard */; };
@@ -21,8 +20,6 @@
 		ECCF3CF822DFBFA100C1E0B9 /* Documents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Documents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCF3CFB22DFBFA100C1E0B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECCF3CFC22DFBFA100C1E0B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ECCF3CFE22DFBFA100C1E0B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ECCF3CFF22DFBFA100C1E0B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ECCF3D0222DFBFA100C1E0B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECCF3D0422DFBFA200C1E0B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECCF3D0722DFBFA200C1E0B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,21 +61,43 @@
 		ECCF3CFA22DFBFA100C1E0B9 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				ECCF3D1722DFD36800C1E0B9 /* View Controllers */,
+				ECCF3D1822DFD37C00C1E0B9 /* Storyboards */,
+				ECCF3D1922DFD3A200C1E0B9 /* Resources */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		ECCF3D1722DFD36800C1E0B9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				ECCF3D1122DFD12900C1E0B9 /* KRCDocumentDetailViewController.h */,
 				ECCF3D1222DFD12900C1E0B9 /* KRCDocumentDetailViewController.m */,
 				ECCF3D1422DFD29400C1E0B9 /* KRCDocumentTableViewController.h */,
 				ECCF3D1522DFD29400C1E0B9 /* KRCDocumentTableViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		ECCF3D1822DFD37C00C1E0B9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ECCF3D0122DFBFA100C1E0B9 /* Main.storyboard */,
+				ECCF3D0622DFBFA200C1E0B9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ECCF3D1922DFD3A200C1E0B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				ECCF3CFB22DFBFA100C1E0B9 /* AppDelegate.h */,
 				ECCF3CFC22DFBFA100C1E0B9 /* AppDelegate.m */,
-				ECCF3CFE22DFBFA100C1E0B9 /* ViewController.h */,
-				ECCF3CFF22DFBFA100C1E0B9 /* ViewController.m */,
-				ECCF3D0122DFBFA100C1E0B9 /* Main.storyboard */,
 				ECCF3D0422DFBFA200C1E0B9 /* Assets.xcassets */,
-				ECCF3D0622DFBFA200C1E0B9 /* LaunchScreen.storyboard */,
 				ECCF3D0922DFBFA200C1E0B9 /* Info.plist */,
 				ECCF3D0A22DFBFA200C1E0B9 /* main.m */,
 			);
-			path = Documents;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +170,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECCF3D0022DFBFA100C1E0B9 /* ViewController.m in Sources */,
 				ECCF3D0B22DFBFA200C1E0B9 /* main.m in Sources */,
 				ECCF3CFD22DFBFA100C1E0B9 /* AppDelegate.m in Sources */,
 				ECCF3D1322DFD12900C1E0B9 /* KRCDocumentDetailViewController.m in Sources */,
