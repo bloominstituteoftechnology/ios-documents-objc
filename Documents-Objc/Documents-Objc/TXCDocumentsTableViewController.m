@@ -22,6 +22,11 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
 - (TXCDocumentController *)documentController {
     if (_documentController ==  nil) {
         _documentController = [[TXCDocumentController alloc] init];
@@ -33,7 +38,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+
     return self.documentController.documents.count;
 }
 

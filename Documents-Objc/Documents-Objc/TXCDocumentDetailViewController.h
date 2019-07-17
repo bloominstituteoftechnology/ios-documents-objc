@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TXCDocumentDetailViewController : UIViewController
 
 @property TXCDocumentController *documentController;
-@property TXCDocument *document;
+@property (nonatomic) TXCDocument *document;
 
 @end
 
