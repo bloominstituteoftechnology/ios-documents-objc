@@ -117,7 +117,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="label" destination="BDz-NW-KrW" id="LPo-x0-1Mo"/>
+                        <outlet property="countLabel" destination="BDz-NW-KrW" id="LPo-x0-1Mo"/>
                         <outlet property="textField" destination="x6z-la-bMM" id="oyp-9h-RTK"/>
                         <outlet property="textView" destination="xk7-Ne-xjt" id="TMq-8a-tkf"/>
                     </connections>
