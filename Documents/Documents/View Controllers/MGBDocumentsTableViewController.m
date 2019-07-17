@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    [self.tableView reloadData];
 }
 
 - (instancetype)initWithCoder:(NSCoder *)coder
@@ -36,9 +36,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
-    MGBDocument *document = [[[self documentController] documents] objectAtIndex:[indexPath row]];
+    MGBDocument *document = [[_documentController documents] objectAtIndex:[indexPath row]];
     cell.textLabel.text = document.title;
-    cell.detailTextLabel.text = document.text;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu words", (unsigned long)document.text.wordCount];
     return cell;
 }
 

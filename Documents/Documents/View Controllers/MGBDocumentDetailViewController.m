@@ -22,7 +22,7 @@
 
 - (void)textViewDidChange:(UITextView *)textView
 {
-        self.numberOfWordsLabel.text = [NSString stringWithFormat:@"%d words", self.bodyTextView.text.wordCount];
+    self.numberOfWordsLabel.text = [NSString stringWithFormat:@"%lu words", (unsigned long)self.bodyTextView.text.wordCount];
 }
 
 - (void)updateViews
@@ -30,11 +30,12 @@
     self.title = self.document.title;
     self.titleTextField.text = self.document.title;
     self.bodyTextView.text = self.document.text;
-    self.numberOfWordsLabel.text = [NSString stringWithFormat:@"%d words", self.document.text.wordCount];
+    self.numberOfWordsLabel.text = [NSString stringWithFormat:@"%lu words", (unsigned long)self.document.text.wordCount];
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
-    [self.documentController createDocumentWithTitle: _titleTextField.text andText:_bodyTextView.text];
+    [_documentController createDocumentWithTitle: _titleTextField.text andText:_bodyTextView.text];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
