@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)removeDocument:(TXCDocument *)document;
 
+- (void)updateDocument:(TXCDocument *)document;
+
 @end
 
 NS_ASSUME_NONNULL_END

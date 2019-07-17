@@ -10,7 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class TXCDocumentController;
+@class TXCDocument;
+
 @interface TXCDocumentDetailViewController : UIViewController
+
+@property TXCDocumentController *documentController;
+@property TXCDocument *document;
 
 @end
 

@@ -45,4 +45,9 @@
     [_internalDocuments removeObject:document];
 }
 
+- (void)updateDocument:(TXCDocument *)document title:(NSString *)title text:(NSString *)text {
+    document.title = title;
+    document.text = text;
+}
+
 @end
