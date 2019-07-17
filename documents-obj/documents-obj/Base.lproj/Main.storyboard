@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="cCM-hY-pfJ" kind="show" id="jfR-DL-xTK"/>
+                                    <segue destination="cCM-hY-pfJ" kind="show" identifier="ViewSegue" id="EfZ-Kp-7nZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -55,7 +55,7 @@
                     <navigationItem key="navigationItem" title="Documents" id="h5W-ag-7tr">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yco-mh-l2K">
                             <connections>
-                                <segue destination="cCM-hY-pfJ" kind="show" id="UKL-JL-QkQ"/>
+                                <segue destination="cCM-hY-pfJ" kind="show" identifier="AddSegue" id="Nm4-0N-0vc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -112,10 +112,9 @@
                         <viewLayoutGuide key="safeArea" id="sCu-gu-ydI"/>
                     </view>
                     <connections>
-                        <outlet property="countLabel" destination="pQM-8n-ksi" id="LD5-s3-1cN"/>
+                        <outlet property="countLabel" destination="pQM-8n-ksi" id="UAH-JO-ugn"/>
                         <outlet property="documentTextView" destination="u7E-eB-Jni" id="b3o-v1-dMo"/>
                         <outlet property="titleTextField" destination="71X-W0-THS" id="n5w-zZ-pmS"/>
-                        <outlet property="wordCountLabel" destination="pQM-8n-ksi" id="aHy-VC-knc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKe-jC-MIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,6 +141,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UKL-JL-QkQ"/>
+        <segue reference="Nm4-0N-0vc"/>
     </inferredMetricsTieBreakers>
 </document>
