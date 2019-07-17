@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECC355A022DFD89000C5F7D1 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC3559F22DFD89000C5F7D1 /* NSString+WordCount.m */; };
 		ECCF3CFD22DFBFA100C1E0B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCF3CFC22DFBFA100C1E0B9 /* AppDelegate.m */; };
 		ECCF3D0322DFBFA100C1E0B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCF3D0122DFBFA100C1E0B9 /* Main.storyboard */; };
 		ECCF3D0522DFBFA200C1E0B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCF3D0422DFBFA200C1E0B9 /* Assets.xcassets */; };
@@ -14,9 +15,12 @@
 		ECCF3D0B22DFBFA200C1E0B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCF3D0A22DFBFA200C1E0B9 /* main.m */; };
 		ECCF3D1322DFD12900C1E0B9 /* KRCDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCF3D1222DFD12900C1E0B9 /* KRCDocumentDetailViewController.m */; };
 		ECCF3D1622DFD29400C1E0B9 /* KRCDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCF3D1522DFD29400C1E0B9 /* KRCDocumentTableViewController.m */; };
+		ECCF3D2022DFD54100C1E0B9 /* KRCDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCF3D1E22DFD54000C1E0B9 /* KRCDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ECC3559E22DFD89000C5F7D1 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+WordCount.h"; path = "Documents/Resources/NSString+WordCount.h"; sourceTree = SOURCE_ROOT; };
+		ECC3559F22DFD89000C5F7D1 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+WordCount.m"; path = "Documents/Resources/NSString+WordCount.m"; sourceTree = SOURCE_ROOT; };
 		ECCF3CF822DFBFA100C1E0B9 /* Documents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Documents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCF3CFB22DFBFA100C1E0B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECCF3CFC22DFBFA100C1E0B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +33,8 @@
 		ECCF3D1222DFD12900C1E0B9 /* KRCDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRCDocumentDetailViewController.m; sourceTree = "<group>"; };
 		ECCF3D1422DFD29400C1E0B9 /* KRCDocumentTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRCDocumentTableViewController.h; sourceTree = "<group>"; };
 		ECCF3D1522DFD29400C1E0B9 /* KRCDocumentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRCDocumentTableViewController.m; sourceTree = "<group>"; };
+		ECCF3D1E22DFD54000C1E0B9 /* KRCDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRCDocument.m; sourceTree = "<group>"; };
+		ECCF3D1F22DFD54000C1E0B9 /* KRCDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRCDocument.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		ECCF3CFA22DFBFA100C1E0B9 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				ECCF3D1D22DFD54000C1E0B9 /* Model */,
 				ECCF3D1722DFD36800C1E0B9 /* View Controllers */,
 				ECCF3D1822DFD37C00C1E0B9 /* Storyboards */,
 				ECCF3D1922DFD3A200C1E0B9 /* Resources */,
@@ -91,6 +98,8 @@
 		ECCF3D1922DFD3A200C1E0B9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ECC3559E22DFD89000C5F7D1 /* NSString+WordCount.h */,
+				ECC3559F22DFD89000C5F7D1 /* NSString+WordCount.m */,
 				ECCF3CFB22DFBFA100C1E0B9 /* AppDelegate.h */,
 				ECCF3CFC22DFBFA100C1E0B9 /* AppDelegate.m */,
 				ECCF3D0422DFBFA200C1E0B9 /* Assets.xcassets */,
@@ -98,6 +107,15 @@
 				ECCF3D0A22DFBFA200C1E0B9 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		ECCF3D1D22DFD54000C1E0B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECCF3D1E22DFD54000C1E0B9 /* KRCDocument.m */,
+				ECCF3D1F22DFD54000C1E0B9 /* KRCDocument.h */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +191,9 @@
 				ECCF3D0B22DFBFA200C1E0B9 /* main.m in Sources */,
 				ECCF3CFD22DFBFA100C1E0B9 /* AppDelegate.m in Sources */,
 				ECCF3D1322DFD12900C1E0B9 /* KRCDocumentDetailViewController.m in Sources */,
+				ECC355A022DFD89000C5F7D1 /* NSString+WordCount.m in Sources */,
 				ECCF3D1622DFD29400C1E0B9 /* KRCDocumentTableViewController.m in Sources */,
+				ECCF3D2022DFD54100C1E0B9 /* KRCDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66AJPZAPLQ;
-				INFOPLIST_FILE = Documents/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Documents/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66AJPZAPLQ;
-				INFOPLIST_FILE = Documents/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Documents/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
