@@ -72,37 +72,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" misplaced="YES" text="0 words" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMT-E8-6wE">
-                                <rect key="frame" x="151" y="108" width="113" height="37"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PPY-SX-qCK">
-                                <rect key="frame" x="20" y="153" width="374" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VMO-HI-eje">
-                                <rect key="frame" x="20" y="191" width="374" height="651"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QA4-hu-ck8">
+                                <rect key="frame" x="20" y="108" width="374" height="734"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="0 words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMT-E8-6wE">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PPY-SX-qCK">
+                                        <rect key="frame" x="0.0" y="45" width="374" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VMO-HI-eje">
+                                        <rect key="frame" x="0.0" y="83" width="374" height="651"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="eMT-E8-6wE" firstAttribute="top" secondItem="93R-5k-xcO" secondAttribute="top" constant="20" id="4z6-HS-aHI"/>
-                            <constraint firstItem="PPY-SX-qCK" firstAttribute="trailing" secondItem="OPq-c8-0Fg" secondAttribute="trailingMargin" id="BiM-Nt-X9t"/>
-                            <constraint firstItem="93R-5k-xcO" firstAttribute="bottom" secondItem="VMO-HI-eje" secondAttribute="bottom" constant="20" id="N3N-zg-6Pa"/>
-                            <constraint firstItem="PPY-SX-qCK" firstAttribute="leading" secondItem="OPq-c8-0Fg" secondAttribute="leadingMargin" id="NVx-cC-Kej"/>
-                            <constraint firstItem="eMT-E8-6wE" firstAttribute="centerX" secondItem="PPY-SX-qCK" secondAttribute="centerX" id="Otf-Gn-VcQ"/>
-                            <constraint firstItem="PPY-SX-qCK" firstAttribute="trailing" secondItem="VMO-HI-eje" secondAttribute="trailing" id="Rb6-A5-Vic"/>
-                            <constraint firstItem="PPY-SX-qCK" firstAttribute="top" secondItem="eMT-E8-6wE" secondAttribute="bottom" constant="8" symbolic="YES" id="dJw-ht-uRX"/>
-                            <constraint firstItem="VMO-HI-eje" firstAttribute="top" secondItem="PPY-SX-qCK" secondAttribute="bottom" constant="8" symbolic="YES" id="iu6-sV-CrK"/>
-                            <constraint firstItem="eMT-E8-6wE" firstAttribute="leading" secondItem="93R-5k-xcO" secondAttribute="leading" constant="151" id="tjH-R3-pbD"/>
-                            <constraint firstItem="PPY-SX-qCK" firstAttribute="leading" secondItem="VMO-HI-eje" secondAttribute="leading" id="xKd-NX-RSy"/>
+                            <constraint firstItem="QA4-hu-ck8" firstAttribute="top" secondItem="93R-5k-xcO" secondAttribute="top" constant="20" id="bFf-0p-Dvd"/>
+                            <constraint firstItem="93R-5k-xcO" firstAttribute="bottom" secondItem="QA4-hu-ck8" secondAttribute="bottom" constant="20" id="hwe-Kc-Ulu"/>
+                            <constraint firstItem="93R-5k-xcO" firstAttribute="trailing" secondItem="QA4-hu-ck8" secondAttribute="trailing" constant="20" id="qtQ-Tr-QZv"/>
+                            <constraint firstItem="QA4-hu-ck8" firstAttribute="leading" secondItem="93R-5k-xcO" secondAttribute="leading" constant="20" id="xtE-XW-y7A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="93R-5k-xcO"/>
                     </view>
