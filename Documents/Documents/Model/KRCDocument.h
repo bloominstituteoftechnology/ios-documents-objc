@@ -14,10 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString *documentTitle;
 @property NSString *document;
-@property NSString *documentWordCount;
+@property (nonatomic) NSUInteger documentWordCount;
 
 - (instancetype)initWithDocument:(NSString *)document titled:(NSString *)title;
 
+- (NSUInteger)documentWordCount;
 
 @end
 

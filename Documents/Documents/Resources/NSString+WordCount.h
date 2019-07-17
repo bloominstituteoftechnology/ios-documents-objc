@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (WordCount)
 
-- (NSUInteger)krc_wordCount:(NSString *)document;
+- (NSUInteger)krc_wordCount;
 
 @end
 

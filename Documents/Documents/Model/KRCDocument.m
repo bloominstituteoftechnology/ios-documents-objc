@@ -7,7 +7,23 @@
 //
 
 #import "KRCDocument.h"
+#import "NSString+WordCount.h"
 
 @implementation KRCDocument
+
+- (instancetype)initWithDocument:(NSString *)document titled:(NSString *)title {
+    
+    if (self = [super init]) {
+        _document = document;
+        _documentTitle = title;
+    }
+    
+    return self;
+}
+
+- (NSUInteger)documentWordCount {
+    
+    return [_documentTitle krc_wordCount];
+}
 
 @end

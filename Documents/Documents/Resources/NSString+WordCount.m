@@ -10,11 +10,11 @@
 
 @implementation NSString (WordCount)
 
-- (NSUInteger)krc_wordCount:(NSString *)document
-{
+- (NSUInteger)krc_wordCount {
+    
     NSUInteger words = 0;
     
-    NSScanner *scanner = [NSScanner scannerWithString: document];
+    NSScanner *scanner = [NSScanner scannerWithString: self];
     
     // Look for spaces, tabs and newlines
     NSCharacterSet *whiteSpace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
