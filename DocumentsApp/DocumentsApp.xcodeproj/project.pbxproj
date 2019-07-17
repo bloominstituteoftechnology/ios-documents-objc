@@ -17,6 +17,7 @@
 		9E2425E922DFCC8200A21876 /* DLJDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2425E822DFCC8200A21876 /* DLJDocumentTableViewController.m */; };
 		9E2425EC22DFCD8E00A21876 /* DLJDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2425EB22DFCD8E00A21876 /* DLJDocument.m */; };
 		9E2425EF22DFD75200A21876 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2425EE22DFD75200A21876 /* NSString+WordCount.m */; };
+		9E2425F222DFDD4B00A21876 /* DLJDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2425F122DFDD4B00A21876 /* DLJDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		9E2425EB22DFCD8E00A21876 /* DLJDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLJDocument.m; sourceTree = "<group>"; };
 		9E2425ED22DFD75200A21876 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		9E2425EE22DFD75200A21876 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		9E2425F022DFDD4B00A21876 /* DLJDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLJDocumentController.h; sourceTree = "<group>"; };
+		9E2425F122DFDD4B00A21876 /* DLJDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLJDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				9E2425EB22DFCD8E00A21876 /* DLJDocument.m */,
 				9E2425ED22DFD75200A21876 /* NSString+WordCount.h */,
 				9E2425EE22DFD75200A21876 /* NSString+WordCount.m */,
+				9E2425F022DFDD4B00A21876 /* DLJDocumentController.h */,
+				9E2425F122DFDD4B00A21876 /* DLJDocumentController.m */,
 			);
 			path = DocumentsApp;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				9E2425EF22DFD75200A21876 /* NSString+WordCount.m in Sources */,
 				9E2425E922DFCC8200A21876 /* DLJDocumentTableViewController.m in Sources */,
 				9E2425EC22DFCD8E00A21876 /* DLJDocument.m in Sources */,
+				9E2425F222DFDD4B00A21876 /* DLJDocumentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

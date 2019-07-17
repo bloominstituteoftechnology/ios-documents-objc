@@ -12,8 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DLJDocument : NSObject
 
-@property NSString *title;
-@property NSString *message;
+@property  NSString *title;
+@property  NSString *message;
+@property  NSInteger *wordCount;
 
 
 -(instancetype)initWithTitle:(NSString *)title message:(NSString *)message;
