@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HHDocument.h"
+#import "HHDocumentController.h"
+#import "NSString+WordCount.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HHDetailDocumentViewController : UIViewController
+
+@property HHDocumentController *documentController;
+@property HHDocument *document;
 
 @end
 
