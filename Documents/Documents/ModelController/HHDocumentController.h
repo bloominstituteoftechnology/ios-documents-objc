@@ -13,7 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HHDocumentController : NSObject
 
-@property NSArray *documentsArray;
+@property (nonatomic) NSArray *documentsArray;
+
+- (void)createDocumentWithTitle:(NSString *)title
+                           text:(NSString *)text;
+
+- (void)updateDocument:(HHDocument *)document withTitle:(NSString *)title
+                  text:(NSString *)text;
+
+- (void)removeDocument:(HHDocument *)document;
 
 @end
 
