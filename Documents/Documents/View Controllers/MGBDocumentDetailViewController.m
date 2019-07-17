@@ -16,19 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self updateViews];
+    self.bodyTextView.delegate = self;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)textViewDidChange:(UITextView *)textView
+{
+        self.numberOfWordsLabel.text = [NSString stringWithFormat:@"%d words", self.bodyTextView.text.wordCount];
 }
-*/
+
+- (void)updateViews
+{
+    self.title = self.document.title;
+    self.titleTextField.text = self.document.title;
+    self.bodyTextView.text = self.document.text;
+    self.numberOfWordsLabel.text = [NSString stringWithFormat:@"%d words", self.document.text.wordCount];
+}
 
 - (IBAction)saveButtonPressed:(id)sender {
+    [self.documentController createDocumentWithTitle: _titleTextField.text andText:_bodyTextView.text];
 }
+
 @end

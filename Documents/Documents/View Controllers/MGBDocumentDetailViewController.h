@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MGBDocumentDetailViewController : UIViewController
+@interface MGBDocumentDetailViewController : UIViewController <UITextViewDelegate>
 
 @property MGBDocument *document;
 @property MGBDocumentController *documentController;
