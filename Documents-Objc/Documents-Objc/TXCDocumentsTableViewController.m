@@ -43,8 +43,9 @@
     
     TXCDocument *document = self.documentController.documents[indexPath.row];
     cell.textLabel.text = document.title;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%li", (long)document.wordCount];
-    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%li", document.wordCount];
+    NSLog(@"Document: %@", document.text);
+    NSLog(@"Document: %li", document.wordCount);
     return cell;
 }
 

@@ -25,10 +25,10 @@
 
 @synthesize wordCount = _wordCount;
 - (void)setWordCount:(NSInteger)wordCount {
-    _wordCount = [_text txc_wordCount];
+    _wordCount = wordCount;
 }
 - (NSInteger)wordCount {
-    return _wordCount;
+    return [self.text txc_wordCount];
 }
 
 @end
