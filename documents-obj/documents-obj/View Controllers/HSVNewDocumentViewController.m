@@ -25,12 +25,12 @@
 
 }
 
-- (void)saveDocument {
-	NSLog(@"save");
-}
-
 - (void)textViewDidChange:(UITextView *)textView {
 	self.countLabel.text = [[NSString alloc] initWithFormat:@"%@ Words", [textView.text hsv_wordCount] ];
+}
+- (IBAction)saveBarButton:(id)sender {
+	NSLog(@"save and dismiss");
+	
 }
 
 - (void) setupViews {
