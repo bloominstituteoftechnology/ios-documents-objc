@@ -34,7 +34,11 @@
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
-    [_documentController createDocumentWithTitle: _titleTextField.text andText:_bodyTextView.text];
+    if (!_document) {
+        [_documentController createDocumentWithTitle: _titleTextField.text andText:_bodyTextView.text];
+    } else {
+        [_documentController updateDocument:_document withTitle:_titleTextField.text andText:_bodyTextView.text];
+    }
     [self.navigationController popViewControllerAnimated:YES];
 }
 
