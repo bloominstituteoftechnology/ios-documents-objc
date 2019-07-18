@@ -9,5 +9,14 @@
 #import "HSVDocument.h"
 
 @implementation HSVDocument
+- (instancetype) initWithTitle:(NSString *)title body:(NSString *)body count:(NSString *)count {
+	self = [super init];
+	if (self) {
+		_title = title;
+		_body = body;
+		_count = count;
+	}
+	return self;
+}
 
 @end

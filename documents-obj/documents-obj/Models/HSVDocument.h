@@ -12,6 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HSVDocument : NSObject
 
+@property NSString *title;
+@property NSString *body;
+@property NSString *count;
+
+- (instancetype) initWithTitle:(NSString *)title body:(NSString *)body count:(NSString *)count;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END
