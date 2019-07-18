@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *body;
 @property NSString *count;
 
-- (instancetype) initWithTitle:(NSString *)title body:(NSString *)body count:(NSString *)count;
+- (instancetype) initWithTitle:(NSString *)title body:(NSString *)body;
 
 
 

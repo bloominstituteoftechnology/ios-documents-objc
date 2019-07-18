@@ -16,6 +16,7 @@
 		E894092B22DFCB070081062E /* HSVDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E894092A22DFCB070081062E /* HSVDocumentsTableViewController.m */; };
 		E894093122DFD8EC0081062E /* NSString+hsvWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = E894093022DFD8EC0081062E /* NSString+hsvWordCount.m */; };
 		E894093422E021870081062E /* HSVDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E894093322E021870081062E /* HSVDocument.m */; };
+		E894093822E024930081062E /* HSVDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E894093722E024930081062E /* HSVDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		E894093022DFD8EC0081062E /* NSString+hsvWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+hsvWordCount.m"; sourceTree = "<group>"; };
 		E894093222E021870081062E /* HSVDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSVDocument.h; sourceTree = "<group>"; };
 		E894093322E021870081062E /* HSVDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSVDocument.m; sourceTree = "<group>"; };
+		E894093622E024930081062E /* HSVDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSVDocumentController.h; sourceTree = "<group>"; };
+		E894093722E024930081062E /* HSVDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSVDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 			children = (
 				E894090922DFC5220081062E /* AppDelegate.h */,
 				E894090A22DFC5220081062E /* AppDelegate.m */,
+				E894093922E0249E0081062E /* Model Controller  */,
 				E894093522E0218B0081062E /* Models */,
 				E894092222DFC81A0081062E /* View Controllers */,
 				E894090F22DFC5220081062E /* Main.storyboard */,
@@ -100,6 +104,15 @@
 				E894093322E021870081062E /* HSVDocument.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E894093922E0249E0081062E /* Model Controller  */ = {
+			isa = PBXGroup;
+			children = (
+				E894093622E024930081062E /* HSVDocumentController.h */,
+				E894093722E024930081062E /* HSVDocumentController.m */,
+			);
+			path = "Model Controller ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +189,7 @@
 				E894091922DFC5240081062E /* main.m in Sources */,
 				E894093122DFD8EC0081062E /* NSString+hsvWordCount.m in Sources */,
 				E894092822DFCAEC0081062E /* HSVNewDocumentViewController.m in Sources */,
+				E894093822E024930081062E /* HSVDocumentController.m in Sources */,
 				E894092B22DFCB070081062E /* HSVDocumentsTableViewController.m in Sources */,
 				E894093422E021870081062E /* HSVDocument.m in Sources */,
 				E894090B22DFC5220081062E /* AppDelegate.m in Sources */,
