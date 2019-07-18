@@ -19,20 +19,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
-	
-	
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	[self.tableView reloadData];
+}
+
+- (HSVDocumentController *)documentcontroller {
+	if(!_documentcontroller)
+		_documentcontroller = [[HSVDocumentController alloc] init];
+
+	return _documentcontroller;
+}
+
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.documentcontroller.countOfDocuments;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) NSArray *documents;
 
+- (NSArray *)documents;
+- (NSInteger)countOfDocuments;
 - (void)createDocument:(HSVDocument *)document;
 - (void)updateDocument:(HSVDocument *)document;
 - (void)deleteDocument:(HSVDocument *)document;

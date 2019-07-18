@@ -16,18 +16,26 @@
 @end
 
 @implementation HSVDocumentController
+
 - (instancetype)init
 {
 	self = [super init];
 	if (self) {
 		_internalDocumets = [[NSMutableArray alloc] init];
 		
-		//init stuff here
+		[self addTestData];
 	}
 	return self;
 }
 
-- (NSArray *)tasks {
+- (void)addTestData {
+	HSVDocument * doc1 = [[HSVDocument alloc] initWithTitle:@"clean living room" body:@"clean and clean some more"];
+	HSVDocument * doc2 = [[HSVDocument alloc] initWithTitle:@"clean rest room" body:@"clean and clean some more and some more"];
+	[self createDocument:doc1];
+	[self createDocument:doc2];
+}
+
+- (NSArray *)documents {
 	return [_internalDocumets copy];
 }
 
