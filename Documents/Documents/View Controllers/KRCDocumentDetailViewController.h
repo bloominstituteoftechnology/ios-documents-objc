@@ -13,14 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 @class KRCDocument;
 @class KRCDocumentController;
 
-@interface KRCDocumentDetailViewController : UIViewController
+@interface KRCDocumentDetailViewController : UIViewController <UITextViewDelegate>
 
 @property (nonatomic) KRCDocument *document;
 @property (nonatomic) KRCDocumentController *documentController;
+@property (nonatomic) NSIndexPath *indexPathForDocument;
 
 - (void)setDocument:(KRCDocument * _Nonnull)document;
 - (void)setDocumentController:(KRCDocumentController * _Nonnull)documentController;
-
+- (void)setIndexPathForDocument:(NSIndexPath *)indexPathForDocument;
 @end
 
 NS_ASSUME_NONNULL_END

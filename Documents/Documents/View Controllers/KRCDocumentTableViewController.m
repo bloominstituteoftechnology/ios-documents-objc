@@ -41,7 +41,6 @@
     return [[self documentController] getCount];
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
     
@@ -52,16 +51,6 @@
     
     return cell;
 }
-
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -74,7 +63,6 @@
     }
 }
 
-
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
@@ -86,14 +74,13 @@
         KRCDocumentDetailViewController *detailVC = [segue destinationViewController];
         [detailVC setDocument:selectedDocument];
         [detailVC setDocumentController:[self documentController]];
+        [detailVC setIndexPathForDocument:indexPath];
         
     } else if ([[segue identifier] isEqualToString:@"ShowCreateDocument"]) {
         
         KRCDocumentDetailViewController *detailVC = [segue destinationViewController];
         [detailVC setDocumentController:[self documentController]];
     }
-    
 }
-
 
 @end

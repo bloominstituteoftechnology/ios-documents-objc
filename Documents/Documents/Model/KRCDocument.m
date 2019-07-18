@@ -23,7 +23,7 @@
 
 - (NSUInteger)documentWordCount {
     
-    return [_documentTitle krc_wordCount];
+    return [_document krc_wordCount];
 }
 
 @end
