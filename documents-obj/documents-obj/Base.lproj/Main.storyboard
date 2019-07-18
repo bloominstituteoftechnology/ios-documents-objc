@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cCM-hY-pfJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sHb-OZ-l3v">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="cCM-hY-pfJ" kind="show" identifier="ViewSegue" id="EfZ-Kp-7nZ"/>
+                                    <segue destination="V47-4M-ZP5" kind="show" id="j8f-kF-RCh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -55,7 +55,7 @@
                     <navigationItem key="navigationItem" title="Documents" id="h5W-ag-7tr">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yco-mh-l2K">
                             <connections>
-                                <segue destination="cCM-hY-pfJ" kind="show" identifier="AddSegue" id="Nm4-0N-0vc"/>
+                                <segue destination="V47-4M-ZP5" kind="show" id="9K2-Va-UFS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -65,61 +65,28 @@
             <point key="canvasLocation" x="1343.4782608695652" y="14.732142857142856"/>
         </scene>
         <!--New Document View Controller-->
-        <scene sceneID="XYV-9b-xn1">
+        <scene sceneID="ZN5-ch-q36">
             <objects>
-                <viewController id="cCM-hY-pfJ" customClass="HSVNewDocumentViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KlD-3J-lTC">
+                <viewController id="V47-4M-ZP5" customClass="HSVNewDocumentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p5u-3e-zTq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Words" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQM-8n-ksi">
-                                <rect key="frame" x="158.5" y="160" width="97" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 Words" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dag-k9-Kzs">
+                                <rect key="frame" x="186" y="150" width="97" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71X-W0-THS">
-                                <rect key="frame" x="20" y="200" width="374" height="30"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.98823529409999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u7E-eB-Jni">
-                                <rect key="frame" x="20" y="238" width="374" height="173"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.98823529409999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="u7E-eB-Jni" secondAttribute="height" multiplier="361:167" id="c2z-0R-rub"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="u7E-eB-Jni" firstAttribute="top" secondItem="71X-W0-THS" secondAttribute="bottom" constant="8" id="38G-G0-ZAT"/>
-                            <constraint firstItem="pQM-8n-ksi" firstAttribute="centerX" secondItem="KlD-3J-lTC" secondAttribute="centerX" id="JPU-yZ-wH2"/>
-                            <constraint firstItem="u7E-eB-Jni" firstAttribute="top" secondItem="71X-W0-THS" secondAttribute="bottom" constant="8" id="Qob-9k-kTJ"/>
-                            <constraint firstItem="sCu-gu-ydI" firstAttribute="trailing" secondItem="u7E-eB-Jni" secondAttribute="trailing" constant="20" id="YB8-os-OzZ"/>
-                            <constraint firstItem="u7E-eB-Jni" firstAttribute="leading" secondItem="sCu-gu-ydI" secondAttribute="leading" constant="20" id="YLR-6J-TmH"/>
-                            <constraint firstItem="sCu-gu-ydI" firstAttribute="trailing" secondItem="71X-W0-THS" secondAttribute="trailing" constant="20" id="aL0-ar-Dfr"/>
-                            <constraint firstItem="71X-W0-THS" firstAttribute="top" secondItem="pQM-8n-ksi" secondAttribute="bottom" constant="8" id="mgm-MF-AuK"/>
-                            <constraint firstItem="u7E-eB-Jni" firstAttribute="centerX" secondItem="KlD-3J-lTC" secondAttribute="centerX" id="qDb-v2-bdV"/>
-                            <constraint firstItem="pQM-8n-ksi" firstAttribute="top" secondItem="sCu-gu-ydI" secondAttribute="top" constant="20" id="tzS-6q-IKH"/>
-                            <constraint firstItem="71X-W0-THS" firstAttribute="leading" secondItem="sCu-gu-ydI" secondAttribute="leading" constant="20" id="v0e-pk-g1T"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="sCu-gu-ydI"/>
+                        <viewLayoutGuide key="safeArea" id="Ofg-lN-k6B"/>
                     </view>
-                    <connections>
-                        <outlet property="countLabel" destination="pQM-8n-ksi" id="UAH-JO-ugn"/>
-                        <outlet property="documentTextView" destination="u7E-eB-Jni" id="b3o-v1-dMo"/>
-                        <outlet property="titleTextField" destination="71X-W0-THS" id="n5w-zZ-pmS"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tKe-jC-MIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Vo-cW-6KN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2173.913043478261" y="14.732142857142856"/>
+            <point key="canvasLocation" x="2264" y="15"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hdE-iI-SFf">
@@ -141,6 +108,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Nm4-0N-0vc"/>
+        <segue reference="j8f-kF-RCh"/>
     </inferredMetricsTieBreakers>
 </document>
