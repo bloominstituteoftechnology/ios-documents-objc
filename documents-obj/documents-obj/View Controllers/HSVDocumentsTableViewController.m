@@ -44,7 +44,7 @@
 	HSVDocument *doc = self.documentcontroller.documents[indexPath.row];
 	
 	cell.textLabel.text = doc.title;
-	cell.detailTextLabel.text = doc.body;
+	cell.detailTextLabel.text = [[NSString alloc] initWithFormat:@"%@ words", doc.count];
     
     return cell;
 }

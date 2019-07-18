@@ -25,10 +25,12 @@
     [super viewDidLoad];
 	self.documentTextView.delegate = self;
 	[self setupViews];
+	
+	
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
-	self.countLabel.text = [[NSString alloc] initWithFormat:@"%@ Words", [textView.text hsv_wordCount] ];
+	self.countLabel.text = [[NSString alloc] initWithFormat:@"%@ words", [textView.text hsv_wordCount] ];
 }
 
 - (IBAction)saveBarButton:(id)sender {
@@ -37,6 +39,7 @@
 	NSString *title = self.titleTextField.text;
 	NSString *body = self.documentTextView.text;
 	HSVDocument *doc = [[HSVDocument alloc] initWithTitle:title body:body];
+	doc.count = [body hsv_wordCount];
 	[self.documentController createDocument:doc];
 	[self.navigationController popViewControllerAnimated:YES];
 	
@@ -45,10 +48,10 @@
 - (void) setupViews {
 	if (!self.isViewLoaded || !self.document) { return; }
 	
-	self.title = @"title";
+	self.title = self.document.title;
 	self.titleTextField.text = self.document.title;
 	self.documentTextView.text = self.document.body;
-	self.countLabel.text = [self.document.body hsv_wordCount];
+	self.countLabel.text = [[NSString alloc] initWithFormat:@"%@ words", self.document.count];
 }
 
 @end

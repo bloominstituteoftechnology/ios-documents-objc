@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="1343.4782608695652" y="14.732142857142856"/>
         </scene>
-        <!--New Document View Controller-->
+        <!--New Document-->
         <scene sceneID="ZN5-ch-q36">
             <objects>
                 <viewController id="V47-4M-ZP5" customClass="HSVNewDocumentViewController" sceneMemberID="viewController">
@@ -75,7 +75,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FD9-ht-H4f">
                                 <rect key="frame" x="8" y="148" width="398" height="292"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XL6-gf-LAM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XL6-gf-LAM">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                         <nil key="textColor"/>
@@ -111,7 +111,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ofg-lN-k6B"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2aB-dD-pHA">
+                    <navigationItem key="navigationItem" title="New Document" id="2aB-dD-pHA">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="55h-ua-PjC">
                             <connections>
                                 <action selector="saveBarButton:" destination="V47-4M-ZP5" id="YlH-D9-3zl"/>
