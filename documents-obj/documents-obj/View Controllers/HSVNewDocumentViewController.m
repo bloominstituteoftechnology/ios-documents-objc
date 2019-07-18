@@ -33,6 +33,12 @@
 - (IBAction)saveBarButton:(id)sender {
 	NSLog(@"save and dismiss");
 	
+	NSString *title = self.titleTextField.text;
+	NSString *body = self.documentTextView.text;
+	HSVDocument *doc = [[HSVDocument alloc] initWithTitle:title body:body];
+	[self.documentController createDocument:doc];
+	[self.navigationController popViewControllerAnimated:YES];
+	
 }
 
 - (void) setupViews {
