@@ -9,7 +9,6 @@
 #import "HSVDocumentController.h"
 
 @interface HSVDocumentController() {
-	
 }
 
 @property NSMutableArray *internalDocumets;
@@ -28,16 +27,24 @@
 	return self;
 }
 
+- (NSArray *)tasks {
+	return [_internalDocumets copy];
+}
+
+- (NSInteger)countOfDocuments {
+	return [_internalDocumets count];
+}
+
 - (void)createDocument:(HSVDocument *)document{
-	
+	[_internalDocumets addObject:document];
 }
 
 - (void)updateDocument:(HSVDocument *)document{
-	
+	//update
 }
 
 - (void)deleteDocument:(HSVDocument *)document{
-	
+	[_internalDocumets removeObject:document];
 }
 
 
