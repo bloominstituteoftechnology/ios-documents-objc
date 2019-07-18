@@ -10,14 +10,11 @@
 #import "NSString+WordCount.h"
 
 
-
-
-
 // This is a CATEGORY of NSString which allows you to write a new method within a given type like NSString, giving you more functionality you can call at any time in your project.  In this project we only need to use this once...
 
 @implementation NSString (WordCount)
 
-- (int *)wordCount {
+- (NSUInteger )wordCount {
     
     // take a long NSString and count the spaces to get word count
            // safety... don't count a space if it comes first
@@ -26,7 +23,7 @@
     // didn't need all this logic, the NSString method takes care of it all!
     
     // really don't like the addition of (void) here... or the () around "%@"
-    NSArray *arrayOfWords = [(void)("%@"), self componentsSeparatedByString:@" "];
+    NSArray *arrayOfWords = [self componentsSeparatedByString:@" "];
 
     return [arrayOfWords count];
 }
