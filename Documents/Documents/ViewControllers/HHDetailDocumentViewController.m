@@ -21,21 +21,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self updateView];
+    [self updateWordCount];
+    [[self textView] setDelegate:self];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)textViewDidChange:(UITextView *)textView {
+    [self updateWordCount];
 }
-*/
+
+- (void)updateView {
+    if (!self.isViewLoaded || self.document) { return; }
+    
+    self.title = self.document.title;
+    self.countLabel.text = [NSString stringWithFormat:@"%d words", self.document.text.wordCount];
+    self.textField.text = self.document.title;
+    self.textView.text = self.document.text;
+}
+
+- (void)updateWordCount {
+    if ([self.textView.text isEqualToString:@""]) {
+        self.countLabel.text = @"0 words";
+    } else {
+        self.countLabel.text = [NSString stringWithFormat:@"%d words", self.textView.text.wordCount];
+    }
+}
 
 // Actions
 - (IBAction)saveButtonTapped:(id)sender {
+    NSString *title = self.textField.text;
+    NSString *text = self.textView.text;
+    
+    if (!self.document) {
+        [self.documentController createDocumentWithTitle:title text:text];
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

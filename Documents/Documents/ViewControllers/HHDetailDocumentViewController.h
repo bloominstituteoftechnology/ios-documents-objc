@@ -13,10 +13,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HHDetailDocumentViewController : UIViewController
+@interface HHDetailDocumentViewController : UIViewController <UITextViewDelegate>
 
 @property HHDocumentController *documentController;
-@property HHDocument *document;
+@property (nonatomic) HHDocument *document;
 
 @end
 

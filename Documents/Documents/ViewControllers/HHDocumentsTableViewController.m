@@ -21,10 +21,16 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
+}
+
 @synthesize documentController = _documentController;
 
 - (HHDocumentController *)documentController {
-    if (!_documentController) {
+    if (_documentController == nil) {
         _documentController = [[HHDocumentController alloc] init];
     }
     return _documentController;
