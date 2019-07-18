@@ -11,9 +11,7 @@
 @implementation NSString (WordCount)
 
 - (NSString *)slr_wordCount {
-    NSUInteger luWC;
-    luWC = [[self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"length > 0"]].count;
-    return  [NSString stringWithFormat:@"%lu words",  luWC];
+    return  [NSString stringWithFormat:@"%lu words",  [self componentsSeparatedByString:@" "].count];
 }
 
 @end

@@ -14,9 +14,11 @@
 @interface SLRDetailViewController ()
 
 #pragma mark - Outlets
-@property (strong, nonatomic) IBOutlet UILabel *wordCountLabel;
-@property (strong, nonatomic) IBOutlet UITextField *documentTitleTextField;
-@property (strong, nonatomic) IBOutlet UITextView *wordsTextField;
+@property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
+@property (weak, nonatomic) IBOutlet UITextField *documentTitleTextField;
+@property (weak, nonatomic) IBOutlet UITextView *wordsTextField;
+
+@property (nonatomic) NSString *wordCount;
 
 @end
 
@@ -25,10 +27,18 @@
 #pragma mark - View states
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    _wordsTextField.delegate = self;
     // Update view
     [self updateView];
 }
+
+
+//-(void)setWordCount:(NSString *)wordCount {
+//    NSLog(@"wordCount = %@", wordCount);
+//        wordCount = [self.document.documentWords slr_wordCount];
+//    [self updateView];
+//}
+
 
 // Initialize the document sent
 -(void)setDocument:(SLRDocument *)document {
@@ -39,6 +49,11 @@
 }
 
 #pragma mark - Actions
+- (IBAction)detailSaveButtonTapped:(id)sender {
+    [self saveDocument:self.document];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - Functions
 
 -(void) updateView {
@@ -49,15 +64,14 @@
     self.title = self.document.documentName;
     // The document data
     
-    self.wordCountLabel.text = [self.document.documentWords slr_wordCount];
+    _wordCount = [self.document.documentWords slr_wordCount];
+    self.wordCountLabel.text =[self.document.documentWords slr_wordCount];
     self.documentTitleTextField.text = self.document.documentName;
     self.wordsTextField.text = self.document.documentWords;
 }
 
-
-- (IBAction)detailSaveButtonTapped:(id)sender {
-    [self saveDocument:self.document];
-    [self.navigationController popViewControllerAnimated:YES];
+- (void)textViewDidChange:(UITextView *)textView {
+    self.wordCountLabel.text =  [self.wordsTextField.text slr_wordCount];
 }
 
 -(void) saveDocument:(SLRDocument *)document {
@@ -68,7 +82,6 @@
     }
     [self updateDocumentFromUserInput: document];
     if(isNewDocument) {
-        NSLog(@"\nisNewDocument: %@ \n %@", self.document.documentName, self.document.documentWords);
         [self.documentController addDocument:document];
     }
 }
