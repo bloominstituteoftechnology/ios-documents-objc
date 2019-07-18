@@ -42,7 +42,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
+	HSVDocument *doc = self.documentcontroller.documents[indexPath.row];
 	
+	cell.textLabel.text = doc.title;
+	cell.detailTextLabel.text = doc.body;
     
     return cell;
 }
