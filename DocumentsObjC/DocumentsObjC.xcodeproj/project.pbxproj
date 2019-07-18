@@ -16,6 +16,7 @@
 		37CE365422DFC98400C983FA /* SLRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE365322DFC98400C983FA /* SLRDetailViewController.m */; };
 		37CE365722DFD38300C983FA /* SLRDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE365622DFD38300C983FA /* SLRDocument.m */; };
 		37CE366122DFD68800C983FA /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE366022DFD68800C983FA /* NSString+WordCount.m */; };
+		37CE366422E016A300C983FA /* SLRDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE366322E016A300C983FA /* SLRDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		37CE365622DFD38300C983FA /* SLRDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLRDocument.m; sourceTree = "<group>"; };
 		37CE365F22DFD68800C983FA /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		37CE366022DFD68800C983FA /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		37CE366222E016A300C983FA /* SLRDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLRDocumentController.h; sourceTree = "<group>"; };
+		37CE366322E016A300C983FA /* SLRDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLRDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 		37CE364B22DFC70700C983FA /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				37CE366222E016A300C983FA /* SLRDocumentController.h */,
+				37CE366322E016A300C983FA /* SLRDocumentController.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				37CE364022DFC55100C983FA /* main.m in Sources */,
 				37CE365722DFD38300C983FA /* SLRDocument.m in Sources */,
 				37CE366122DFD68800C983FA /* NSString+WordCount.m in Sources */,
+				37CE366422E016A300C983FA /* SLRDocumentController.m in Sources */,
 				37CE363222DFC55000C983FA /* AppDelegate.m in Sources */,
 				37CE364E22DFC8A000C983FA /* SLRDocumentsTableViewController.m in Sources */,
 			);

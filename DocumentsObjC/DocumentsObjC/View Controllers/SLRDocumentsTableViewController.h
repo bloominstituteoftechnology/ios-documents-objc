@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class SLRDocumentController;
+
 @interface SLRDocumentsTableViewController : UITableViewController
+
+@property (nonatomic) SLRDocumentController *documentController;
 
 @end
 

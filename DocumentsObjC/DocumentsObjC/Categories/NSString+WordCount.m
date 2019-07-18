@@ -7,12 +7,12 @@
 //
 
 #import "NSString+WordCount.h"
-#
 
 @implementation NSString (WordCount)
 
 - (NSString *)slr_wordCount {
-    return [];
+    return[NSString stringWithFormat:@"%@",  self];
 }
 
 @end
+

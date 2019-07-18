@@ -9,5 +9,14 @@
 #import "SLRDocument.h"
 
 @implementation SLRDocument
-
+-(instancetype)initWithDocumentName: (NSString *) documentName
+                          documentWords: (NSString *) documentWords {
+    
+    if(self = [super init]) {
+        _documentName = documentName;
+        _documentWords = documentWords;
+    }
+    
+    return self;
+}
 @end

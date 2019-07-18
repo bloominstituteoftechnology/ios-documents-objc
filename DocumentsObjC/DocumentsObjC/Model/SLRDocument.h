@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *documentName;
 @property NSString *documentWords;
 
--(instancetype)initWithDocumentName: (NSString *) documentName
-                          documentWords: (NSString *) documentWords;
+-(instancetype)initWithDocumentName:(NSString *) documentName
+                          documentWords:(NSString *) documentWords;
 
 @end
 

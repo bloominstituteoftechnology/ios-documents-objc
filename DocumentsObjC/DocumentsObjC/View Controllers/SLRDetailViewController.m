@@ -7,6 +7,7 @@
 //
 
 #import "SLRDetailViewController.h"
+#import "NSString+WordCount.h"
 
 @interface SLRDetailViewController ()
 
@@ -23,6 +24,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    
 }
 
 #pragma mark - Actions

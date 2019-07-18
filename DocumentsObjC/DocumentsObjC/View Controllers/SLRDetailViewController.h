@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class SLRDocument;
+
 @interface SLRDetailViewController : UIViewController
+
+@property (nonatomic) SLRDocument *doccument;
 
 @end
 
