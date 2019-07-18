@@ -39,8 +39,12 @@
 	NSString *title = self.titleTextField.text;
 	NSString *body = self.documentTextView.text;
 	HSVDocument *doc = [[HSVDocument alloc] initWithTitle:title body:body];
-	doc.count = [body hsv_wordCount];
-	[self.documentController createDocument:doc];
+	
+	if (!_document)
+		[self.documentController createDocument:doc];
+	else
+		[self.documentController updateDocument:doc];
+	
 	[self.navigationController popViewControllerAnimated:YES];
 	
 }
