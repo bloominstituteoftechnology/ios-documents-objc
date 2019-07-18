@@ -22,7 +22,6 @@
 	self = [super init];
 	if (self) {
 		_internalDocumets = [[NSMutableArray alloc] init];
-		
 		[self addTestData];
 	}
 	return self;
@@ -48,7 +47,7 @@
 }
 
 - (void)updateDocument:(HSVDocument *)document{
-	//update
+	
 }
 
 - (void)deleteDocument:(HSVDocument *)document{

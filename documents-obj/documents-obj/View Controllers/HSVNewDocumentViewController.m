@@ -30,6 +30,7 @@
 - (void)textViewDidChange:(UITextView *)textView {
 	self.countLabel.text = [[NSString alloc] initWithFormat:@"%@ Words", [textView.text hsv_wordCount] ];
 }
+
 - (IBAction)saveBarButton:(id)sender {
 	NSLog(@"save and dismiss");
 	
@@ -49,13 +50,5 @@
 	self.documentTextView.text = self.document.body;
 	self.countLabel.text = [self.document.body hsv_wordCount];
 }
-
-
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-	
-	
-}
-
 
 @end
