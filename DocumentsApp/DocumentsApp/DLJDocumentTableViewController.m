@@ -13,6 +13,8 @@
 
 @interface DLJDocumentTableViewController ()
 
+@property (nonatomic) DLJDocumentController *docController;
+
 
 @end
 

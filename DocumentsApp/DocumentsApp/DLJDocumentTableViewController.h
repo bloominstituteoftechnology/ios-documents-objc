@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DLJDocumentTableViewController : UITableViewController
 
-@property (nonatomic) DLJDocumentController *docController;
+
 
 @end
 
