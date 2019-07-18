@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (WordCount)
 
+//- (NSString *)slr_wordCount;
 - (NSString *)slr_wordCount;
 
 @end

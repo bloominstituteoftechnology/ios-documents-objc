@@ -7,14 +7,16 @@
 //
 
 #import "SLRDetailViewController.h"
+#import "SLRDocument.h"
+#import "SLRDocumentController.h"
 #import "NSString+WordCount.h"
 
 @interface SLRDetailViewController ()
 
 #pragma mark - Outlets
-@property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
-@property (weak, nonatomic) IBOutlet UITextField *documentTitleTextField;
-@property (weak, nonatomic) IBOutlet UITextView *wordsTextField;
+@property (strong, nonatomic) IBOutlet UILabel *wordCountLabel;
+@property (strong, nonatomic) IBOutlet UITextField *documentTitleTextField;
+@property (strong, nonatomic) IBOutlet UITextView *wordsTextField;
 
 @end
 
@@ -23,26 +25,56 @@
 #pragma mark - View states
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // Update view
+    [self updateView];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-
-    
+// Initialize the document sent
+-(void)setDocument:(SLRDocument *)document {
+    if (document != _document) {
+        _document = document;
+        [self updateView];
+    }
 }
 
 #pragma mark - Actions
+#pragma mark - Functions
+
+-(void) updateView {
+    if(!self.isViewLoaded || !self.document) { return; }
+    
+    // Populate the detail fields
+    // The view title
+    self.title = self.document.documentName;
+    // The document data
+    
+    self.wordCountLabel.text = [self.document.documentWords slr_wordCount];
+    self.documentTitleTextField.text = self.document.documentName;
+    self.wordsTextField.text = self.document.documentWords;
+}
+
+
 - (IBAction)detailSaveButtonTapped:(id)sender {
+    [self saveDocument:self.document];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void) saveDocument:(SLRDocument *)document {
+    BOOL isNewDocument = !document;
+    // Create the new task if one was not passed
+    if(isNewDocument) {
+        document = [[SLRDocument alloc] init];
+    }
+    [self updateDocumentFromUserInput: document];
+    if(isNewDocument) {
+        NSLog(@"\nisNewDocument: %@ \n %@", self.document.documentName, self.document.documentWords);
+        [self.documentController addDocument:document];
+    }
 }
-*/
+
+- (void)updateDocumentFromUserInput:(SLRDocument *)document {
+    document.documentName = self.documentTitleTextField.text;
+    document.documentWords = self.wordsTextField.text;
+}
 @end

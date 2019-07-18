@@ -27,10 +27,10 @@
 
 // Test Documents
 - (void)addTestDocuments {
-    SLRDocument *document1 = [[SLRDocument alloc] initWithDocumentName:@"Test: This is test document 1" documentWords:@"Progressing through project!"];
-    SLRDocument *document2 = [[SLRDocument alloc] initWithDocumentName:@"Test: This is test document 2" documentWords:@"There's a great deal of review and copy"];
-    SLRDocument *document3 = [[SLRDocument alloc] initWithDocumentName:@"Test: This is test document 3" documentWords:@"Successfully learning this requires invesing more time in practice."];
-    SLRDocument *document4 = [[SLRDocument alloc] initWithDocumentName:@"Test: This is test document 4" documentWords:@"There's the rub: there's very little time."];
+    SLRDocument *document1 = [[SLRDocument alloc] initWithDocumentName:@"Test 1" documentWords:@"Progressing through project!"];
+    SLRDocument *document2 = [[SLRDocument alloc] initWithDocumentName:@"Test2" documentWords:@"There's a great deal of review and copy"];
+    SLRDocument *document3 = [[SLRDocument alloc] initWithDocumentName:@"Test 3" documentWords:@"Successfully learning this requires invesing more time in practice."];
+    SLRDocument *document4 = [[SLRDocument alloc] initWithDocumentName:@"Test 4" documentWords:@"There's the rub: there's very little time."];
     [self addDocument:document1];
     [self addDocument:document2];
     [self addDocument:document3];

@@ -11,10 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class SLRDocument;
+@class SLRDocumentController;
 
 @interface SLRDetailViewController : UIViewController
 
-@property (nonatomic) SLRDocument *doccument;
+@property SLRDocumentController *documentController;
+@property (nonatomic) SLRDocument *document;
+@property NSString *wordCount;
 
 @end
 

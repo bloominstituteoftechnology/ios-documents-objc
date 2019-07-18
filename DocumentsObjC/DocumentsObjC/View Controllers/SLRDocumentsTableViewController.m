@@ -10,6 +10,7 @@
 #import "SLRDetailViewController.h"
 #import "SLRDocumentController.h"
 #import "SLRDocument.h"
+#import "NSString+WordCount.h"
 
 @interface SLRDocumentsTableViewController ()
 
@@ -24,7 +25,6 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     [self.tableView reloadData];
 }
 
@@ -54,7 +54,7 @@
     
     // Display the documentName and documentWords in the tableView cell
     cell.textLabel.text = document.documentName;
-    cell.detailTextLabel.text = @"This will be the word count";
+    cell.detailTextLabel.text =  [document.documentWords slr_wordCount];
     
     return cell;
 }
@@ -64,19 +64,32 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         SLRDocument *document = self.documentController.documents[indexPath.row];
+        [self.documentController removeDocument:document];
         // Now clear the row
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 
 
-/*
+
 #pragma mark - Navigation
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    // Show detail for exsisting document
+    if([segue.identifier isEqualToString:@"SegueWithDocument"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        SLRDocument *document = self.documentController.documents[indexPath.row];
+        
+        // Cast the destination segue controller to the custom controller type
+        SLRDetailViewController *detailVC = segue.destinationViewController;
+        detailVC.documentController = self.documentController;
+        detailVC.document = document;
+        
+    } else {
+        SLRDetailViewController *detailVC = segue.destinationViewController;
+        detailVC.documentController = self.documentController;
+    }
 }
-*/
+
 
 @end
