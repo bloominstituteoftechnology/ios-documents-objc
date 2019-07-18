@@ -10,7 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class KRCDocument;
+@class KRCDocumentController;
+
 @interface KRCDocumentDetailViewController : UIViewController
+
+@property (nonatomic) KRCDocument *document;
+@property (nonatomic) KRCDocumentController *documentController;
+
+- (void)setDocument:(KRCDocument * _Nonnull)document;
+- (void)setDocumentController:(KRCDocumentController * _Nonnull)documentController;
 
 @end
 

@@ -7,7 +7,8 @@
 //
 
 #import "KRCDocumentDetailViewController.h"
-
+#import "KRCDocumentController.h"
+#import "KRCDocument.h"
 @interface KRCDocumentDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *numberOfWordsLabel;
@@ -21,6 +22,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if ([self document]) {
+        [self setTitle:[[self document] documentTitle]];
+    } else {
+        [self setTitle:@"New Document"];
+    }
+    
+}
+
+- (void)setDocument:(KRCDocument * _Nonnull)document {
+    _document = document;
+}
+
+- (void)setDocumentController:(KRCDocumentController * _Nonnull)documentController {
+    _documentController = documentController;
 }
 
 - (IBAction)saveButtonTapped:(id)sender {
