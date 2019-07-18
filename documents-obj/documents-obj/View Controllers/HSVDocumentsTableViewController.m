@@ -7,6 +7,9 @@
 //
 
 #import "HSVDocumentsTableViewController.h"
+#import "../Model Controller /HSVDocumentController.h"
+#import "../Models/HSVDocument.h"
+#import "HSVNewDocumentViewController.h"
 
 @interface HSVDocumentsTableViewController ()
 

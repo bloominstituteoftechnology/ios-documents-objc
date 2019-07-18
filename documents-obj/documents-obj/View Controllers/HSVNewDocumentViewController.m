@@ -8,6 +8,8 @@
 
 #import "HSVNewDocumentViewController.h"
 #import "../NSString+hsvWordCount.h"
+#import "../Model Controller /HSVDocumentController.h"
+#import "../Models/HSVDocument.h"
 
 @interface HSVNewDocumentViewController ()
 

@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class HSVDocumentController;
+
 @interface HSVDocumentsTableViewController : UITableViewController
+
+@property (nonatomic) HSVDocumentController *documentcontroller;
 
 @end
 

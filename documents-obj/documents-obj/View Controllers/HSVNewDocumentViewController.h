@@ -10,9 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class HSVDocumentController;
+@class HSVDocument;
+
 @interface HSVNewDocumentViewController : UIViewController <UITextViewDelegate>
 
-
+@property HSVDocumentController *documentController;
+@property (nonatomic) HSVDocument *document;
 
 @end
 
