@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.documentTextView.delegate = self;
-
+	[self setupViews];
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
@@ -36,8 +36,12 @@
 }
 
 - (void) setupViews {
+	if (!self.isViewLoaded || !self.document) { return; }
 	
-
+	self.title = @"title";
+	self.titleTextField.text = self.document.title;
+	self.documentTextView.text = self.document.body;
+	self.countLabel.text = [self.document.body hsv_wordCount];
 }
 
 

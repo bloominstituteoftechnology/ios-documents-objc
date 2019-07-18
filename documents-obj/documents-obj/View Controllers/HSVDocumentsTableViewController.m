@@ -33,7 +33,6 @@
 	return _documentcontroller;
 }
 
-
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -50,9 +49,6 @@
     return cell;
 }
 
-
-
-// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
 	
@@ -62,9 +58,6 @@
 		[tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
 	}
 }
-
-
-
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 	
@@ -81,9 +74,7 @@
 		HSVNewDocumentViewController *newDocVC = segue.destinationViewController;
 		newDocVC.document = doc;
 		newDocVC.documentController = self.documentcontroller;
-		
 	}
 }
-
 
 @end
