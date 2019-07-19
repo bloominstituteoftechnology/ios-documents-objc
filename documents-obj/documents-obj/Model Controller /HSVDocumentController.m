@@ -28,8 +28,8 @@
 }
 
 - (void)addTestData {
-	HSVDocument * doc1 = [[HSVDocument alloc] initWithTitle:@"clean living room" body:@"clean and clean some more"];
-	HSVDocument * doc2 = [[HSVDocument alloc] initWithTitle:@"clean rest room" body:@"clean and clean some more and some more"];
+	HSVDocument * doc1 = [[HSVDocument alloc] initWithTitle:@"Clean house" body:@"clean and clean some more"];
+	HSVDocument * doc2 = [[HSVDocument alloc] initWithTitle:@"clean backyard" body:@"clean and clean some more and some more"];
 	[self createDocument:doc1];
 	[self createDocument:doc2];
 }
@@ -47,7 +47,7 @@
 }
 
 - (void)updateDocument:(HSVDocument *)document{
-	
+	[_internalDocumets addObject:document];
 }
 
 - (void)deleteDocument:(HSVDocument *)document{

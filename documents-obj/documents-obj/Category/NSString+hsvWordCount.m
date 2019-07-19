@@ -11,6 +11,8 @@
 @implementation NSString (hsvWordCount)
 
 - (NSString *)hsv_wordCount {
+	
+	//words not char  // mitchel budge
 	NSUInteger length = [self length];
 	return [[NSString alloc] initWithFormat:@"%ld", length];
 }

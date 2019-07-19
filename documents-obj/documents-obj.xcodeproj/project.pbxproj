@@ -72,16 +72,15 @@
 			children = (
 				E894090922DFC5220081062E /* AppDelegate.h */,
 				E894090A22DFC5220081062E /* AppDelegate.m */,
-				E894093922E0249E0081062E /* Model Controller  */,
+				E8ED8AA122E1731400C54782 /* Category */,
 				E894093522E0218B0081062E /* Models */,
+				E894093922E0249E0081062E /* Model Controller  */,
 				E894092222DFC81A0081062E /* View Controllers */,
 				E894090F22DFC5220081062E /* Main.storyboard */,
 				E894091222DFC5230081062E /* Assets.xcassets */,
 				E894091422DFC5240081062E /* LaunchScreen.storyboard */,
 				E894091722DFC5240081062E /* Info.plist */,
 				E894091822DFC5240081062E /* main.m */,
-				E894092F22DFD8EC0081062E /* NSString+hsvWordCount.h */,
-				E894093022DFD8EC0081062E /* NSString+hsvWordCount.m */,
 			);
 			path = "documents-obj";
 			sourceTree = "<group>";
@@ -113,6 +112,15 @@
 				E894093722E024930081062E /* HSVDocumentController.m */,
 			);
 			path = "Model Controller ";
+			sourceTree = "<group>";
+		};
+		E8ED8AA122E1731400C54782 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E894092F22DFD8EC0081062E /* NSString+hsvWordCount.h */,
+				E894093022DFD8EC0081062E /* NSString+hsvWordCount.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

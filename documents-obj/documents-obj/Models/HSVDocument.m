@@ -10,6 +10,7 @@
 #import "../NSString+hsvWordCount.h"
 
 @implementation HSVDocument
+
 - (instancetype) initWithTitle:(NSString *)title body:(NSString *)body {
 	self = [super init];
 	if (self) {
