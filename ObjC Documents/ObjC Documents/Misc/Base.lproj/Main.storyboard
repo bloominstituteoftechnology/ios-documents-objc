@@ -62,16 +62,16 @@
             </objects>
             <point key="canvasLocation" x="1098.5507246376812" y="122.54464285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Document Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DocumentDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="R9I-bL-Src">
-                                <rect key="frame" x="20" y="108" width="374" height="196"/>
+                                <rect key="frame" x="20" y="108" width="374" height="268"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Document Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIM-aO-cCS">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -79,14 +79,20 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AhN-6Z-7EE">
-                                        <rect key="frame" x="0.0" y="42" width="374" height="128"/>
+                                        <rect key="frame" x="0.0" y="42" width="374" height="200"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="hSm-yk-ib3"/>
+                                        </constraints>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="A8h-FS-UAg"/>
+                                        </connections>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Count Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRg-W6-XXX">
-                                        <rect key="frame" x="0.0" y="178" width="374" height="18"/>
+                                        <rect key="frame" x="0.0" y="250" width="374" height="18"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -103,8 +109,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rzn-3K-Ps7">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Hvf-7N-PSd"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Hvf-7N-PSd">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="BYZ-38-t0r" id="Bed-hP-T1e"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="documentTextView" destination="AhN-6Z-7EE" id="66W-f8-Cdb"/>
+                        <outlet property="saveButton" destination="Hvf-7N-PSd" id="c7J-Gb-2dC"/>
+                        <outlet property="titleTextField" destination="CIM-aO-cCS" id="oWf-kG-6GH"/>
+                        <outlet property="wordCountLabel" destination="iRg-W6-XXX" id="jWM-Bl-sFW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
