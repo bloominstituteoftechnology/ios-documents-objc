@@ -86,9 +86,17 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TItle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TZX-1N-WEL">
+                                <rect key="frame" x="74" y="189" width="291" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="wTN-IA-MI3" firstAttribute="trailing" secondItem="TZX-1N-WEL" secondAttribute="trailing" constant="49" id="0vj-eJ-xss"/>
+                            <constraint firstItem="TZX-1N-WEL" firstAttribute="leading" secondItem="wTN-IA-MI3" secondAttribute="leading" constant="74" id="1ON-hq-U5g"/>
+                            <constraint firstItem="TZX-1N-WEL" firstAttribute="top" secondItem="451-F9-mYN" secondAttribute="topMargin" constant="101" id="23p-Xz-1WR"/>
                             <constraint firstItem="KWQ-LG-WOz" firstAttribute="leading" secondItem="wTN-IA-MI3" secondAttribute="leading" constant="180" id="77p-lF-v14"/>
                             <constraint firstItem="wTN-IA-MI3" firstAttribute="trailing" secondItem="KWQ-LG-WOz" secondAttribute="trailing" constant="154" id="Sn3-7J-eUo"/>
                             <constraint firstItem="KWQ-LG-WOz" firstAttribute="top" secondItem="wTN-IA-MI3" secondAttribute="top" constant="49" id="TH9-Hx-bMz"/>
@@ -101,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RRH-lB-d0N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="159"/>
+            <point key="canvasLocation" x="1740.5797101449277" y="158.70535714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qrv-fY-l8s">
