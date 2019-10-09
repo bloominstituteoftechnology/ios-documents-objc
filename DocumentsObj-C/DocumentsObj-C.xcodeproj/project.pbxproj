@@ -13,6 +13,7 @@
 		EFB7117D234E86E000BF2D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB7117C234E86E000BF2D04 /* Assets.xcassets */; };
 		EFB71180234E86E000BF2D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB7117E234E86E000BF2D04 /* LaunchScreen.storyboard */; };
 		EFB71183234E86E000BF2D04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB71182234E86E000BF2D04 /* main.m */; };
+		EFB7118B234E8B2C00BF2D04 /* DocsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB7118A234E8B2C00BF2D04 /* DocsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		EFB7117F234E86E000BF2D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFB71181234E86E000BF2D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFB71182234E86E000BF2D04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFB71189234E8B2C00BF2D04 /* DocsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocsTableViewController.h; sourceTree = "<group>"; };
+		EFB7118A234E8B2C00BF2D04 /* DocsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +66,22 @@
 				EFB71173234E86C700BF2D04 /* SceneDelegate.h */,
 				EFB71174234E86C700BF2D04 /* SceneDelegate.m */,
 				EFB71179234E86C700BF2D04 /* Main.storyboard */,
+				EFB7118C234E8B4A00BF2D04 /* VIewControllers */,
 				EFB7117C234E86E000BF2D04 /* Assets.xcassets */,
 				EFB7117E234E86E000BF2D04 /* LaunchScreen.storyboard */,
 				EFB71181234E86E000BF2D04 /* Info.plist */,
 				EFB71182234E86E000BF2D04 /* main.m */,
 			);
 			path = "DocumentsObj-C";
+			sourceTree = "<group>";
+		};
+		EFB7118C234E8B4A00BF2D04 /* VIewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFB71189234E8B2C00BF2D04 /* DocsTableViewController.h */,
+				EFB7118A234E8B2C00BF2D04 /* DocsTableViewController.m */,
+			);
+			path = VIewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB7118B234E8B2C00BF2D04 /* DocsTableViewController.m in Sources */,
 				EFB71172234E86C700BF2D04 /* AppDelegate.m in Sources */,
 				EFB71183234E86E000BF2D04 /* main.m in Sources */,
 				EFB71175234E86C700BF2D04 /* SceneDelegate.m in Sources */,
