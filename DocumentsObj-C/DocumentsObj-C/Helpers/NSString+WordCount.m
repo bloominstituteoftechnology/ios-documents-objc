@@ -8,9 +8,14 @@
 
 #import "NSString+WordCount.h"
 
+#import "TargetConditionals.h"
+#if !TARGET_OS_IOS
 #import <AppKit/AppKit.h>
+#endif
 
 
 @implementation NSString (WordCount)
+
+
 
 @end
