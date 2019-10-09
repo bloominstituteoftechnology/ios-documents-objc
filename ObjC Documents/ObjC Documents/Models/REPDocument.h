@@ -14,4 +14,6 @@
 @property NSString* text;
 @property (readonly) NSUInteger wordCount;
 
+- (instancetype)initWithTitle:(NSString*)title andText:(NSString*)text;
+
 @end
