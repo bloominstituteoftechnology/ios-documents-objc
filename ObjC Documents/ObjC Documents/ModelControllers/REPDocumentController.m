@@ -56,7 +56,15 @@
 }
 
 - (void)deleteDocument:(REPDocument *)document {
-//	[_documents removeObject:document];
+	[[REPCoreDataStack sharedInstance].mainContext performBlockAndWait:^{
+		[[REPCoreDataStack sharedInstance].mainContext deleteObject:document];
+	}];
+
+	NSError* error;
+	[[REPCoreDataStack sharedInstance] saveContext:[REPCoreDataStack sharedInstance].mainContext error:error];
+	if (error) {
+		NSLog(@"Error saving new document: %@", error);
+	}
 }
 
 @end
