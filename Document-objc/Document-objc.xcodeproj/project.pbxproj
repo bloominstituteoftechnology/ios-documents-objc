@@ -16,6 +16,7 @@
 		75D7F9BC234E7868000223DD /* BYDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D7F9BB234E7868000223DD /* BYDocumentsTableViewController.m */; };
 		75D7F9C0234E78B0000223DD /* BYDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D7F9BF234E78B0000223DD /* BYDocumentDetailViewController.m */; };
 		75D7F9C3234E7A70000223DD /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D7F9C2234E7A70000223DD /* NSString+WordCount.m */; };
+		75D7F9C7234E7C2B000223DD /* BYDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D7F9C6234E7C2B000223DD /* BYDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		75D7F9BF234E78B0000223DD /* BYDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYDocumentDetailViewController.m; sourceTree = "<group>"; };
 		75D7F9C1234E7A70000223DD /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		75D7F9C2234E7A70000223DD /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		75D7F9C5234E7C2B000223DD /* BYDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYDocument.h; sourceTree = "<group>"; };
+		75D7F9C6234E7C2B000223DD /* BYDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		75D7F99F234E7741000223DD /* Document-objc */ = {
 			isa = PBXGroup;
 			children = (
+				75D7F9C4234E7C12000223DD /* Model */,
 				75D7F9BD234E7877000223DD /* DocumentDetailScreen */,
 				75D7F9B9234E7843000223DD /* DocumentsTableViewScreen */,
 				75D7F9A0234E7741000223DD /* AppDelegate.h */,
@@ -100,6 +104,15 @@
 				75D7F9BF234E78B0000223DD /* BYDocumentDetailViewController.m */,
 			);
 			path = DocumentDetailScreen;
+			sourceTree = "<group>";
+		};
+		75D7F9C4234E7C12000223DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75D7F9C5234E7C2B000223DD /* BYDocument.h */,
+				75D7F9C6234E7C2B000223DD /* BYDocument.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 				75D7F9B3234E7747000223DD /* main.m in Sources */,
 				75D7F9BC234E7868000223DD /* BYDocumentsTableViewController.m in Sources */,
 				75D7F9C3234E7A70000223DD /* NSString+WordCount.m in Sources */,
+				75D7F9C7234E7C2B000223DD /* BYDocument.m in Sources */,
 				75D7F9C0234E78B0000223DD /* BYDocumentDetailViewController.m in Sources */,
 				75D7F9A5234E7741000223DD /* SceneDelegate.m in Sources */,
 			);
