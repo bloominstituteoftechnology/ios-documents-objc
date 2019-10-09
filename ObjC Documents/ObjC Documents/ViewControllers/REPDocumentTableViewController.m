@@ -7,8 +7,13 @@
 //
 
 #import "REPDocumentTableViewController.h"
+#import "REPDocumentController.h"
+#import "REPDocument.h"
+#import "REPDocumentDetailViewController.h"
 
 @interface REPDocumentTableViewController ()
+
+@property REPDocumentController* documentController;
 
 @end
 
@@ -17,23 +22,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+	_documentController = [[REPDocumentController alloc] init];
 }
 
-#pragma mark - Table view data source
+// MARK: - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.documentController.documents.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
-//
-//    // Configure the cell...
-//
-//    return cell;
-	return nil;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
+
+    // Configure the cell...
+	REPDocument* document = self.documentController.documents[indexPath.row];
+	cell.textLabel.text = document.title;
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu words", document.wordCount];
+
+    return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+	if ([segue.identifier isEqualToString:@"AddDocumentSegue"]) {
+		REPDocumentDetailViewController* detailVC = segue.destinationViewController;
+		detailVC.documentController = self.documentController;
+	}
+	if ([segue.identifier isEqualToString:@"ShowDocumentSegue"]) {
+		REPDocumentDetailViewController* detailVC = segue.destinationViewController;
+		detailVC.documentController = self.documentController;
+
+		NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
+		REPDocument* document = self.documentController.documents[indexPath.row];
+
+		detailVC.document = document;
+	}
+
+
 }
 
 

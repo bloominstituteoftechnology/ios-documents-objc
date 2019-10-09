@@ -41,7 +41,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ulL-5B-26q"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDocumentSegue" id="ulL-5B-26q"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -53,7 +53,7 @@
                     <navigationItem key="navigationItem" id="p1G-m3-0R3">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Ww-IA-PJJ">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="7vL-Ii-xWr"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="AddDocumentSegue" id="7vL-Ii-xWr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -146,6 +146,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7vL-Ii-xWr"/>
+        <segue reference="ulL-5B-26q"/>
     </inferredMetricsTieBreakers>
 </document>

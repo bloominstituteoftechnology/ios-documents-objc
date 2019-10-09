@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class REPDocumentController;
+@class REPDocument;
+
 @interface REPDocumentDetailViewController : UIViewController <UITextViewDelegate>
 
+@property REPDocumentController* documentController;
+@property REPDocument* document;
 
 @end
 
