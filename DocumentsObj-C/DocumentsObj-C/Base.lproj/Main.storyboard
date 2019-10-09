@@ -117,7 +117,11 @@
                         <viewLayoutGuide key="safeArea" id="wTN-IA-MI3"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Document" id="KRZ-7r-vCd">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="N3a-64-vN2"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="N3a-64-vN2">
+                            <connections>
+                                <action selector="save:" destination="zt7-Pa-NNO" id="oxn-04-xSm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="docTextView" destination="pjo-Eb-c04" id="mqQ-jB-YgI"/>
