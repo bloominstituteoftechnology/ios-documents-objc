@@ -26,9 +26,13 @@
 	[super viewDidLoad];
 	// Do any additional setup after loading the view.
 	[self updateViews];
+	[self updateWordCount];
 }
 
 - (void)updateViews {
+	self.documentTextView.layer.borderColor = [UIColor blackColor].CGColor;
+	self.documentTextView.layer.borderWidth = 1.5;
+
 	if (!self.isViewLoaded || !self.document) {
 		return;
 	}
