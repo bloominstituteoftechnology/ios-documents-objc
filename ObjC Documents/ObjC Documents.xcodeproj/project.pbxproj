@@ -61,19 +61,35 @@
 		3329E81B234E7D2500EE2EEE /* ObjC Documents */ = {
 			isa = PBXGroup;
 			children = (
+				3329E835234E7EF100EE2EEE /* ViewControllers */,
+				33541B02234E7F3A008FD665 /* Misc */,
+			);
+			path = "ObjC Documents";
+			sourceTree = "<group>";
+		};
+		3329E835234E7EF100EE2EEE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3329E822234E7D2500EE2EEE /* ViewController.h */,
+				3329E823234E7D2500EE2EEE /* ViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		33541B02234E7F3A008FD665 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
 				3329E81C234E7D2500EE2EEE /* AppDelegate.h */,
 				3329E81D234E7D2500EE2EEE /* AppDelegate.m */,
 				3329E81F234E7D2500EE2EEE /* SceneDelegate.h */,
 				3329E820234E7D2500EE2EEE /* SceneDelegate.m */,
-				3329E822234E7D2500EE2EEE /* ViewController.h */,
-				3329E823234E7D2500EE2EEE /* ViewController.m */,
 				3329E825234E7D2500EE2EEE /* Main.storyboard */,
 				3329E828234E7D2700EE2EEE /* Assets.xcassets */,
 				3329E82A234E7D2700EE2EEE /* LaunchScreen.storyboard */,
 				3329E82D234E7D2700EE2EEE /* Info.plist */,
 				3329E82E234E7D2700EE2EEE /* main.m */,
 			);
-			path = "ObjC Documents";
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5UZAT7KA9;
-				INFOPLIST_FILE = "ObjC Documents/Info.plist";
+				INFOPLIST_FILE = "ObjC Documents/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5UZAT7KA9;
-				INFOPLIST_FILE = "ObjC Documents/Info.plist";
+				INFOPLIST_FILE = "ObjC Documents/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
