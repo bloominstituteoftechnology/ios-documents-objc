@@ -8,7 +8,8 @@
 
 #import "REPDocumentTableViewController.h"
 #import "REPDocumentController.h"
-#import "REPDocument.h"
+#import "REPDocument+CoreDataClass.h"
+#import "REPDocument+Convenience.h"
 #import "REPDocumentDetailViewController.h"
 
 @interface REPDocumentTableViewController ()

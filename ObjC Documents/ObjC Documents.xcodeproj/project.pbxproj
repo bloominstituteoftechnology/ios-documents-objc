@@ -16,9 +16,10 @@
 		3329E82F234E7D2700EE2EEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3329E82E234E7D2700EE2EEE /* main.m */; };
 		33AB6FEC234E812700110464 /* REPDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FEB234E812700110464 /* REPDocumentTableViewController.m */; };
 		33AB6FF2234E81A800110464 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FF1234E81A800110464 /* NSString+WordCount.m */; };
-		33AB6FF7234E82DD00110464 /* REPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FF6234E82DD00110464 /* REPDocument.m */; };
+		33AB6FF7234E82DD00110464 /* REPDocument+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FF6234E82DD00110464 /* REPDocument+Convenience.m */; };
 		33AB6FFA234E83E600110464 /* REPDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FF9234E83E600110464 /* REPDocumentController.m */; };
 		33AB6FFD234E8E6300110464 /* REPCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FFC234E8E6300110464 /* REPCoreDataStack.m */; };
+		33AB7000234E998A00110464 /* REPDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FFE234E998A00110464 /* REPDocument.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,12 +39,13 @@
 		33AB6FF0234E81A800110464 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		33AB6FF1234E81A800110464 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 		33AB6FF4234E82AE00110464 /* REPDocumentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REPDocumentDetailViewController.h; sourceTree = "<group>"; };
-		33AB6FF5234E82DD00110464 /* REPDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REPDocument.h; sourceTree = "<group>"; };
-		33AB6FF6234E82DD00110464 /* REPDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REPDocument.m; sourceTree = "<group>"; };
+		33AB6FF5234E82DD00110464 /* REPDocument+Convenience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "REPDocument+Convenience.h"; sourceTree = "<group>"; };
+		33AB6FF6234E82DD00110464 /* REPDocument+Convenience.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "REPDocument+Convenience.m"; sourceTree = "<group>"; };
 		33AB6FF8234E83E600110464 /* REPDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REPDocumentController.h; sourceTree = "<group>"; };
 		33AB6FF9234E83E600110464 /* REPDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REPDocumentController.m; sourceTree = "<group>"; };
 		33AB6FFB234E8E6300110464 /* REPCoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REPCoreDataStack.h; sourceTree = "<group>"; };
 		33AB6FFC234E8E6300110464 /* REPCoreDataStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REPCoreDataStack.m; sourceTree = "<group>"; };
+		33AB6FFF234E998A00110464 /* REPDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = REPDocument.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +117,9 @@
 		33AB6FED234E818700110464 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				33AB6FF5234E82DD00110464 /* REPDocument.h */,
-				33AB6FF6234E82DD00110464 /* REPDocument.m */,
+				33AB6FF5234E82DD00110464 /* REPDocument+Convenience.h */,
+				33AB6FF6234E82DD00110464 /* REPDocument+Convenience.m */,
+				33AB6FFE234E998A00110464 /* REPDocument.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,9 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3329E824234E7D2500EE2EEE /* REPDocumentDetailViewController.m in Sources */,
-				33AB6FF7234E82DD00110464 /* REPDocument.m in Sources */,
+				33AB6FF7234E82DD00110464 /* REPDocument+Convenience.m in Sources */,
 				33AB6FFD234E8E6300110464 /* REPCoreDataStack.m in Sources */,
 				3329E81E234E7D2500EE2EEE /* AppDelegate.m in Sources */,
+				33AB7000234E998A00110464 /* REPDocument.xcdatamodeld in Sources */,
 				33AB6FEC234E812700110464 /* REPDocumentTableViewController.m in Sources */,
 				33AB6FFA234E83E600110464 /* REPDocumentController.m in Sources */,
 				33AB6FF2234E81A800110464 /* NSString+WordCount.m in Sources */,
@@ -412,6 +416,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		33AB6FFE234E998A00110464 /* REPDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				33AB6FFF234E998A00110464 /* REPDocument.xcdatamodel */,
+			);
+			currentVersion = 33AB6FFF234E998A00110464 /* REPDocument.xcdatamodel */;
+			path = REPDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3329E811234E7D2500EE2EEE /* Project object */;
 }

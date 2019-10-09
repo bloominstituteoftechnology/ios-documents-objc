@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "REPDocument+CoreDataClass.h"
 
-@interface REPDocument : NSObject
+@interface REPDocument (Convenience)
 
-@property NSString* title;
-@property NSString* text;
 @property (readonly) NSUInteger wordCount;
 
-- (instancetype)initWithTitle:(NSString*)title andText:(NSString*)text;
+- (instancetype)initWithTitle:(NSString*)title andText:(NSString*)text onContext:(NSManagedObjectContext*)context;
+
 
 @end

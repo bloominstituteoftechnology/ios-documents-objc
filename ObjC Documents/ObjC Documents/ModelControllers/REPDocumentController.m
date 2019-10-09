@@ -7,7 +7,8 @@
 //
 
 #import "REPDocumentController.h"
-#import "REPDocument.h"
+#import "REPDocument+CoreDataClass.h"
+#import "REPDocument+Convenience.h"
 #import "REPCoreDataStack.h"
 
 @interface REPDocumentController() {
@@ -31,17 +32,31 @@
 }
 
 - (void)createDocumentWithTitle:(NSString *)title andText:(NSString *)text {
-	REPDocument* document = [[REPDocument alloc] initWithTitle:title andText:text];
+	REPDocument* document = [[REPDocument alloc] initWithTitle:title andText:text onContext:[REPCoreDataStack sharedInstance].mainContext];
 	[_documents addObject:document];
+
+	NSError* error;
+	[[REPCoreDataStack sharedInstance] saveContext:[REPCoreDataStack sharedInstance].mainContext error:error];
+	if (error) {
+		NSLog(@"Error saving new document: %@", error);
+	}
 }
 
 - (void)updateDocument:(REPDocument *)document withTitle:(NSString *)title andText:(NSString *)text {
-	document.title = title;
-	document.text = text;
+	[[REPCoreDataStack sharedInstance].mainContext performBlockAndWait:^{
+		document.title = title;
+		document.text = text;
+	}];
+
+	NSError* error;
+	[[REPCoreDataStack sharedInstance] saveContext:[REPCoreDataStack sharedInstance].mainContext error:error];
+	if (error) {
+		NSLog(@"Error saving new document: %@", error);
+	}
 }
 
 - (void)deleteDocument:(REPDocument *)document {
-	[_documents removeObject:document];
+//	[_documents removeObject:document];
 }
 
 @end

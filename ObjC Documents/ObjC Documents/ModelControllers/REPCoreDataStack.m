@@ -33,7 +33,7 @@ static REPCoreDataStack* _sharedInstance = nil;
 
 - (NSPersistentContainer *)container {
 	if (!_container) {
-		_container = [NSPersistentContainer persistentContainerWithName:@""];
+		_container = [NSPersistentContainer persistentContainerWithName:@"REPDocument"];
 
 		[_container loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *description, NSError *error) {
 			if (error) {
