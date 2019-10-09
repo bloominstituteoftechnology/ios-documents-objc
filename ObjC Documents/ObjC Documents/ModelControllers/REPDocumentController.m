@@ -8,6 +8,7 @@
 
 #import "REPDocumentController.h"
 #import "REPDocument.h"
+#import "REPCoreDataStack.h"
 
 @interface REPDocumentController() {
 	NSMutableArray* _documents;
