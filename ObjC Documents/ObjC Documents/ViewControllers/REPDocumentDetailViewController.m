@@ -7,7 +7,7 @@
 //
 
 #import "REPDocumentDetailViewController.h"
-#import "REPDocument.h"
+#import "REPDocument+CoreDataClass.h"
 #import "REPDocumentController.h"
 #import "NSString+WordCount.h"
 
