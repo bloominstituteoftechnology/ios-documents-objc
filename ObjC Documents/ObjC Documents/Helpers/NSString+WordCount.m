@@ -11,7 +11,8 @@
 @implementation NSString (WordCount)
 
 - (NSUInteger)wordCount {
-	NSArray* words = [self componentsSeparatedByString:@" "];
+	NSString* tStr = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	NSArray* words = [tStr componentsSeparatedByString:@" "];
 	return words.count;
 }
 
