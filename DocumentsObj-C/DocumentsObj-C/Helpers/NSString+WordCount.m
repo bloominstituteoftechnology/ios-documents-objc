@@ -16,6 +16,8 @@
 
 @implementation NSString (WordCount)
 
-
+-(NSUInteger)wordCount:(NSString*)word {
+    return [word length];
+}
 
 @end

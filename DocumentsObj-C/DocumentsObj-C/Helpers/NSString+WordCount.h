@@ -16,7 +16,7 @@
 
 @interface NSString (WordCount)
 
--(int)wordCount:(NSString*)word;
+-(NSUInteger)wordCount:(NSString*)word;
 
 
 @end
