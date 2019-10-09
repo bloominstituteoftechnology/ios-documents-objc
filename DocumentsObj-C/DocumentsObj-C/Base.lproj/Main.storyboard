@@ -102,7 +102,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wTN-IA-MI3" firstAttribute="trailing" secondItem="TZX-1N-WEL" secondAttribute="trailing" constant="49" id="0vj-eJ-xss"/>
                             <constraint firstItem="TZX-1N-WEL" firstAttribute="leading" secondItem="wTN-IA-MI3" secondAttribute="leading" constant="74" id="1ON-hq-U5g"/>
