@@ -15,7 +15,7 @@
 - (instancetype)initWithTitle:(NSString*)title andText:(NSString*)text onContext:(NSManagedObjectContext*)context {
 	if (self = [super initWithContext:context]) {
 		self.title = title;
-		self.title = text;
+		self.text = text;
 		self.id = [NSUUID UUID];
 	}
 	return self;
