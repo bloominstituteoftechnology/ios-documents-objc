@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class BYDocumentController;
+@class BYDocument;
 
 @interface BYDocumentDetailViewController : UIViewController
 
-@end
+@property BYDocumentController *documentController;
+@property BYDocument *document;
 
-NS_ASSUME_NONNULL_END
+@end
