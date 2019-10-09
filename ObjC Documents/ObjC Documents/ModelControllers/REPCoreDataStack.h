@@ -11,12 +11,11 @@
 
 @interface REPCoreDataStack : NSObject
 
-@property (readonly) NSPersistentContainer* container;
-@property (readonly) NSManagedObjectContext* mainContext;
-
-
 + (REPCoreDataStack*)sharedInstance;
 
-- (void)saveContext:(NSManagedObjectContext*)context; // error:(NSError*)error;
+@property (readonly) NSManagedObjectContext* mainContext;
+@property (readonly) NSPersistentContainer* container;
+
+- (void)saveContext:(NSManagedObjectContext*)context error:(NSError*)error;
 
 @end
