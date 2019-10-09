@@ -15,6 +15,7 @@
 		75D7F9B3234E7747000223DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D7F9B2234E7747000223DD /* main.m */; };
 		75D7F9BC234E7868000223DD /* BYDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D7F9BB234E7868000223DD /* BYDocumentsTableViewController.m */; };
 		75D7F9C0234E78B0000223DD /* BYDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D7F9BF234E78B0000223DD /* BYDocumentDetailViewController.m */; };
+		75D7F9C3234E7A70000223DD /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D7F9C2234E7A70000223DD /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		75D7F9BB234E7868000223DD /* BYDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYDocumentsTableViewController.m; sourceTree = "<group>"; };
 		75D7F9BE234E78B0000223DD /* BYDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYDocumentDetailViewController.h; sourceTree = "<group>"; };
 		75D7F9BF234E78B0000223DD /* BYDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYDocumentDetailViewController.m; sourceTree = "<group>"; };
+		75D7F9C1234E7A70000223DD /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		75D7F9C2234E7A70000223DD /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				75D7F9AE234E7747000223DD /* LaunchScreen.storyboard */,
 				75D7F9B1234E7747000223DD /* Info.plist */,
 				75D7F9B2234E7747000223DD /* main.m */,
+				75D7F9C1234E7A70000223DD /* NSString+WordCount.h */,
+				75D7F9C2234E7A70000223DD /* NSString+WordCount.m */,
 			);
 			path = "Document-objc";
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				75D7F9A2234E7741000223DD /* AppDelegate.m in Sources */,
 				75D7F9B3234E7747000223DD /* main.m in Sources */,
 				75D7F9BC234E7868000223DD /* BYDocumentsTableViewController.m in Sources */,
+				75D7F9C3234E7A70000223DD /* NSString+WordCount.m in Sources */,
 				75D7F9C0234E78B0000223DD /* BYDocumentDetailViewController.m in Sources */,
 				75D7F9A5234E7741000223DD /* SceneDelegate.m in Sources */,
 			);
