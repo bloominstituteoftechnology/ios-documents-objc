@@ -1,14 +1,14 @@
 //
-//  DocumentDetailViewController.m
+//  REPDocumentDetailViewController.m
 //  ObjC Documents
 //
 //  Created by Michael Redig on 10/9/19.
 //  Copyright © 2019 Red_Egg Productions. All rights reserved.
 //
 
-#import "DocumentDetailViewController.h"
+#import "REPDocumentDetailViewController.h"
 
-@interface DocumentDetailViewController ()
+@interface REPDocumentDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *documentTextView;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation DocumentDetailViewController
+@implementation REPDocumentDetailViewController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];

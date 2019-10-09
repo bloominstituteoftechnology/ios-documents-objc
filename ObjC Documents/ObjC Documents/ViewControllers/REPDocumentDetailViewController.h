@@ -1,5 +1,5 @@
 //
-//  DocumentDetailViewController.h
+//  REPDocumentDetailViewController.h
 //  ObjC Documents
 //
 //  Created by Michael Redig on 10/9/19.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DocumentDetailViewController : UIViewController <UITextViewDelegate>
+@interface REPDocumentDetailViewController : UIViewController <UITextViewDelegate>
 
 
 @end

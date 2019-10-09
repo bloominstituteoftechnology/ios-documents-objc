@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		3329E81E234E7D2500EE2EEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3329E81D234E7D2500EE2EEE /* AppDelegate.m */; };
 		3329E821234E7D2500EE2EEE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3329E820234E7D2500EE2EEE /* SceneDelegate.m */; };
-		3329E824234E7D2500EE2EEE /* DocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3329E823234E7D2500EE2EEE /* DocumentDetailViewController.m */; };
+		3329E824234E7D2500EE2EEE /* REPDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3329E823234E7D2500EE2EEE /* REPDocumentDetailViewController.m */; };
 		3329E827234E7D2500EE2EEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3329E825234E7D2500EE2EEE /* Main.storyboard */; };
 		3329E829234E7D2700EE2EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3329E828234E7D2700EE2EEE /* Assets.xcassets */; };
 		3329E82C234E7D2700EE2EEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3329E82A234E7D2700EE2EEE /* LaunchScreen.storyboard */; };
 		3329E82F234E7D2700EE2EEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3329E82E234E7D2700EE2EEE /* main.m */; };
+		33AB6FEC234E812700110464 /* REPDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FEB234E812700110464 /* REPDocumentTableViewController.m */; };
+		33AB6FF2234E81A800110464 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FF1234E81A800110464 /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +24,17 @@
 		3329E81D234E7D2500EE2EEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3329E81F234E7D2500EE2EEE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		3329E820234E7D2500EE2EEE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		3329E822234E7D2500EE2EEE /* DocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDetailViewController.h; sourceTree = "<group>"; };
-		3329E823234E7D2500EE2EEE /* DocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDetailViewController.m; sourceTree = "<group>"; };
+		3329E823234E7D2500EE2EEE /* REPDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REPDocumentDetailViewController.m; sourceTree = "<group>"; };
 		3329E826234E7D2500EE2EEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3329E828234E7D2700EE2EEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3329E82B234E7D2700EE2EEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3329E82D234E7D2700EE2EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3329E82E234E7D2700EE2EEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33AB6FEA234E812700110464 /* REPDocumentTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REPDocumentTableViewController.h; sourceTree = "<group>"; };
+		33AB6FEB234E812700110464 /* REPDocumentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REPDocumentTableViewController.m; sourceTree = "<group>"; };
+		33AB6FF0234E81A800110464 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		33AB6FF1234E81A800110464 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		33AB6FF4234E82AE00110464 /* REPDocumentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REPDocumentDetailViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 		3329E81B234E7D2500EE2EEE /* ObjC Documents */ = {
 			isa = PBXGroup;
 			children = (
+				33AB6FEE234E818A00110464 /* ModelControllers */,
+				33AB6FED234E818700110464 /* Models */,
+				33AB6FEF234E819200110464 /* Helpers */,
 				3329E835234E7EF100EE2EEE /* ViewControllers */,
 				33541B02234E7F3A008FD665 /* Misc */,
 			);
@@ -70,8 +79,10 @@
 		3329E835234E7EF100EE2EEE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3329E822234E7D2500EE2EEE /* DocumentDetailViewController.h */,
-				3329E823234E7D2500EE2EEE /* DocumentDetailViewController.m */,
+				33AB6FF4234E82AE00110464 /* REPDocumentDetailViewController.h */,
+				3329E823234E7D2500EE2EEE /* REPDocumentDetailViewController.m */,
+				33AB6FEA234E812700110464 /* REPDocumentTableViewController.h */,
+				33AB6FEB234E812700110464 /* REPDocumentTableViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -90,6 +101,29 @@
 				3329E82E234E7D2700EE2EEE /* main.m */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		33AB6FED234E818700110464 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		33AB6FEE234E818A00110464 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		33AB6FEF234E819200110464 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				33AB6FF0234E81A800110464 /* NSString+WordCount.h */,
+				33AB6FF1234E81A800110464 /* NSString+WordCount.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +152,7 @@
 		3329E811234E7D2500EE2EEE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = REP;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Red_Egg Productions";
 				TargetAttributes = {
@@ -162,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3329E824234E7D2500EE2EEE /* DocumentDetailViewController.m in Sources */,
+				3329E824234E7D2500EE2EEE /* REPDocumentDetailViewController.m in Sources */,
 				3329E81E234E7D2500EE2EEE /* AppDelegate.m in Sources */,
+				33AB6FEC234E812700110464 /* REPDocumentTableViewController.m in Sources */,
+				33AB6FF2234E81A800110464 /* NSString+WordCount.m in Sources */,
 				3329E82F234E7D2700EE2EEE /* main.m in Sources */,
 				3329E821234E7D2500EE2EEE /* SceneDelegate.m in Sources */,
 			);
