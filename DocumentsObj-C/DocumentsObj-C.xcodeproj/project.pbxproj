@@ -14,6 +14,7 @@
 		EFB71180234E86E000BF2D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB7117E234E86E000BF2D04 /* LaunchScreen.storyboard */; };
 		EFB71183234E86E000BF2D04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB71182234E86E000BF2D04 /* main.m */; };
 		EFB7118B234E8B2C00BF2D04 /* DocsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB7118A234E8B2C00BF2D04 /* DocsTableViewController.m */; };
+		EFB7118F234E8B8C00BF2D04 /* DocDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB7118E234E8B8C00BF2D04 /* DocDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		EFB71182234E86E000BF2D04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFB71189234E8B2C00BF2D04 /* DocsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocsTableViewController.h; sourceTree = "<group>"; };
 		EFB7118A234E8B2C00BF2D04 /* DocsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocsTableViewController.m; sourceTree = "<group>"; };
+		EFB7118D234E8B8C00BF2D04 /* DocDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocDetailViewController.h; sourceTree = "<group>"; };
+		EFB7118E234E8B8C00BF2D04 /* DocDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 			children = (
 				EFB71189234E8B2C00BF2D04 /* DocsTableViewController.h */,
 				EFB7118A234E8B2C00BF2D04 /* DocsTableViewController.m */,
+				EFB7118D234E8B8C00BF2D04 /* DocDetailViewController.h */,
+				EFB7118E234E8B8C00BF2D04 /* DocDetailViewController.m */,
 			);
 			path = VIewControllers;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			files = (
 				EFB7118B234E8B2C00BF2D04 /* DocsTableViewController.m in Sources */,
 				EFB71172234E86C700BF2D04 /* AppDelegate.m in Sources */,
+				EFB7118F234E8B8C00BF2D04 /* DocDetailViewController.m in Sources */,
 				EFB71183234E86E000BF2D04 /* main.m in Sources */,
 				EFB71175234E86C700BF2D04 /* SceneDelegate.m in Sources */,
 			);
