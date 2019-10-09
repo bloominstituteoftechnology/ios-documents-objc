@@ -1,18 +1,18 @@
 //
-//  DocumentTableViewController.m
+//  MJRDocumentsTableViewController.m
 //  Documents-ObjectiveC
 //
 //  Created by Marlon Raskin on 10/9/19.
 //  Copyright © 2019 Marlon Raskin. All rights reserved.
 //
 
-#import "DocumentTableViewController.h"
+#import "MJRDocumentsTableViewController.h"
 
-@interface DocumentTableViewController ()
+@interface MJRDocumentsTableViewController ()
 
 @end
 
-@implementation DocumentTableViewController
+@implementation MJRDocumentsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,10 +33,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocCell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    
     return cell;
 }
+
 
 /*
 // Override to support conditional editing of the table view.

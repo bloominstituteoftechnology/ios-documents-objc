@@ -1,5 +1,5 @@
 //
-//  DocumentTableViewController.h
+//  MJRDocumentsTableViewController.h
 //  Documents-ObjectiveC
 //
 //  Created by Marlon Raskin on 10/9/19.
@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface DocumentTableViewController : UITableViewController
+@interface MJRDocumentsTableViewController : UITableViewController
 
 @end
-
-NS_ASSUME_NONNULL_END

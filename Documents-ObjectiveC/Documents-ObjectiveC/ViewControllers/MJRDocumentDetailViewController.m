@@ -1,23 +1,22 @@
 //
-//  DocumentDetailViewController.m
+//  MJRDocumentDetailViewController.m
 //  Documents-ObjectiveC
 //
 //  Created by Marlon Raskin on 10/9/19.
 //  Copyright © 2019 Marlon Raskin. All rights reserved.
 //
 
-#import "DocumentDetailViewController.h"
+#import "MJRDocumentDetailViewController.h"
 
-
-@interface DocumentDetailViewController ()
+@interface MJRDocumentDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
-@property (weak, nonatomic) IBOutlet UITextField *docNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
-@implementation DocumentDetailViewController
+@implementation MJRDocumentDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

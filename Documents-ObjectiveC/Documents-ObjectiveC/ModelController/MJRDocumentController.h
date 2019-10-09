@@ -1,5 +1,5 @@
 //
-//  Document.h
+//  MJRDocumentController.h
 //  Documents-ObjectiveC
 //
 //  Created by Marlon Raskin on 10/9/19.
@@ -8,10 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface Document : NSObject
+@interface MJRDocumentController : NSObject
 
 @end
-
-NS_ASSUME_NONNULL_END

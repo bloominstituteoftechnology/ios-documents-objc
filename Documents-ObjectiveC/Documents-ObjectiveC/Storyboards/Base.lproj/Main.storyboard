@@ -10,7 +10,7 @@
         <!--Documents-->
         <scene sceneID="VEg-Mx-Mii">
             <objects>
-                <tableViewController id="2oj-q7-p8c" customClass="DocumentTableViewController" sceneMemberID="viewController">
+                <tableViewController id="2oj-q7-p8c" customClass="MJRDocumentsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YMB-Sj-fkh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +65,7 @@
         <!--Document Detail View Controller-->
         <scene sceneID="R3g-3v-unI">
             <objects>
-                <viewController id="yQe-Ag-2vN" customClass="DocumentDetailViewController" sceneMemberID="viewController">
+                <viewController id="yQe-Ag-2vN" customClass="MJRDocumentDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GDP-xA-lfd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,9 +117,9 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="WE2-yz-zvg"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="docNameTextField" destination="Pee-Av-hkA" id="ldQ-JO-97D"/>
-                        <outlet property="textView" destination="IBX-jU-jsI" id="xCB-8D-xT2"/>
-                        <outlet property="wordCountLabel" destination="P3D-gR-boA" id="ZEX-Np-tiu"/>
+                        <outlet property="nameTextField" destination="Pee-Av-hkA" id="CBU-3Z-9eO"/>
+                        <outlet property="textView" destination="IBX-jU-jsI" id="wZ3-FH-iTC"/>
+                        <outlet property="wordCountLabel" destination="P3D-gR-boA" id="dbD-24-HMd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="um1-68-ag2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -149,7 +149,7 @@
         <image name="doc.text" catalog="system" width="56" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="D2S-9I-5zK"/>
+        <segue reference="vHa-In-wv5"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

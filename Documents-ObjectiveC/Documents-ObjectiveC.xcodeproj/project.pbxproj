@@ -13,10 +13,10 @@
 		375DB6B8234E84230007A6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375DB6B7234E84230007A6BF /* Assets.xcassets */; };
 		375DB6BB234E84230007A6BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375DB6B9234E84230007A6BF /* LaunchScreen.storyboard */; };
 		375DB6BE234E84230007A6BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6BD234E84230007A6BF /* main.m */; };
-		375DB6CA234E89630007A6BF /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6C9234E89630007A6BF /* Document.m */; };
-		375DB6CD234E89870007A6BF /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6CC234E89870007A6BF /* DocumentController.m */; };
-		375DB6D0234E89A60007A6BF /* DocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6CF234E89A60007A6BF /* DocumentDetailViewController.m */; };
-		375DB6D3234E89BB0007A6BF /* DocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6D2234E89BB0007A6BF /* DocumentTableViewController.m */; };
+		375DB6D8234E910F0007A6BF /* MJRDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6D7234E910F0007A6BF /* MJRDocumentsTableViewController.m */; };
+		375DB6DB234E92320007A6BF /* MJRDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6DA234E92320007A6BF /* MJRDocumentDetailViewController.m */; };
+		375DB6DE234E93F30007A6BF /* MJRDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6DD234E93F30007A6BF /* MJRDocument.m */; };
+		375DB6E1234E94F10007A6BF /* MJRDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6E0234E94F10007A6BF /* MJRDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +30,14 @@
 		375DB6BA234E84230007A6BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		375DB6BC234E84230007A6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		375DB6BD234E84230007A6BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		375DB6C8234E89630007A6BF /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
-		375DB6C9234E89630007A6BF /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
-		375DB6CB234E89870007A6BF /* DocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
-		375DB6CC234E89870007A6BF /* DocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
-		375DB6CE234E89A60007A6BF /* DocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDetailViewController.h; sourceTree = "<group>"; };
-		375DB6CF234E89A60007A6BF /* DocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDetailViewController.m; sourceTree = "<group>"; };
-		375DB6D1234E89BB0007A6BF /* DocumentTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentTableViewController.h; sourceTree = "<group>"; };
-		375DB6D2234E89BB0007A6BF /* DocumentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentTableViewController.m; sourceTree = "<group>"; };
+		375DB6D6234E910F0007A6BF /* MJRDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRDocumentsTableViewController.h; sourceTree = "<group>"; };
+		375DB6D7234E910F0007A6BF /* MJRDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocumentsTableViewController.m; sourceTree = "<group>"; };
+		375DB6D9234E92320007A6BF /* MJRDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRDocumentDetailViewController.h; sourceTree = "<group>"; };
+		375DB6DA234E92320007A6BF /* MJRDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocumentDetailViewController.m; sourceTree = "<group>"; };
+		375DB6DC234E93F30007A6BF /* MJRDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRDocument.h; sourceTree = "<group>"; };
+		375DB6DD234E93F30007A6BF /* MJRDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocument.m; sourceTree = "<group>"; };
+		375DB6DF234E94F10007A6BF /* MJRDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRDocumentController.h; sourceTree = "<group>"; };
+		375DB6E0234E94F10007A6BF /* MJRDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +86,10 @@
 		375DB6C4234E886D0007A6BF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				375DB6CE234E89A60007A6BF /* DocumentDetailViewController.h */,
-				375DB6CF234E89A60007A6BF /* DocumentDetailViewController.m */,
-				375DB6D1234E89BB0007A6BF /* DocumentTableViewController.h */,
-				375DB6D2234E89BB0007A6BF /* DocumentTableViewController.m */,
+				375DB6D6234E910F0007A6BF /* MJRDocumentsTableViewController.h */,
+				375DB6D7234E910F0007A6BF /* MJRDocumentsTableViewController.m */,
+				375DB6D9234E92320007A6BF /* MJRDocumentDetailViewController.h */,
+				375DB6DA234E92320007A6BF /* MJRDocumentDetailViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -97,8 +97,8 @@
 		375DB6C5234E88830007A6BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				375DB6C8234E89630007A6BF /* Document.h */,
-				375DB6C9234E89630007A6BF /* Document.m */,
+				375DB6DC234E93F30007A6BF /* MJRDocument.h */,
+				375DB6DD234E93F30007A6BF /* MJRDocument.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,8 +106,8 @@
 		375DB6C6234E888A0007A6BF /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
-				375DB6CB234E89870007A6BF /* DocumentController.h */,
-				375DB6CC234E89870007A6BF /* DocumentController.m */,
+				375DB6DF234E94F10007A6BF /* MJRDocumentController.h */,
+				375DB6E0234E94F10007A6BF /* MJRDocumentController.m */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -165,6 +165,7 @@
 		375DB6A0234E84200007A6BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MJR;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Marlon Raskin";
 				TargetAttributes = {
@@ -209,12 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				375DB6CA234E89630007A6BF /* Document.m in Sources */,
-				375DB6D3234E89BB0007A6BF /* DocumentTableViewController.m in Sources */,
+				375DB6DE234E93F30007A6BF /* MJRDocument.m in Sources */,
 				375DB6AD234E84200007A6BF /* AppDelegate.m in Sources */,
-				375DB6CD234E89870007A6BF /* DocumentController.m in Sources */,
+				375DB6E1234E94F10007A6BF /* MJRDocumentController.m in Sources */,
+				375DB6DB234E92320007A6BF /* MJRDocumentDetailViewController.m in Sources */,
 				375DB6BE234E84230007A6BF /* main.m in Sources */,
-				375DB6D0234E89A60007A6BF /* DocumentDetailViewController.m in Sources */,
+				375DB6D8234E910F0007A6BF /* MJRDocumentsTableViewController.m in Sources */,
 				375DB6B0234E84200007A6BF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

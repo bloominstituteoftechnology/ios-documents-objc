@@ -1,5 +1,5 @@
 //
-//  DocumentDetailViewController.h
+//  MJRDocumentDetailViewController.h
 //  Documents-ObjectiveC
 //
 //  Created by Marlon Raskin on 10/9/19.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-
-
-@interface DocumentDetailViewController : UIViewController
+@interface MJRDocumentDetailViewController : UIViewController
 
 @end
