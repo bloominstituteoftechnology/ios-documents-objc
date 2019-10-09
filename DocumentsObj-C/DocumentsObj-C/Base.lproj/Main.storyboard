@@ -91,15 +91,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pjo-Eb-c04">
+                                <rect key="frame" x="64" y="259" width="301" height="268"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="McE-ve-Rh0"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wTN-IA-MI3" firstAttribute="trailing" secondItem="TZX-1N-WEL" secondAttribute="trailing" constant="49" id="0vj-eJ-xss"/>
                             <constraint firstItem="TZX-1N-WEL" firstAttribute="leading" secondItem="wTN-IA-MI3" secondAttribute="leading" constant="74" id="1ON-hq-U5g"/>
+                            <constraint firstItem="pjo-Eb-c04" firstAttribute="leading" secondItem="wTN-IA-MI3" secondAttribute="leading" constant="64" id="1n0-b4-gPy"/>
                             <constraint firstItem="TZX-1N-WEL" firstAttribute="top" secondItem="451-F9-mYN" secondAttribute="topMargin" constant="101" id="23p-Xz-1WR"/>
                             <constraint firstItem="KWQ-LG-WOz" firstAttribute="leading" secondItem="wTN-IA-MI3" secondAttribute="leading" constant="180" id="77p-lF-v14"/>
                             <constraint firstItem="wTN-IA-MI3" firstAttribute="trailing" secondItem="KWQ-LG-WOz" secondAttribute="trailing" constant="154" id="Sn3-7J-eUo"/>
                             <constraint firstItem="KWQ-LG-WOz" firstAttribute="top" secondItem="wTN-IA-MI3" secondAttribute="top" constant="49" id="TH9-Hx-bMz"/>
+                            <constraint firstItem="wTN-IA-MI3" firstAttribute="trailing" secondItem="pjo-Eb-c04" secondAttribute="trailing" constant="49" id="YbV-Sj-069"/>
+                            <constraint firstItem="pjo-Eb-c04" firstAttribute="top" secondItem="451-F9-mYN" secondAttribute="topMargin" constant="171" id="wQp-pZ-zqX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wTN-IA-MI3"/>
                     </view>
