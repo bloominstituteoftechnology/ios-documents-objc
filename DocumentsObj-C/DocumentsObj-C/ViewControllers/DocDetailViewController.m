@@ -11,9 +11,7 @@
 @interface DocDetailViewController ()
 
 @property (strong, nonatomic) IBOutlet UILabel *wordCount;
-
 @property (strong, nonatomic) IBOutlet UITextField *titleTextField;
-
 @property (strong, nonatomic) IBOutlet UITextView *docTextView;
 
 @end
