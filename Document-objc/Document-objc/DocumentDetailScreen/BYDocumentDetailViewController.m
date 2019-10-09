@@ -36,6 +36,7 @@
         
         document.title = self.titleTextField.text;
         document.bodyText = self.bodyTextView.text;
+    [document setWordCount: [self.bodyTextView.text wordCount]];
         
         if (isNewTask) {
             [self.documentController createDocument:document];
@@ -50,6 +51,7 @@
     self.title = self.document.title;
     self.titleTextField.text = self.document.title;
     self.bodyTextView.text = self.document.bodyText;
+    self.wordCountLabel.text = [NSString stringWithFormat:@"Word count: %d", self.document.wordCount];
 }
 
 - (IBAction)saveDocument:(id)sender {

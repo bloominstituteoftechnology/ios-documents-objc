@@ -11,6 +11,7 @@
 
 @implementation BYDocument
 
+@synthesize wordCount = _wordCount;
 
 - (instancetype)initWithTitle:(NSString *)title body:(NSString *)bodyText {
     if (self = [super init]) {
@@ -21,7 +22,7 @@
 }
 
 - (void)setWordCount:(int)wordCount {
-    _wordCount = [_bodyText wordCount];
+    _wordCount = wordCount;
 }
 
 @end
