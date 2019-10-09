@@ -69,24 +69,16 @@
 				EFB71173234E86C700BF2D04 /* SceneDelegate.h */,
 				EFB71174234E86C700BF2D04 /* SceneDelegate.m */,
 				EFB71179234E86C700BF2D04 /* Main.storyboard */,
-				EFB7118C234E8B4A00BF2D04 /* VIewControllers */,
+				EFB71189234E8B2C00BF2D04 /* DocsTableViewController.h */,
+				EFB7118A234E8B2C00BF2D04 /* DocsTableViewController.m */,
+				EFB7118D234E8B8C00BF2D04 /* DocDetailViewController.h */,
+				EFB7118E234E8B8C00BF2D04 /* DocDetailViewController.m */,
 				EFB7117C234E86E000BF2D04 /* Assets.xcassets */,
 				EFB7117E234E86E000BF2D04 /* LaunchScreen.storyboard */,
 				EFB71181234E86E000BF2D04 /* Info.plist */,
 				EFB71182234E86E000BF2D04 /* main.m */,
 			);
 			path = "DocumentsObj-C";
-			sourceTree = "<group>";
-		};
-		EFB7118C234E8B4A00BF2D04 /* VIewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				EFB71189234E8B2C00BF2D04 /* DocsTableViewController.h */,
-				EFB7118A234E8B2C00BF2D04 /* DocsTableViewController.m */,
-				EFB7118D234E8B8C00BF2D04 /* DocDetailViewController.h */,
-				EFB7118E234E8B8C00BF2D04 /* DocDetailViewController.m */,
-			);
-			path = VIewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
