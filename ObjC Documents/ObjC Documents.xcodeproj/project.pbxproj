@@ -16,6 +16,7 @@
 		3329E82F234E7D2700EE2EEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3329E82E234E7D2700EE2EEE /* main.m */; };
 		33AB6FEC234E812700110464 /* REPDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FEB234E812700110464 /* REPDocumentTableViewController.m */; };
 		33AB6FF2234E81A800110464 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FF1234E81A800110464 /* NSString+WordCount.m */; };
+		33AB6FF7234E82DD00110464 /* REPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB6FF6234E82DD00110464 /* REPDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		33AB6FF0234E81A800110464 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		33AB6FF1234E81A800110464 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 		33AB6FF4234E82AE00110464 /* REPDocumentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REPDocumentDetailViewController.h; sourceTree = "<group>"; };
+		33AB6FF5234E82DD00110464 /* REPDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REPDocument.h; sourceTree = "<group>"; };
+		33AB6FF6234E82DD00110464 /* REPDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REPDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 		33AB6FED234E818700110464 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				33AB6FF5234E82DD00110464 /* REPDocument.h */,
+				33AB6FF6234E82DD00110464 /* REPDocument.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3329E824234E7D2500EE2EEE /* REPDocumentDetailViewController.m in Sources */,
+				33AB6FF7234E82DD00110464 /* REPDocument.m in Sources */,
 				3329E81E234E7D2500EE2EEE /* AppDelegate.m in Sources */,
 				33AB6FEC234E812700110464 /* REPDocumentTableViewController.m in Sources */,
 				33AB6FF2234E81A800110464 /* NSString+WordCount.m in Sources */,
