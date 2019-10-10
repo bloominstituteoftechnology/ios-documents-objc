@@ -8,7 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class MJRDocument;
 
 @interface MJRDocumentController : NSObject
+
+@property (readonly) NSArray *documents;
+
+- (instancetype)initWithDocuments:(NSArray *)documents;
+- (void)createDocument:(MJRDocument *)document;
+- (void)deleteDocument:(MJRDocument *)document;
+
 
 @end
