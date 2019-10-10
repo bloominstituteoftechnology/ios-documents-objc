@@ -16,7 +16,7 @@
 
 @interface NSString (WordCount)
 
--(NSUInteger)wordCount:(NSString*)word;
+@property (readonly) NSUInteger wordCount;
 
 
 @end

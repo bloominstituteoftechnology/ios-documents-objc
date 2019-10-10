@@ -10,7 +10,7 @@
         <!--Documents-->
         <scene sceneID="MoT-Sg-bC1">
             <objects>
-                <tableViewController id="Yil-6Q-M1n" customClass="DocsTableViewController" customModule="DocumentsObj_C" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Yil-6Q-M1n" customClass="DocsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="677-h2-DnB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
         <!--New Document-->
         <scene sceneID="Hky-ac-c65">
             <objects>
-                <viewController id="zt7-Pa-NNO" customClass="DocDetailViewController" customModule="DocumentsObj_C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zt7-Pa-NNO" customClass="DocDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="451-F9-mYN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="docTextView" destination="pjo-Eb-c04" id="mqQ-jB-YgI"/>
+                        <outlet property="docText" destination="pjo-Eb-c04" id="zWT-pw-NsH"/>
                         <outlet property="titleTextField" destination="TZX-1N-WEL" id="eRZ-Kg-HyV"/>
                         <outlet property="wordCount" destination="H9s-ae-bdk" id="3Jm-oe-y92"/>
                     </connections>
