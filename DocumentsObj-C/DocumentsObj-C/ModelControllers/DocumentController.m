@@ -9,15 +9,10 @@
 #import "DocumentController.h"
 #import "Document.h"
 @interface DocumentController()
-
-@property NSMutableArray *documents;
-
 @end
 
 
-
 @implementation DocumentController
-
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -28,7 +23,7 @@
    
     
 -(void)addDocumentWithTitle:(NSString *)title
-                andText:(NSString *)text; {
+                andText:(NSString *)text {
     Document *document = [[Document alloc] initWithTitle:title text:text];
     [self.documents addObject:document];
     

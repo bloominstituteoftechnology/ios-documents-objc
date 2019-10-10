@@ -12,7 +12,8 @@
 @interface DocumentController : NSObject
 
 //create
--(void)addDocument:(Document *)document;
+-(void)addDocumentWithTitle:(NSString *)title
+andText:(NSString *)text;
 
 //update
 -(void)update:(Document *)document
@@ -26,6 +27,7 @@ withTitle:(NSString *)title
 
 -(Document *)documentAtIndex:(NSUInteger)index;
 
+@property NSMutableArray *documents;
 
 @end
 
