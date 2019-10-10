@@ -65,7 +65,7 @@
         <!--Document Detail View Controller-->
         <scene sceneID="R3g-3v-unI">
             <objects>
-                <viewController id="yQe-Ag-2vN" customClass="MJRDocumentDetailViewController" sceneMemberID="viewController">
+                <viewController interfaceStyle="dark" id="yQe-Ag-2vN" customClass="MJRDocumentDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GDP-xA-lfd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,7 @@
         <image name="doc.text" catalog="system" width="56" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vHa-In-wv5"/>
+        <segue reference="D2S-9I-5zK"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

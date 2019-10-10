@@ -13,7 +13,12 @@
 @implementation NSString (MJRWordCount)
 
 - (NSUInteger)wordCount {
-    return [self componentsSeparatedByString:@" "].count;
+    NSArray *unfilteredWordArray = [self componentsSeparatedByString:@" "];
+    NSMutableArray *filteredWordArray = [unfilteredWordArray mutableCopy];
+
+    [filteredWordArray removeObject:@""];
+
+    return [filteredWordArray count];
 }
 
 @end
