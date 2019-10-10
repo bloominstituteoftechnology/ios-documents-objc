@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MJRDocumentDetailViewController : UIViewController
+@class MJRDocumentController;
+@class MJRDocument;
 
+@interface MJRDocumentDetailViewController : UIViewController <UITextViewDelegate>
 
+@property MJRDocument *document;
+@property MJRDocumentController *controller;
 
 @end

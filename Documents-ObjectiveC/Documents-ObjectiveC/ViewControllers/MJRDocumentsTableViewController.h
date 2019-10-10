@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class MJRDocumentController;
 
 @interface MJRDocumentsTableViewController : UITableViewController
+
+@property (nonatomic) MJRDocumentController *controller;
 
 @end

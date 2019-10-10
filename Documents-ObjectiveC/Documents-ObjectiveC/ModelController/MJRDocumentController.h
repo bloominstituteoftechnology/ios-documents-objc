@@ -12,11 +12,14 @@
 
 @interface MJRDocumentController : NSObject
 
-@property (readonly) NSArray *documents;
+@property (readonly) NSMutableArray *documents;
 
-- (instancetype)initWithDocuments:(NSArray *)documents;
-- (void)createDocument:(MJRDocument *)document;
+- (instancetype)init;
+- (void)addDocument:(MJRDocument *)document;
+- (void)updateDocument:(MJRDocument *)document withTitle:(NSString *)title andText:(NSString *)text;
 - (void)deleteDocument:(MJRDocument *)document;
+- (NSUInteger)count;
+- (MJRDocument *)documentAtIndex:(NSUInteger)index;
 
 
 @end

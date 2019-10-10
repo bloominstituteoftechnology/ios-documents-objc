@@ -7,6 +7,10 @@
 //
 
 #import "MJRDocumentsTableViewController.h"
+#import "MJRDocumentDetailViewController.h"
+#import "MJRDocumentController.h"
+#import "NSString+MJRWordCount.h"
+#import "MJRDocument.h"
 
 @interface MJRDocumentsTableViewController ()
 
@@ -19,66 +23,63 @@
     self.tableView.tableFooterView = [UIView new];
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
+- (MJRDocumentController *)controller {
+    if (_controller) {
+        return _controller;
+    } else {
+        _controller = [[MJRDocumentController alloc] init];
+        return _controller;
+    }
+}
+
+#pragma mark - Table view data source
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return [self.controller count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocCell" forIndexPath:indexPath];
-    
+
+    MJRDocument *document = [self.controller documentAtIndex:indexPath.row];
+    cell.textLabel.text = document.title;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Word count: %lu", [document.text wordCount]];
     return cell;
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
+        MJRDocument *document = [self.controller documentAtIndex:indexPath.row];
+        [self.controller deleteDocument:document];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    }
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"ShowDetailSegue"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        MJRDocumentDetailViewController *detailVC = segue.destinationViewController;
+        detailVC.controller = self.controller;
+        detailVC.document = [self.controller documentAtIndex:indexPath.row];
+    }
+
+    if ([segue.identifier isEqualToString:@"NewDocSegue"]) {
+        MJRDocumentDetailViewController *detailVC = segue.destinationViewController;
+        detailVC.controller = self.controller;
+    }
 }
-*/
 
 @end
