@@ -12,7 +12,7 @@
 @class DocumentController;
 @class Document;
 
-@interface DocDetailViewController : UIViewController
+@interface DocDetailViewController : UIViewController <UITextViewDelegate>
 
 @property DocumentController *controller;
 @property Document *detailDocument;

@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self updateViews];
+    _docText.delegate = self;
 }
 
 - (IBAction)save:(id)sender {
@@ -46,7 +47,14 @@
     self.titleTextField.text = self.detailDocument.title;
     self.docText.text = self.detailDocument.text;
     self.wordCount.text = [NSString stringWithFormat:@"%lu", (unsigned long)self.detailDocument.text.wordCount];
+    
+}
+
+- (void)textViewDidChange:(UITextView *)textView {
+    self.wordCount.text = [NSString stringWithFormat:@"%lu", (unsigned long)textView.text.wordCount];
 }
 
 
+
 @end
+
