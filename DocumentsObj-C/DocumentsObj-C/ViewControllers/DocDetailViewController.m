@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self updateViews];
 }
 
 - (IBAction)save:(id)sender {
@@ -41,7 +41,12 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-
+-(void)updateViews {
+    if (!self.isViewLoaded || !self.detailDocument) {return;}
+    self.titleTextField.text = self.detailDocument.title;
+    self.docText.text = self.detailDocument.text;
+    self.wordCount.text = [NSString stringWithFormat:@"%lu", (unsigned long)self.detailDocument.text.wordCount];
+}
 
 
 @end
