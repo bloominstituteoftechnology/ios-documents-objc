@@ -14,6 +14,7 @@
 
 @property NSString *title;
 @property NSString *text;
+//read only becuase its not being saved with the object
 @property (readonly) NSUInteger wordCount;
 
 

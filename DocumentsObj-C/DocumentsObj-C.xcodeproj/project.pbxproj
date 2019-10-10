@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EFAF4E24234E913B00D391E7 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAF4E23234E913B00D391E7 /* NSString+WordCount.m */; };
 		EFAF4E29234E98D400D391E7 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAF4E28234E98D400D391E7 /* Document.m */; };
+		EFAF4E2D234ECE4800D391E7 /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAF4E2C234ECE4800D391E7 /* DocumentController.m */; };
 		EFB71172234E86C700BF2D04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB71171234E86C700BF2D04 /* AppDelegate.m */; };
 		EFB71175234E86C700BF2D04 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB71174234E86C700BF2D04 /* SceneDelegate.m */; };
 		EFB7117B234E86C700BF2D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB71179234E86C700BF2D04 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 		EFAF4E23234E913B00D391E7 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 		EFAF4E27234E98D400D391E7 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
 		EFAF4E28234E98D400D391E7 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		EFAF4E2B234ECE4800D391E7 /* DocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
+		EFAF4E2C234ECE4800D391E7 /* DocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
 		EFB7116D234E86C700BF2D04 /* DocumentsObj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DocumentsObj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB71170234E86C700BF2D04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFB71171234E86C700BF2D04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +83,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		EFAF4E2E234ECE5000D391E7 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFAF4E2B234ECE4800D391E7 /* DocumentController.h */,
+				EFAF4E2C234ECE4800D391E7 /* DocumentController.m */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
 		EFB71164234E86C600BF2D04 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 			children = (
 				EFB71170234E86C700BF2D04 /* AppDelegate.h */,
 				EFB71171234E86C700BF2D04 /* AppDelegate.m */,
+				EFAF4E2E234ECE5000D391E7 /* ModelControllers */,
 				EFB71173234E86C700BF2D04 /* SceneDelegate.h */,
 				EFAF4E2A234E98DE00D391E7 /* Models */,
 				EFAF4E25234E914800D391E7 /* Helpers */,
@@ -187,6 +200,7 @@
 			files = (
 				EFB7118B234E8B2C00BF2D04 /* DocsTableViewController.m in Sources */,
 				EFB71172234E86C700BF2D04 /* AppDelegate.m in Sources */,
+				EFAF4E2D234ECE4800D391E7 /* DocumentController.m in Sources */,
 				EFB7118F234E8B8C00BF2D04 /* DocDetailViewController.m in Sources */,
 				EFAF4E29234E98D400D391E7 /* Document.m in Sources */,
 				EFAF4E24234E913B00D391E7 /* NSString+WordCount.m in Sources */,
