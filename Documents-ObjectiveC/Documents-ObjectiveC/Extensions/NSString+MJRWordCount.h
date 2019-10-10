@@ -1,5 +1,5 @@
 //
-//  MJRDocument.h
+//  NSString+MJRWordCount.h
 //  Documents-ObjectiveC
 //
 //  Created by Marlon Raskin on 10/9/19.
@@ -8,14 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NSString (MJRWordCount)
 
-@interface MJRDocument : NSObject
-
-@property NSString *title;
-@property NSString *text;
 @property (readonly) NSUInteger wordCount;
-
-
-- (instancetype)initWithTitle:(NSString*)title text:(NSString*)text;
 
 @end

@@ -7,7 +7,21 @@
 //
 
 #import "MJRDocument.h"
+#import "NSString+MJRWordCount.h"
+
 
 @implementation MJRDocument
+
+- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text {
+    if (self = [super init]) {
+        _title = title;
+        _text = text;
+    }
+    return self;
+}
+
+- (NSUInteger)wordCount {
+    return self.text.wordCount;
+}
 
 @end

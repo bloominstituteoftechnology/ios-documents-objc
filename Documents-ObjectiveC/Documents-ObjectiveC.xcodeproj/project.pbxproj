@@ -17,6 +17,7 @@
 		375DB6DB234E92320007A6BF /* MJRDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6DA234E92320007A6BF /* MJRDocumentDetailViewController.m */; };
 		375DB6DE234E93F30007A6BF /* MJRDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6DD234E93F30007A6BF /* MJRDocument.m */; };
 		375DB6E1234E94F10007A6BF /* MJRDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6E0234E94F10007A6BF /* MJRDocumentController.m */; };
+		375DB6E4234E99B00007A6BF /* NSString+MJRWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 375DB6E3234E99B00007A6BF /* NSString+MJRWordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		375DB6DD234E93F30007A6BF /* MJRDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocument.m; sourceTree = "<group>"; };
 		375DB6DF234E94F10007A6BF /* MJRDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRDocumentController.h; sourceTree = "<group>"; };
 		375DB6E0234E94F10007A6BF /* MJRDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRDocumentController.m; sourceTree = "<group>"; };
+		375DB6E2234E99B00007A6BF /* NSString+MJRWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MJRWordCount.h"; sourceTree = "<group>"; };
+		375DB6E3234E99B00007A6BF /* NSString+MJRWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJRWordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 		375DB6C7234E88970007A6BF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				375DB6E2234E99B00007A6BF /* NSString+MJRWordCount.h */,
+				375DB6E3234E99B00007A6BF /* NSString+MJRWordCount.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				375DB6DE234E93F30007A6BF /* MJRDocument.m in Sources */,
 				375DB6AD234E84200007A6BF /* AppDelegate.m in Sources */,
 				375DB6E1234E94F10007A6BF /* MJRDocumentController.m in Sources */,
+				375DB6E4234E99B00007A6BF /* NSString+MJRWordCount.m in Sources */,
 				375DB6DB234E92320007A6BF /* MJRDocumentDetailViewController.m in Sources */,
 				375DB6BE234E84230007A6BF /* main.m in Sources */,
 				375DB6D8234E910F0007A6BF /* MJRDocumentsTableViewController.m in Sources */,
