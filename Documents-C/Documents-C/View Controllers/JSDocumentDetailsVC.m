@@ -38,21 +38,28 @@
 
 - (IBAction)saveBtnTapped:(id)sender {
 	NSManagedObjectContext *context = [self managedObjectContext];
-    
-    // Create a new managed object
-    NSManagedObject *newDoc = [NSEntityDescription insertNewObjectForEntityForName:@"Document" inManagedObjectContext:context];
+
 	NSString *bodyText = self.bodyTextView.text;
 	NSUInteger wordCount = [bodyText componentsSeparatedByString:@" "].count;
 	
-    [newDoc setValue:self.titleTextField.text forKey:@"title"];
-    [newDoc setValue:bodyText forKey:@"body"];
-	[newDoc setValue:[NSString stringWithFormat:@"%lu", (unsigned long)wordCount] forKey:@"wordCount"];
-    
-    NSError *error = nil;
-    // Save the object to persistent store
-    if (![context save:&error]) {
-        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
-    }
+	if (self.document) {
+		[self.document setValue:self.titleTextField.text forKey:@"title"];
+		[self.document setValue:bodyText forKey:@"body"];
+		[self.document setValue:[NSString stringWithFormat:@"%lu", (unsigned long)wordCount] forKey:@"wordCount"];
+	} else {
+		// Create a new managed object
+		NSManagedObject *newDoc = [NSEntityDescription insertNewObjectForEntityForName:@"Document" inManagedObjectContext:context];
+		
+		[newDoc setValue:self.titleTextField.text forKey:@"title"];
+		[newDoc setValue:bodyText forKey:@"body"];
+		[newDoc setValue:[NSString stringWithFormat:@"%lu", (unsigned long)wordCount] forKey:@"wordCount"];
+	}
+	
+	NSError *error = nil;
+	// Save the object to persistent store
+	if (![context save:&error]) {
+		NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+	}
     
     [self.navigationController popViewControllerAnimated:true];
 }
@@ -73,7 +80,6 @@
 		self.wordCountLbl.text = [NSString stringWithFormat:@"%@ words", self.document.wordCount];
 		
 		self.bodyTextView.textColor = [UIColor blackColor];
-		[self.navigationItem.rightBarButtonItem setEnabled:false];
 	}
 }
 
