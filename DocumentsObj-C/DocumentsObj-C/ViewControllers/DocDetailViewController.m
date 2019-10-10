@@ -26,14 +26,22 @@
 }
 
 - (IBAction)save:(id)sender {
-
+    [self saveDocument];
 }
 
 -(void)saveDocument {
     
-    
-    
+    BOOL isNewDocument = self.detailDocument == nil;
+    Document *document = self.detailDocument ?: [[Document alloc] init];
+    document.title = self.titleTextField.text;
+    document.text = self.docText.text;
+    if (isNewDocument) {
+        [self.controller addDocumentWithTitle:self.titleTextField.text andText:self.docText.text];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
 }
+
+
 
 
 @end
