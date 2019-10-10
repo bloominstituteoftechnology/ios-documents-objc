@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-
+@class DocumentController;
 
 @interface DocsTableViewController : UITableViewController
+
+@property (nonatomic)DocumentController *controller;
 
 @end
 
