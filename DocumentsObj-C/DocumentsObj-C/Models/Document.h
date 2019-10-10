@@ -14,11 +14,8 @@
 
 @property NSString *title;
 @property NSString *text;
-//read only becuase its not being saved with the object
+//read only becuase its not being saved with the object, just a part of the class
 @property (readonly) NSUInteger wordCount;
-
-
-
 
 -(instancetype)initWithTitle:(NSString *)title
                         text:(NSString*)text;

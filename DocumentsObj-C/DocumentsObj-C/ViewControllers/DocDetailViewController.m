@@ -7,12 +7,13 @@
 //
 
 #import "DocDetailViewController.h"
+#import "Document.h"
+#import "DocumentController.h"
 
 @interface DocDetailViewController ()
 
 @property (strong, nonatomic) IBOutlet UILabel *wordCount;
 @property (strong, nonatomic) IBOutlet UITextField *titleTextField;
-
 @property (strong, nonatomic) IBOutlet UITextView *docText;
 
 @end
@@ -25,6 +26,13 @@
 }
 
 - (IBAction)save:(id)sender {
+
+}
+
+-(void)saveDocument {
+    
+    
+    
 }
 
 

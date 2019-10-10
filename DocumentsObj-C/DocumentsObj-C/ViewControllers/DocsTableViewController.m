@@ -58,6 +58,18 @@
  
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
+    if ([segue.identifier isEqualToString:@"ShowDocument"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        DocDetailViewController *detailVC = segue.destinationViewController;
+        detailVC.controller = self.controller;
+       detailVC.detailDocument = [self.controller documentAtIndex:indexPath.row];
+    }
+    
+    if ([segue.identifier isEqualToString:@"AddDocument"]) {
+        DocDetailViewController *detailVC = segue.destinationViewController;
+        detailVC.controller = self.controller;
+    }
+    
 }
 
 

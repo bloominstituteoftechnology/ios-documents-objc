@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 
+@class DocumentController;
+@class Document;
 
 @interface DocDetailViewController : UIViewController
+
+@property DocumentController *controller;
+@property Document *detailDocument;
 
 @end
 
