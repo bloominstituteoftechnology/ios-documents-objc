@@ -15,6 +15,7 @@
 		FBDA7A6523736FF900F9C676 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDA7A6423736FF900F9C676 /* main.m */; };
 		FBDA7A702373715100F9C676 /* LSIDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDA7A6F2373715100F9C676 /* LSIDocumentsTableViewController.m */; };
 		FBDA7A732373747100F9C676 /* LSIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDA7A722373747100F9C676 /* LSIDetailViewController.m */; };
+		FBDA7A762373769B00F9C676 /* NSString+LSIWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDA7A752373769B00F9C676 /* NSString+LSIWordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		FBDA7A6F2373715100F9C676 /* LSIDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocumentsTableViewController.m; sourceTree = "<group>"; };
 		FBDA7A712373747100F9C676 /* LSIDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDetailViewController.h; sourceTree = "<group>"; };
 		FBDA7A722373747100F9C676 /* LSIDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDetailViewController.m; sourceTree = "<group>"; };
+		FBDA7A742373769B00F9C676 /* NSString+LSIWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LSIWordCount.h"; sourceTree = "<group>"; };
+		FBDA7A752373769B00F9C676 /* NSString+LSIWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LSIWordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				FBDA7A6F2373715100F9C676 /* LSIDocumentsTableViewController.m */,
 				FBDA7A712373747100F9C676 /* LSIDetailViewController.h */,
 				FBDA7A722373747100F9C676 /* LSIDetailViewController.m */,
+				FBDA7A742373769B00F9C676 /* NSString+LSIWordCount.h */,
+				FBDA7A752373769B00F9C676 /* NSString+LSIWordCount.m */,
 			);
 			path = "ios-documents-objc";
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				FBDA7A5423736FF400F9C676 /* AppDelegate.m in Sources */,
 				FBDA7A732373747100F9C676 /* LSIDetailViewController.m in Sources */,
 				FBDA7A6523736FF900F9C676 /* main.m in Sources */,
+				FBDA7A762373769B00F9C676 /* NSString+LSIWordCount.m in Sources */,
 				FBDA7A5723736FF400F9C676 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
