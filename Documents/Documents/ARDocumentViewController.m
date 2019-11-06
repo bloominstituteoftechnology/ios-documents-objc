@@ -7,6 +7,7 @@
 //
 
 #import "ARDocumentViewController.h"
+#import "NSString+ARWordCount.h"
 
 @interface ARDocumentViewController ()
 
@@ -21,19 +22,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self updateViews];
+    self.bodyTextView.delegate = self;
 }
 
 - (IBAction)saveButtonTapped:(UIBarButtonItem *)sender {
     NSString *title = self.titleTextField.text;
     NSString *body = self.bodyTextView.text;
+    if (!self.document) {
     [self.controller createDocumentWithTitle:title body:body];
+    } else {
+        [self.controller  updateDocumentWith:self.document title:title body:body];
+    }
     [self.navigationController popViewControllerAnimated:YES];
-    
 }
 
 - (void) updateViews {
-    
+    if (self.isViewLoaded && self.document != nil) {
+        NSString *wordCountString = [NSString stringWithFormat:@"%lu words", (unsigned long) self.document.wordCount];
+        self.title = self.document.title;
+        self.wordsLabel.text = wordCountString;
+        self.titleTextField.text = self.document.title;
+        self.bodyTextView.text = self.document.body;
+    }
 }
 
 - (void) setDocument:(ARDocument *)document {
@@ -41,6 +52,11 @@
         _document = document;
         [self updateViews];
     }
+}
+
+- (void)textViewDidChange:(UITextView *)textView {
+    NSString *wordCountString = [NSString stringWithFormat:@"%lu words", [textView.text wordCount]];
+    self.wordsLabel.text = wordCountString;
 }
 
 @end

@@ -10,7 +10,7 @@
 #import "ARDocumentController.h"
 #import "ARDocument.h"
 
-@interface ARDocumentViewController : UIViewController
+@interface ARDocumentViewController : UIViewController <UITextViewDelegate>
 
 @property (nonatomic) ARDocumentController *controller;
 @property (nonatomic) ARDocument *document;
