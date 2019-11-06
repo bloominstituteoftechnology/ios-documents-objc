@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		FBDA7A5423736FF400F9C676 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDA7A5323736FF400F9C676 /* AppDelegate.m */; };
 		FBDA7A5723736FF400F9C676 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDA7A5623736FF400F9C676 /* SceneDelegate.m */; };
-		FBDA7A5A23736FF400F9C676 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDA7A5923736FF400F9C676 /* ViewController.m */; };
 		FBDA7A5D23736FF400F9C676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDA7A5B23736FF400F9C676 /* Main.storyboard */; };
 		FBDA7A5F23736FF900F9C676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDA7A5E23736FF900F9C676 /* Assets.xcassets */; };
 		FBDA7A6223736FF900F9C676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDA7A6023736FF900F9C676 /* LaunchScreen.storyboard */; };
 		FBDA7A6523736FF900F9C676 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDA7A6423736FF900F9C676 /* main.m */; };
+		FBDA7A702373715100F9C676 /* LSIDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDA7A6F2373715100F9C676 /* LSIDocumentsTableViewController.m */; };
+		FBDA7A732373747100F9C676 /* LSIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDA7A722373747100F9C676 /* LSIDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +23,15 @@
 		FBDA7A5323736FF400F9C676 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FBDA7A5523736FF400F9C676 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		FBDA7A5623736FF400F9C676 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		FBDA7A5823736FF400F9C676 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FBDA7A5923736FF400F9C676 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FBDA7A5C23736FF400F9C676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBDA7A5E23736FF900F9C676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDA7A6123736FF900F9C676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBDA7A6323736FF900F9C676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBDA7A6423736FF900F9C676 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBDA7A6E2373715100F9C676 /* LSIDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDocumentsTableViewController.h; sourceTree = "<group>"; };
+		FBDA7A6F2373715100F9C676 /* LSIDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocumentsTableViewController.m; sourceTree = "<group>"; };
+		FBDA7A712373747100F9C676 /* LSIDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDetailViewController.h; sourceTree = "<group>"; };
+		FBDA7A722373747100F9C676 /* LSIDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +68,15 @@
 				FBDA7A5323736FF400F9C676 /* AppDelegate.m */,
 				FBDA7A5523736FF400F9C676 /* SceneDelegate.h */,
 				FBDA7A5623736FF400F9C676 /* SceneDelegate.m */,
-				FBDA7A5823736FF400F9C676 /* ViewController.h */,
-				FBDA7A5923736FF400F9C676 /* ViewController.m */,
 				FBDA7A5B23736FF400F9C676 /* Main.storyboard */,
 				FBDA7A5E23736FF900F9C676 /* Assets.xcassets */,
 				FBDA7A6023736FF900F9C676 /* LaunchScreen.storyboard */,
 				FBDA7A6323736FF900F9C676 /* Info.plist */,
 				FBDA7A6423736FF900F9C676 /* main.m */,
+				FBDA7A6E2373715100F9C676 /* LSIDocumentsTableViewController.h */,
+				FBDA7A6F2373715100F9C676 /* LSIDocumentsTableViewController.m */,
+				FBDA7A712373747100F9C676 /* LSIDetailViewController.h */,
+				FBDA7A722373747100F9C676 /* LSIDetailViewController.m */,
 			);
 			path = "ios-documents-objc";
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 		FBDA7A4723736FF300F9C676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LSI;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
@@ -146,8 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBDA7A5A23736FF400F9C676 /* ViewController.m in Sources */,
+				FBDA7A702373715100F9C676 /* LSIDocumentsTableViewController.m in Sources */,
 				FBDA7A5423736FF400F9C676 /* AppDelegate.m in Sources */,
+				FBDA7A732373747100F9C676 /* LSIDetailViewController.m in Sources */,
 				FBDA7A6523736FF900F9C676 /* main.m in Sources */,
 				FBDA7A5723736FF400F9C676 /* SceneDelegate.m in Sources */,
 			);
