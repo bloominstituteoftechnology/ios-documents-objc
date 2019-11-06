@@ -19,6 +19,7 @@
 		38BA3B2B237374520073B8EC /* ARDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BA3B2A237374520073B8EC /* ARDocumentViewController.m */; };
 		38BA3B2E2373769E0073B8EC /* NSString+ARWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BA3B2D2373769E0073B8EC /* NSString+ARWordCount.m */; };
 		38BA3B3123737B830073B8EC /* ARDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BA3B3023737B830073B8EC /* ARDocument.m */; };
+		38BA3B3423737F710073B8EC /* ARDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BA3B3323737F710073B8EC /* ARDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		38BA3B2D2373769E0073B8EC /* NSString+ARWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ARWordCount.m"; sourceTree = "<group>"; };
 		38BA3B2F23737B830073B8EC /* ARDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARDocument.h; sourceTree = "<group>"; };
 		38BA3B3023737B830073B8EC /* ARDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDocument.m; sourceTree = "<group>"; };
+		38BA3B3223737F710073B8EC /* ARDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARDocumentController.h; sourceTree = "<group>"; };
+		38BA3B3323737F710073B8EC /* ARDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				38BA3B2D2373769E0073B8EC /* NSString+ARWordCount.m */,
 				38BA3B2F23737B830073B8EC /* ARDocument.h */,
 				38BA3B3023737B830073B8EC /* ARDocument.m */,
+				38BA3B3223737F710073B8EC /* ARDocumentController.h */,
+				38BA3B3323737F710073B8EC /* ARDocumentController.m */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				38BA3AF623736F0F0073B8EC /* SceneDelegate.m in Sources */,
 				38BA3B28237370F90073B8EC /* ARDocumentsTableViewController.m in Sources */,
 				38BA3B3123737B830073B8EC /* ARDocument.m in Sources */,
+				38BA3B3423737F710073B8EC /* ARDocumentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
