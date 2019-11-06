@@ -18,6 +18,7 @@
 		38BA3B28237370F90073B8EC /* ARDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BA3B27237370F90073B8EC /* ARDocumentsTableViewController.m */; };
 		38BA3B2B237374520073B8EC /* ARDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BA3B2A237374520073B8EC /* ARDocumentViewController.m */; };
 		38BA3B2E2373769E0073B8EC /* NSString+ARWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BA3B2D2373769E0073B8EC /* NSString+ARWordCount.m */; };
+		38BA3B3123737B830073B8EC /* ARDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BA3B3023737B830073B8EC /* ARDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		38BA3B2A237374520073B8EC /* ARDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDocumentViewController.m; sourceTree = "<group>"; };
 		38BA3B2C2373769E0073B8EC /* NSString+ARWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ARWordCount.h"; sourceTree = "<group>"; };
 		38BA3B2D2373769E0073B8EC /* NSString+ARWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ARWordCount.m"; sourceTree = "<group>"; };
+		38BA3B2F23737B830073B8EC /* ARDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARDocument.h; sourceTree = "<group>"; };
+		38BA3B3023737B830073B8EC /* ARDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				38BA3B2A237374520073B8EC /* ARDocumentViewController.m */,
 				38BA3B2C2373769E0073B8EC /* NSString+ARWordCount.h */,
 				38BA3B2D2373769E0073B8EC /* NSString+ARWordCount.m */,
+				38BA3B2F23737B830073B8EC /* ARDocument.h */,
+				38BA3B3023737B830073B8EC /* ARDocument.m */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 				38BA3B0423736F110073B8EC /* main.m in Sources */,
 				38BA3AF623736F0F0073B8EC /* SceneDelegate.m in Sources */,
 				38BA3B28237370F90073B8EC /* ARDocumentsTableViewController.m in Sources */,
+				38BA3B3123737B830073B8EC /* ARDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
