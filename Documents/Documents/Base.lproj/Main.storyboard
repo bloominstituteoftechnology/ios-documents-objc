@@ -106,8 +106,17 @@
                         <viewLayoutGuide key="safeArea" id="Vzd-Mu-N1Q"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Document" id="Xcq-pQ-nAt">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="7SM-1w-1K9"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="7SM-1w-1K9">
+                            <connections>
+                                <action selector="save:" destination="vQc-lS-hez" id="OTB-EF-7iY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textTextView" destination="kOP-yF-tbi" id="Tde-cJ-iw6"/>
+                        <outlet property="titleTextField" destination="OMa-He-oDQ" id="81R-j8-nIF"/>
+                        <outlet property="wordCountLabel" destination="lvY-se-HO8" id="TVr-Nq-o7z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ad-yX-jdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

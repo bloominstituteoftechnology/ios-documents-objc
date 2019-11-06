@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class DocumentController;
+@class Document;
+
 @interface DocumentDetailViewController : UIViewController
+
+@property (nonatomic) DocumentController *documentController;
+@property (nonatomic) Document *document;
 
 @end

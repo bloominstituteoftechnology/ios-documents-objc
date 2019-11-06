@@ -17,6 +17,7 @@
 		D6AD988F2372654000445606 /* DocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AD988E2372654000445606 /* DocumentDetailViewController.m */; };
 		D6AD98922372655D00445606 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AD98912372655D00445606 /* Document.m */; };
 		D6AD98952372656A00445606 /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AD98942372656A00445606 /* DocumentController.m */; };
+		D6AD989923726CA900445606 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AD989823726CA900445606 /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		D6AD98912372655D00445606 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
 		D6AD98932372656A00445606 /* DocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
 		D6AD98942372656A00445606 /* DocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
+		D6AD989723726CA900445606 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		D6AD989823726CA900445606 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,7 @@
 				D6AD9888237263B400445606 /* Models */,
 				D6AD98872372639B00445606 /* Model Controllers */,
 				D6AD98862372639800445606 /* View Controllers */,
+				D6AD989623726C8400445606 /* Helpers */,
 				D6AD98852372639400445606 /* Storyboards */,
 				D6AD98842372638D00445606 /* Resources */,
 			);
@@ -137,6 +141,15 @@
 				D6AD987D237261D100445606 /* main.m */,
 			);
 			name = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		D6AD989623726C8400445606 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D6AD989723726CA900445606 /* NSString+WordCount.h */,
+				D6AD989823726CA900445606 /* NSString+WordCount.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +229,7 @@
 				D6AD988C2372652A00445606 /* DocumentsTableViewController.m in Sources */,
 				D6AD98952372656A00445606 /* DocumentController.m in Sources */,
 				D6AD9870237261CF00445606 /* SceneDelegate.m in Sources */,
+				D6AD989923726CA900445606 /* NSString+WordCount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
