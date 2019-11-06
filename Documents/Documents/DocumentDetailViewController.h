@@ -11,7 +11,7 @@
 @class DocumentController;
 @class Document;
 
-@interface DocumentDetailViewController : UIViewController
+@interface DocumentDetailViewController : UIViewController <UITextViewDelegate>
 
 @property (nonatomic) DocumentController *documentController;
 @property (nonatomic) Document *document;

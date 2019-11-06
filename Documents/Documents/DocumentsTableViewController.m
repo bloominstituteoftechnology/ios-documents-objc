@@ -42,7 +42,7 @@
     
     Document *document = [self.documentController.documents objectAtIndex:indexPath.row];
     cell.textLabel.text = document.title;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%p words", document.wordCount];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld words", (long)document.text.wordCount];
     
     return cell;
 }

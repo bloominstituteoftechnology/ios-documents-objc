@@ -10,10 +10,10 @@
 
 @interface Document : NSObject
 
-- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text wordCount:(NSString *)wordCount;
+- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text;
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *text;
-@property (nonatomic, copy) NSString *wordCount;
+@property (nonatomic) NSInteger wordCount;
 
 @end

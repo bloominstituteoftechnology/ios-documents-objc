@@ -10,6 +10,6 @@
 
 @interface NSString (WordCount)
 
-- (NSInteger *)wordCount;
+- (NSUInteger)wordCount;
 
 @end

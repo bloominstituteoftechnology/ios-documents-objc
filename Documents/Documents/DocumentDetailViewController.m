@@ -10,9 +10,9 @@
 #import "DocumentController.h"
 #import "Document.h"
 
-@interface DocumentDetailViewController ()
+#import "NSString+WordCount.h"
 
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(nonnull NSString *)text;
+@interface DocumentDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
@@ -24,13 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.textTextView setDelegate:self];
     [self updateViews];
-}
-
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(nonnull NSString *)text
-{
-    self.wordCountLabel.text = [textView.text stringByReplacingCharactersInRange:range withString:text];
-    return true;
 }
 
 #pragma mark - IBActions and Methods
@@ -39,15 +34,19 @@
     BOOL isNewDocument = (self.document == nil);
     
     if (isNewDocument) {
-        Document *document = [[Document alloc] initWithTitle:self.titleTextField.text text:self.textTextView.text wordCount:self.wordCountLabel.text];
+        Document *document = [[Document alloc] initWithTitle:self.titleTextField.text text:self.textTextView.text];
         [self.documentController addDocument:document];
     } else {
         self.document.title = self.titleTextField.text;
         self.document.text = self.textTextView.text;
-        self.document.wordCount = self.wordCountLabel.text;
     }
     
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    self.wordCountLabel.text = [NSString stringWithFormat:@"%lu words", self.textTextView.text.wordCount];
 }
 
 - (void)updateViews
@@ -57,7 +56,7 @@
     
     self.titleTextField.text = self.document.title;
     self.textTextView.text = self.document.text;
-    self.wordCountLabel.text = self.document.wordCount;
+    self.wordCountLabel.text = [NSString stringWithFormat:@"%lu words", self.textTextView.text.wordCount];
 }
 
 - (void)setDocument:(Document *)document

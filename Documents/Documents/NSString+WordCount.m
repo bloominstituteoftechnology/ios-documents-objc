@@ -10,13 +10,10 @@
 
 @implementation NSString (WordCount)
 
-- (NSInteger *)wordCount
+- (NSUInteger)wordCount
 {
-    __block NSInteger *words = 0;
-    [self enumerateSubstringsInRange:NSMakeRange(0,self.length)
-                             options:NSStringEnumerationByWords
-                          usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {words++;}];
-    return words;
+    NSArray *wordArray = [self componentsSeparatedByString:@" "];
+    return [wordArray count];
 }
 
 @end
