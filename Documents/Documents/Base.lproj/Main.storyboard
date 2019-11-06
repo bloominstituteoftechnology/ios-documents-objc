@@ -73,19 +73,19 @@
                                 <rect key="frame" x="20" y="108" width="374" height="734"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="0 words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDw-2p-sQf">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="26.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Document Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mR0-qf-M7Y">
-                                        <rect key="frame" x="0.0" y="37" width="374" height="32.5"/>
+                                        <rect key="frame" x="0.0" y="38.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3te-Sy-2HF">
-                                        <rect key="frame" x="0.0" y="81.5" width="374" height="652.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3te-Sy-2HF">
+                                        <rect key="frame" x="0.0" y="84.5" width="374" height="649.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -98,7 +98,6 @@
                             <constraint firstItem="q0Q-Pg-Rbk" firstAttribute="trailing" secondItem="KiQ-OG-FUm" secondAttribute="trailing" constant="20" id="1r4-b4-0LV"/>
                             <constraint firstItem="KiQ-OG-FUm" firstAttribute="leading" secondItem="q0Q-Pg-Rbk" secondAttribute="leading" constant="20" id="1sg-L5-gFm"/>
                             <constraint firstItem="KiQ-OG-FUm" firstAttribute="top" secondItem="q0Q-Pg-Rbk" secondAttribute="top" constant="20" id="gDk-py-Sfb"/>
-                            <constraint firstItem="q0Q-Pg-Rbk" firstAttribute="bottom" secondItem="KiQ-OG-FUm" secondAttribute="bottom" constant="20" id="sed-Mo-Ums"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q0Q-Pg-Rbk"/>
                     </view>
