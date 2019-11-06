@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ARDocumentController.h"
+#import "ARDocument.h"
 
 @interface ARDocumentViewController : UIViewController
+
+@property (nonatomic) ARDocumentController *controller;
+@property (nonatomic) ARDocument *document;
 
 @end
 
