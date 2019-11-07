@@ -16,6 +16,7 @@
 		324529C92373C82100AC3963 /* iOS_Documents_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324529C82373C82100AC3963 /* iOS_Documents_objcTests.m */; };
 		324529D82373C8FE00AC3963 /* JLCDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324529D72373C8FE00AC3963 /* JLCDocumentsTableViewController.m */; };
 		324529DB2373C94100AC3963 /* JLCAddDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324529DA2373C94100AC3963 /* JLCAddDocumentViewController.m */; };
+		324529DF2373CBB500AC3963 /* NSString+JLCWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 324529DE2373CBB500AC3963 /* NSString+JLCWordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		324529D72373C8FE00AC3963 /* JLCDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCDocumentsTableViewController.m; sourceTree = "<group>"; };
 		324529D92373C94100AC3963 /* JLCAddDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCAddDocumentViewController.h; sourceTree = "<group>"; };
 		324529DA2373C94100AC3963 /* JLCAddDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCAddDocumentViewController.m; sourceTree = "<group>"; };
+		324529DD2373CBB500AC3963 /* NSString+JLCWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JLCWordCount.h"; sourceTree = "<group>"; };
+		324529DE2373CBB500AC3963 /* NSString+JLCWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JLCWordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 			children = (
 				324529D52373C85B00AC3963 /* View Controllers */,
 				324529D42373C84000AC3963 /* Storyboards */,
+				324529DC2373CB7900AC3963 /* Helpers */,
 				324529D32373C83300AC3963 /* Resources */,
 				324529BD2373C82000AC3963 /* Info.plist */,
 				324529BE2373C82000AC3963 /* main.m */,
@@ -135,6 +139,15 @@
 				324529DA2373C94100AC3963 /* JLCAddDocumentViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		324529DC2373CB7900AC3963 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				324529DD2373CBB500AC3963 /* NSString+JLCWordCount.h */,
+				324529DE2373CBB500AC3963 /* NSString+JLCWordCount.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				324529AE2373C81D00AC3963 /* AppDelegate.m in Sources */,
+				324529DF2373CBB500AC3963 /* NSString+JLCWordCount.m in Sources */,
 				324529BF2373C82000AC3963 /* main.m in Sources */,
 				324529D82373C8FE00AC3963 /* JLCDocumentsTableViewController.m in Sources */,
 				324529B12373C81D00AC3963 /* SceneDelegate.m in Sources */,
