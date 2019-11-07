@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JLCDocumentController.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@interface JLCAddDocumentViewController : UIViewController <UITextViewDelegate>
 
-@interface JLCAddDocumentViewController : UIViewController
+@property (nonatomic) JLCDocumentController *documentController;
 
 @end
-
-NS_ASSUME_NONNULL_END

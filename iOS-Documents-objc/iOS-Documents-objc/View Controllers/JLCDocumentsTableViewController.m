@@ -7,6 +7,7 @@
 //
 
 #import "JLCDocumentsTableViewController.h"
+#import "JLCAddDocumentViewController.h"
 #import "JLCDocumentController.h"
 #import "JLCDocument.h"
 
@@ -50,23 +51,22 @@
     return cell;
 }
 
-
-// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
+        JLCDocument *document = self.documentController.documents[indexPath.row];
+        [self.documentController deleteDocument:document];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
 
 // MARK: - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier]  isEqual: @"AddDocumentSegue"]) {
+        JLCAddDocumentViewController *destinationVC = segue.destinationViewController;
+        destinationVC.documentController = self.documentController;
+    }
 }
 
 

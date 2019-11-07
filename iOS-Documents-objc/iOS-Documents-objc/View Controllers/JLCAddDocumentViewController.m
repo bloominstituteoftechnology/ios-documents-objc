@@ -7,8 +7,12 @@
 //
 
 #import "JLCAddDocumentViewController.h"
+#import "NSString+JLCWordCount.h"
 
 @interface JLCAddDocumentViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *numOfWordsLabel;
+@property (weak, nonatomic) IBOutlet UITextField *docTitleTextField;
+@property (weak, nonatomic) IBOutlet UITextView *docTextView;
 
 @end
 
@@ -16,8 +20,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.docTextView.delegate = self;
+    [self updateViews];
 }
+
+- (void)updateViews {
+    int wordCount = [self.docTextView.text wordCount];
+    self.numOfWordsLabel.text = [NSString stringWithFormat:@"%d words", wordCount];
+}
+
+- (void)textViewDidChange:(UITextView *)textView {
+    [self updateViews];
+}
+
+- (IBAction)saveButtonTapped:(UIBarButtonItem *)sender {
+}
+
 
 /*
 #pragma mark - Navigation
