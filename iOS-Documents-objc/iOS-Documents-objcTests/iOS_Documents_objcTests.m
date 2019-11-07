@@ -60,4 +60,18 @@
     XCTAssertEqual(JLCDocumentController.totalDocumentsCreated, 0);
 }
 
+-(void)testUpdatingDocument {
+    JLCDocumentController *documentController = [[JLCDocumentController alloc] init];
+    [documentController createDocumentWithTitle:@"This is a test" text:@"This is a word count string to be used for counting and the count should be 17"];
+    XCTAssertEqual(JLCDocumentController.totalDocumentsCreated, 1);
+    
+    JLCDocument *doc2 = [[JLCDocument alloc] init];
+    [doc2 setTitle:@"This is a test"];
+    [doc2 setText:@"This is update"];
+    
+    [documentController updateDocument:doc2 title:doc2.title text:doc2.text];
+    XCTAssertEqual([documentController.documents[0]text], @"This is update");
+    NSLog(@"THE TEXT: %@",[documentController.documents[0]text]);
+}
+
 @end

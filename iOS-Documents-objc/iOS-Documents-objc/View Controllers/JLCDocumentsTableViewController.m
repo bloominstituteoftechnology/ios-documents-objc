@@ -71,6 +71,11 @@
     if ([[segue identifier]  isEqual: @"AddDocumentSegue"]) {
         JLCAddDocumentViewController *destinationVC = segue.destinationViewController;
         destinationVC.documentController = self.documentController;
+    } else if ([[segue identifier]  isEqual: @"UpdateDocumentSegue"]) {
+        JLCAddDocumentViewController *destinationVC = segue.destinationViewController;
+        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+        destinationVC.documentController = self.documentController;
+        destinationVC.document = self.documentController.documents[indexPath.row];
     }
 }
 

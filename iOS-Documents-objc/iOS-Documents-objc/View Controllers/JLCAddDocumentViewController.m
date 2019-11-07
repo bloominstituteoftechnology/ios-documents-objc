@@ -22,6 +22,11 @@
     [super viewDidLoad];
     self.docTextView.delegate = self;
     [self updateViews];
+    if (self.document) {
+        self.docTitleTextField.text = self.document.title;
+        self.docTextView.text = self.document.text;
+        self.numOfWordsLabel.text = [NSString stringWithFormat:@"%d words", [self.document.text wordCount]];
+    }
 }
 
 - (void)updateViews {
@@ -34,7 +39,11 @@
 }
 
 - (IBAction)saveButtonTapped:(UIBarButtonItem *)sender {
-    if (![self.docTextView.text  isEqual: @""] && ![self.docTextView.text  isEqual: @""]) {
+    if (self.document && ![self.docTitleTextField.text  isEqual: @""] && ![self.docTextView.text  isEqual: @""]) {
+        
+        [self.documentController updateDocument:self.document title:self.docTitleTextField.text text:self.docTextView.text];
+         
+    } else if (![self.docTitleTextField.text  isEqual: @""] && ![self.docTextView.text  isEqual: @""]) {
         [self.documentController createDocumentWithTitle:self.docTitleTextField.text
                                                     text:self.docTextView.text];
     }

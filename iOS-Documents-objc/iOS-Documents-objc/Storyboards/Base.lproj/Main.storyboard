@@ -39,6 +39,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="plE-dc-PZw" kind="show" identifier="UpdateDocumentSegue" id="Xpk-Eq-BM2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -140,4 +143,7 @@
             <point key="canvasLocation" x="1111.5942028985507" y="130.58035714285714"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Xpk-Eq-BM2"/>
+    </inferredMetricsTieBreakers>
 </document>

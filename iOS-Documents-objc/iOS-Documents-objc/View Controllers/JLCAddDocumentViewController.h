@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "JLCDocumentController.h"
+#import "JLCDocument.h"
 
 @interface JLCAddDocumentViewController : UIViewController <UITextViewDelegate>
 
 @property (nonatomic) JLCDocumentController *documentController;
+@property (nonatomic) JLCDocument *document;
 
 @end

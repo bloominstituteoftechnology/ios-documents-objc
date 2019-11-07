@@ -42,6 +42,12 @@ static NSUInteger _totalDocumentsCreated = 0;
     _totalDocumentsCreated++;
 }
 
+- (void)updateDocument:(JLCDocument *)document title:(NSString *)title text:(NSString *)text {
+    document.title = title;
+    document.text = text;
+    document.numberOfWords = [document.text wordCount];
+}
+
 - (void)deleteDocument:(JLCDocument *)document {
     [self.internalDocuments removeObject:document];
     _totalDocumentsCreated--;

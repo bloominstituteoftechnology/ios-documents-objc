@@ -18,6 +18,10 @@
 - (void)createDocumentWithTitle:(NSString *)title
                       text:(NSString *)text;
 
+- (void)updateDocument:(JLCDocument *)document
+                 title:(NSString *)title
+                  text:(NSString *)text;
+
 - (void)deleteDocument:(JLCDocument *)document;
 
 
