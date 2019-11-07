@@ -13,7 +13,7 @@
 
 @property (nonatomic, readonly) NSArray *documents;
 
-@property (nonatomic, class, readonly) int totalDocumentsCreated;
+@property (nonatomic, class, readonly) NSUInteger totalDocumentsCreated;
 
 - (void)createDocumentWithTitle:(NSString *)title
                       text:(NSString *)text;

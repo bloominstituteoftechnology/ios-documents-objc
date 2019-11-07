@@ -8,6 +8,7 @@
 
 #import "JLCDocumentController.h"
 #import "JLCDocument.h"
+#import "NSString+JLCWordCount.h"
 
 @interface JLCDocumentController ()
 
@@ -17,9 +18,9 @@
 
 @implementation JLCDocumentController
 
-static int _totalDocumentsCreated = 0;
+static NSUInteger _totalDocumentsCreated = 0;
 
-+ (int)totalDocumentsCreated {
++ (NSUInteger)totalDocumentsCreated {
     return _totalDocumentsCreated;
 }
 
@@ -28,14 +29,29 @@ static int _totalDocumentsCreated = 0;
     self = [super init];
     if (self) {
         _internalDocuments = [[NSMutableArray alloc] init];
+#warning "remove before production"
+        [self addTestData];
     }
     return self;
+}
+
+- (void)addTestData {
+    JLCDocument *doc1 = [[JLCDocument alloc] init];
+    doc1.title = @"Test Doc one";
+    doc1.text = @"This is doc one text.";
+    
+    JLCDocument *doc2 = [[JLCDocument alloc] init];
+    doc2.title = @"Test Doc two";
+    doc2.text = @"This is doc two text then adding more words.";
+    
+    [_internalDocuments addObjectsFromArray:@[doc1, doc2]];
 }
 
 - (void)createDocumentWithTitle:(NSString *)title text:(NSString *)text {
     JLCDocument *document = [[JLCDocument alloc] init];
     document.title = title;
     document.text = text;
+    document.numberOfWords = [document.text wordCount];
     [self.internalDocuments addObject:document];
     _totalDocumentsCreated++;
 }
@@ -43,6 +59,10 @@ static int _totalDocumentsCreated = 0;
 - (void)deleteDocument:(JLCDocument *)document {
     [self.internalDocuments removeObject:document];
     _totalDocumentsCreated--;
+}
+
+- (NSArray *)documents {
+    return [self.internalDocuments copy];
 }
 
 @end

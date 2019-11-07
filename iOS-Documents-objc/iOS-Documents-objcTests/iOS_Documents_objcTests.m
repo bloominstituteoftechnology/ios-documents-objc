@@ -54,6 +54,7 @@
     JLCDocument *doc = [[JLCDocument alloc] init];
     [doc setTitle:@"This is a test"];
     [doc setText:@"This is a word count string to be used for counting and the count should be 17"];
+    XCTAssertEqual(doc.numberOfWords, 17);
     
     [documentController deleteDocument:doc];
     XCTAssertEqual(JLCDocumentController.totalDocumentsCreated, 0);
