@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JLCDocumentsTableViewController.h
 //  iOS-Documents-objc
 //
 //  Created by Jake Connerly on 11/6/19.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface JLCDocumentsTableViewController : UITableViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
