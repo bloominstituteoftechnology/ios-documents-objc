@@ -29,22 +29,8 @@ static NSUInteger _totalDocumentsCreated = 0;
     self = [super init];
     if (self) {
         _internalDocuments = [[NSMutableArray alloc] init];
-#warning "remove before production"
-        [self addTestData];
     }
     return self;
-}
-
-- (void)addTestData {
-    JLCDocument *doc1 = [[JLCDocument alloc] init];
-    doc1.title = @"Test Doc one";
-    doc1.text = @"This is doc one text.";
-    
-    JLCDocument *doc2 = [[JLCDocument alloc] init];
-    doc2.title = @"Test Doc two";
-    doc2.text = @"This is doc two text then adding more words.";
-    
-    [_internalDocuments addObjectsFromArray:@[doc1, doc2]];
 }
 
 - (void)createDocumentWithTitle:(NSString *)title text:(NSString *)text {
@@ -66,3 +52,19 @@ static NSUInteger _totalDocumentsCreated = 0;
 }
 
 @end
+
+// MARK: - Test Data
+
+/*
+ - (void)addTestData {
+     JLCDocument *doc1 = [[JLCDocument alloc] init];
+     doc1.title = @"Test Doc one";
+     doc1.text = @"This is doc one text.";
+     
+     JLCDocument *doc2 = [[JLCDocument alloc] init];
+     doc2.title = @"Test Doc two";
+     doc2.text = @"This is doc two text then adding more words.";
+     
+     [_internalDocuments addObjectsFromArray:@[doc1, doc2]];
+ }
+ */

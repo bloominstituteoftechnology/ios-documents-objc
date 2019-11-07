@@ -34,6 +34,11 @@
 }
 
 - (IBAction)saveButtonTapped:(UIBarButtonItem *)sender {
+    if (![self.docTextView.text  isEqual: @""] && ![self.docTextView.text  isEqual: @""]) {
+        [self.documentController createDocumentWithTitle:self.docTitleTextField.text
+                                                    text:self.docTextView.text];
+    }
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 
