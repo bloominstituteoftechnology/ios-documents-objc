@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "NSString+JLCWordCount.h"
 #import "JLCDocument.h"
+#import "JLCDocumentController.h"
 
 @interface iOS_Documents_objcTests : XCTestCase
 
@@ -35,9 +36,27 @@
     XCTAssertEqual(doc.title, @"This is a test");
     XCTAssertEqual(doc.text, @"This is a word count string to be used for counting and the count should be 17");
     XCTAssertEqual(doc.numberOfWords, 17);
-    
 }
 
+- (void)testCreatingDocument {
+    JLCDocumentController *documentController = [[JLCDocumentController alloc] init];
+    
+    [documentController createDocumentWithTitle:@"This is a test" text:@"This is a word count string to be used for counting and the count should be 17"];
+    
+    XCTAssertEqual(JLCDocumentController.totalDocumentsCreated, 1);
+}
 
+-(void)testDeleteDocument {
+    JLCDocumentController *documentController = [[JLCDocumentController alloc] init];
+    [documentController createDocumentWithTitle:@"This is a test" text:@"This is a word count string to be used for counting and the count should be 17"];
+    XCTAssertEqual(JLCDocumentController.totalDocumentsCreated, 1);
+    
+    JLCDocument *doc = [[JLCDocument alloc] init];
+    [doc setTitle:@"This is a test"];
+    [doc setText:@"This is a word count string to be used for counting and the count should be 17"];
+    
+    [documentController deleteDocument:doc];
+    XCTAssertEqual(JLCDocumentController.totalDocumentsCreated, 0);
+}
 
 @end

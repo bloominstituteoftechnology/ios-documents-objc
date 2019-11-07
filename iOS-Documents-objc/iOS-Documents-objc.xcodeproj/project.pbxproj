@@ -18,6 +18,7 @@
 		324529DB2373C94100AC3963 /* JLCAddDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324529DA2373C94100AC3963 /* JLCAddDocumentViewController.m */; };
 		324529DF2373CBB500AC3963 /* NSString+JLCWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 324529DE2373CBB500AC3963 /* NSString+JLCWordCount.m */; };
 		324529E32373D21100AC3963 /* JLCDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 324529E22373D21100AC3963 /* JLCDocument.m */; };
+		324529E72373D9EB00AC3963 /* JLCDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324529E62373D9EB00AC3963 /* JLCDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		324529DE2373CBB500AC3963 /* NSString+JLCWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JLCWordCount.m"; sourceTree = "<group>"; };
 		324529E12373D21100AC3963 /* JLCDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCDocument.h; sourceTree = "<group>"; };
 		324529E22373D21100AC3963 /* JLCDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCDocument.m; sourceTree = "<group>"; };
+		324529E52373D9EB00AC3963 /* JLCDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCDocumentController.h; sourceTree = "<group>"; };
+		324529E62373D9EB00AC3963 /* JLCDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				324529E02373D1F600AC3963 /* Models */,
+				324529E42373D9CA00AC3963 /* Model Controllers */,
 				324529D52373C85B00AC3963 /* View Controllers */,
 				324529D42373C84000AC3963 /* Storyboards */,
 				324529DC2373CB7900AC3963 /* Helpers */,
@@ -161,6 +165,15 @@
 				324529E22373D21100AC3963 /* JLCDocument.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		324529E42373D9CA00AC3963 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				324529E52373D9EB00AC3963 /* JLCDocumentController.h */,
+				324529E62373D9EB00AC3963 /* JLCDocumentController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +282,7 @@
 				324529DF2373CBB500AC3963 /* NSString+JLCWordCount.m in Sources */,
 				324529BF2373C82000AC3963 /* main.m in Sources */,
 				324529D82373C8FE00AC3963 /* JLCDocumentsTableViewController.m in Sources */,
+				324529E72373D9EB00AC3963 /* JLCDocumentController.m in Sources */,
 				324529B12373C81D00AC3963 /* SceneDelegate.m in Sources */,
 				324529DB2373C94100AC3963 /* JLCAddDocumentViewController.m in Sources */,
 			);
