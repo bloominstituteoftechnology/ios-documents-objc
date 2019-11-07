@@ -20,14 +20,4 @@
         return wordCount;
 }
 
-//- (int)wordCountFrom:(NSString *)str {
-//    int wordCount = 0;
-//    NSScanner *scanner = [NSScanner scannerWithString:str];
-//    NSCharacterSet *whiteSpace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-//    while ([scanner scanUpToCharactersFromSet:whiteSpace intoString:nil]) {
-//        wordCount++;
-//    }
-//    return wordCount;
-//}
-
 @end

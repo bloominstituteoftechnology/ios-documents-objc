@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "NSString+JLCWordCount.h"
+#import "JLCDocument.h"
 
 @interface iOS_Documents_objcTests : XCTestCase
 
@@ -22,6 +23,19 @@
     
     NSLog(@"The Test String Count is: %d", [testString wordCount]);
     XCTAssertEqual(result, 8);
+}
+
+- (void)testDocumentModel {
+    JLCDocument *doc = [[JLCDocument alloc] init];
+    
+    [doc setTitle:@"This is a test"];
+    [doc setText:@"This is a word count string to be used for counting and the count should be 17"];
+    [doc numberOfWords];
+    
+    XCTAssertEqual(doc.title, @"This is a test");
+    XCTAssertEqual(doc.text, @"This is a word count string to be used for counting and the count should be 17");
+    XCTAssertEqual(doc.numberOfWords, 17);
+    
 }
 
 
