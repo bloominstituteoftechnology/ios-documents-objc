@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LSIDocument.h"
+#import "LSIDocumentController.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface LSIDetailViewController : UIViewController
-
+@interface LSIDetailViewController : UIViewController <UITextViewDelegate>
+@property (nonatomic) LSIDocumentController *controller;
+@property (nonatomic) LSIDocument *document;
 @end
-
-NS_ASSUME_NONNULL_END
