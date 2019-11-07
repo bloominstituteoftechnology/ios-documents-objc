@@ -45,7 +45,6 @@
     return self.documentController.documents.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
     JLCDocument *document = self.documentController.documents[indexPath.row];
@@ -66,7 +65,6 @@
 
 // MARK: - Navigation
 
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier]  isEqual: @"AddDocumentSegue"]) {
         JLCAddDocumentViewController *destinationVC = segue.destinationViewController;
@@ -78,6 +76,5 @@
         destinationVC.document = self.documentController.documents[indexPath.row];
     }
 }
-
 
 @end

@@ -69,7 +69,7 @@
     [doc2 setTitle:@"This is a test"];
     [doc2 setText:@"This is update"];
     
-    [documentController updateDocument:doc2 title:doc2.title text:doc2.text];
+    [documentController updateDocument:documentController.documents[0] title:doc2.title text:doc2.text];
     XCTAssertEqual([documentController.documents[0]text], @"This is update");
     NSLog(@"THE TEXT: %@",[documentController.documents[0]text]);
 }
