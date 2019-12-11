@@ -22,4 +22,6 @@
 
 - (void)updateViews;
 
+- (IBAction)save:(UIBarButtonItem *)sender;
+
 @end

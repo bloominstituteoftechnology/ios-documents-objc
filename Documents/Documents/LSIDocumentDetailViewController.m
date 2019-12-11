@@ -9,6 +9,7 @@
 #import "LSIDocumentDetailViewController.h"
 #import "LSIDocument.h"
 #import "NSString+LSIWordCount.h"
+#import "LSIDocumentController.h"
 
 @interface LSIDocumentDetailViewController ()
 
@@ -36,6 +37,19 @@
 
 - (void)updateViews {
     [self.wordCountLabel setText:[[NSString alloc] initWithFormat:@"%d words", [[self.textView text] wordCount]]];
+}
+
+- (IBAction)save:(UIBarButtonItem *)sender {
+    NSString *title = [self.titleTextField text];
+    NSString *text = [self.textView text];
+    
+    if (self.document) {
+        [self.controller updateDocument:self.document title:title text:text];
+    } else {
+        [self.controller addDocumentWithTitle:title text:text];
+    }
+    
+    [self.navigationController popViewControllerAnimated:true];
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
