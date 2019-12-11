@@ -10,7 +10,7 @@
         <!--Documents-->
         <scene sceneID="23Q-hf-Rlf">
             <objects>
-                <tableViewController id="Jzr-J8-gd6" sceneMemberID="viewController">
+                <tableViewController id="Jzr-J8-gd6" customClass="LSIDocumentsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8yY-bz-Ydg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
         <!--New Document-->
         <scene sceneID="GvJ-UU-4tQ">
             <objects>
-                <viewController id="dwn-mC-JJ9" sceneMemberID="viewController">
+                <viewController id="dwn-mC-JJ9" customClass="LSIDocumentDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A7n-Kl-ehc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

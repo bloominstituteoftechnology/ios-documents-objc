@@ -13,6 +13,8 @@
 		59AA764323A190AD00391ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59AA764223A190AD00391ACD /* Assets.xcassets */; };
 		59AA764623A190AD00391ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AA764423A190AD00391ACD /* LaunchScreen.storyboard */; };
 		59AA764923A190AD00391ACD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA764823A190AD00391ACD /* main.m */; };
+		59AA765123A193E300391ACD /* LSIDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA765023A193E300391ACD /* LSIDocumentsTableViewController.m */; };
+		59AA765423A193F300391ACD /* LSIDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA765323A193F300391ACD /* LSIDocumentDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		59AA764523A190AD00391ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59AA764723A190AD00391ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59AA764823A190AD00391ACD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		59AA764F23A193E300391ACD /* LSIDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDocumentsTableViewController.h; sourceTree = "<group>"; };
+		59AA765023A193E300391ACD /* LSIDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocumentsTableViewController.m; sourceTree = "<group>"; };
+		59AA765223A193F300391ACD /* LSIDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDocumentDetailViewController.h; sourceTree = "<group>"; };
+		59AA765323A193F300391ACD /* LSIDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocumentDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				59AA763723A190A700391ACD /* AppDelegate.m */,
 				59AA763923A190A700391ACD /* SceneDelegate.h */,
 				59AA763A23A190A700391ACD /* SceneDelegate.m */,
+				59AA764F23A193E300391ACD /* LSIDocumentsTableViewController.h */,
+				59AA765023A193E300391ACD /* LSIDocumentsTableViewController.m */,
+				59AA765223A193F300391ACD /* LSIDocumentDetailViewController.h */,
+				59AA765323A193F300391ACD /* LSIDocumentDetailViewController.m */,
 				59AA763F23A190A700391ACD /* Main.storyboard */,
 				59AA764223A190AD00391ACD /* Assets.xcassets */,
 				59AA764423A190AD00391ACD /* LaunchScreen.storyboard */,
@@ -97,6 +107,7 @@
 		59AA762B23A190A700391ACD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LSI;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
@@ -144,6 +155,8 @@
 				59AA763823A190A700391ACD /* AppDelegate.m in Sources */,
 				59AA764923A190AD00391ACD /* main.m in Sources */,
 				59AA763B23A190A700391ACD /* SceneDelegate.m in Sources */,
+				59AA765123A193E300391ACD /* LSIDocumentsTableViewController.m in Sources */,
+				59AA765423A193F300391ACD /* LSIDocumentDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
