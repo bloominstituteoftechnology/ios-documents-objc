@@ -15,6 +15,7 @@
 		807FA00723A1896900B201BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FA00623A1896900B201BA /* main.m */; };
 		807FA00F23A18C4800B201BA /* JLRDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FA00E23A18C4800B201BA /* JLRDocumentsTableViewController.m */; };
 		807FA01323A18F2600B201BA /* JLRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FA01223A18F2600B201BA /* JLRDetailViewController.m */; };
+		807FA01623A1912900B201BA /* NSString+JLRWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FA01523A1912900B201BA /* NSString+JLRWordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		807FA00E23A18C4800B201BA /* JLRDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRDocumentsTableViewController.m; sourceTree = "<group>"; };
 		807FA01123A18F2600B201BA /* JLRDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLRDetailViewController.h; sourceTree = "<group>"; };
 		807FA01223A18F2600B201BA /* JLRDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRDetailViewController.m; sourceTree = "<group>"; };
+		807FA01423A1912900B201BA /* NSString+JLRWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JLRWordCount.h"; sourceTree = "<group>"; };
+		807FA01523A1912900B201BA /* NSString+JLRWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JLRWordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 				807F9FF523A1896400B201BA /* AppDelegate.m */,
 				807F9FF723A1896400B201BA /* SceneDelegate.h */,
 				807F9FF823A1896400B201BA /* SceneDelegate.m */,
+				807FA01723A1913100B201BA /* Category */,
 				807FA01023A18C5600B201BA /* View Controllers */,
 				807F9FFD23A1896400B201BA /* Main.storyboard */,
 				807FA00023A1896900B201BA /* Assets.xcassets */,
@@ -87,6 +91,15 @@
 				807FA01223A18F2600B201BA /* JLRDetailViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		807FA01723A1913100B201BA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				807FA01423A1912900B201BA /* NSString+JLRWordCount.h */,
+				807FA01523A1912900B201BA /* NSString+JLRWordCount.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				807FA01623A1912900B201BA /* NSString+JLRWordCount.m in Sources */,
 				807FA01323A18F2600B201BA /* JLRDetailViewController.m in Sources */,
 				807F9FF623A1896400B201BA /* AppDelegate.m in Sources */,
 				807FA00723A1896900B201BA /* main.m in Sources */,

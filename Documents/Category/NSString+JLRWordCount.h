@@ -1,13 +1,15 @@
 //
-//  JLRDetailViewController.h
+//  NSString+JLRWordCount.h
 //  Documents
 //
 //  Created by Jesse Ruiz on 12/11/19.
 //  Copyright © 2019 Lambda School. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface JLRDetailViewController : UIViewController
+@interface NSString (JLRWordCount)
+
+- (NSUInteger)wordCount;
 
 @end
