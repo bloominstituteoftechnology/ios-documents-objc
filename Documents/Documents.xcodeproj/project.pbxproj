@@ -15,6 +15,7 @@
 		59AA764923A190AD00391ACD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA764823A190AD00391ACD /* main.m */; };
 		59AA765123A193E300391ACD /* LSIDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA765023A193E300391ACD /* LSIDocumentsTableViewController.m */; };
 		59AA765423A193F300391ACD /* LSIDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA765323A193F300391ACD /* LSIDocumentDetailViewController.m */; };
+		59AA765723A1943800391ACD /* NSString+LSIWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA765623A1943800391ACD /* NSString+LSIWordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		59AA765023A193E300391ACD /* LSIDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocumentsTableViewController.m; sourceTree = "<group>"; };
 		59AA765223A193F300391ACD /* LSIDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDocumentDetailViewController.h; sourceTree = "<group>"; };
 		59AA765323A193F300391ACD /* LSIDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocumentDetailViewController.m; sourceTree = "<group>"; };
+		59AA765523A1943800391ACD /* NSString+LSIWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LSIWordCount.h"; sourceTree = "<group>"; };
+		59AA765623A1943800391ACD /* NSString+LSIWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LSIWordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				59AA765023A193E300391ACD /* LSIDocumentsTableViewController.m */,
 				59AA765223A193F300391ACD /* LSIDocumentDetailViewController.h */,
 				59AA765323A193F300391ACD /* LSIDocumentDetailViewController.m */,
+				59AA765523A1943800391ACD /* NSString+LSIWordCount.h */,
+				59AA765623A1943800391ACD /* NSString+LSIWordCount.m */,
 				59AA763F23A190A700391ACD /* Main.storyboard */,
 				59AA764223A190AD00391ACD /* Assets.xcassets */,
 				59AA764423A190AD00391ACD /* LaunchScreen.storyboard */,
@@ -156,6 +161,7 @@
 				59AA764923A190AD00391ACD /* main.m in Sources */,
 				59AA763B23A190A700391ACD /* SceneDelegate.m in Sources */,
 				59AA765123A193E300391ACD /* LSIDocumentsTableViewController.m in Sources */,
+				59AA765723A1943800391ACD /* NSString+LSIWordCount.m in Sources */,
 				59AA765423A193F300391ACD /* LSIDocumentDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
