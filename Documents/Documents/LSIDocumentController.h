@@ -8,8 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+@class LSIDocument;
+
 @interface LSIDocumentController : NSObject
 
 @property (readonly) NSMutableArray *documents;
+
+- (void)addDocumentWithTitle:(NSString *)title
+                        text:(NSString *)text;
+
+- (void)updateDocument:(LSIDocument *)document
+                 title:(NSString *)title
+                  text:(NSString *)text;
+
+- (void)deleteDocument:(LSIDocument *)document;
 
 @end
