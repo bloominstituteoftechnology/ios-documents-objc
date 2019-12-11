@@ -7,12 +7,33 @@
 //
 
 #import "LSIDocumentsTableViewController.h"
+#import "LSIDocumentController.h"
+#import "LSIDocument.h"
 
 @interface LSIDocumentsTableViewController ()
+
+@property LSIDocumentController *controller;
 
 @end
 
 @implementation LSIDocumentsTableViewController
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _controller = [[LSIDocumentController alloc] init];
+    }
+    return self;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        _controller = [[LSIDocumentController alloc] init];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,29 +43,26 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self.controller addDocumentWithTitle:@"Document 1" text:@"Some text"];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.controller.documents.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    LSIDocument *document = self.controller.documents[indexPath.row];
+    
+    [[cell textLabel] setText:[document title]];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
