@@ -8,6 +8,7 @@
 
 #import "LSIDocumentDetailViewController.h"
 #import "LSIDocument.h"
+#import "NSString+LSIWordCount.h"
 
 @interface LSIDocumentDetailViewController ()
 
@@ -27,6 +28,12 @@
     } else {
         [self.textView setText:nil];
     }
+    
+    [self updateViews];
+}
+
+- (void)updateViews {
+    [self.wordCountLabel setText:[[NSString alloc] initWithFormat:@"%d words", [[self.textView text] wordCount]]];
 }
 
 @end
