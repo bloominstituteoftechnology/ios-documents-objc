@@ -11,7 +11,7 @@
 @class LSIDocumentController;
 @class LSIDocument;
 
-@interface LSIDocumentDetailViewController : UIViewController
+@interface LSIDocumentDetailViewController : UIViewController <UITextViewDelegate>
 
 @property LSIDocument *document;
 @property LSIDocumentController *controller;

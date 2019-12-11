@@ -20,6 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self.textView setDelegate:self];
+    
     if (self.document) {
         [self setTitle:[self.document title]];
         [self.titleTextField setText:[self.document title]];
@@ -34,6 +36,10 @@
 
 - (void)updateViews {
     [self.wordCountLabel setText:[[NSString alloc] initWithFormat:@"%d words", [[self.textView text] wordCount]]];
+}
+
+- (void)textViewDidChange:(UITextView *)textView {
+    [self updateViews];
 }
 
 @end
