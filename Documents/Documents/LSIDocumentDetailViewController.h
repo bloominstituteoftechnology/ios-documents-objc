@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class LSIDocumentController;
+@class LSIDocument;
 
 @interface LSIDocumentDetailViewController : UIViewController
 
-@end
+@property LSIDocument *document;
+@property LSIDocumentController *controller;
 
-NS_ASSUME_NONNULL_END
+@property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
+@end

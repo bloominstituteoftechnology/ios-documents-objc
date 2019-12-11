@@ -9,6 +9,7 @@
 #import "LSIDocumentsTableViewController.h"
 #import "LSIDocumentController.h"
 #import "LSIDocument.h"
+#import "LSIDocumentDetailViewController.h"
 
 @interface LSIDocumentsTableViewController ()
 
@@ -99,14 +100,21 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    LSIDocumentDetailViewController *documentDetailVC = [segue destinationViewController];
+    if (documentDetailVC) {
+        [documentDetailVC setController:self.controller];
+        
+        if ([[segue identifier] isEqualToString:@"ShowDocumentDetail"]) {
+            NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+            if (indexPath) {
+                [documentDetailVC setDocument:self.controller.documents[indexPath.row]];
+            }
+        }
+    }
 }
-*/
 
 @end
