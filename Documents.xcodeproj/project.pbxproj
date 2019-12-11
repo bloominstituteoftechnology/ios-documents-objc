@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		807F9FF623A1896400B201BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 807F9FF523A1896400B201BA /* AppDelegate.m */; };
 		807F9FF923A1896400B201BA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 807F9FF823A1896400B201BA /* SceneDelegate.m */; };
-		807F9FFC23A1896400B201BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807F9FFB23A1896400B201BA /* ViewController.m */; };
 		807F9FFF23A1896400B201BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807F9FFD23A1896400B201BA /* Main.storyboard */; };
 		807FA00123A1896900B201BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807FA00023A1896900B201BA /* Assets.xcassets */; };
 		807FA00423A1896900B201BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807FA00223A1896900B201BA /* LaunchScreen.storyboard */; };
 		807FA00723A1896900B201BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FA00623A1896900B201BA /* main.m */; };
+		807FA00F23A18C4800B201BA /* JLRDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FA00E23A18C4800B201BA /* JLRDocumentsTableViewController.m */; };
+		807FA01323A18F2600B201BA /* JLRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FA01223A18F2600B201BA /* JLRDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +23,15 @@
 		807F9FF523A1896400B201BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		807F9FF723A1896400B201BA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		807F9FF823A1896400B201BA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		807F9FFA23A1896400B201BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		807F9FFB23A1896400B201BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		807F9FFE23A1896400B201BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		807FA00023A1896900B201BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		807FA00323A1896900B201BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		807FA00523A1896900B201BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		807FA00623A1896900B201BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		807FA00D23A18C4800B201BA /* JLRDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLRDocumentsTableViewController.h; sourceTree = "<group>"; };
+		807FA00E23A18C4800B201BA /* JLRDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRDocumentsTableViewController.m; sourceTree = "<group>"; };
+		807FA01123A18F2600B201BA /* JLRDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLRDetailViewController.h; sourceTree = "<group>"; };
+		807FA01223A18F2600B201BA /* JLRDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +68,7 @@
 				807F9FF523A1896400B201BA /* AppDelegate.m */,
 				807F9FF723A1896400B201BA /* SceneDelegate.h */,
 				807F9FF823A1896400B201BA /* SceneDelegate.m */,
-				807F9FFA23A1896400B201BA /* ViewController.h */,
-				807F9FFB23A1896400B201BA /* ViewController.m */,
+				807FA01023A18C5600B201BA /* View Controllers */,
 				807F9FFD23A1896400B201BA /* Main.storyboard */,
 				807FA00023A1896900B201BA /* Assets.xcassets */,
 				807FA00223A1896900B201BA /* LaunchScreen.storyboard */,
@@ -74,6 +76,17 @@
 				807FA00623A1896900B201BA /* main.m */,
 			);
 			path = Documents;
+			sourceTree = "<group>";
+		};
+		807FA01023A18C5600B201BA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				807FA00D23A18C4800B201BA /* JLRDocumentsTableViewController.h */,
+				807FA00E23A18C4800B201BA /* JLRDocumentsTableViewController.m */,
+				807FA01123A18F2600B201BA /* JLRDetailViewController.h */,
+				807FA01223A18F2600B201BA /* JLRDetailViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +115,7 @@
 		807F9FE923A1896400B201BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JLR;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
@@ -146,10 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				807F9FFC23A1896400B201BA /* ViewController.m in Sources */,
+				807FA01323A18F2600B201BA /* JLRDetailViewController.m in Sources */,
 				807F9FF623A1896400B201BA /* AppDelegate.m in Sources */,
 				807FA00723A1896900B201BA /* main.m in Sources */,
 				807F9FF923A1896400B201BA /* SceneDelegate.m in Sources */,
+				807FA00F23A18C4800B201BA /* JLRDocumentsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

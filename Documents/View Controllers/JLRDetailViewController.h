@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JLRDetailViewController.h
 //  Documents
 //
 //  Created by Jesse Ruiz on 12/11/19.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface JLRDetailViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
