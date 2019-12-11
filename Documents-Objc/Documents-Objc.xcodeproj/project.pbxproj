@@ -15,6 +15,9 @@
 		A67673B723A189BF0049D0BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67673B623A189BF0049D0BF /* main.m */; };
 		A67673C123A18AF10049D0BF /* GIPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67673C023A18AF10049D0BF /* GIPTableViewController.m */; };
 		A67673C423A193440049D0BF /* GIPNewDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67673C323A193440049D0BF /* GIPNewDocumentViewController.m */; };
+		A67673C723A193C60049D0BF /* NSString+GIPWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = A67673C623A193C60049D0BF /* NSString+GIPWordCount.m */; };
+		A67673CA23A196C30049D0BF /* GIPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A67673C923A196C30049D0BF /* GIPDocument.m */; };
+		A67673CE23A1ABDD0049D0BF /* GIPDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67673CD23A1ABDD0049D0BF /* GIPDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,12 @@
 		A67673C023A18AF10049D0BF /* GIPTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPTableViewController.m; sourceTree = "<group>"; };
 		A67673C223A193440049D0BF /* GIPNewDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPNewDocumentViewController.h; sourceTree = "<group>"; };
 		A67673C323A193440049D0BF /* GIPNewDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPNewDocumentViewController.m; sourceTree = "<group>"; };
+		A67673C523A193C60049D0BF /* NSString+GIPWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+GIPWordCount.h"; sourceTree = "<group>"; };
+		A67673C623A193C60049D0BF /* NSString+GIPWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+GIPWordCount.m"; sourceTree = "<group>"; };
+		A67673C823A196C30049D0BF /* GIPDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPDocument.h; sourceTree = "<group>"; };
+		A67673C923A196C30049D0BF /* GIPDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPDocument.m; sourceTree = "<group>"; };
+		A67673CC23A1ABDD0049D0BF /* GIPDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPDocumentController.h; sourceTree = "<group>"; };
+		A67673CD23A1ABDD0049D0BF /* GIPDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				A67673BD23A189EF0049D0BF /* View Controllers */,
+				A67673CB23A196C90049D0BF /* Models */,
+				A67673CF23A1ABE30049D0BF /* Model Controllers */,
 				A67673BE23A189F80049D0BF /* Storyboards */,
 				A67673B023A189BF0049D0BF /* Assets.xcassets */,
 				A67673A423A189BE0049D0BF /* AppDelegate.h */,
@@ -73,6 +84,8 @@
 				A67673A823A189BE0049D0BF /* SceneDelegate.m */,
 				A67673B523A189BF0049D0BF /* Info.plist */,
 				A67673B623A189BF0049D0BF /* main.m */,
+				A67673C523A193C60049D0BF /* NSString+GIPWordCount.h */,
+				A67673C623A193C60049D0BF /* NSString+GIPWordCount.m */,
 			);
 			path = "Documents-Objc";
 			sourceTree = "<group>";
@@ -95,6 +108,24 @@
 				A67673B223A189BF0049D0BF /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A67673CB23A196C90049D0BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A67673C823A196C30049D0BF /* GIPDocument.h */,
+				A67673C923A196C30049D0BF /* GIPDocument.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A67673CF23A1ABE30049D0BF /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A67673CC23A1ABDD0049D0BF /* GIPDocumentController.h */,
+				A67673CD23A1ABDD0049D0BF /* GIPDocumentController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +201,10 @@
 			files = (
 				A67673C423A193440049D0BF /* GIPNewDocumentViewController.m in Sources */,
 				A67673A623A189BE0049D0BF /* AppDelegate.m in Sources */,
+				A67673C723A193C60049D0BF /* NSString+GIPWordCount.m in Sources */,
+				A67673CA23A196C30049D0BF /* GIPDocument.m in Sources */,
 				A67673B723A189BF0049D0BF /* main.m in Sources */,
+				A67673CE23A1ABDD0049D0BF /* GIPDocumentController.m in Sources */,
 				A67673C123A18AF10049D0BF /* GIPTableViewController.m in Sources */,
 				A67673A923A189BE0049D0BF /* SceneDelegate.m in Sources */,
 			);
