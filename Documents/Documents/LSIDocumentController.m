@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        _documents = @[];
+        _documents = [[NSMutableArray alloc] initWithArray:@[]];
     }
     return self;
 }
