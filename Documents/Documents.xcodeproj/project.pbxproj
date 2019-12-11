@@ -17,6 +17,7 @@
 		59AA765423A193F300391ACD /* LSIDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA765323A193F300391ACD /* LSIDocumentDetailViewController.m */; };
 		59AA765723A1943800391ACD /* NSString+LSIWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA765623A1943800391ACD /* NSString+LSIWordCount.m */; };
 		59AA765A23A1976900391ACD /* LSIDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA765923A1976900391ACD /* LSIDocument.m */; };
+		59AA765D23A198F500391ACD /* LSIDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA765C23A198F500391ACD /* LSIDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		59AA765623A1943800391ACD /* NSString+LSIWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LSIWordCount.m"; sourceTree = "<group>"; };
 		59AA765823A1976900391ACD /* LSIDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDocument.h; sourceTree = "<group>"; };
 		59AA765923A1976900391ACD /* LSIDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocument.m; sourceTree = "<group>"; };
+		59AA765B23A198F500391ACD /* LSIDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIDocumentController.h; sourceTree = "<group>"; };
+		59AA765C23A198F500391ACD /* LSIDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				59AA765623A1943800391ACD /* NSString+LSIWordCount.m */,
 				59AA765823A1976900391ACD /* LSIDocument.h */,
 				59AA765923A1976900391ACD /* LSIDocument.m */,
+				59AA765B23A198F500391ACD /* LSIDocumentController.h */,
+				59AA765C23A198F500391ACD /* LSIDocumentController.m */,
 				59AA763F23A190A700391ACD /* Main.storyboard */,
 				59AA764223A190AD00391ACD /* Assets.xcassets */,
 				59AA764423A190AD00391ACD /* LaunchScreen.storyboard */,
@@ -167,6 +172,7 @@
 				59AA764923A190AD00391ACD /* main.m in Sources */,
 				59AA763B23A190A700391ACD /* SceneDelegate.m in Sources */,
 				59AA765123A193E300391ACD /* LSIDocumentsTableViewController.m in Sources */,
+				59AA765D23A198F500391ACD /* LSIDocumentController.m in Sources */,
 				59AA765723A1943800391ACD /* NSString+LSIWordCount.m in Sources */,
 				59AA765423A193F300391ACD /* LSIDocumentDetailViewController.m in Sources */,
 			);
