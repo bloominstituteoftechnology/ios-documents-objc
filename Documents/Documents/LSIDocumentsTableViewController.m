@@ -44,7 +44,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    [self.controller addDocumentWithTitle:@"Document 1" text:@"Some text"];
+    [self.controller addDocumentWithTitle:@"Document 1" text:@"Lots and lots of text and words to test the word counter"];
     [self.tableView reloadData];
 }
 
@@ -60,6 +60,7 @@
     LSIDocument *document = self.controller.documents[indexPath.row];
     
     [[cell textLabel] setText:[document title]];
+    [[cell detailTextLabel] setText:[[NSString alloc] initWithFormat:@"%d words", [document wordCount]]];
     
     return cell;
 }
