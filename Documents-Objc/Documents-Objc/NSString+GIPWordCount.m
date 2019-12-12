@@ -12,16 +12,20 @@
 
 - (int)wordCount {
     NSString *string = self;
-    NSUInteger charCount = [string length];
+    NSUInteger stringLength = [string length];
     NSUInteger index = 0;
     int wordCount = 0;
     
+    if ([string length] == 0) {
+        return wordCount;
+    }
+    wordCount++;
     do {
         if ([string characterAtIndex: index] == ' ') {
             wordCount++;
         }
         index++;
-    } while (index <= charCount);
+    } while (index < stringLength);
     
     return wordCount;
 }
