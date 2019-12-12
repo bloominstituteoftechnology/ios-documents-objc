@@ -17,6 +17,7 @@
 		807FA01323A18F2600B201BA /* JLRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FA01223A18F2600B201BA /* JLRDetailViewController.m */; };
 		807FA01623A1912900B201BA /* NSString+JLRWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FA01523A1912900B201BA /* NSString+JLRWordCount.m */; };
 		807FA01A23A196AB00B201BA /* JLRDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FA01923A196AB00B201BA /* JLRDocument.m */; };
+		807FA01E23A19AC500B201BA /* JLRDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FA01D23A19AC500B201BA /* JLRDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		807FA01523A1912900B201BA /* NSString+JLRWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JLRWordCount.m"; sourceTree = "<group>"; };
 		807FA01823A196AB00B201BA /* JLRDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLRDocument.h; sourceTree = "<group>"; };
 		807FA01923A196AB00B201BA /* JLRDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRDocument.m; sourceTree = "<group>"; };
+		807FA01C23A19AC400B201BA /* JLRDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLRDocumentController.h; sourceTree = "<group>"; };
+		807FA01D23A19AC500B201BA /* JLRDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,7 @@
 				807F9FF723A1896400B201BA /* SceneDelegate.h */,
 				807F9FF823A1896400B201BA /* SceneDelegate.m */,
 				807FA01B23A196B100B201BA /* Models */,
+				807FA01F23A19AC800B201BA /* Model Controllers */,
 				807FA01023A18C5600B201BA /* View Controllers */,
 				807FA01723A1913100B201BA /* Category */,
 				807F9FFD23A1896400B201BA /* Main.storyboard */,
@@ -113,6 +117,15 @@
 				807FA01923A196AB00B201BA /* JLRDocument.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		807FA01F23A19AC800B201BA /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				807FA01C23A19AC400B201BA /* JLRDocumentController.h */,
+				807FA01D23A19AC500B201BA /* JLRDocumentController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +204,7 @@
 				807F9FF623A1896400B201BA /* AppDelegate.m in Sources */,
 				807FA01A23A196AB00B201BA /* JLRDocument.m in Sources */,
 				807FA00723A1896900B201BA /* main.m in Sources */,
+				807FA01E23A19AC500B201BA /* JLRDocumentController.m in Sources */,
 				807F9FF923A1896400B201BA /* SceneDelegate.m in Sources */,
 				807FA00F23A18C4800B201BA /* JLRDocumentsTableViewController.m in Sources */,
 			);

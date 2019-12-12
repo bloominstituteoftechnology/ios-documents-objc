@@ -7,6 +7,8 @@
 //
 
 #import "JLRDetailViewController.h"
+#import "JLRDocument.h"
+#import "JLRDocumentController.h"
 
 @interface JLRDetailViewController ()
 
@@ -15,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *titleText;
 @property (weak, nonatomic) IBOutlet UITextView *documentText;
 
+@property (nonatomic, copy, readonly) JLRDocument *document;
+@property (nonatomic, copy, readonly) JLRDocumentController *documentController;
 
 @end
 
