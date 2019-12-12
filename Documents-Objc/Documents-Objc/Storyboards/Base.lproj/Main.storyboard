@@ -103,7 +103,11 @@
                         <viewLayoutGuide key="safeArea" id="lqZ-Vs-COK"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Document" largeTitleDisplayMode="always" id="KY5-hL-NuM">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="EnB-SP-HGw"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="EnB-SP-HGw">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="R9R-HN-gnQ" id="oHV-OI-jCL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="documentTextView" destination="Jg2-4s-OhE" id="YoQ-Z1-Hfm"/>
