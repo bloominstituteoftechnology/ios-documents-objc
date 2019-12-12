@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class GIPDocumentController;
 
-@interface GIPNewDocumentViewController : UIViewController
+@interface GIPNewDocumentViewController : UIViewController <UITextViewDelegate>
+
+@property GIPDocumentController *controller;
 
 @end
-
-NS_ASSUME_NONNULL_END

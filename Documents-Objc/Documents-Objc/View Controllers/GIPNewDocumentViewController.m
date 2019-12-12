@@ -7,11 +7,15 @@
 //
 
 #import "GIPNewDocumentViewController.h"
+#import "GIPDocumentController.h"
+#import "GIPDocument.h"
+#import "NSString+GIPWordCount.h"
 
 @interface GIPNewDocumentViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *documentTextView;
+- (IBAction)saveButtonPressed:(id)sender;
 
 @end
 
@@ -19,17 +23,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [self.documentTextView setDelegate:self];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)saveButtonPressed:(id)sender {
+    NSString *title = self.titleTextField.text;
+    NSString *document = self.documentTextView.text;
+    
+    if (![title isEqual: @""] && ![document isEqual: @""]) {
+        GIPDocument *newDoc = [[GIPDocument alloc] initWithTitle:title text:document];
+        [self.controller addDocument:newDoc];
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
-*/
+
+
+- (void)textViewDidChange:(UITextView *)textView {
+    int wordCount = [self.documentTextView.text wordCount];
+    self.wordCountLabel.text = [NSString stringWithFormat:@"%d words", wordCount];
+}
 
 @end
