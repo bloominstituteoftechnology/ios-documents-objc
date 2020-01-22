@@ -10,7 +10,7 @@
 
 @class SKSDocumentController, SKSDocument;
 
-@interface SKSDetailDocumentViewController : UIViewController
+@interface SKSDetailDocumentViewController : UIViewController <UITextViewDelegate>
 
 @property SKSDocumentController *documentController;
 @property SKSDocument *document;

@@ -38,12 +38,19 @@
 - (void)updateDocument:(SKSDocument *)document with:(SKSDocument *)updatedDocument {
     NSUInteger index = [self.internalDocuments indexOfObject:document];
     SKSDocument *tempDoc = self.internalDocuments[index];
-    tempDoc.documentText = updatedDocument.documentText;
+    NSLog(@"%@", tempDoc.title);
+    NSLog(@"%@", tempDoc.documentText);
+
     tempDoc.title = updatedDocument.title;
+    tempDoc.documentText = updatedDocument.documentText;
+
+    NSLog(@"%@", tempDoc.title);
+    NSLog(@"%@", tempDoc.documentText);
 }
 
 - (void)deleteDocument:(SKSDocument *)document {
     [self.internalDocuments removeObject:document];
 }
+
 
 @end
