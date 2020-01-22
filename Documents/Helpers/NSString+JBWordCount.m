@@ -11,7 +11,7 @@
 @implementation NSString (JBWordCount)
 
 - (NSUInteger)jbWordCount {
-    NSArray *words = [self componentsSeparatedByString:@" "];
+    NSArray *words = [self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     return words.count;
 }
 
