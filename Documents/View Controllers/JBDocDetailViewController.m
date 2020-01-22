@@ -11,6 +11,7 @@
 #import "JBDocumentController.h"
 #import "NSString+JBWordCount.h"
 
+
 @interface JBDocDetailViewController ()
 
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *wordCountLabel;
@@ -24,6 +25,7 @@
 - (void)updateWordCount;
 
 @end
+
 
 @implementation JBDocDetailViewController
 

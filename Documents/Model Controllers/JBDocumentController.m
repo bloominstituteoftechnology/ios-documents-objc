@@ -9,6 +9,7 @@
 #import "JBDocumentController.h"
 #import "JBDocument.h"
 
+
 @interface JBDocumentController () {
     NSMutableArray *_documents;
 }
@@ -16,6 +17,7 @@
 - (void)addMockData;
 
 @end
+
 
 @implementation JBDocumentController
 

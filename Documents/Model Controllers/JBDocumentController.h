@@ -10,6 +10,7 @@
 
 @class JBDocument;
 
+
 @interface JBDocumentController : NSObject
 
 @property (readonly, nonatomic) NSArray *documents;

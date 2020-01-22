@@ -11,11 +11,13 @@
 #import "JBDocumentController.h"
 #import "JBDocument.h"
 
+
 @interface JBDocsTableViewController ()
 
 - (void) updateViews;
 
 @end
+
 
 @implementation JBDocsTableViewController
 

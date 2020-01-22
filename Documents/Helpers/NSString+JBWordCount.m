@@ -8,6 +8,7 @@
 
 #import "NSString+JBWordCount.h"
 
+
 @implementation NSString (JBWordCount)
 
 - (NSUInteger)jbWordCount {

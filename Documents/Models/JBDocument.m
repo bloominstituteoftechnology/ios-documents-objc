@@ -9,6 +9,7 @@
 #import "JBDocument.h"
 #import "NSString+JBWordCount.h"
 
+
 @implementation JBDocument
 
 - (instancetype)initWithTitle:(NSString *)title body:(NSString *)body {

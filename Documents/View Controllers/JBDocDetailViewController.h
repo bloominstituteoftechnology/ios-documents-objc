@@ -11,6 +11,7 @@
 @class JBDocumentController;
 @class JBDocument;
 
+
 @interface JBDocDetailViewController : UIViewController
 
 @property (nonatomic) JBDocumentController *documentController;

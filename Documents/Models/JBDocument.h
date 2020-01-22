@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface JBDocument : NSObject
 
 @property (nonatomic) NSString *title;
