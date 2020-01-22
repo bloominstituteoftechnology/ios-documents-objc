@@ -12,7 +12,7 @@
 
 - (NSUInteger)jbWordCount {
     NSArray *words = [self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    return words.count;
+    return ([self length] == 0) ? 0 : words.count;
 }
 
 - (NSString *)jbFormattedWordCount {
