@@ -10,9 +10,15 @@
 
 @implementation NSString (JBWordCount)
 
-- (NSUInteger)wordCount {
+- (NSUInteger)jbWordCount {
     NSArray *words = [self componentsSeparatedByString:@" "];
     return words.count;
+}
+
+- (NSString *)jbFormattedWordCount {
+    NSUInteger wordCount = [self jbWordCount];
+    NSString *suffix = (wordCount == 1) ? @"word" : @"words";
+    return [NSString stringWithFormat:@"%lu %@", wordCount, suffix];
 }
 
 @end

@@ -21,7 +21,11 @@
 }
 
 - (NSUInteger)wordCount {
-    return self.body.wordCount;
+    return self.body.jbWordCount;
+}
+
+- (NSString *)formattedWordCount {
+    return self.body.jbFormattedWordCount;
 }
 
 @end

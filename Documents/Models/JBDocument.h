@@ -12,7 +12,9 @@
 
 @property (nonatomic) NSString *title;
 @property (nonatomic) NSString *body;
+
 @property (readonly, nonatomic) NSUInteger wordCount;
+@property (readonly, nonatomic) NSString *formattedWordCount;
 
 - (instancetype)initWithTitle:(NSString *)title body:(NSString *)body;
 

@@ -10,7 +10,8 @@
 
 @interface NSString (JBWordCount)
 
-- (NSUInteger)wordCount;
+- (NSUInteger)jbWordCount;
+- (NSString *)jbFormattedWordCount;
 
 @end
 
