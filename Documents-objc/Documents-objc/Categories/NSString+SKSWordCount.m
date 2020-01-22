@@ -11,7 +11,6 @@
 @implementation NSString (SKSWordCount)
 
 - (int)sks_wordCount {
-
     return (int)[[self componentsSeparatedByString:@" "] count];
 }
 
