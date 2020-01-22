@@ -12,9 +12,13 @@
 
 @interface JBDocsTableViewController ()
 
+- (void) updateViews;
+
 @end
 
 @implementation JBDocsTableViewController
+
+#pragma mark - Init / View Lifecycle
 
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
@@ -32,6 +36,16 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    [self updateViews];
+}
+
+- (void)updateViews {
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -85,14 +99,11 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
 }
-*/
 
 @end

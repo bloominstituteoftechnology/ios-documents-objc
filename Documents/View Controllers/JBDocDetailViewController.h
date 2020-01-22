@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class JBDocumentController;
+@class JBDocument;
+
 @interface JBDocDetailViewController : UIViewController
+
+@property (nonatomic) JBDocumentController *documentController;
+@property (nonatomic) JBDocument *document;
 
 @end

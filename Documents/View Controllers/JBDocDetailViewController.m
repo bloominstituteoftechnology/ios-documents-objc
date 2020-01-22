@@ -7,6 +7,7 @@
 //
 
 #import "JBDocDetailViewController.h"
+#import "JBDocumentController.h"
 
 @interface JBDocDetailViewController ()
 
@@ -16,16 +17,46 @@
 
 - (IBAction)saveButtonTapped:(UIBarButtonItem *)sender;
 
+- (void)saveDocument;
+- (void)updateViews;
+
 @end
 
 @implementation JBDocDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [self updateViews];
 }
 
 - (IBAction)saveButtonTapped:(UIBarButtonItem *)sender {
+    [self saveDocument];
+}
+
+- (void)saveDocument {
+    if (([self.titleTextField.text length] == 0) || ([self.bodyTextView.text length] == 0)) {
+        return;
+    }
+
+    if (self.document) {
+        [self.documentController updateDocument:self.document
+                                   withNewTitle:self.titleTextField.text
+                                           body:self.bodyTextView.text];
+    } else {
+        [self.documentController createDocumentWithTitle:self.titleTextField.text
+                                                    body:self.bodyTextView.text];
+    }
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (void)updateViews {
+    if (self.document) {
+        // TODO: configure subviews for doc data
+    } else {
+        // TODO: configure subviews for new doc
+    }
 }
 
 @end
