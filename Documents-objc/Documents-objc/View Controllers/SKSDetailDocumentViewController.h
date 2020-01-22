@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class SKSDocumentController, SKSDocument;
+
 @interface SKSDetailDocumentViewController : UIViewController
+
+@property SKSDocumentController *documentController;
+@property SKSDocument *document;
 
 @end
 

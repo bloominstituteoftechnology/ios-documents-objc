@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class SKSDocumentController;
+
 @interface SKSDocumentsTableViewController : UITableViewController
+
+@property SKSDocumentController *documentController;
 
 @end
 

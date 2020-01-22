@@ -74,14 +74,13 @@
 			isa = PBXGroup;
 			children = (
 				BBBCEC0723D8F01500506CAF /* View Controllers */,
+				BBBCEC1323D8FAB100506CAF /* Model Controller */,
+				BBBCEC0F23D8F51000506CAF /* Model */,
+				BBBCEC0B23D8F29800506CAF /* Categories */,
 				BBBCEBE823D8EA0700506CAF /* AppDelegate.h */,
 				BBBCEBE923D8EA0700506CAF /* AppDelegate.m */,
 				BBBCEBEB23D8EA0700506CAF /* SceneDelegate.h */,
 				BBBCEBEC23D8EA0700506CAF /* SceneDelegate.m */,
-				BBBCEC1023D8F51F00506CAF /* SKSDocumentController.h */,
-				BBBCEC1123D8F51F00506CAF /* SKSDocumentController.m */,
-				BBBCEC0F23D8F51000506CAF /* Model */,
-				BBBCEC0B23D8F29800506CAF /* Categories */,
 				BBBCEBF123D8EA0700506CAF /* Main.storyboard */,
 				BBBCEBF423D8EA0B00506CAF /* Assets.xcassets */,
 				BBBCEBF623D8EA0B00506CAF /* LaunchScreen.storyboard */,
@@ -118,6 +117,15 @@
 				BBBCEC0D23D8F2BC00506CAF /* SKSDocument.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BBBCEC1323D8FAB100506CAF /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEC1023D8F51F00506CAF /* SKSDocumentController.h */,
+				BBBCEC1123D8F51F00506CAF /* SKSDocumentController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
