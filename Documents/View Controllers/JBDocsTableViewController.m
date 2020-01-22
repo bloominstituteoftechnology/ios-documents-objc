@@ -7,12 +7,22 @@
 //
 
 #import "JBDocsTableViewController.h"
+#import "JBDocumentController.h"
+#import "JBDocument.h"
 
 @interface JBDocsTableViewController ()
 
 @end
 
 @implementation JBDocsTableViewController
+
+- (instancetype)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+    if (self) {
+        _documentController = [[JBDocumentController alloc] init];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,25 +36,20 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.documentController.documents.count;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell"
+                                                            forIndexPath:indexPath];
+    JBDocument *doc = self.documentController.documents[indexPath.row];
+    cell.textLabel.text = doc.title;
+    cell.detailTextLabel.text = doc.formattedWordCount;
+
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

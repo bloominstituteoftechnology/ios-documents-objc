@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class JBDocumentController;
+
 @interface JBDocsTableViewController : UITableViewController
+
+@property (nonatomic) JBDocumentController *documentController;
 
 @end
