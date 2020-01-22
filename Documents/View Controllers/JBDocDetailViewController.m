@@ -8,6 +8,7 @@
 
 #import "JBDocDetailViewController.h"
 #import "JBDocumentController.h"
+#import "NSString+JBWordCount.h"
 
 @interface JBDocDetailViewController ()
 
@@ -19,6 +20,7 @@
 
 - (void)saveDocument;
 - (void)updateViews;
+- (void)updateWordCount;
 
 @end
 
@@ -28,6 +30,14 @@
     [super viewDidLoad];
 
     [self updateViews];
+}
+
+- (void)updateViews {
+    if (self.document) {
+        // TODO: configure subviews for doc data
+    }
+
+    [self updateWordCount];
 }
 
 - (IBAction)saveButtonTapped:(UIBarButtonItem *)sender {
@@ -47,16 +57,12 @@
         [self.documentController createDocumentWithTitle:self.titleTextField.text
                                                     body:self.bodyTextView.text];
     }
-    
+
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
-- (void)updateViews {
-    if (self.document) {
-        // TODO: configure subviews for doc data
-    } else {
-        // TODO: configure subviews for new doc
-    }
+- (void)updateWordCount {
+    self.wordCountLabel.text = self.bodyTextView.text.jbFormattedWordCount;
 }
 
 @end

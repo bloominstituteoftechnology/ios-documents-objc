@@ -7,6 +7,7 @@
 //
 
 #import "JBDocsTableViewController.h"
+#import "JBDocDetailViewController.h"
 #import "JBDocumentController.h"
 #import "JBDocument.h"
 
@@ -103,7 +104,14 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
+    JBDocDetailViewController *detailVC;
+    // compiler yelled at me until I put two sets of parentheses...
+    if ((detailVC = (JBDocDetailViewController *)segue.destinationViewController)) {
+        detailVC.documentController = self.documentController;
+        if ([segue.identifier isEqual:@"EditDocumentSegue"]) {
+            detailVC.document = self.documentController.documents[[self.tableView indexPathForSelectedRow].row];
+        }
+    }
 }
 
 @end
