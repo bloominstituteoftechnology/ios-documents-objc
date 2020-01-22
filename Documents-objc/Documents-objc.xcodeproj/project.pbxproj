@@ -17,6 +17,7 @@
 		BBBCEC0623D8EE2A00506CAF /* SKSDetailDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0523D8EE2A00506CAF /* SKSDetailDocumentViewController.m */; };
 		BBBCEC0A23D8F06700506CAF /* NSString+SKSWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0923D8F06700506CAF /* NSString+SKSWordCount.m */; };
 		BBBCEC0E23D8F2BC00506CAF /* SKSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0D23D8F2BC00506CAF /* SKSDocument.m */; };
+		BBBCEC1223D8F51F00506CAF /* SKSDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC1123D8F51F00506CAF /* SKSDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		BBBCEC0923D8F06700506CAF /* NSString+SKSWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SKSWordCount.m"; sourceTree = "<group>"; };
 		BBBCEC0C23D8F2BC00506CAF /* SKSDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDocument.h; sourceTree = "<group>"; };
 		BBBCEC0D23D8F2BC00506CAF /* SKSDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDocument.m; sourceTree = "<group>"; };
+		BBBCEC1023D8F51F00506CAF /* SKSDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDocumentController.h; sourceTree = "<group>"; };
+		BBBCEC1123D8F51F00506CAF /* SKSDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +78,9 @@
 				BBBCEBE923D8EA0700506CAF /* AppDelegate.m */,
 				BBBCEBEB23D8EA0700506CAF /* SceneDelegate.h */,
 				BBBCEBEC23D8EA0700506CAF /* SceneDelegate.m */,
-				BBBCEC0C23D8F2BC00506CAF /* SKSDocument.h */,
-				BBBCEC0D23D8F2BC00506CAF /* SKSDocument.m */,
+				BBBCEC1023D8F51F00506CAF /* SKSDocumentController.h */,
+				BBBCEC1123D8F51F00506CAF /* SKSDocumentController.m */,
+				BBBCEC0F23D8F51000506CAF /* Model */,
 				BBBCEC0B23D8F29800506CAF /* Categories */,
 				BBBCEBF123D8EA0700506CAF /* Main.storyboard */,
 				BBBCEBF423D8EA0B00506CAF /* Assets.xcassets */,
@@ -105,6 +109,15 @@
 				BBBCEC0923D8F06700506CAF /* NSString+SKSWordCount.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		BBBCEC0F23D8F51000506CAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEC0C23D8F2BC00506CAF /* SKSDocument.h */,
+				BBBCEC0D23D8F2BC00506CAF /* SKSDocument.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +197,7 @@
 				BBBCEC0323D8EA7D00506CAF /* SKSDocumentsTableViewController.m in Sources */,
 				BBBCEC0E23D8F2BC00506CAF /* SKSDocument.m in Sources */,
 				BBBCEC0623D8EE2A00506CAF /* SKSDetailDocumentViewController.m in Sources */,
+				BBBCEC1223D8F51F00506CAF /* SKSDocumentController.m in Sources */,
 				BBBCEBED23D8EA0700506CAF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
