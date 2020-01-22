@@ -24,4 +24,6 @@
 
 - (void)deleteDocument:(JBDocument *)document;
 
+- (void)deleteDocumentAtIndex:(NSUInteger)index;
+
 @end

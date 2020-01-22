@@ -30,6 +30,8 @@
     return self;
 }
 
+#pragma mark - CRUD
+
 - (NSArray *)documents {
     return [_documents copy];
 }
@@ -50,6 +52,12 @@
 - (void)deleteDocument:(JBDocument *)document {
     [_documents removeObject:document];
 }
+
+- (void)deleteDocumentAtIndex:(NSUInteger)index {
+    [_documents removeObjectAtIndex:index];
+}
+
+#pragma mark - Private methods
 
 - (void)addMockData {
     NSArray *mockDocs = @[
