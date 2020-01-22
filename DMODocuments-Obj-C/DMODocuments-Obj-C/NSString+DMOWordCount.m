@@ -8,9 +8,11 @@
 
 #import "NSString+DMOWordCount.h"
 
-#import <AppKit/AppKit.h>
-
 
 @implementation NSString (DMOWordCount)
+
+- (int)dmo_wordCount {
+    return (int) [self componentsSeparatedByString:@" "].count;
+}
 
 @end

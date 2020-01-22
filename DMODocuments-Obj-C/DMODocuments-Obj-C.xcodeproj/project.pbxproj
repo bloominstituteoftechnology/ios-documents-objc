@@ -15,6 +15,8 @@
 		C09747F723D8E3FD00DD739F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09747F523D8E3FD00DD739F /* LaunchScreen.storyboard */; };
 		C09747FA23D8E3FD00DD739F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C09747F923D8E3FD00DD739F /* main.m */; };
 		C097480223D8F10100DD739F /* NSString+DMOWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = C097480123D8F10100DD739F /* NSString+DMOWordCount.m */; };
+		C097480523D8FE4D00DD739F /* DMODocument.m in Sources */ = {isa = PBXBuildFile; fileRef = C097480423D8FE4D00DD739F /* DMODocument.m */; };
+		C097480823D9111000DD739F /* DMODocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = C097480723D9111000DD739F /* DMODocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		C09747F923D8E3FD00DD739F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C097480023D8F10100DD739F /* NSString+DMOWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DMOWordCount.h"; sourceTree = "<group>"; };
 		C097480123D8F10100DD739F /* NSString+DMOWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DMOWordCount.m"; sourceTree = "<group>"; };
+		C097480323D8FE4D00DD739F /* DMODocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMODocument.h; sourceTree = "<group>"; };
+		C097480423D8FE4D00DD739F /* DMODocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMODocument.m; sourceTree = "<group>"; };
+		C097480623D9111000DD739F /* DMODocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMODocumentController.h; sourceTree = "<group>"; };
+		C097480723D9111000DD739F /* DMODocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMODocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,10 @@
 				C097480123D8F10100DD739F /* NSString+DMOWordCount.m */,
 				C09747ED23D8E3FB00DD739F /* DocumentDetailViewController.h */,
 				C09747EE23D8E3FB00DD739F /* DocumentDetailViewController.m */,
+				C097480623D9111000DD739F /* DMODocumentController.h */,
+				C097480723D9111000DD739F /* DMODocumentController.m */,
+				C097480323D8FE4D00DD739F /* DMODocument.h */,
+				C097480423D8FE4D00DD739F /* DMODocument.m */,
 				C09747F023D8E3FB00DD739F /* Main.storyboard */,
 				C09747F323D8E3FD00DD739F /* Assets.xcassets */,
 				C09747F523D8E3FD00DD739F /* LaunchScreen.storyboard */,
@@ -157,6 +167,8 @@
 				C09747FA23D8E3FD00DD739F /* main.m in Sources */,
 				C09747EC23D8E3FB00DD739F /* SceneDelegate.m in Sources */,
 				C097480223D8F10100DD739F /* NSString+DMOWordCount.m in Sources */,
+				C097480823D9111000DD739F /* DMODocumentController.m in Sources */,
+				C097480523D8FE4D00DD739F /* DMODocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
