@@ -13,6 +13,8 @@
     NSMutableArray *_documents;
 }
 
+- (void)addMockData;
+
 @end
 
 @implementation JBDocumentController
@@ -21,6 +23,7 @@
     self = [super init];
     if (self) {
         _documents = [[NSMutableArray alloc] init];
+        [self addMockData]; // TODO: Remove this; testing only
     }
     return self;
 }
@@ -44,6 +47,16 @@
 
 - (void)deleteDocument:(JBDocument *)document {
     [_documents removeObject:document];
+}
+
+- (void)addMockData {
+    NSArray *mockDocs = @[
+        [[JBDocument alloc] initWithTitle:@"My document"
+                                     body:@"Hello there! This is my document. I'm going to need to count manually how many words it has, which is a bit of a bummer, but ah well."], // 28 words?
+        [[JBDocument alloc] initWithTitle:@"Another doc"
+                                     body:@"This is a much shorter document."] // 6 words
+    ];
+    [_documents addObjectsFromArray:mockDocs];
 }
 
 @end
