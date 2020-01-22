@@ -58,6 +58,10 @@
 		9967732223D8E87300C4BCE6 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				9967733E23D8EAAF00C4BCE6 /* Views */,
+				9967733D23D8EAA800C4BCE6 /* View Controllers */,
+				9967733F23D8EAB400C4BCE6 /* Model Controllers */,
+				9967734023D8EABC00C4BCE6 /* Models */,
 				9967733C23D8E93800C4BCE6 /* Application */,
 			);
 			path = Documents;
@@ -77,6 +81,34 @@
 				9967733523D8E87600C4BCE6 /* main.m */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		9967733D23D8EAA800C4BCE6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9967733E23D8EAAF00C4BCE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9967733F23D8EAB400C4BCE6 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		9967734023D8EABC00C4BCE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
