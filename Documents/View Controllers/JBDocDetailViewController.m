@@ -29,7 +29,8 @@
 
 @implementation JBDocDetailViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 
     self.titleTextField.delegate = self;
@@ -38,8 +39,10 @@
     [self updateViews];
 }
 
-- (void)updateViews {
-    if (self.document) {
+- (void)updateViews
+{
+    if (self.document)
+    {
         self.title = self.document.title;
         self.titleTextField.text = self.document.title;
         self.bodyTextView.text = self.document.body;
@@ -48,7 +51,8 @@
     [self updateWordCount];
 }
 
-- (IBAction)saveButtonTapped:(UIBarButtonItem *)sender {
+- (IBAction)saveButtonTapped:(UIBarButtonItem *)sender
+{
     [self saveDocument];
 }
 
@@ -57,11 +61,13 @@
         return;
     }
 
-    if (self.document) {
+    if (self.document)
+    {
         [self.documentController updateDocument:self.document
                                    withNewTitle:self.titleTextField.text
                                            body:self.bodyTextView.text];
-    } else {
+    } else
+    {
         [self.documentController createDocumentWithTitle:self.titleTextField.text
                                                     body:self.bodyTextView.text];
     }
@@ -69,18 +75,22 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
-- (void)updateWordCount {
+- (void)updateWordCount
+{
     self.wordCountLabel.text = self.bodyTextView.text.jbFormattedWordCount;
 }
 
 #pragma mark - Delegate methods
 
-- (void)textViewDidChange:(UITextView *)textView {
+- (void)textViewDidChange:(UITextView *)textView
+{
     [self updateWordCount];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    if (textField == self.titleTextField) {
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == self.titleTextField)
+    {
         return [self.bodyTextView becomeFirstResponder];
     }
 

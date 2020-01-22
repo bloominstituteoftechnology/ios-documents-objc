@@ -21,7 +21,8 @@
 
 @implementation JBDocumentController
 
-- (instancetype)init {
+- (instancetype)init
+{
     self = [super init];
     if (self) {
         _documents = [[NSMutableArray alloc] init];
@@ -32,34 +33,48 @@
 
 #pragma mark - CRUD
 
-- (NSArray *)documents {
+- (NSArray *)documents
+{
     return [_documents copy];
 }
 
 - (void)createDocumentWithTitle:(NSString *)title
-                           body:(NSString *)body {
+                           body:(NSString *)body
+{
     JBDocument *doc = [[JBDocument alloc] initWithTitle:title body:body];
     [_documents addObject:doc];
 }
 
 - (void)updateDocument:(JBDocument *)document
           withNewTitle:(NSString *)newTitle
-                  body:(NSString *)newBody {
+                  body:(NSString *)newBody
+{
     document.title = newTitle;
     document.body = newBody;
 }
 
-- (void)deleteDocument:(JBDocument *)document {
+- (void)moveDocumentAtIndex:(NSUInteger)oldIndex
+                         to:(NSUInteger)newIndex
+{
+    JBDocument *doc = _documents[oldIndex];
+    [_documents removeObjectAtIndex:oldIndex];
+    [_documents insertObject:doc atIndex:newIndex];
+}
+
+- (void)deleteDocument:(JBDocument *)document
+{
     [_documents removeObject:document];
 }
 
-- (void)deleteDocumentAtIndex:(NSUInteger)index {
+- (void)deleteDocumentAtIndex:(NSUInteger)index
+{
     [_documents removeObjectAtIndex:index];
 }
 
 #pragma mark - Private methods
 
-- (void)addMockData {
+- (void)addMockData
+{
     NSArray *mockDocs = @[
         [[JBDocument alloc] initWithTitle:@"My document"
                                      body:@"Hello there! This is my document.\n\nI'm going to need to count manually how many words it has, which is a bit of a bummer, but ah well."], // 28 words?

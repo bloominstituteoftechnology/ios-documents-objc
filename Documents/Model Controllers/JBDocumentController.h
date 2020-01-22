@@ -22,6 +22,9 @@
           withNewTitle:(NSString *)newTitle
                   body:(NSString *)newBody;
 
+- (void)moveDocumentAtIndex:(NSUInteger)oldIndex
+                         to:(NSUInteger)newIndex;
+
 - (void)deleteDocument:(JBDocument *)document;
 
 - (void)deleteDocumentAtIndex:(NSUInteger)index;

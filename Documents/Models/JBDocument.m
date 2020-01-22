@@ -12,20 +12,25 @@
 
 @implementation JBDocument
 
-- (instancetype)initWithTitle:(NSString *)title body:(NSString *)body {
+- (instancetype)initWithTitle:(NSString *)title
+                         body:(NSString *)body
+{
     self = [super init];
-    if (self) {
+    if (self)
+    {
         _title = title;
         _body = body;
     }
     return self;
 }
 
-- (NSUInteger)wordCount {
+- (NSUInteger)wordCount
+{
     return self.body.jbWordCount;
 }
 
-- (NSString *)formattedWordCount {
+- (NSString *)formattedWordCount
+{
     return self.body.jbFormattedWordCount;
 }
 

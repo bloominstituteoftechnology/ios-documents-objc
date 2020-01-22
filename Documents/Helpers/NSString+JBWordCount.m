@@ -11,12 +11,14 @@
 
 @implementation NSString (JBWordCount)
 
-- (NSUInteger)jbWordCount {
-    if ([self length] == 0) {
+- (NSUInteger)jbWordCount
+{
+    if ([self length] == 0)
+    {
         return 0;
     }
-    NSMutableArray *words = [[NSMutableArray alloc] initWithArray:[self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
-
+    NSMutableArray *words = [[NSMutableArray alloc]
+                             initWithArray:[self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
     int i = 0;
     while (i < words.count) {
         NSString *word = words[i];
@@ -28,13 +30,14 @@
             i++;
         }
     }
-
     return words.count;
 }
 
-- (NSString *)jbFormattedWordCount {
+- (NSString *)jbFormattedWordCount
+{
     NSUInteger wordCount = [self jbWordCount];
     NSString *suffix = (wordCount == 1) ? @"word" : @"words";
+
     return [NSString stringWithFormat:@"%lu %@", wordCount, suffix];
 }
 
