@@ -12,7 +12,7 @@
 
 @interface JBDocumentController : NSObject
 
-@property (readonly) NSArray *documents;
+@property (readonly, nonatomic) NSArray *documents;
 
 - (void)createDocumentWithTitle:(NSString *)title
                            body:(NSString *)body;

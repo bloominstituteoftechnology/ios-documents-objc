@@ -10,9 +10,9 @@
 
 @interface JBDocument : NSObject
 
-@property NSString *title;
-@property NSString *body;
-@property (readonly) NSUInteger wordCount;
+@property (nonatomic) NSString *title;
+@property (nonatomic) NSString *body;
+@property (readonly, nonatomic) NSUInteger wordCount;
 
 - (instancetype)initWithTitle:(NSString *)title body:(NSString *)body;
 
