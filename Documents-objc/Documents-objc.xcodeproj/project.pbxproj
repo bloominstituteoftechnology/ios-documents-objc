@@ -15,6 +15,7 @@
 		BBBCEBFB23D8EA0B00506CAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBFA23D8EA0B00506CAF /* main.m */; };
 		BBBCEC0323D8EA7D00506CAF /* SKSDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0223D8EA7D00506CAF /* SKSDocumentsTableViewController.m */; };
 		BBBCEC0623D8EE2A00506CAF /* SKSDetailDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0523D8EE2A00506CAF /* SKSDetailDocumentViewController.m */; };
+		BBBCEC0A23D8F06700506CAF /* NSString+SKSWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0923D8F06700506CAF /* NSString+SKSWordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		BBBCEC0223D8EA7D00506CAF /* SKSDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDocumentsTableViewController.m; sourceTree = "<group>"; };
 		BBBCEC0423D8EE2A00506CAF /* SKSDetailDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDetailDocumentViewController.h; sourceTree = "<group>"; };
 		BBBCEC0523D8EE2A00506CAF /* SKSDetailDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDetailDocumentViewController.m; sourceTree = "<group>"; };
+		BBBCEC0823D8F06700506CAF /* NSString+SKSWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SKSWordCount.h"; sourceTree = "<group>"; };
+		BBBCEC0923D8F06700506CAF /* NSString+SKSWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SKSWordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +67,13 @@
 		BBBCEBE723D8EA0700506CAF /* Documents-objc */ = {
 			isa = PBXGroup;
 			children = (
+				BBBCEC0723D8F01500506CAF /* View Controllers */,
 				BBBCEBE823D8EA0700506CAF /* AppDelegate.h */,
 				BBBCEBE923D8EA0700506CAF /* AppDelegate.m */,
 				BBBCEBEB23D8EA0700506CAF /* SceneDelegate.h */,
 				BBBCEBEC23D8EA0700506CAF /* SceneDelegate.m */,
-				BBBCEC0123D8EA7D00506CAF /* SKSDocumentsTableViewController.h */,
-				BBBCEC0223D8EA7D00506CAF /* SKSDocumentsTableViewController.m */,
-				BBBCEC0423D8EE2A00506CAF /* SKSDetailDocumentViewController.h */,
-				BBBCEC0523D8EE2A00506CAF /* SKSDetailDocumentViewController.m */,
+				BBBCEC0823D8F06700506CAF /* NSString+SKSWordCount.h */,
+				BBBCEC0923D8F06700506CAF /* NSString+SKSWordCount.m */,
 				BBBCEBF123D8EA0700506CAF /* Main.storyboard */,
 				BBBCEBF423D8EA0B00506CAF /* Assets.xcassets */,
 				BBBCEBF623D8EA0B00506CAF /* LaunchScreen.storyboard */,
@@ -79,6 +81,17 @@
 				BBBCEBFA23D8EA0B00506CAF /* main.m */,
 			);
 			path = "Documents-objc";
+			sourceTree = "<group>";
+		};
+		BBBCEC0723D8F01500506CAF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEC0123D8EA7D00506CAF /* SKSDocumentsTableViewController.h */,
+				BBBCEC0223D8EA7D00506CAF /* SKSDocumentsTableViewController.m */,
+				BBBCEC0423D8EE2A00506CAF /* SKSDetailDocumentViewController.h */,
+				BBBCEC0523D8EE2A00506CAF /* SKSDetailDocumentViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBBCEBEA23D8EA0700506CAF /* AppDelegate.m in Sources */,
+				BBBCEC0A23D8F06700506CAF /* NSString+SKSWordCount.m in Sources */,
 				BBBCEBFB23D8EA0B00506CAF /* main.m in Sources */,
 				BBBCEC0323D8EA7D00506CAF /* SKSDocumentsTableViewController.m in Sources */,
 				BBBCEC0623D8EE2A00506CAF /* SKSDetailDocumentViewController.m in Sources */,
