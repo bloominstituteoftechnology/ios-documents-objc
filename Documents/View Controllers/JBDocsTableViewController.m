@@ -14,7 +14,10 @@
 
 @interface JBDocsTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
+
 - (void) updateViews;
+- (IBAction)editButtonTapped:(UIBarButtonItem *)sender;
 
 @end
 
@@ -49,6 +52,12 @@
 
 - (void)updateViews {
     [self.tableView reloadData];
+}
+
+- (IBAction)editButtonTapped:(UIBarButtonItem *)sender
+{
+    [self.tableView setEditing:!(self.tableView.isEditing) animated:YES];
+    [self.editButton setTitle:(self.tableView.isEditing ? @"Save order" : @"Edit")];
 }
 
 #pragma mark - Table view data source
@@ -90,15 +99,13 @@
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+- (void)tableView:(UITableView *)tableView
+moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
+      toIndexPath:(NSIndexPath *)toIndexPath
+{
+    [self.documentController moveDocumentAtIndex:fromIndexPath.row to:toIndexPath.row];
 }
-*/
 
 #pragma mark - Navigation
 

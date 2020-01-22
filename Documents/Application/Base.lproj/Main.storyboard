@@ -50,12 +50,22 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Documents" id="fMb-Nj-Tia">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gT9-QP-qLp">
-                            <connections>
-                                <segue destination="ZJS-6G-hpr" kind="show" identifier="NewDocumentSegue" id="WC9-u9-qk6"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="gT9-QP-qLp">
+                                <connections>
+                                    <segue destination="ZJS-6G-hpr" kind="show" identifier="NewDocumentSegue" id="WC9-u9-qk6"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Edit" id="nsD-Pr-t0r">
+                                <connections>
+                                    <action selector="editButtonTapped:" destination="jFF-wf-wMd" id="cLx-pX-4j4"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="editButton" destination="nsD-Pr-t0r" id="JdF-tX-JDG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apd-rO-WMP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
