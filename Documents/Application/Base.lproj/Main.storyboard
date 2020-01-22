@@ -10,7 +10,7 @@
         <!--Documents-->
         <scene sceneID="n2S-PE-HQb">
             <objects>
-                <tableViewController id="jFF-wf-wMd" sceneMemberID="viewController">
+                <tableViewController id="jFF-wf-wMd" customClass="JBDocsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vJ1-2G-wsL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
         <!--New Document-->
         <scene sceneID="acn-mb-eU5">
             <objects>
-                <viewController id="ZJS-6G-hpr" sceneMemberID="viewController">
+                <viewController id="ZJS-6G-hpr" customClass="JBDocDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PGm-7h-Bh2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,6 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8qE-nV-Uas">
                                         <rect key="frame" x="0.0" y="84.5" width="374" height="605.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -104,8 +103,17 @@
                         <viewLayoutGuide key="safeArea" id="d0l-Ey-Qxh"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Document" id="tLl-l0-5rF">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="FXe-X3-E3Q"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="FXe-X3-E3Q">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="ZJS-6G-hpr" id="lJr-ao-7An"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bodyTextView" destination="8qE-nV-Uas" id="gMM-a1-y0A"/>
+                        <outlet property="titleTextField" destination="7m6-Sa-f5F" id="E3k-UC-fUy"/>
+                        <outlet property="wordCountLabel" destination="8Tk-Zm-4Jv" id="iGl-hr-vNc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Mx-JR-tc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

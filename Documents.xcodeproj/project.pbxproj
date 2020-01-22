@@ -13,6 +13,8 @@
 		9967733023D8E87600C4BCE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9967732F23D8E87600C4BCE6 /* Assets.xcassets */; };
 		9967733323D8E87600C4BCE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9967733123D8E87600C4BCE6 /* LaunchScreen.storyboard */; };
 		9967733623D8E87600C4BCE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967733523D8E87600C4BCE6 /* main.m */; };
+		9967734423D8EB6700C4BCE6 /* JBDocsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967734323D8EB6700C4BCE6 /* JBDocsTableViewController.m */; };
+		9967734723D8EB8600C4BCE6 /* JBDocDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967734623D8EB8600C4BCE6 /* JBDocDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		9967733223D8E87600C4BCE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9967733423D8E87600C4BCE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9967733523D8E87600C4BCE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9967734223D8EB6700C4BCE6 /* JBDocsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBDocsTableViewController.h; sourceTree = "<group>"; };
+		9967734323D8EB6700C4BCE6 /* JBDocsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBDocsTableViewController.m; sourceTree = "<group>"; };
+		9967734523D8EB8600C4BCE6 /* JBDocDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBDocDetailViewController.h; sourceTree = "<group>"; };
+		9967734623D8EB8600C4BCE6 /* JBDocDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBDocDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 		9967733D23D8EAA800C4BCE6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9967734223D8EB6700C4BCE6 /* JBDocsTableViewController.h */,
+				9967734323D8EB6700C4BCE6 /* JBDocsTableViewController.m */,
+				9967734523D8EB8600C4BCE6 /* JBDocDetailViewController.h */,
+				9967734623D8EB8600C4BCE6 /* JBDocDetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -137,6 +147,7 @@
 		9967731823D8E87300C4BCE6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JB;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Jon Bash";
 				TargetAttributes = {
@@ -183,6 +194,8 @@
 			files = (
 				9967732523D8E87300C4BCE6 /* AppDelegate.m in Sources */,
 				9967733623D8E87600C4BCE6 /* main.m in Sources */,
+				9967734723D8EB8600C4BCE6 /* JBDocDetailViewController.m in Sources */,
+				9967734423D8EB6700C4BCE6 /* JBDocsTableViewController.m in Sources */,
 				9967732823D8E87300C4BCE6 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
