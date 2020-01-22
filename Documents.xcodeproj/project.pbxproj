@@ -15,6 +15,7 @@
 		9967733623D8E87600C4BCE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967733523D8E87600C4BCE6 /* main.m */; };
 		9967734423D8EB6700C4BCE6 /* JBDocsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967734323D8EB6700C4BCE6 /* JBDocsTableViewController.m */; };
 		9967734723D8EB8600C4BCE6 /* JBDocDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967734623D8EB8600C4BCE6 /* JBDocDetailViewController.m */; };
+		9967734A23D8ED2D00C4BCE6 /* JBDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967734923D8ED2D00C4BCE6 /* JBDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		9967734323D8EB6700C4BCE6 /* JBDocsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBDocsTableViewController.m; sourceTree = "<group>"; };
 		9967734523D8EB8600C4BCE6 /* JBDocDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBDocDetailViewController.h; sourceTree = "<group>"; };
 		9967734623D8EB8600C4BCE6 /* JBDocDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBDocDetailViewController.m; sourceTree = "<group>"; };
+		9967734823D8ED2D00C4BCE6 /* JBDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBDocument.h; sourceTree = "<group>"; };
+		9967734923D8ED2D00C4BCE6 /* JBDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 		9967734023D8EABC00C4BCE6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9967734823D8ED2D00C4BCE6 /* JBDocument.h */,
+				9967734923D8ED2D00C4BCE6 /* JBDocument.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			files = (
 				9967732523D8E87300C4BCE6 /* AppDelegate.m in Sources */,
 				9967733623D8E87600C4BCE6 /* main.m in Sources */,
+				9967734A23D8ED2D00C4BCE6 /* JBDocument.m in Sources */,
 				9967734723D8EB8600C4BCE6 /* JBDocDetailViewController.m in Sources */,
 				9967734423D8EB6700C4BCE6 /* JBDocsTableViewController.m in Sources */,
 				9967732823D8E87300C4BCE6 /* SceneDelegate.m in Sources */,
