@@ -11,8 +11,24 @@
 @implementation NSString (JBWordCount)
 
 - (NSUInteger)jbWordCount {
-    NSArray *words = [self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    return ([self length] == 0) ? 0 : words.count;
+    if ([self length] == 0) {
+        return 0;
+    }
+    NSMutableArray *words = [[NSMutableArray alloc] initWithArray:[self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
+
+    int i = 0;
+    while (i < words.count) {
+        NSString *word = words[i];
+        if (([word length] == 0) ||
+            ([[NSCharacterSet whitespaceAndNewlineCharacterSet] characterIsMember:[word characterAtIndex:0]]))
+        {
+            [words removeObjectAtIndex:i];
+        } else {
+            i++;
+        }
+    }
+
+    return words.count;
 }
 
 - (NSString *)jbFormattedWordCount {
