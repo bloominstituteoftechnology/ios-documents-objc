@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9967732523D8E87300C4BCE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967732423D8E87300C4BCE6 /* AppDelegate.m */; };
 		9967732823D8E87300C4BCE6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967732723D8E87300C4BCE6 /* SceneDelegate.m */; };
-		9967732B23D8E87300C4BCE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967732A23D8E87300C4BCE6 /* ViewController.m */; };
 		9967732E23D8E87300C4BCE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9967732C23D8E87300C4BCE6 /* Main.storyboard */; };
 		9967733023D8E87600C4BCE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9967732F23D8E87600C4BCE6 /* Assets.xcassets */; };
 		9967733323D8E87600C4BCE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9967733123D8E87600C4BCE6 /* LaunchScreen.storyboard */; };
@@ -22,8 +21,6 @@
 		9967732423D8E87300C4BCE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9967732623D8E87300C4BCE6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		9967732723D8E87300C4BCE6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		9967732923D8E87300C4BCE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9967732A23D8E87300C4BCE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9967732D23D8E87300C4BCE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9967732F23D8E87600C4BCE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9967733223D8E87600C4BCE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,19 +58,25 @@
 		9967732223D8E87300C4BCE6 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				9967733C23D8E93800C4BCE6 /* Application */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		9967733C23D8E93800C4BCE6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9967732C23D8E87300C4BCE6 /* Main.storyboard */,
+				9967733123D8E87600C4BCE6 /* LaunchScreen.storyboard */,
 				9967732323D8E87300C4BCE6 /* AppDelegate.h */,
 				9967732423D8E87300C4BCE6 /* AppDelegate.m */,
 				9967732623D8E87300C4BCE6 /* SceneDelegate.h */,
 				9967732723D8E87300C4BCE6 /* SceneDelegate.m */,
-				9967732923D8E87300C4BCE6 /* ViewController.h */,
-				9967732A23D8E87300C4BCE6 /* ViewController.m */,
-				9967732C23D8E87300C4BCE6 /* Main.storyboard */,
 				9967732F23D8E87600C4BCE6 /* Assets.xcassets */,
-				9967733123D8E87600C4BCE6 /* LaunchScreen.storyboard */,
 				9967733423D8E87600C4BCE6 /* Info.plist */,
 				9967733523D8E87600C4BCE6 /* main.m */,
 			);
-			path = Documents;
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9967732B23D8E87300C4BCE6 /* ViewController.m in Sources */,
 				9967732523D8E87300C4BCE6 /* AppDelegate.m in Sources */,
 				9967733623D8E87600C4BCE6 /* main.m in Sources */,
 				9967732823D8E87300C4BCE6 /* SceneDelegate.m in Sources */,
@@ -291,7 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22X3GA956P;
-				INFOPLIST_FILE = Documents/Info.plist;
+				INFOPLIST_FILE = Documents/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22X3GA956P;
-				INFOPLIST_FILE = Documents/Info.plist;
+				INFOPLIST_FILE = Documents/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
