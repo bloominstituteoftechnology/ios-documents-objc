@@ -1,5 +1,5 @@
 //
-//  JBDocument.h
+//  NSString+JBWordCount.h
 //  Documents
 //
 //  Created by Jon Bash on 2020-01-22.
@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface JBDocument : NSObject
+@interface NSString (JBWordCount)
 
-@property NSString *title;
-@property NSString *body;
-@property (readonly) NSUInteger wordCount;
+- (NSUInteger)wordCount;
 
 @end
+

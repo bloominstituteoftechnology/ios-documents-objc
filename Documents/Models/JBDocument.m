@@ -7,6 +7,7 @@
 //
 
 #import "JBDocument.h"
+#import "NSString+JBWordCount.h"
 
 @implementation JBDocument
 
@@ -19,9 +20,8 @@
     return self;
 }
 
-- (uint)wordCount {
-    // TODO: - implement word count
-    return 0;
+- (NSUInteger)wordCount {
+    return self.body.wordCount;
 }
 
 @end
