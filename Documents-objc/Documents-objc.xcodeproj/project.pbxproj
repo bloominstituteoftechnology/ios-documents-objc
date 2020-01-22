@@ -14,6 +14,7 @@
 		BBBCEBF823D8EA0B00506CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEBF623D8EA0B00506CAF /* LaunchScreen.storyboard */; };
 		BBBCEBFB23D8EA0B00506CAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBFA23D8EA0B00506CAF /* main.m */; };
 		BBBCEC0323D8EA7D00506CAF /* SKSDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0223D8EA7D00506CAF /* SKSDocumentsTableViewController.m */; };
+		BBBCEC0623D8EE2A00506CAF /* SKSDetailDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0523D8EE2A00506CAF /* SKSDetailDocumentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		BBBCEBFA23D8EA0B00506CAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBBCEC0123D8EA7D00506CAF /* SKSDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDocumentsTableViewController.h; sourceTree = "<group>"; };
 		BBBCEC0223D8EA7D00506CAF /* SKSDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDocumentsTableViewController.m; sourceTree = "<group>"; };
+		BBBCEC0423D8EE2A00506CAF /* SKSDetailDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDetailDocumentViewController.h; sourceTree = "<group>"; };
+		BBBCEC0523D8EE2A00506CAF /* SKSDetailDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDetailDocumentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				BBBCEBEC23D8EA0700506CAF /* SceneDelegate.m */,
 				BBBCEC0123D8EA7D00506CAF /* SKSDocumentsTableViewController.h */,
 				BBBCEC0223D8EA7D00506CAF /* SKSDocumentsTableViewController.m */,
+				BBBCEC0423D8EE2A00506CAF /* SKSDetailDocumentViewController.h */,
+				BBBCEC0523D8EE2A00506CAF /* SKSDetailDocumentViewController.m */,
 				BBBCEBF123D8EA0700506CAF /* Main.storyboard */,
 				BBBCEBF423D8EA0B00506CAF /* Assets.xcassets */,
 				BBBCEBF623D8EA0B00506CAF /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 				BBBCEBEA23D8EA0700506CAF /* AppDelegate.m in Sources */,
 				BBBCEBFB23D8EA0B00506CAF /* main.m in Sources */,
 				BBBCEC0323D8EA7D00506CAF /* SKSDocumentsTableViewController.m in Sources */,
+				BBBCEC0623D8EE2A00506CAF /* SKSDetailDocumentViewController.m in Sources */,
 				BBBCEBED23D8EA0700506CAF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  SKSDocumentsTableViewController.h
+//  SKSDetailDocumentViewController.h
 //  Documents-objc
 //
 //  Created by Lambda_School_Loaner_204 on 1/22/20.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SKSDocumentsTableViewController : UITableViewController
+@interface SKSDetailDocumentViewController : UIViewController
 
 @end
 
