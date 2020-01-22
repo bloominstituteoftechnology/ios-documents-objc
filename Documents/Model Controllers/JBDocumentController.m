@@ -52,7 +52,8 @@
 - (void)addMockData {
     NSArray *mockDocs = @[
         [[JBDocument alloc] initWithTitle:@"My document"
-                                     body:@"Hello there! This is my document. I'm going to need to count manually how many words it has, which is a bit of a bummer, but ah well."], // 28 words?
+                                     body:@"Hello there! This is my document.\n\nI'm going to need to count manually how many words it has, which is a bit of a bummer, but ah well."], // 28 words?
+        // I realize new I could have just copied it into an online word counter thingy...
         [[JBDocument alloc] initWithTitle:@"Another doc"
                                      body:@"This is a much shorter document."] // 6 words
     ];

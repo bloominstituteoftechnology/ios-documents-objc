@@ -7,6 +7,7 @@
 //
 
 #import "JBDocDetailViewController.h"
+#import "JBDocument.h"
 #import "JBDocumentController.h"
 #import "NSString+JBWordCount.h"
 
@@ -34,7 +35,9 @@
 
 - (void)updateViews {
     if (self.document) {
-        // TODO: configure subviews for doc data
+        self.title = self.document.title;
+        self.titleTextField.text = self.document.title;
+        self.bodyTextView.text = self.document.body;
     }
 
     [self updateWordCount];
