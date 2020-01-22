@@ -12,7 +12,7 @@
 #import "NSString+JBWordCount.h"
 
 
-@interface JBDocDetailViewController ()
+@interface JBDocDetailViewController () <UITextFieldDelegate, UITextViewDelegate>
 
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *wordCountLabel;
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *titleTextField;
@@ -31,6 +31,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.titleTextField.delegate = self;
+    self.bodyTextView.delegate = self;
 
     [self updateViews];
 }
@@ -68,6 +71,20 @@
 
 - (void)updateWordCount {
     self.wordCountLabel.text = self.bodyTextView.text.jbFormattedWordCount;
+}
+
+#pragma mark - Delegate methods
+
+- (void)textViewDidChange:(UITextView *)textView {
+    [self updateWordCount];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField == self.titleTextField) {
+        return [self.bodyTextView becomeFirstResponder];
+    }
+
+    return YES;
 }
 
 @end
