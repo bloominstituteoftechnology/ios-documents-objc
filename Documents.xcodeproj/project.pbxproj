@@ -17,6 +17,7 @@
 		9967734723D8EB8600C4BCE6 /* JBDocDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967734623D8EB8600C4BCE6 /* JBDocDetailViewController.m */; };
 		9967734A23D8ED2D00C4BCE6 /* JBDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967734923D8ED2D00C4BCE6 /* JBDocument.m */; };
 		9967734E23D8EE4400C4BCE6 /* NSString+JBWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967734D23D8EE4400C4BCE6 /* NSString+JBWordCount.m */; };
+		9967735123D8EF5000C4BCE6 /* JBDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967735023D8EF5000C4BCE6 /* JBDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		9967734923D8ED2D00C4BCE6 /* JBDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBDocument.m; sourceTree = "<group>"; };
 		9967734C23D8EE4400C4BCE6 /* NSString+JBWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JBWordCount.h"; sourceTree = "<group>"; };
 		9967734D23D8EE4400C4BCE6 /* NSString+JBWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JBWordCount.m"; sourceTree = "<group>"; };
+		9967734F23D8EF5000C4BCE6 /* JBDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBDocumentController.h; sourceTree = "<group>"; };
+		9967735023D8EF5000C4BCE6 /* JBDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 		9967733F23D8EAB400C4BCE6 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9967734F23D8EF5000C4BCE6 /* JBDocumentController.h */,
+				9967735023D8EF5000C4BCE6 /* JBDocumentController.m */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9967735123D8EF5000C4BCE6 /* JBDocumentController.m in Sources */,
 				9967732523D8E87300C4BCE6 /* AppDelegate.m in Sources */,
 				9967733623D8E87600C4BCE6 /* main.m in Sources */,
 				9967734A23D8ED2D00C4BCE6 /* JBDocument.m in Sources */,
