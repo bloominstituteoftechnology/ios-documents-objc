@@ -23,13 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-//    NSString *myString = @"test how many words";
-//    NSLog(@"words: %d", [myString dmo_wordCount]);
+    
     self.contentTextView.delegate = self;
-    
-//    self.document = [[DMODocument alloc] initWithTitle:@"My Document" text:@"Type here"];
-    
     [self updateViews];
 }
 
@@ -54,14 +49,14 @@
         DMODocument *document = [[DMODocument alloc] initWithTitle:title text:text];
         [self.documentController addDocument:document];
     }
-
+    
     [self.navigationController popViewControllerAnimated:true];
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
-    // 
-//    NSLog(@"new%@", textView.text);
-    self.countLabel.text = [NSString stringWithFormat:@"%d Words",[textView.text dmo_wordCount]];
+    if (![textView.text hasSuffix:@" "]) {
+        self.countLabel.text = [NSString stringWithFormat:@"%d Words",[textView.text dmo_wordCount]];
+    }
 }
 
 
