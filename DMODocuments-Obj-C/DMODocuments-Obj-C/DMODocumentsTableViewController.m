@@ -9,6 +9,7 @@
 #import "DMODocumentsTableViewController.h"
 #import "DMODocumentController.h"
 #import "DMODocument.h"
+#import "DocumentDetailViewController.h"
 
 @interface DMODocumentsTableViewController ()
 
@@ -29,6 +30,11 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -85,14 +91,17 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+    DMODocument *document = self.documentController.documents[indexPath.row];
+    DocumentDetailViewController *detailVC = segue.destinationViewController;
+    detailVC.documentController = self.documentController;
+    detailVC.document = document;
 }
-*/
+
 
 @end

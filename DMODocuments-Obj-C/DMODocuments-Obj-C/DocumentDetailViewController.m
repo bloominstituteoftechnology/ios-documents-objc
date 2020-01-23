@@ -8,6 +8,7 @@
 
 #import "DocumentDetailViewController.h"
 #import "NSString+DMOWordCount.h"
+#import "DMODocumentController.h"
 #import "DMODocument.h"
 
 @interface DocumentDetailViewController ()
@@ -23,11 +24,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSString *myString = @"test how many words";
-    NSLog(@"words: %d", [myString dmo_wordCount]);
+//    NSString *myString = @"test how many words";
+//    NSLog(@"words: %d", [myString dmo_wordCount]);
     self.contentTextView.delegate = self;
     
-    self.document = [[DMODocument alloc] initWithTitle:@"My Document" text:@"Type here"];
+//    self.document = [[DMODocument alloc] initWithTitle:@"My Document" text:@"Type here"];
     
     [self updateViews];
 }
@@ -41,11 +42,26 @@
     }
 }
 
+- (IBAction)saveTapped:(id)sender {
+    NSString *title = self.titleTextField.text;
+    NSString *text = self.contentTextView.text;
+    if (self.document) {
+        self.document.title = title;
+        self.document.text = text;
+        
+        [self.documentController updateDocument:self.document];
+    } else {
+        DMODocument *document = [[DMODocument alloc] initWithTitle:title text:text];
+        [self.documentController addDocument:document];
+    }
+
+    [self.navigationController popViewControllerAnimated:true];
+}
+
 - (void)textViewDidChange:(UITextView *)textView {
     // 
 //    NSLog(@"new%@", textView.text);
     self.countLabel.text = [NSString stringWithFormat:@"%d Words",[textView.text dmo_wordCount]];
-    
 }
 
 

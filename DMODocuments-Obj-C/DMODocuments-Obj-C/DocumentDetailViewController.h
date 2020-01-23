@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @class DMODocument;
+@class DMODocumentController;
 
 @interface DocumentDetailViewController : UIViewController <UITextViewDelegate>
 
+@property DMODocumentController *documentController;
 @property DMODocument *document;
 
 @end

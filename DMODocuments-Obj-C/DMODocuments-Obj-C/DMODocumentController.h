@@ -16,6 +16,6 @@
 
 - (void)addDocument:(DMODocument *)document;
 - (void)removeDocument:(DMODocument *)document;
-- (void)updateDocument:(DMODocument *)document;
+- (void)updateDocument:(DMODocument *)document; // withTitle:(NSString *)title andText:(NSString *)text
 
 @end
