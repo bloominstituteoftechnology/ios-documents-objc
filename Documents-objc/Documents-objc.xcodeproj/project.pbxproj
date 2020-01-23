@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBBCEBEA23D8EA0700506CAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBE923D8EA0700506CAF /* AppDelegate.m */; };
+		BBBCEBED23D8EA0700506CAF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBEC23D8EA0700506CAF /* SceneDelegate.m */; };
+		BBBCEBF323D8EA0700506CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEBF123D8EA0700506CAF /* Main.storyboard */; };
+		BBBCEBF523D8EA0B00506CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEBF423D8EA0B00506CAF /* Assets.xcassets */; };
+		BBBCEBF823D8EA0B00506CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEBF623D8EA0B00506CAF /* LaunchScreen.storyboard */; };
+		BBBCEBFB23D8EA0B00506CAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBFA23D8EA0B00506CAF /* main.m */; };
+		BBBCEC0323D8EA7D00506CAF /* SKSDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0223D8EA7D00506CAF /* SKSDocumentsTableViewController.m */; };
+		BBBCEC0623D8EE2A00506CAF /* SKSDetailDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0523D8EE2A00506CAF /* SKSDetailDocumentViewController.m */; };
+		BBBCEC0A23D8F06700506CAF /* NSString+SKSWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0923D8F06700506CAF /* NSString+SKSWordCount.m */; };
+		BBBCEC0E23D8F2BC00506CAF /* SKSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0D23D8F2BC00506CAF /* SKSDocument.m */; };
+		BBBCEC1223D8F51F00506CAF /* SKSDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC1123D8F51F00506CAF /* SKSDocumentController.m */; };
+		BBBCEC1623D9182600506CAF /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC1423D9182600506CAF /* Document.xcdatamodeld */; };
+		BBBCEC1C23D91B1F00506CAF /* Document+SKSConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC1B23D91B1F00506CAF /* Document+SKSConvenience.m */; };
+		BBBCEC1F23D91B9300506CAF /* SKSCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC1E23D91B9300506CAF /* SKSCoreDataStack.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BBBCEBE523D8EA0700506CAF /* Documents-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Documents-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBBCEBE823D8EA0700506CAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BBBCEBE923D8EA0700506CAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BBBCEBEB23D8EA0700506CAF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		BBBCEBEC23D8EA0700506CAF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		BBBCEBF223D8EA0700506CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBBCEBF423D8EA0B00506CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBBCEBF723D8EA0B00506CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBBCEBF923D8EA0B00506CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBBCEBFA23D8EA0B00506CAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBBCEC0123D8EA7D00506CAF /* SKSDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDocumentsTableViewController.h; sourceTree = "<group>"; };
+		BBBCEC0223D8EA7D00506CAF /* SKSDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDocumentsTableViewController.m; sourceTree = "<group>"; };
+		BBBCEC0423D8EE2A00506CAF /* SKSDetailDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDetailDocumentViewController.h; sourceTree = "<group>"; };
+		BBBCEC0523D8EE2A00506CAF /* SKSDetailDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDetailDocumentViewController.m; sourceTree = "<group>"; };
+		BBBCEC0823D8F06700506CAF /* NSString+SKSWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SKSWordCount.h"; sourceTree = "<group>"; };
+		BBBCEC0923D8F06700506CAF /* NSString+SKSWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SKSWordCount.m"; sourceTree = "<group>"; };
+		BBBCEC0C23D8F2BC00506CAF /* SKSDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDocument.h; sourceTree = "<group>"; };
+		BBBCEC0D23D8F2BC00506CAF /* SKSDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDocument.m; sourceTree = "<group>"; };
+		BBBCEC1023D8F51F00506CAF /* SKSDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDocumentController.h; sourceTree = "<group>"; };
+		BBBCEC1123D8F51F00506CAF /* SKSDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDocumentController.m; sourceTree = "<group>"; };
+		BBBCEC1523D9182600506CAF /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		BBBCEC1A23D91B1F00506CAF /* Document+SKSConvenience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Document+SKSConvenience.h"; sourceTree = "<group>"; };
+		BBBCEC1B23D91B1F00506CAF /* Document+SKSConvenience.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Document+SKSConvenience.m"; sourceTree = "<group>"; };
+		BBBCEC1D23D91B9300506CAF /* SKSCoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSCoreDataStack.h; sourceTree = "<group>"; };
+		BBBCEC1E23D91B9300506CAF /* SKSCoreDataStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSCoreDataStack.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBBCEBE223D8EA0700506CAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBBCEBDC23D8EA0700506CAF = {
+			isa = PBXGroup;
+			children = (
+				BBBCEBE723D8EA0700506CAF /* Documents-objc */,
+				BBBCEBE623D8EA0700506CAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBBCEBE623D8EA0700506CAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEBE523D8EA0700506CAF /* Documents-objc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBBCEBE723D8EA0700506CAF /* Documents-objc */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEC0723D8F01500506CAF /* View Controllers */,
+				BBBCEC1323D8FAB100506CAF /* Model Controller */,
+				BBBCEC0F23D8F51000506CAF /* Model */,
+				BBBCEC0B23D8F29800506CAF /* Categories */,
+				BBBCEBE823D8EA0700506CAF /* AppDelegate.h */,
+				BBBCEBE923D8EA0700506CAF /* AppDelegate.m */,
+				BBBCEBEB23D8EA0700506CAF /* SceneDelegate.h */,
+				BBBCEBEC23D8EA0700506CAF /* SceneDelegate.m */,
+				BBBCEBF123D8EA0700506CAF /* Main.storyboard */,
+				BBBCEC1423D9182600506CAF /* Document.xcdatamodeld */,
+				BBBCEC1D23D91B9300506CAF /* SKSCoreDataStack.h */,
+				BBBCEC1E23D91B9300506CAF /* SKSCoreDataStack.m */,
+				BBBCEBF423D8EA0B00506CAF /* Assets.xcassets */,
+				BBBCEBF623D8EA0B00506CAF /* LaunchScreen.storyboard */,
+				BBBCEBF923D8EA0B00506CAF /* Info.plist */,
+				BBBCEBFA23D8EA0B00506CAF /* main.m */,
+			);
+			path = "Documents-objc";
+			sourceTree = "<group>";
+		};
+		BBBCEC0723D8F01500506CAF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEC0123D8EA7D00506CAF /* SKSDocumentsTableViewController.h */,
+				BBBCEC0223D8EA7D00506CAF /* SKSDocumentsTableViewController.m */,
+				BBBCEC0423D8EE2A00506CAF /* SKSDetailDocumentViewController.h */,
+				BBBCEC0523D8EE2A00506CAF /* SKSDetailDocumentViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BBBCEC0B23D8F29800506CAF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEC0823D8F06700506CAF /* NSString+SKSWordCount.h */,
+				BBBCEC0923D8F06700506CAF /* NSString+SKSWordCount.m */,
+				BBBCEC1A23D91B1F00506CAF /* Document+SKSConvenience.h */,
+				BBBCEC1B23D91B1F00506CAF /* Document+SKSConvenience.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		BBBCEC0F23D8F51000506CAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEC0C23D8F2BC00506CAF /* SKSDocument.h */,
+				BBBCEC0D23D8F2BC00506CAF /* SKSDocument.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BBBCEC1323D8FAB100506CAF /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEC1023D8F51F00506CAF /* SKSDocumentController.h */,
+				BBBCEC1123D8F51F00506CAF /* SKSDocumentController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBBCEBE423D8EA0700506CAF /* Documents-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBBCEBFE23D8EA0B00506CAF /* Build configuration list for PBXNativeTarget "Documents-objc" */;
+			buildPhases = (
+				BBBCEBE123D8EA0700506CAF /* Sources */,
+				BBBCEBE223D8EA0700506CAF /* Frameworks */,
+				BBBCEBE323D8EA0700506CAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Documents-objc";
+			productName = "Documents-objc";
+			productReference = BBBCEBE523D8EA0700506CAF /* Documents-objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBBCEBDD23D8EA0700506CAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SKS;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Lambda School";
+				TargetAttributes = {
+					BBBCEBE423D8EA0700506CAF = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = BBBCEBE023D8EA0700506CAF /* Build configuration list for PBXProject "Documents-objc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBBCEBDC23D8EA0700506CAF;
+			productRefGroup = BBBCEBE623D8EA0700506CAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBBCEBE423D8EA0700506CAF /* Documents-objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBBCEBE323D8EA0700506CAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBBCEBF823D8EA0B00506CAF /* LaunchScreen.storyboard in Resources */,
+				BBBCEBF523D8EA0B00506CAF /* Assets.xcassets in Resources */,
+				BBBCEBF323D8EA0700506CAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBBCEBE123D8EA0700506CAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBBCEBEA23D8EA0700506CAF /* AppDelegate.m in Sources */,
+				BBBCEC0A23D8F06700506CAF /* NSString+SKSWordCount.m in Sources */,
+				BBBCEBFB23D8EA0B00506CAF /* main.m in Sources */,
+				BBBCEC0323D8EA7D00506CAF /* SKSDocumentsTableViewController.m in Sources */,
+				BBBCEC0E23D8F2BC00506CAF /* SKSDocument.m in Sources */,
+				BBBCEC1F23D91B9300506CAF /* SKSCoreDataStack.m in Sources */,
+				BBBCEC0623D8EE2A00506CAF /* SKSDetailDocumentViewController.m in Sources */,
+				BBBCEC1623D9182600506CAF /* Document.xcdatamodeld in Sources */,
+				BBBCEC1223D8F51F00506CAF /* SKSDocumentController.m in Sources */,
+				BBBCEC1C23D91B1F00506CAF /* Document+SKSConvenience.m in Sources */,
+				BBBCEBED23D8EA0700506CAF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBBCEBF123D8EA0700506CAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBBCEBF223D8EA0700506CAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBBCEBF623D8EA0B00506CAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBBCEBF723D8EA0B00506CAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBBCEBFC23D8EA0B00506CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BBBCEBFD23D8EA0B00506CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBBCEBFF23D8EA0B00506CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Documents-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Documents-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBBCEC0023D8EA0B00506CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Documents-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Documents-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBBCEBE023D8EA0700506CAF /* Build configuration list for PBXProject "Documents-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBCEBFC23D8EA0B00506CAF /* Debug */,
+				BBBCEBFD23D8EA0B00506CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBBCEBFE23D8EA0B00506CAF /* Build configuration list for PBXNativeTarget "Documents-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBCEBFF23D8EA0B00506CAF /* Debug */,
+				BBBCEC0023D8EA0B00506CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BBBCEC1423D9182600506CAF /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BBBCEC1523D9182600506CAF /* Document.xcdatamodel */,
+			);
+			currentVersion = BBBCEC1523D9182600506CAF /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BBBCEBDD23D8EA0700506CAF /* Project object */;
+}
