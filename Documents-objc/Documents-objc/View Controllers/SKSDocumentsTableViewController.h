@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
 @class SKSDocumentController;
 
-@interface SKSDocumentsTableViewController : UITableViewController
+@interface SKSDocumentsTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @property SKSDocumentController *documentController;
 

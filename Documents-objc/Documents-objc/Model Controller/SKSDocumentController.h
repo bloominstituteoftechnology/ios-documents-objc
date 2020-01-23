@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@class SKSDocument;
+@class SKSDocument, Document;
 
 @interface SKSDocumentController : NSObject
 
 @property (nonatomic, readonly) NSArray *documents;
 
-- (void)createDocument:(SKSDocument *)document;
-- (void)updateDocument:(SKSDocument *)document with:(SKSDocument *)updatedDocument;
-- (void)deleteDocument:(SKSDocument *)document;
+- (void)createDocument:(Document *)document;
+- (void)updateDocument:(Document *)document with:(Document *)updatedDocument;
+- (void)deleteDocument:(Document *)document;
 
 @end

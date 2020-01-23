@@ -9,6 +9,8 @@
 #import "SKSDetailDocumentViewController.h"
 #import "SKSDocument.h"
 #import "SKSDocumentController.h"
+#import "Document+CoreDataClass.h"
+#import "Document+SKSConvenience.h"
 #import "NSString+SKSWordCount.h"
 
 @interface SKSDetailDocumentViewController ()
@@ -36,7 +38,7 @@
     if (self.document) {
         self.title = self.document.title;
         self.titleTextField.text = self.document.title;
-        self.documentTextView.text = self.document.documentText;
+        self.documentTextView.text = self.document.text;
         self.wordsLabel.text = [NSString stringWithFormat:@"%d Words", self.document.wordCount];
     }
 
@@ -59,14 +61,15 @@
         return;
     }
 
-    SKSDocument *document = [[SKSDocument alloc] initWithTitle:title text:text];
+    //SKSDocument *document = [[SKSDocument alloc] initWithTitle:title text:text];
+    Document *document = [[Document alloc] initWithTitle:title text:text];
 
     if (self.document) {
         [self.documentController updateDocument:self.document with:document];
     } else {
         [self.documentController createDocument:document];
     }
-
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

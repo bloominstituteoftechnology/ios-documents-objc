@@ -8,6 +8,9 @@
 
 #import "SKSDocumentController.h"
 #import "SKSDocument.h"
+#import "SKSCoreDataStack.h"
+#import "Document+CoreDataClass.h"
+#import "Document+SKSConvenience.h"
 
 @interface SKSDocumentController() {
 }
@@ -31,20 +34,26 @@
     return [self.internalDocuments copy];
 }
 
-- (void)createDocument:(SKSDocument *)document {
-    [self.internalDocuments addObject:document];
+- (void)createDocument:(Document *)document {
+    //[self.internalDocuments addObject:document];
+    [[SKSCoreDataStack shared] saveContext:[[SKSCoreDataStack shared] mainContext]];
 }
 
-- (void)updateDocument:(SKSDocument *)document with:(SKSDocument *)updatedDocument {
-    NSUInteger index = [self.internalDocuments indexOfObject:document];
-    SKSDocument *tempDoc = self.internalDocuments[index];
+- (void)updateDocument:(Document *)document with:(Document *)updatedDocument {
+//    NSUInteger index = [self.internalDocuments indexOfObject:document];
+//    SKSDocument *tempDoc = self.internalDocuments[index];
+//    tempDoc.title = updatedDocument.title;
+//    tempDoc.documentText = updatedDocument.documentText;
+    document.title = updatedDocument.title;
+    document.text = updatedDocument.text;
 
-    tempDoc.title = updatedDocument.title;
-    tempDoc.documentText = updatedDocument.documentText;
+    [[SKSCoreDataStack shared] saveContext:[[SKSCoreDataStack shared] mainContext]];
 }
 
-- (void)deleteDocument:(SKSDocument *)document {
-    [self.internalDocuments removeObject:document];
+- (void)deleteDocument:(Document *)document {
+    //[self.internalDocuments removeObject:document];
+    [[[SKSCoreDataStack shared] mainContext] deleteObject:document];
+    [[SKSCoreDataStack shared] saveContext:[[SKSCoreDataStack shared] mainContext]];
 }
 
 

@@ -18,6 +18,9 @@
 		BBBCEC0A23D8F06700506CAF /* NSString+SKSWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0923D8F06700506CAF /* NSString+SKSWordCount.m */; };
 		BBBCEC0E23D8F2BC00506CAF /* SKSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC0D23D8F2BC00506CAF /* SKSDocument.m */; };
 		BBBCEC1223D8F51F00506CAF /* SKSDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC1123D8F51F00506CAF /* SKSDocumentController.m */; };
+		BBBCEC1623D9182600506CAF /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC1423D9182600506CAF /* Document.xcdatamodeld */; };
+		BBBCEC1C23D91B1F00506CAF /* Document+SKSConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC1B23D91B1F00506CAF /* Document+SKSConvenience.m */; };
+		BBBCEC1F23D91B9300506CAF /* SKSCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC1E23D91B9300506CAF /* SKSCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,11 @@
 		BBBCEC0D23D8F2BC00506CAF /* SKSDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDocument.m; sourceTree = "<group>"; };
 		BBBCEC1023D8F51F00506CAF /* SKSDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDocumentController.h; sourceTree = "<group>"; };
 		BBBCEC1123D8F51F00506CAF /* SKSDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDocumentController.m; sourceTree = "<group>"; };
+		BBBCEC1523D9182600506CAF /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		BBBCEC1A23D91B1F00506CAF /* Document+SKSConvenience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Document+SKSConvenience.h"; sourceTree = "<group>"; };
+		BBBCEC1B23D91B1F00506CAF /* Document+SKSConvenience.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Document+SKSConvenience.m"; sourceTree = "<group>"; };
+		BBBCEC1D23D91B9300506CAF /* SKSCoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSCoreDataStack.h; sourceTree = "<group>"; };
+		BBBCEC1E23D91B9300506CAF /* SKSCoreDataStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSCoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,9 @@
 				BBBCEBEB23D8EA0700506CAF /* SceneDelegate.h */,
 				BBBCEBEC23D8EA0700506CAF /* SceneDelegate.m */,
 				BBBCEBF123D8EA0700506CAF /* Main.storyboard */,
+				BBBCEC1423D9182600506CAF /* Document.xcdatamodeld */,
+				BBBCEC1D23D91B9300506CAF /* SKSCoreDataStack.h */,
+				BBBCEC1E23D91B9300506CAF /* SKSCoreDataStack.m */,
 				BBBCEBF423D8EA0B00506CAF /* Assets.xcassets */,
 				BBBCEBF623D8EA0B00506CAF /* LaunchScreen.storyboard */,
 				BBBCEBF923D8EA0B00506CAF /* Info.plist */,
@@ -106,6 +117,8 @@
 			children = (
 				BBBCEC0823D8F06700506CAF /* NSString+SKSWordCount.h */,
 				BBBCEC0923D8F06700506CAF /* NSString+SKSWordCount.m */,
+				BBBCEC1A23D91B1F00506CAF /* Document+SKSConvenience.h */,
+				BBBCEC1B23D91B1F00506CAF /* Document+SKSConvenience.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -204,8 +217,11 @@
 				BBBCEBFB23D8EA0B00506CAF /* main.m in Sources */,
 				BBBCEC0323D8EA7D00506CAF /* SKSDocumentsTableViewController.m in Sources */,
 				BBBCEC0E23D8F2BC00506CAF /* SKSDocument.m in Sources */,
+				BBBCEC1F23D91B9300506CAF /* SKSCoreDataStack.m in Sources */,
 				BBBCEC0623D8EE2A00506CAF /* SKSDetailDocumentViewController.m in Sources */,
+				BBBCEC1623D9182600506CAF /* Document.xcdatamodeld in Sources */,
 				BBBCEC1223D8F51F00506CAF /* SKSDocumentController.m in Sources */,
+				BBBCEC1C23D91B1F00506CAF /* Document+SKSConvenience.m in Sources */,
 				BBBCEBED23D8EA0700506CAF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +412,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BBBCEC1423D9182600506CAF /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BBBCEC1523D9182600506CAF /* Document.xcdatamodel */,
+			);
+			currentVersion = BBBCEC1523D9182600506CAF /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BBBCEBDD23D8EA0700506CAF /* Project object */;
 }
