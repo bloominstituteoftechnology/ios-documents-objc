@@ -17,6 +17,7 @@
 		C097480223D8F10100DD739F /* NSString+DMOWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = C097480123D8F10100DD739F /* NSString+DMOWordCount.m */; };
 		C097480523D8FE4D00DD739F /* DMODocument.m in Sources */ = {isa = PBXBuildFile; fileRef = C097480423D8FE4D00DD739F /* DMODocument.m */; };
 		C097480823D9111000DD739F /* DMODocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = C097480723D9111000DD739F /* DMODocumentController.m */; };
+		C097480B23D915F300DD739F /* DMODocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C097480A23D915F300DD739F /* DMODocumentsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		C097480423D8FE4D00DD739F /* DMODocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMODocument.m; sourceTree = "<group>"; };
 		C097480623D9111000DD739F /* DMODocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMODocumentController.h; sourceTree = "<group>"; };
 		C097480723D9111000DD739F /* DMODocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMODocumentController.m; sourceTree = "<group>"; };
+		C097480923D915F300DD739F /* DMODocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMODocumentsTableViewController.h; sourceTree = "<group>"; };
+		C097480A23D915F300DD739F /* DMODocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMODocumentsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				C09747EB23D8E3FB00DD739F /* SceneDelegate.m */,
 				C097480023D8F10100DD739F /* NSString+DMOWordCount.h */,
 				C097480123D8F10100DD739F /* NSString+DMOWordCount.m */,
+				C097480923D915F300DD739F /* DMODocumentsTableViewController.h */,
+				C097480A23D915F300DD739F /* DMODocumentsTableViewController.m */,
 				C09747ED23D8E3FB00DD739F /* DocumentDetailViewController.h */,
 				C09747EE23D8E3FB00DD739F /* DocumentDetailViewController.m */,
 				C097480623D9111000DD739F /* DMODocumentController.h */,
@@ -169,6 +174,7 @@
 				C097480223D8F10100DD739F /* NSString+DMOWordCount.m in Sources */,
 				C097480823D9111000DD739F /* DMODocumentController.m in Sources */,
 				C097480523D8FE4D00DD739F /* DMODocument.m in Sources */,
+				C097480B23D915F300DD739F /* DMODocumentsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,11 +20,6 @@
     return self;
 }
 
-- (void)setText:(NSString *)text {
-    _text = text;
-    self.wordCount = [text dmo_wordCount];
-}
-
 -(int)wordCount
 {
     return [self.text dmo_wordCount];
