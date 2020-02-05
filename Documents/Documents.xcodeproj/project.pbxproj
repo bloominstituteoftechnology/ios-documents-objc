@@ -14,6 +14,7 @@
 		5D5AB3A623EA5F5D00E81FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D5AB3A523EA5F5D00E81FED /* Assets.xcassets */; };
 		5D5AB3A923EA5F5D00E81FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5AB3A723EA5F5D00E81FED /* LaunchScreen.storyboard */; };
 		5D5AB3AC23EA5F5D00E81FED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3AB23EA5F5D00E81FED /* main.m */; };
+		5D5AB3B923EA61A700E81FED /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3B823EA61A700E81FED /* DocumentsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		5D5AB3A823EA5F5D00E81FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D5AB3AA23EA5F5D00E81FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D5AB3AB23EA5F5D00E81FED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D5AB3B723EA61A700E81FED /* DocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentsTableViewController.h; sourceTree = "<group>"; };
+		5D5AB3B823EA61A700E81FED /* DocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 			children = (
 				5D5AB39F23EA5F5B00E81FED /* DocumentDetailViewController.h */,
 				5D5AB3A023EA5F5B00E81FED /* DocumentDetailViewController.m */,
+				5D5AB3B723EA61A700E81FED /* DocumentsTableViewController.h */,
+				5D5AB3B823EA61A700E81FED /* DocumentsTableViewController.m */,
 				5D5AB3A223EA5F5B00E81FED /* Main.storyboard */,
 			);
 			name = Views;
@@ -187,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D5AB3A123EA5F5B00E81FED /* DocumentDetailViewController.m in Sources */,
+				5D5AB3B923EA61A700E81FED /* DocumentsTableViewController.m in Sources */,
 				5D5AB39B23EA5F5B00E81FED /* AppDelegate.m in Sources */,
 				5D5AB3AC23EA5F5D00E81FED /* main.m in Sources */,
 				5D5AB39E23EA5F5B00E81FED /* SceneDelegate.m in Sources */,
