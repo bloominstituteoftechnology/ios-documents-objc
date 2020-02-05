@@ -15,6 +15,7 @@
 		29B564CD23EA5D290041340D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B564CC23EA5D290041340D /* main.m */; };
 		29B564DB23EA5E350041340D /* DocumentsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B564DA23EA5E350041340D /* DocumentsTableVC.m */; };
 		29B564DE23EA5F4B0041340D /* DocumentDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B564DD23EA5F4B0041340D /* DocumentDetailVC.m */; };
+		29B564E123EA62CC0041340D /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B564E023EA62CC0041340D /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		29B564DA23EA5E350041340D /* DocumentsTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableVC.m; sourceTree = "<group>"; };
 		29B564DC23EA5F4B0041340D /* DocumentDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDetailVC.h; sourceTree = "<group>"; };
 		29B564DD23EA5F4B0041340D /* DocumentDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDetailVC.m; sourceTree = "<group>"; };
+		29B564DF23EA62CC0041340D /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		29B564E023EA62CC0041340D /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 		29B564D623EA5D590041340D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				29B564DF23EA62CC0041340D /* NSString+WordCount.h */,
+				29B564E023EA62CC0041340D /* NSString+WordCount.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				29B564DE23EA5F4B0041340D /* DocumentDetailVC.m in Sources */,
 				29B564DB23EA5E350041340D /* DocumentsTableVC.m in Sources */,
 				29B564BC23EA5D270041340D /* AppDelegate.m in Sources */,
+				29B564E123EA62CC0041340D /* NSString+WordCount.m in Sources */,
 				29B564CD23EA5D290041340D /* main.m in Sources */,
 				29B564BF23EA5D270041340D /* SceneDelegate.m in Sources */,
 			);
