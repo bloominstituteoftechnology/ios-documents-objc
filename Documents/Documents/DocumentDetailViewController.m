@@ -10,6 +10,12 @@
 
 @interface DocumentDetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *lblWordCount;
+@property (weak, nonatomic) IBOutlet UITextField *txtTitle;
+@property (weak, nonatomic) IBOutlet UITextView *txtvBody;
+
+- (IBAction)saveTapped:(id)sender;
+
 @end
 
 @implementation DocumentDetailViewController
@@ -19,5 +25,8 @@
     // Do any additional setup after loading the view.
 }
 
+
+- (IBAction)saveTapped:(id)sender {
+}
 
 @end

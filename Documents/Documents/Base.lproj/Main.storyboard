@@ -106,8 +106,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Document" id="Fdb-cV-C5v">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="62M-co-zRI"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="62M-co-zRI">
+                            <connections>
+                                <action selector="saveTapped:" destination="BYZ-38-t0r" id="2c7-bu-qhX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lblWordCount" destination="64f-2g-vPc" id="iic-9d-FFP"/>
+                        <outlet property="txtTitle" destination="JRW-el-onQ" id="TAD-Em-Onf"/>
+                        <outlet property="txtvBody" destination="WH1-xW-td6" id="VB1-DW-0KM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
