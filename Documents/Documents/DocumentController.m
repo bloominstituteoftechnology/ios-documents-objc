@@ -8,6 +8,7 @@
 
 #import "DocumentController.h"
 #import "JDKDocument.h"
+#import "NSString+WordCount.h"
 
 @interface DocumentController ()
 
@@ -30,14 +31,22 @@
     [_internalDocuments addObject:aDocument];
 }
 
-- (void)updateDocument:(JDKDocument *)aDocument
-{
-    
-}
-
 - (void)deleteDocument:(JDKDocument *)aDocument
 {
     [_internalDocuments removeObject:aDocument];
+}
+
+- (void)updateDocument:(JDKDocument *)aDocument withTitle:(NSString *)title andText:(NSString *)text
+{
+    aDocument.title = title;
+    aDocument.text = text;
+    aDocument.wordCount = [text jdk_wordCount];
+}
+
+@synthesize documents = _documents;
+- (void)setDocuments:(NSArray<JDKDocument *> *)documents
+{
+    _documents = [self internalDocuments];
 }
 
 - (NSArray<JDKDocument *> *)documents

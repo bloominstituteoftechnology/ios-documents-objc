@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (WordCount)
 
-- (NSUInteger)wordCount:(NSString *)text;
+- (int)jdk_wordCount;
 
 @end
 

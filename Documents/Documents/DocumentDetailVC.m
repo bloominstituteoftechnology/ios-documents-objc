@@ -7,8 +7,14 @@
 //
 
 #import "DocumentDetailVC.h"
+#import "DocumentController.h"
+#import "JDKDocument.h"
 
 @interface DocumentDetailVC ()
+
+-(void)checkWordCount;
+
+@property int textViewWordCount;
 
 @property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
 @property (weak, nonatomic) IBOutlet UITextField *documentTitleTextField;
@@ -24,18 +30,61 @@
     [self updateViews];
     
     self.navigationController.navigationBar.prefersLargeTitles = YES;
+    self.documentWordsTextView.delegate = self;
 }
 
 - (void)updateViews
 {
-    self.title = @"New Document";
+    if (self.document != nil) {
+        JDKDocument *doc = [self document];
+        self.documentTitleTextField.text = doc.title;
+        self.documentWordsTextView.text = doc.text;
+        self.checkWordCount;
+        self.navigationItem.title = @"Update Document";
+    } else {
+        self.title = @"New Document";
+    }
+    
+    
     self.documentWordsTextView.layer.borderColor = UIColor.systemGray4Color.CGColor;
     self.documentWordsTextView.layer.cornerRadius = 10;
     self.documentWordsTextView.layer.borderWidth = 1;
 }
 
-- (IBAction)saveButtonTapped:(id)sender {
-    NSLog(@"test");
+- (void)checkWordCount {
+    int wordCount = [[self.documentWordsTextView text] jdk_wordCount];
+    NSString *wordWord = [[NSString alloc] init];
+    wordWord = wordCount != 1 ? @"words" : @"word";
+    NSString *wordCountString = [[NSString alloc] initWithFormat:@"%i %@", wordCount, wordWord];
+    [[self wordCountLabel] setText: wordCountString];
+    self.textViewWordCount = wordCount;
+}
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    [self checkWordCount];
+}
+
+- (void)setDocument:(JDKDocument *)document
+{
+    _document = document;
+    [self updateViews];
+}
+
+- (IBAction)saveButtonTapped:(id)sender
+{
+    BOOL isNewDocument = (self.document == nil);
+    
+    if (isNewDocument) {
+        JDKDocument *document = [[JDKDocument alloc] initWithTitle:self.documentTitleTextField.text
+                                                              text:self.documentWordsTextView.text];
+        [self.documentsController createDocument:document];
+    } else {
+        self.document.title = self.documentTitleTextField.text;
+        self.document.text = self.documentWordsTextView.text;
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

@@ -11,10 +11,18 @@
 
 @implementation NSString (WordCount)
 
-- (NSUInteger)wordCount:(NSString *)text
+- (int)jdk_wordCount
 {
-    NSArray *words = [self componentsSeparatedByString:@" "];
-    return [words count];
+    NSCharacterSet *seperators = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    NSArray *words = [self componentsSeparatedByCharactersInSet:seperators];
+    NSMutableArray *forWordCount = [[NSMutableArray alloc] init];
+    
+    for (NSString *word in words) {
+        NSString *justWord = [word stringByTrimmingCharactersInSet:seperators];
+        [forWordCount addObject:justWord];
+    }
+    
+    return (int)[forWordCount count];
 }
 
 @end

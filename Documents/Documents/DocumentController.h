@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSArray<JDKDocument *> *documents;
 
 - (void)createDocument:(JDKDocument *)aDocument;
-- (void)updateDocument:(JDKDocument *)aDocument;
+- (void)updateDocument:(JDKDocument *)aDocument withTitle:(NSString *)title andText:(NSString *)text;
 - (void)deleteDocument:(JDKDocument *)aDocument;
 
 @end

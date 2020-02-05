@@ -20,8 +20,12 @@
 
 @synthesize wordCount = _wordCount;
 
+-(int)wordCount
+{
+    return [[self text] jdk_wordCount];
+}
 
-- (void)setWordCount:(NSUInteger *)wordCount
+- (void)setWordCount:(int)wordCount
 {
     _wordCount = wordCount;
 }

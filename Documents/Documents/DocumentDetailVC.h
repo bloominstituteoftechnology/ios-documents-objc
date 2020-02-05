@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class DocumentController;
+@class JDKDocument;
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DocumentDetailVC : UIViewController
+@interface DocumentDetailVC : UIViewController<UITextViewDelegate>
+
+@property (nonatomic) DocumentController *documentsController;
+@property (nonatomic) JDKDocument *document;
 
 @end
 
