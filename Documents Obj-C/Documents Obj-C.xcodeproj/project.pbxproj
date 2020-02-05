@@ -16,6 +16,7 @@
 		E33BB37323EA3DFF00B06AA4 /* VVSDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB37223EA3DFF00B06AA4 /* VVSDocumentsTableViewController.m */; };
 		E33BB37623EA490F00B06AA4 /* VVSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB37523EA490F00B06AA4 /* VVSDocument.m */; };
 		E33BB37923EA4DFC00B06AA4 /* NSString+VVSWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB37823EA4DFC00B06AA4 /* NSString+VVSWordCount.m */; };
+		E33BB37C23EA61B400B06AA4 /* VVSDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB37B23EA61B400B06AA4 /* VVSDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		E33BB37523EA490F00B06AA4 /* VVSDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSDocument.m; sourceTree = "<group>"; };
 		E33BB37723EA4DFC00B06AA4 /* NSString+VVSWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+VVSWordCount.h"; sourceTree = "<group>"; };
 		E33BB37823EA4DFC00B06AA4 /* NSString+VVSWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+VVSWordCount.m"; sourceTree = "<group>"; };
+		E33BB37A23EA61B400B06AA4 /* VVSDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVSDocumentController.h; sourceTree = "<group>"; };
+		E33BB37B23EA61B400B06AA4 /* VVSDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 		E33BB36E23EA3B9100B06AA4 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E33BB37A23EA61B400B06AA4 /* VVSDocumentController.h */,
+				E33BB37B23EA61B400B06AA4 /* VVSDocumentController.m */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E33BB37623EA490F00B06AA4 /* VVSDocument.m in Sources */,
+				E33BB37C23EA61B400B06AA4 /* VVSDocumentController.m in Sources */,
 				E33BB37923EA4DFC00B06AA4 /* NSString+VVSWordCount.m in Sources */,
 				E33BB37323EA3DFF00B06AA4 /* VVSDocumentsTableViewController.m in Sources */,
 				E33BB35423EA379100B06AA4 /* AppDelegate.m in Sources */,
