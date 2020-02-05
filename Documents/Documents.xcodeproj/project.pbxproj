@@ -13,6 +13,8 @@
 		29B564C723EA5D290041340D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29B564C623EA5D290041340D /* Assets.xcassets */; };
 		29B564CA23EA5D290041340D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B564C823EA5D290041340D /* LaunchScreen.storyboard */; };
 		29B564CD23EA5D290041340D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B564CC23EA5D290041340D /* main.m */; };
+		29B564DB23EA5E350041340D /* DocumentsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B564DA23EA5E350041340D /* DocumentsTableVC.m */; };
+		29B564DE23EA5F4B0041340D /* DocumentDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B564DD23EA5F4B0041340D /* DocumentDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		29B564C923EA5D290041340D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29B564CB23EA5D290041340D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29B564CC23EA5D290041340D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B564D923EA5E350041340D /* DocumentsTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentsTableVC.h; sourceTree = "<group>"; };
+		29B564DA23EA5E350041340D /* DocumentsTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableVC.m; sourceTree = "<group>"; };
+		29B564DC23EA5F4B0041340D /* DocumentDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDetailVC.h; sourceTree = "<group>"; };
+		29B564DD23EA5F4B0041340D /* DocumentDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,10 @@
 		29B564D323EA5D370041340D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				29B564D923EA5E350041340D /* DocumentsTableVC.h */,
+				29B564DA23EA5E350041340D /* DocumentsTableVC.m */,
+				29B564DC23EA5F4B0041340D /* DocumentDetailVC.h */,
+				29B564DD23EA5F4B0041340D /* DocumentDetailVC.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -189,6 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B564DE23EA5F4B0041340D /* DocumentDetailVC.m in Sources */,
+				29B564DB23EA5E350041340D /* DocumentsTableVC.m in Sources */,
 				29B564BC23EA5D270041340D /* AppDelegate.m in Sources */,
 				29B564CD23EA5D290041340D /* main.m in Sources */,
 				29B564BF23EA5D270041340D /* SceneDelegate.m in Sources */,
