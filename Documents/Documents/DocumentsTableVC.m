@@ -20,19 +20,12 @@
 
 @implementation DocumentsTableVC
 
--(instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _documentsController = [[DocumentController alloc] init];
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self updateViews];
+    
+    _documentsController = [[DocumentController alloc] init];
 }
 
 - (void)viewWillAppear:(BOOL)animated

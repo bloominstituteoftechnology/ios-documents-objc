@@ -13,7 +13,12 @@
 
 - (instancetype)initWithTitle:(NSString *)aTitle text:(NSString *)someText
 {
-    return [self initWithTitle:aTitle text:someText];
+    self = [super init];
+    if (self) {
+        _title = aTitle;
+        _text = someText;
+    }
+    return self;
 }
 
 #pragma mark - Accessors

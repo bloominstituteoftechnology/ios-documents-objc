@@ -12,7 +12,7 @@
 
 @interface DocumentDetailVC ()
 
--(void)checkWordCount;
+
 
 @property int textViewWordCount;
 
@@ -39,7 +39,6 @@
         JDKDocument *doc = [self document];
         self.documentTitleTextField.text = doc.title;
         self.documentWordsTextView.text = doc.text;
-        self.checkWordCount;
         self.navigationItem.title = @"Update Document";
     } else {
         self.title = @"New Document";
@@ -51,18 +50,9 @@
     self.documentWordsTextView.layer.borderWidth = 1;
 }
 
-- (void)checkWordCount {
-    int wordCount = [[self.documentWordsTextView text] jdk_wordCount];
-    NSString *wordWord = [[NSString alloc] init];
-    wordWord = wordCount != 1 ? @"words" : @"word";
-    NSString *wordCountString = [[NSString alloc] initWithFormat:@"%i %@", wordCount, wordWord];
-    [[self wordCountLabel] setText: wordCountString];
-    self.textViewWordCount = wordCount;
-}
-
 - (void)textViewDidChange:(UITextView *)textView
 {
-    [self checkWordCount];
+    
 }
 
 - (void)setDocument:(JDKDocument *)document
