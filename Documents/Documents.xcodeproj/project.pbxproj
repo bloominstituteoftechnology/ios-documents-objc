@@ -17,6 +17,7 @@
 		5D5AB3B923EA61A700E81FED /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3B823EA61A700E81FED /* DocumentsTableViewController.m */; };
 		5D5AB3BD23EA6CB100E81FED /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3BC23EA6CB100E81FED /* NSString+WordCount.m */; };
 		5D5AB3C023EA8E2300E81FED /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3BF23EA8E2300E81FED /* Document.m */; };
+		5D5AB3C323EA904000E81FED /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3C223EA904000E81FED /* DocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		5D5AB3BC23EA6CB100E81FED /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 		5D5AB3BE23EA8E2300E81FED /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
 		5D5AB3BF23EA8E2300E81FED /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		5D5AB3C123EA904000E81FED /* DocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
+		5D5AB3C223EA904000E81FED /* DocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 		5D5AB3B623EA603800E81FED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5D5AB3C123EA904000E81FED /* DocumentController.h */,
+				5D5AB3C223EA904000E81FED /* DocumentController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			files = (
 				5D5AB3A123EA5F5B00E81FED /* DocumentDetailViewController.m in Sources */,
 				5D5AB3B923EA61A700E81FED /* DocumentsTableViewController.m in Sources */,
+				5D5AB3C323EA904000E81FED /* DocumentController.m in Sources */,
 				5D5AB39B23EA5F5B00E81FED /* AppDelegate.m in Sources */,
 				5D5AB3C023EA8E2300E81FED /* Document.m in Sources */,
 				5D5AB3BD23EA6CB100E81FED /* NSString+WordCount.m in Sources */,
