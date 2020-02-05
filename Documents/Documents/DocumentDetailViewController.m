@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  DocumentDetailViewController.m
 //  Documents
 //
 //  Created by Joel Groomer on 2/4/20.
 //  Copyright © 2020 Julltron. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DocumentDetailViewController.h"
 
-@interface ViewController ()
+@interface DocumentDetailViewController ()
 
 @end
 
-@implementation ViewController
+@implementation DocumentDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

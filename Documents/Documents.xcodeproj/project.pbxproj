@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5D5AB39B23EA5F5B00E81FED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB39A23EA5F5B00E81FED /* AppDelegate.m */; };
 		5D5AB39E23EA5F5B00E81FED /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB39D23EA5F5B00E81FED /* SceneDelegate.m */; };
-		5D5AB3A123EA5F5B00E81FED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3A023EA5F5B00E81FED /* ViewController.m */; };
+		5D5AB3A123EA5F5B00E81FED /* DocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3A023EA5F5B00E81FED /* DocumentDetailViewController.m */; };
 		5D5AB3A423EA5F5B00E81FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5AB3A223EA5F5B00E81FED /* Main.storyboard */; };
 		5D5AB3A623EA5F5D00E81FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D5AB3A523EA5F5D00E81FED /* Assets.xcassets */; };
 		5D5AB3A923EA5F5D00E81FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5AB3A723EA5F5D00E81FED /* LaunchScreen.storyboard */; };
@@ -22,8 +22,8 @@
 		5D5AB39A23EA5F5B00E81FED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5D5AB39C23EA5F5B00E81FED /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		5D5AB39D23EA5F5B00E81FED /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		5D5AB39F23EA5F5B00E81FED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5D5AB3A023EA5F5B00E81FED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5D5AB39F23EA5F5B00E81FED /* DocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDetailViewController.h; sourceTree = "<group>"; };
+		5D5AB3A023EA5F5B00E81FED /* DocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDetailViewController.m; sourceTree = "<group>"; };
 		5D5AB3A323EA5F5B00E81FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D5AB3A523EA5F5D00E81FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D5AB3A823EA5F5D00E81FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,19 +61,59 @@
 		5D5AB39823EA5F5B00E81FED /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				5D5AB3B523EA603100E81FED /* Models */,
+				5D5AB3B423EA5FFC00E81FED /* Views */,
+				5D5AB3B623EA603800E81FED /* Controllers */,
+				5D5AB3B323EA5FE300E81FED /* Resources */,
+				5D5AB3B223EA5FB900E81FED /* App Lifecycle */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		5D5AB3B223EA5FB900E81FED /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
 				5D5AB39923EA5F5B00E81FED /* AppDelegate.h */,
 				5D5AB39A23EA5F5B00E81FED /* AppDelegate.m */,
 				5D5AB39C23EA5F5B00E81FED /* SceneDelegate.h */,
 				5D5AB39D23EA5F5B00E81FED /* SceneDelegate.m */,
-				5D5AB39F23EA5F5B00E81FED /* ViewController.h */,
-				5D5AB3A023EA5F5B00E81FED /* ViewController.m */,
-				5D5AB3A223EA5F5B00E81FED /* Main.storyboard */,
+				5D5AB3AB23EA5F5D00E81FED /* main.m */,
+			);
+			name = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		5D5AB3B323EA5FE300E81FED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				5D5AB3A523EA5F5D00E81FED /* Assets.xcassets */,
 				5D5AB3A723EA5F5D00E81FED /* LaunchScreen.storyboard */,
 				5D5AB3AA23EA5F5D00E81FED /* Info.plist */,
-				5D5AB3AB23EA5F5D00E81FED /* main.m */,
 			);
-			path = Documents;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5D5AB3B423EA5FFC00E81FED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D5AB39F23EA5F5B00E81FED /* DocumentDetailViewController.h */,
+				5D5AB3A023EA5F5B00E81FED /* DocumentDetailViewController.m */,
+				5D5AB3A223EA5F5B00E81FED /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5D5AB3B523EA603100E81FED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5D5AB3B623EA603800E81FED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D5AB3A123EA5F5B00E81FED /* ViewController.m in Sources */,
+				5D5AB3A123EA5F5B00E81FED /* DocumentDetailViewController.m in Sources */,
 				5D5AB39B23EA5F5B00E81FED /* AppDelegate.m in Sources */,
 				5D5AB3AC23EA5F5D00E81FED /* main.m in Sources */,
 				5D5AB39E23EA5F5B00E81FED /* SceneDelegate.m in Sources */,

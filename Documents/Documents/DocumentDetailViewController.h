@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DocumentDetailViewController.h
 //  Documents
 //
 //  Created by Joel Groomer on 2/4/20.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DocumentDetailViewController : UIViewController
 
 
 @end
