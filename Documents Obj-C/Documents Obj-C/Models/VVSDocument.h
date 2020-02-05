@@ -10,9 +10,11 @@
 
 @interface VVSDocument : NSObject
 
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *text;
+- (instancetype)initWithName:(NSString *)aTitle notes:(NSString *)someNotes;
 
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *notes;
+@property (nonatomic) NSUInteger wordCount;
 
 @end
 

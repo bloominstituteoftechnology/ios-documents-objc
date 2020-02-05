@@ -10,9 +10,9 @@
 
 @implementation NSString (VVSWordCount)
 
-- (NSUInteger)wordCount:(NSString *)string {
+- (NSUInteger)wordCount {
     __block NSUInteger wordCount = 0;
-    [string enumerateSubstringsInRange:NSMakeRange(0, string.length)
+    [self enumerateSubstringsInRange:NSMakeRange(0, self.length)
                                options:NSStringEnumerationByWords
                             usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
         wordCount++;

@@ -11,7 +11,7 @@
 
 @interface NSString (VVSWordCount)
 
-- (NSUInteger)wordCount:(NSString *)string;
+- (NSUInteger)wordCount;
 
 @end
 
