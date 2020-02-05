@@ -15,6 +15,7 @@
 		5D5AB3A923EA5F5D00E81FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5AB3A723EA5F5D00E81FED /* LaunchScreen.storyboard */; };
 		5D5AB3AC23EA5F5D00E81FED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3AB23EA5F5D00E81FED /* main.m */; };
 		5D5AB3B923EA61A700E81FED /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3B823EA61A700E81FED /* DocumentsTableViewController.m */; };
+		5D5AB3BD23EA6CB100E81FED /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3BC23EA6CB100E81FED /* NSString+WordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		5D5AB3AB23EA5F5D00E81FED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D5AB3B723EA61A700E81FED /* DocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentsTableViewController.h; sourceTree = "<group>"; };
 		5D5AB3B823EA61A700E81FED /* DocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableViewController.m; sourceTree = "<group>"; };
+		5D5AB3BB23EA6CB100E81FED /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		5D5AB3BC23EA6CB100E81FED /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 		5D5AB39823EA5F5B00E81FED /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				5D5AB3BA23EA6C8700E81FED /* Categories */,
 				5D5AB3B523EA603100E81FED /* Models */,
 				5D5AB3B423EA5FFC00E81FED /* Views */,
 				5D5AB3B623EA603800E81FED /* Controllers */,
@@ -119,6 +123,15 @@
 			children = (
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5D5AB3BA23EA6C8700E81FED /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5D5AB3BB23EA6CB100E81FED /* NSString+WordCount.h */,
+				5D5AB3BC23EA6CB100E81FED /* NSString+WordCount.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +207,7 @@
 				5D5AB3A123EA5F5B00E81FED /* DocumentDetailViewController.m in Sources */,
 				5D5AB3B923EA61A700E81FED /* DocumentsTableViewController.m in Sources */,
 				5D5AB39B23EA5F5B00E81FED /* AppDelegate.m in Sources */,
+				5D5AB3BD23EA6CB100E81FED /* NSString+WordCount.m in Sources */,
 				5D5AB3AC23EA5F5D00E81FED /* main.m in Sources */,
 				5D5AB39E23EA5F5B00E81FED /* SceneDelegate.m in Sources */,
 			);
