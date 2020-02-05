@@ -16,6 +16,7 @@
 		5D5AB3AC23EA5F5D00E81FED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3AB23EA5F5D00E81FED /* main.m */; };
 		5D5AB3B923EA61A700E81FED /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3B823EA61A700E81FED /* DocumentsTableViewController.m */; };
 		5D5AB3BD23EA6CB100E81FED /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3BC23EA6CB100E81FED /* NSString+WordCount.m */; };
+		5D5AB3C023EA8E2300E81FED /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AB3BF23EA8E2300E81FED /* Document.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		5D5AB3B823EA61A700E81FED /* DocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableViewController.m; sourceTree = "<group>"; };
 		5D5AB3BB23EA6CB100E81FED /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		5D5AB3BC23EA6CB100E81FED /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		5D5AB3BE23EA8E2300E81FED /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		5D5AB3BF23EA8E2300E81FED /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		5D5AB3B523EA603100E81FED /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5D5AB3BE23EA8E2300E81FED /* Document.h */,
+				5D5AB3BF23EA8E2300E81FED /* Document.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 				5D5AB3A123EA5F5B00E81FED /* DocumentDetailViewController.m in Sources */,
 				5D5AB3B923EA61A700E81FED /* DocumentsTableViewController.m in Sources */,
 				5D5AB39B23EA5F5B00E81FED /* AppDelegate.m in Sources */,
+				5D5AB3C023EA8E2300E81FED /* Document.m in Sources */,
 				5D5AB3BD23EA6CB100E81FED /* NSString+WordCount.m in Sources */,
 				5D5AB3AC23EA5F5D00E81FED /* main.m in Sources */,
 				5D5AB39E23EA5F5B00E81FED /* SceneDelegate.m in Sources */,
