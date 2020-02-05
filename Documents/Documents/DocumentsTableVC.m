@@ -63,15 +63,15 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"AddDocumentSegue"]) {
-//        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
         DocumentDetailVC *detailVC = segue.destinationViewController;
         detailVC.documentsController = self.documentsController;
-//        detailVC.document = [self.documentsController.documents objectAtIndex:indexPath.row];
     }
-//    else if ([segue.identifier isEqualToString:@"ShowCreateTask"]) {
-//        TaskDetailViewController *detailVC = segue.destinationViewController;
-//        detailVC.tasksController = self.tasksController;
-//    }
+    else if ([segue.identifier isEqualToString:@"ShowDocumentSegue"]) {
+        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+        DocumentDetailVC *detailVC = segue.destinationViewController;
+        detailVC.documentsController = self.documentsController;
+        detailVC.document = [self.documentsController.documents objectAtIndex:indexPath.row];
+    }
 }
 
 @end
