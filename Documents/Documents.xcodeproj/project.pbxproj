@@ -17,6 +17,7 @@
 		29B564DE23EA5F4B0041340D /* DocumentDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B564DD23EA5F4B0041340D /* DocumentDetailVC.m */; };
 		29B564E123EA62CC0041340D /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B564E023EA62CC0041340D /* NSString+WordCount.m */; };
 		29B564E423EA683D0041340D /* JDKDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B564E323EA683D0041340D /* JDKDocument.m */; };
+		29B564E723EA6A0E0041340D /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B564E623EA6A0E0041340D /* DocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		29B564E023EA62CC0041340D /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 		29B564E223EA683D0041340D /* JDKDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDKDocument.h; sourceTree = "<group>"; };
 		29B564E323EA683D0041340D /* JDKDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDKDocument.m; sourceTree = "<group>"; };
+		29B564E523EA6A0E0041340D /* DocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
+		29B564E623EA6A0E0041340D /* DocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		29B564D523EA5D4D0041340D /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				29B564E523EA6A0E0041340D /* DocumentController.h */,
+				29B564E623EA6A0E0041340D /* DocumentController.m */,
 			);
 			name = "Model Controllers";
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			files = (
 				29B564E423EA683D0041340D /* JDKDocument.m in Sources */,
 				29B564DE23EA5F4B0041340D /* DocumentDetailVC.m in Sources */,
+				29B564E723EA6A0E0041340D /* DocumentController.m in Sources */,
 				29B564DB23EA5E350041340D /* DocumentsTableVC.m in Sources */,
 				29B564BC23EA5D270041340D /* AppDelegate.m in Sources */,
 				29B564E123EA62CC0041340D /* NSString+WordCount.m in Sources */,
