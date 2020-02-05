@@ -49,7 +49,7 @@
                     <navigationItem key="navigationItem" id="I0b-CT-8SN">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Nst-1f-pct">
                             <connections>
-                                <segue destination="xfn-39-0eD" kind="show" id="TX4-Hm-RJ5"/>
+                                <segue destination="xfn-39-0eD" kind="show" identifier="AddDocumentSegue" id="TX4-Hm-RJ5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -103,7 +103,11 @@
                         <viewLayoutGuide key="safeArea" id="xYs-aM-9Bk"/>
                     </view>
                     <navigationItem key="navigationItem" id="623-LM-Atb">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3vg-JD-B6a"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3vg-JD-B6a">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="xfn-39-0eD" id="Exs-qX-suO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="documentTitleTextField" destination="3Wt-Ef-NeH" id="Kxf-6E-27x"/>

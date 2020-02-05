@@ -21,9 +21,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self updateViews];
+    
+    self.navigationController.navigationBar.prefersLargeTitles = YES;
 }
 
+- (void)updateViews
+{
+    self.title = @"New Document";
+    self.documentWordsTextView.layer.borderColor = UIColor.systemGray4Color.CGColor;
+    self.documentWordsTextView.layer.cornerRadius = 10;
+    self.documentWordsTextView.layer.borderWidth = 1;
+}
 
+- (IBAction)saveButtonTapped:(id)sender {
+    NSLog(@"test");
+}
 
 @end
