@@ -13,6 +13,7 @@
 		E33BB35F23EA379300B06AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33BB35E23EA379300B06AA4 /* Assets.xcassets */; };
 		E33BB36223EA379300B06AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33BB36023EA379300B06AA4 /* LaunchScreen.storyboard */; };
 		E33BB36523EA379300B06AA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB36423EA379300B06AA4 /* main.m */; };
+		E33BB37323EA3DFF00B06AA4 /* VVSDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB37223EA3DFF00B06AA4 /* VVSDocumentsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E33BB36123EA379300B06AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E33BB36323EA379300B06AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E33BB36423EA379300B06AA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E33BB37123EA3DFF00B06AA4 /* VVSDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVSDocumentsTableViewController.h; sourceTree = "<group>"; };
+		E33BB37223EA3DFF00B06AA4 /* VVSDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSDocumentsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,10 @@
 		E33BB35123EA379100B06AA4 /* Documents Obj-C */ = {
 			isa = PBXGroup;
 			children = (
+				E33BB36B23EA3B7900B06AA4 /* View Controllers */,
 				E33BB36E23EA3B9100B06AA4 /* Model Controllers */,
 				E33BB36D23EA3B8A00B06AA4 /* Views */,
 				E33BB36C23EA3B8500B06AA4 /* Models */,
-				E33BB36B23EA3B7900B06AA4 /* View Controllers */,
 				E33BB37023EA3CAB00B06AA4 /* Resources */,
 				E33BB36F23EA3BAB00B06AA4 /* App Lifecycle */,
 			);
@@ -71,6 +74,8 @@
 		E33BB36B23EA3B7900B06AA4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E33BB37123EA3DFF00B06AA4 /* VVSDocumentsTableViewController.h */,
+				E33BB37223EA3DFF00B06AA4 /* VVSDocumentsTableViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 		E33BB34723EA379100B06AA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = VVS;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Vici Shaweddy";
 				TargetAttributes = {
@@ -189,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33BB37323EA3DFF00B06AA4 /* VVSDocumentsTableViewController.m in Sources */,
 				E33BB35423EA379100B06AA4 /* AppDelegate.m in Sources */,
 				E33BB36523EA379300B06AA4 /* main.m in Sources */,
 				E33BB35723EA379100B06AA4 /* SceneDelegate.m in Sources */,
