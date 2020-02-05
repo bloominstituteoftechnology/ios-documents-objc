@@ -61,19 +61,59 @@
 		3718DD2523EA97B300A10756 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				3718DD2623EA97B300A10756 /* AppDelegate.h */,
-				3718DD2723EA97B300A10756 /* AppDelegate.m */,
-				3718DD2923EA97B300A10756 /* SceneDelegate.h */,
-				3718DD2A23EA97B300A10756 /* SceneDelegate.m */,
-				3718DD2C23EA97B300A10756 /* ViewController.h */,
-				3718DD2D23EA97B300A10756 /* ViewController.m */,
+				3718DD4323EA99C800A10756 /* App Lifecycle */,
+				3718DD4223EA99A000A10756 /* Models */,
+				3718DD4123EA999E00A10756 /* Model Controllers */,
+				3718DD4023EA999B00A10756 /* View Controllers */,
+				3718DD3F23EA999800A10756 /* Resources */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		3718DD3F23EA999800A10756 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				3718DD2F23EA97B300A10756 /* Main.storyboard */,
 				3718DD3223EA97B600A10756 /* Assets.xcassets */,
 				3718DD3423EA97B600A10756 /* LaunchScreen.storyboard */,
 				3718DD3723EA97B600A10756 /* Info.plist */,
-				3718DD3823EA97B600A10756 /* main.m */,
 			);
-			path = Documents;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3718DD4023EA999B00A10756 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3718DD2C23EA97B300A10756 /* ViewController.h */,
+				3718DD2D23EA97B300A10756 /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3718DD4123EA999E00A10756 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		3718DD4223EA99A000A10756 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3718DD4323EA99C800A10756 /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				3718DD3823EA97B600A10756 /* main.m */,
+				3718DD2623EA97B300A10756 /* AppDelegate.h */,
+				3718DD2723EA97B300A10756 /* AppDelegate.m */,
+				3718DD2923EA97B300A10756 /* SceneDelegate.h */,
+				3718DD2A23EA97B300A10756 /* SceneDelegate.m */,
+			);
+			name = "App Lifecycle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
