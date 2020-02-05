@@ -34,9 +34,21 @@
     [_internalDocument removeObject:aDocument];
 }
 
-- (void)updateDocument:(VVSDocument *)aDocument withIndex:(NSUInteger)index
+- (void)updateDocument:(VVSDocument *)aDocument withTitle:(NSString *)title notes:(NSString *)someNotes
 {
-    [_internalDocument replaceObjectAtIndex:index withObject:aDocument];
+    aDocument.title = title;
+    aDocument.notes = someNotes;
+    aDocument.wordCount = [aDocument wordCount];
+}
+
+@synthesize documents = _documents;
+
+-(void)setDocuments:(NSArray<VVSDocument *> *)documents {
+    _documents= [self internalDocument];
+}
+
+- (NSArray *)documents {
+    return _internalDocument.copy;
 }
 
 @end

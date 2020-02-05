@@ -17,6 +17,7 @@
 		E33BB37623EA490F00B06AA4 /* VVSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB37523EA490F00B06AA4 /* VVSDocument.m */; };
 		E33BB37923EA4DFC00B06AA4 /* NSString+VVSWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB37823EA4DFC00B06AA4 /* NSString+VVSWordCount.m */; };
 		E33BB37C23EA61B400B06AA4 /* VVSDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB37B23EA61B400B06AA4 /* VVSDocumentController.m */; };
+		E33BB37F23EA717B00B06AA4 /* VVSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB37E23EA717B00B06AA4 /* VVSDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		E33BB37823EA4DFC00B06AA4 /* NSString+VVSWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+VVSWordCount.m"; sourceTree = "<group>"; };
 		E33BB37A23EA61B400B06AA4 /* VVSDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVSDocumentController.h; sourceTree = "<group>"; };
 		E33BB37B23EA61B400B06AA4 /* VVSDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSDocumentController.m; sourceTree = "<group>"; };
+		E33BB37D23EA717B00B06AA4 /* VVSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVSDetailViewController.h; sourceTree = "<group>"; };
+		E33BB37E23EA717B00B06AA4 /* VVSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +76,6 @@
 				E33BB36323EA379300B06AA4 /* Info.plist */,
 				E33BB36B23EA3B7900B06AA4 /* View Controllers */,
 				E33BB36E23EA3B9100B06AA4 /* Model Controllers */,
-				E33BB36D23EA3B8A00B06AA4 /* Views */,
 				E33BB36C23EA3B8500B06AA4 /* Models */,
 				E33BB37023EA3CAB00B06AA4 /* Resources */,
 				E33BB36F23EA3BAB00B06AA4 /* App Lifecycle */,
@@ -86,6 +88,8 @@
 			children = (
 				E33BB37123EA3DFF00B06AA4 /* VVSDocumentsTableViewController.h */,
 				E33BB37223EA3DFF00B06AA4 /* VVSDocumentsTableViewController.m */,
+				E33BB37D23EA717B00B06AA4 /* VVSDetailViewController.h */,
+				E33BB37E23EA717B00B06AA4 /* VVSDetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -99,13 +103,6 @@
 				E33BB37823EA4DFC00B06AA4 /* NSString+VVSWordCount.m */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		E33BB36D23EA3B8A00B06AA4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		E33BB36E23EA3B9100B06AA4 /* Model Controllers */ = {
@@ -215,6 +212,7 @@
 				E33BB37923EA4DFC00B06AA4 /* NSString+VVSWordCount.m in Sources */,
 				E33BB37323EA3DFF00B06AA4 /* VVSDocumentsTableViewController.m in Sources */,
 				E33BB35423EA379100B06AA4 /* AppDelegate.m in Sources */,
+				E33BB37F23EA717B00B06AA4 /* VVSDetailViewController.m in Sources */,
 				E33BB36523EA379300B06AA4 /* main.m in Sources */,
 				E33BB35723EA379100B06AA4 /* SceneDelegate.m in Sources */,
 			);

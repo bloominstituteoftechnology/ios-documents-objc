@@ -15,8 +15,7 @@
 
 - (void)addDocument:(VVSDocument *)aDocument;
 - (void)removeDocument:(VVSDocument *)aDocument;
-- (void)updateDocument:(VVSDocument *)aDocument
-             withIndex:(NSUInteger)index;
+- (void)updateDocument:(VVSDocument *)aDocument withTitle:(NSString *)title notes:(NSString *)someNotes;
 
 @end
 
