@@ -17,8 +17,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *textTextView;
 
-
-
 @end
 
 @implementation DetailViewController
@@ -44,7 +42,7 @@
         self.document.title = self.titleTextField.text;
         self.document.text = self.textTextView.text;
         
-        [self.documentController updateDocument:self.document];
+        [self.documentController updateDocument:_document atIndex:*(self.index)];
     }
     
     [self.navigationController popViewControllerAnimated:YES];
@@ -77,5 +75,3 @@
 }
 
 @end
-
-//TODO: Fix Update method.

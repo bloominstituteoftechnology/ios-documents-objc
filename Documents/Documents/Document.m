@@ -26,7 +26,6 @@
 
 @synthesize wordCount = _wordCount;
 
-// Implement wordCount method
 - (NSUInteger)wordCount
 {
     return [self.text checkWordCount];

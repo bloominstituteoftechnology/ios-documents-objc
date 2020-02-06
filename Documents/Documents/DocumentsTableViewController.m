@@ -48,19 +48,6 @@
     return cell;
 }
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-
 //MARK:  - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -69,6 +56,8 @@
         DetailViewController *detailVC = segue.destinationViewController;
         detailVC.documentController = self.documentController;
         detailVC.document = [self.documentController.documents objectAtIndex:indexPath.row];
+        detailVC.index = indexPath.row;
+        //FIX THIS.
     } else if ([segue.identifier isEqualToString:@"addDocumentSegue"]) {
         DetailViewController *detailVC = segue.destinationViewController;
         detailVC.documentController = self.documentController;

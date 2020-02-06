@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) DocumentController *documentController;
 @property (nonatomic) Document *document;
+@property (nonatomic) NSInteger *index;
 
 @end
 

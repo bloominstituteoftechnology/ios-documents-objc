@@ -30,9 +30,9 @@
     [_internalDocuments addObject:aDocument];
 }
 
-- (void)updateDocument:(Document *)aDocument
+- (void)updateDocument:(Document *)aDocument atIndex:(NSInteger)index
 {
-    //Update the document
+    [_internalDocuments replaceObjectAtIndex:(index) withObject:aDocument];
 }
 
 - (void)removeDocument:(Document *)aDocument
