@@ -38,6 +38,8 @@
     } else {
         self.document.title = self.titleTextField.text;
         self.document.text = self.textTextView.text;
+        
+        [self.documentController updateDocument:self.document];
     }
     
     [self.navigationController popViewControllerAnimated:YES];
