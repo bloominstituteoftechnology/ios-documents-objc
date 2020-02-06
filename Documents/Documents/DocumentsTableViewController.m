@@ -56,8 +56,8 @@
         DetailViewController *detailVC = segue.destinationViewController;
         detailVC.documentController = self.documentController;
         detailVC.document = [self.documentController.documents objectAtIndex:indexPath.row];
-        detailVC.index = indexPath.row;
         //FIX THIS.
+        detailVC.index = indexPath.row;
     } else if ([segue.identifier isEqualToString:@"addDocumentSegue"]) {
         DetailViewController *detailVC = segue.destinationViewController;
         detailVC.documentController = self.documentController;
