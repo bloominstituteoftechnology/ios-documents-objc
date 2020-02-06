@@ -39,9 +39,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="gAS-rM-bo5" kind="show" identifier="DetailSegue" id="V31-ig-cYw"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -56,6 +53,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="gAS-rM-bo5" kind="show" identifier="DetailSegue" id="W8A-qu-4DK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZe-su-h4U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,13 +73,16 @@
                                 <rect key="frame" x="16" y="160" width="382" height="682"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sH-5C-wK6">
-                                        <rect key="frame" x="151" y="0.0" width="80.5" height="41"/>
+                                        <rect key="frame" x="151" y="0.0" width="80.5" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Eq4-GM-eAX"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VS2-EX-M0K">
-                                        <rect key="frame" x="0.0" y="75" width="382" height="40"/>
+                                        <rect key="frame" x="0.0" y="79" width="382" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="0rQ-lL-YPE"/>
                                         </constraints>
@@ -87,7 +90,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xsY-QF-p6t">
-                                        <rect key="frame" x="0.0" y="149" width="382" height="533"/>
+                                        <rect key="frame" x="0.0" y="153" width="382" height="529"/>
                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -149,6 +152,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="V31-ig-cYw"/>
+        <segue reference="W8A-qu-4DK"/>
     </inferredMetricsTieBreakers>
 </document>

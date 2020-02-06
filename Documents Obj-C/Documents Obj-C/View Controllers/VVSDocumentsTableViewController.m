@@ -78,7 +78,7 @@
     } else if ([[segue identifier] isEqualToString:@"DetailSegue"])
     {
         VVSDetailViewController *detailVC = [segue destinationViewController];
-        NSIndexPath *indexPath = (NSIndexPath *)sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         detailVC.documentController = self.documentController;
         detailVC.document = [self.documentController.documents objectAtIndex:indexPath.row];

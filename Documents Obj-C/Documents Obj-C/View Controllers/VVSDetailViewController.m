@@ -16,19 +16,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self updateViews];
     self.notesTextView.delegate = self;
-    
-    if (self.document != nil) {
-        self.title = self.document.title;
-    } else {
-        self.title = @"New Document";
-    }
 }
 
 - (void)textViewDidChange:(UITextView *)textView
 {
-    NSString *stringCount = [NSString stringWithFormat:@"%li", [textView.text wordCount]];
-    self.titleLabel.text = stringCount;
+    self.titleLabel.text = [self getStringWordCount];
+}
+
+- (NSString *)getStringWordCount
+{
+    UITextView *textView = self.notesTextView;
+    int count = (int)textView.text.wordCount;
+    
+    if (count > 1) {
+        NSString *stringCount = [NSString stringWithFormat:@"%li words", [textView.text wordCount]];
+        return stringCount;
+
+    } else {
+        NSString *stringCount = [NSString stringWithFormat:@"%li word", [textView.text wordCount]];
+        return stringCount;
+    }
+}
+
+- (void)updateViews
+{
+    if (self.document != nil) {
+        self.title = @"Update Document";
+        self.titleTextField.text = self.document.title;
+        self.notesTextView.text = self.document.notes;
+        self.titleLabel.text = [self getStringWordCount];
+    } else {
+        self.title = @"New Document";
+        self.titleLabel.text = @"Ready to count!";
+    }
 }
     
 - (IBAction)savePressed:(id)sender {

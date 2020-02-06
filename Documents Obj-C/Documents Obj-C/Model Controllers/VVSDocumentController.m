@@ -7,6 +7,7 @@
 //
 
 #import "VVSDocumentController.h"
+#import "NSString+VVSWordCount.h"
 
 @interface VVSDocumentController ()
 
@@ -36,9 +37,11 @@
 
 - (void)updateDocument:(VVSDocument *)aDocument withTitle:(NSString *)title notes:(NSString *)someNotes
 {
+    NSUInteger index = [_internalDocument indexOfObject:aDocument];
     aDocument.title = title;
     aDocument.notes = someNotes;
-    aDocument.wordCount = [aDocument wordCount];
+    aDocument.wordCount = [someNotes wordCount];
+    [_internalDocument replaceObjectAtIndex:index withObject:aDocument];
 }
 
 @synthesize documents = _documents;
