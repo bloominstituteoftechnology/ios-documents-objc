@@ -11,6 +11,11 @@
 
 @implementation Document
 
++ (instancetype)documentWithTitle:(NSString *)aTitle text:(NSString *)someText
+{
+    return [[self alloc] initWithTitle:aTitle text:someText];
+}
+
 - (instancetype)initWithTitle:(NSString *)aTitle text:(NSString *)someText
 {
     return [self initWithTitle:aTitle text:someText];
