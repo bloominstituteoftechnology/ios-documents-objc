@@ -8,9 +8,21 @@
 
 #import "NSString+WordCount.h"
 
-#import <AppKit/AppKit.h>
-
-
 @implementation NSString (WordCount)
+
+- (NSInteger)checkWordCount:(NSString *)string
+{
+     NSUInteger words = 0;
+    
+     NSScanner *scanner = [NSScanner scannerWithString: string];
+    
+     // Look for spaces, tabs and newlines
+     NSCharacterSet *whiteSpace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+     while ([scanner scanUpToCharactersFromSet:whiteSpace  intoString:nil])
+       words++;
+    
+     return words;
+}
+
 
 @end
