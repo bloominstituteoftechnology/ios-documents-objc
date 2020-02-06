@@ -30,6 +30,11 @@
     [_internalDocuments addObject:aDocument];
 }
 
+- (void)updateDocument:(Document *)aDocument
+{
+    //Update the document
+}
+
 - (void)removeDocument:(Document *)aDocument
 {
     [_internalDocuments removeObject:aDocument];

@@ -21,6 +21,6 @@
 
 @synthesize wordCount = _wordCount;
 
-// Need to figure out how to implement the method from NSString + WordCount
+// Implement wordCount method
 
 @end

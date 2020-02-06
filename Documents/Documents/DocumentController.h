@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, copy) NSArray<Document *> *documents;
 
 - (void)addDocument:(Document *)aDocument;
+- (void)updateDocument:(Document *)aDocument;
 - (void)removeDocument:(Document *)aDocument;
 
 @end
