@@ -97,7 +97,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Te8-Gs-QNy" firstAttribute="top" secondItem="1gh-j2-P4v" secondAttribute="bottom" constant="54.5" id="3Bg-rB-RZq"/>
-                            <constraint firstItem="Te8-Gs-QNy" firstAttribute="centerX" secondItem="5Q0-0o-YeH" secondAttribute="centerX" id="4fs-YX-eby"/>
                             <constraint firstItem="5Q0-0o-YeH" firstAttribute="trailing" secondItem="Te8-Gs-QNy" secondAttribute="trailing" constant="20" id="9HH-U2-fcW"/>
                             <constraint firstItem="aEl-As-Qnv" firstAttribute="centerX" secondItem="5Q0-0o-YeH" secondAttribute="centerX" id="9vk-9T-g0w"/>
                             <constraint firstItem="aEl-As-Qnv" firstAttribute="centerY" secondItem="5Q0-0o-YeH" secondAttribute="centerY" id="DvG-Du-ePN"/>

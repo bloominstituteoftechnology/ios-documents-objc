@@ -70,3 +70,6 @@
 
 
 //TODO: Implement textViewDelegate and add the textViewDidChange method to update word count.
+//TODO: Fix Update method.
+//TODO: Fix WordCount method.
+//TODO: Fix int issue with wordCount.
