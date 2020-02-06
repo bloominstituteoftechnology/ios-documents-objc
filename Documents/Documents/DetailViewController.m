@@ -11,11 +11,13 @@
 #import "Document.h"
 #import "NSString+WordCount.h"
 
-@interface DetailViewController ()
+@interface DetailViewController () <UITextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *textTextView;
+
+
 
 @end
 
@@ -23,6 +25,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.textTextView.delegate = self;
     
     [self updateViews];
 }
@@ -56,6 +60,7 @@
     
     self.titleTextField.text = self.document.title;
     self.textTextView.text = self.document.text;
+    self.wordCountLabel.text = [NSString stringWithFormat:@"%lu Words", (unsigned long)self.document.wordCount];
 }
 
 - (void) setDocument:(Document *)document
@@ -66,10 +71,11 @@
     }
 }
 
+- (void)textViewDidChange:(UITextView *)textView
+{
+    self.wordCountLabel.text = [NSString stringWithFormat:@"%lu Words", (unsigned long)self.document.wordCount];
+}
+
 @end
 
-
-//TODO: Implement textViewDelegate and add the textViewDidChange method to update word count.
 //TODO: Fix Update method.
-//TODO: Fix WordCount method.
-//TODO: Fix int issue with wordCount.

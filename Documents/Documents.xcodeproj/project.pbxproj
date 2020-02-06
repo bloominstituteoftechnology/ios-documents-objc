@@ -107,6 +107,8 @@
 		3718DD4123EA999E00A10756 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3718DD5023EB92A400A10756 /* DocumentController.h */,
+				3718DD5123EB92A400A10756 /* DocumentController.m */,
 			);
 			name = "Model Controllers";
 			sourceTree = "<group>";
@@ -116,8 +118,6 @@
 			children = (
 				3718DD4D23EB903300A10756 /* Document.h */,
 				3718DD4E23EB903300A10756 /* Document.m */,
-				3718DD5023EB92A400A10756 /* DocumentController.h */,
-				3718DD5123EB92A400A10756 /* DocumentController.m */,
 				3718DD4A23EB8DDA00A10756 /* NSString+WordCount.h */,
 				3718DD4B23EB8DDA00A10756 /* NSString+WordCount.m */,
 			);
