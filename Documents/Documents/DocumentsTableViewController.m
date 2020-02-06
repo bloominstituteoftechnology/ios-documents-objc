@@ -7,8 +7,13 @@
 //
 
 #import "DocumentsTableViewController.h"
+#import "DocumentController.h"
+#import "Document.h"
+#import "NSString+WordCount.h"
 
 @interface DocumentsTableViewController ()
+
+@property (nonatomic, readonly) DocumentController *documentController;
 
 @end
 
