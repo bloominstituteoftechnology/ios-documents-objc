@@ -10,16 +10,11 @@
 
 @implementation NSString (WordCount)
 
-- (int)checkWordCount:(NSString *)string
+- (int)checkWordCount
 {
      int words = 0;
     
-     NSScanner *scanner = [NSScanner scannerWithString: string];
-    
-     // Look for spaces, tabs and newlines
-     NSCharacterSet *whiteSpace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-     while ([scanner scanUpToCharactersFromSet:whiteSpace  intoString:nil])
-       words++;
+     //fix this
     
      return words;
 }

@@ -27,5 +27,9 @@
 @synthesize wordCount = _wordCount;
 
 // Implement wordCount method
+- (int)wordCount
+{
+    return [self.text checkWordCount];
+}
 
 @end
