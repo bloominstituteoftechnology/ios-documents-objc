@@ -110,8 +110,17 @@
                         <viewLayoutGuide key="safeArea" id="5Q0-0o-YeH"/>
                     </view>
                     <navigationItem key="navigationItem" id="DGy-xe-KG8">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="hbV-Oo-UL4"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="hbV-Oo-UL4">
+                            <connections>
+                                <action selector="saveTapped:" destination="2j2-SU-mKt" id="ULF-2J-zap"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textTextView" destination="aEl-As-Qnv" id="ZhN-GE-2JI"/>
+                        <outlet property="titleTextField" destination="Te8-Gs-QNy" id="z4U-nJ-2Xj"/>
+                        <outlet property="wordCountLabel" destination="1gh-j2-P4v" id="pWQ-8N-yS5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xpt-gH-coN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
