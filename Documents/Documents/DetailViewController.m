@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "DocumentController.h"
 #import "Document.h"
+#import "NSString+WordCount.h"
 
 @interface DetailViewController ()
 
@@ -66,3 +67,6 @@
 }
 
 @end
+
+
+//TODO: Implement textViewDelegate and add the textViewDidChange method to update word count.
