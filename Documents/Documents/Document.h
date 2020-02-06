@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *text;
-@property (nonatomic) int *wordCount;
+@property (nonatomic) NSUInteger wordCount;
 
 @end
 

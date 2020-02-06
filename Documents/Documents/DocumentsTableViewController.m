@@ -43,7 +43,7 @@
     Document *document = [self.documentController.documents objectAtIndex:indexPath.row];
     
     cell.textLabel.text = document.title;
-    cell.detailTextLabel.text =  [NSString stringWithFormat:@"%d Words", document.wordCount];
+    cell.detailTextLabel.text =  [NSString stringWithFormat:@"%lu Words", (unsigned long)document.wordCount];
     
     return cell;
 }

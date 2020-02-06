@@ -10,13 +10,16 @@
 
 @implementation NSString (WordCount)
 
-- (int)checkWordCount
+- (NSUInteger)checkWordCount
 {
-     int words = 0;
-    
-     //fix this
-    
-     return words;
+    NSCharacterSet *separators = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    NSArray *words = [self componentsSeparatedByCharactersInSet:separators];
+
+    NSIndexSet *separatorIndexes = [words indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
+        return [obj isEqualToString:@""];
+    }];
+
+    return [words count] - [separatorIndexes count];
 }
 
 
