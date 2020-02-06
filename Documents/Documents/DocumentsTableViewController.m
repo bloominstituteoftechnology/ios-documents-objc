@@ -8,6 +8,7 @@
 
 #import "DocumentsTableViewController.h"
 #import "DocumentController.h"
+#import "DetailViewController.h"
 #import "Document.h"
 #import "NSString+WordCount.h"
 
@@ -63,7 +64,15 @@
 //MARK:  - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
+    if ([segue.identifier isEqualToString:@"detailSegue"]) {
+        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+        DetailViewController *detailVC = segue.destinationViewController;
+        detailVC.documentController = self.documentController;
+        detailVC.document = [self.documentController.documents objectAtIndex:indexPath.row];
+    } else if ([segue.identifier isEqualToString:@"addDocumentSegue"]) {
+        DetailViewController *detailVC = segue.destinationViewController;
+        detailVC.documentController = self.documentController;
+    }
 }
 
 //MARK: - Private Properties
