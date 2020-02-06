@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class DocumentController;
+@class Document;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailViewController : UIViewController
+
+@property (nonatomic) DocumentController *documentController;
+@property (nonatomic) Document *document;
 
 @end
 
