@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)addDocument:(Document *)aDocument;
 - (void)delDocument:(Document *)aDocument;
+- (BOOL)updateDocument:(Document *)aDocument withTitle:(NSString *)newTitle withBody:(NSString *)newBody;
 
 @end
 
