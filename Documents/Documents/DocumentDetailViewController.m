@@ -7,6 +7,7 @@
 //
 
 #import "DocumentDetailViewController.h"
+#import "NSString+WordCount.h"
 
 @interface DocumentDetailViewController ()
 
@@ -23,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.txtvBody.delegate = self;
     [self updateViews];
 }
 
@@ -67,6 +69,13 @@
 - (void)setDocument:(Document *)document {
     _document = document;
     [self updateViews];
+}
+
+#pragma mark - UITextViewDelegate
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    self.lblWordCount.text = [NSString stringWithFormat:(@"%d words"), [textView.text wordCount]];
 }
 
 @end

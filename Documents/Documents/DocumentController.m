@@ -51,7 +51,7 @@
 - (BOOL)updateDocument:(Document *)aDocument withTitle:(NSString *)newTitle withBody:(NSString *)newBody
 {
     NSUInteger i = [self.internalDocuments indexOfObject:aDocument];
-    if (i) {
+    if (i != NSNotFound) {
         Document *newDocument = [[Document alloc] initWithTitle:newTitle body:newBody];
         [self.internalDocuments replaceObjectAtIndex:i withObject:newDocument];
         return YES;
