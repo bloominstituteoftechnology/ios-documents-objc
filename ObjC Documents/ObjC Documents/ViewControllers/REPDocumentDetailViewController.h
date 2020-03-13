@@ -1,0 +1,20 @@
+//
+//  REPDocumentDetailViewController.h
+//  ObjC Documents
+//
+//  Created by Michael Redig on 10/9/19.
+//  Copyright © 2019 Red_Egg Productions. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@class REPDocumentController;
+@class REPDocument;
+
+@interface REPDocumentDetailViewController : UIViewController <UITextViewDelegate>
+
+@property REPDocumentController* documentController;
+@property REPDocument* document;
+
+@end
+
