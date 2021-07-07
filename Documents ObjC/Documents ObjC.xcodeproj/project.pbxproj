@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFB24C402227524D0096E395 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C3F2227524D0096E395 /* AppDelegate.m */; };
+		FFB24C462227524D0096E395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB24C442227524D0096E395 /* Main.storyboard */; };
+		FFB24C482227524E0096E395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB24C472227524E0096E395 /* Assets.xcassets */; };
+		FFB24C4B2227524E0096E395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB24C492227524E0096E395 /* LaunchScreen.storyboard */; };
+		FFB24C4E2227524E0096E395 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C4D2227524E0096E395 /* main.m */; };
+		FFB24C5B222757C60096E395 /* LMSDocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C5A222757C60096E395 /* LMSDocumentsTableViewController.m */; };
+		FFB24C5E222757F40096E395 /* LMSDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C5D222757F40096E395 /* LMSDocumentViewController.m */; };
+		FFB24C612227594D0096E395 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C602227594D0096E395 /* NSString+WordCount.m */; };
+		FFB24C6522275FD70096E395 /* LMSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C6422275FD70096E395 /* LMSDocument.m */; };
+		FFB24C682227629F0096E395 /* LMSDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24C672227629F0096E395 /* LMSDocumentController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFB24C3B2227524D0096E395 /* Documents ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Documents ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB24C3E2227524D0096E395 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFB24C3F2227524D0096E395 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFB24C452227524D0096E395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFB24C472227524E0096E395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFB24C4A2227524E0096E395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFB24C4C2227524E0096E395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB24C4D2227524E0096E395 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFB24C59222757C60096E395 /* LMSDocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSDocumentsTableViewController.h; sourceTree = "<group>"; };
+		FFB24C5A222757C60096E395 /* LMSDocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSDocumentsTableViewController.m; sourceTree = "<group>"; };
+		FFB24C5C222757F40096E395 /* LMSDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSDocumentViewController.h; sourceTree = "<group>"; };
+		FFB24C5D222757F40096E395 /* LMSDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSDocumentViewController.m; sourceTree = "<group>"; };
+		FFB24C5F2227594D0096E395 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		FFB24C602227594D0096E395 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		FFB24C6322275FD70096E395 /* LMSDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSDocument.h; sourceTree = "<group>"; };
+		FFB24C6422275FD70096E395 /* LMSDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSDocument.m; sourceTree = "<group>"; };
+		FFB24C662227629F0096E395 /* LMSDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSDocumentController.h; sourceTree = "<group>"; };
+		FFB24C672227629F0096E395 /* LMSDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSDocumentController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFB24C382227524D0096E395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFB24C322227524D0096E395 = {
+			isa = PBXGroup;
+			children = (
+				FFB24C3D2227524D0096E395 /* Documents ObjC */,
+				FFB24C3C2227524D0096E395 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFB24C3C2227524D0096E395 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C3B2227524D0096E395 /* Documents ObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFB24C3D2227524D0096E395 /* Documents ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C582227579F0096E395 /* Model */,
+				FFB24C57222757950096E395 /* Model Controller */,
+				FFB24C56222757810096E395 /* View Controllers */,
+				FFB24C622227599A0096E395 /* Category */,
+				FFB24C542227536B0096E395 /* Storyboards */,
+				FFB24C552227537A0096E395 /* Resources */,
+			);
+			path = "Documents ObjC";
+			sourceTree = "<group>";
+		};
+		FFB24C542227536B0096E395 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C442227524D0096E395 /* Main.storyboard */,
+				FFB24C492227524E0096E395 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FFB24C552227537A0096E395 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C3E2227524D0096E395 /* AppDelegate.h */,
+				FFB24C3F2227524D0096E395 /* AppDelegate.m */,
+				FFB24C472227524E0096E395 /* Assets.xcassets */,
+				FFB24C4C2227524E0096E395 /* Info.plist */,
+				FFB24C4D2227524E0096E395 /* main.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFB24C56222757810096E395 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C59222757C60096E395 /* LMSDocumentsTableViewController.h */,
+				FFB24C5A222757C60096E395 /* LMSDocumentsTableViewController.m */,
+				FFB24C5C222757F40096E395 /* LMSDocumentViewController.h */,
+				FFB24C5D222757F40096E395 /* LMSDocumentViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FFB24C57222757950096E395 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C662227629F0096E395 /* LMSDocumentController.h */,
+				FFB24C672227629F0096E395 /* LMSDocumentController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		FFB24C582227579F0096E395 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C6322275FD70096E395 /* LMSDocument.h */,
+				FFB24C6422275FD70096E395 /* LMSDocument.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFB24C622227599A0096E395 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24C5F2227594D0096E395 /* NSString+WordCount.h */,
+				FFB24C602227594D0096E395 /* NSString+WordCount.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFB24C3A2227524D0096E395 /* Documents ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB24C512227524E0096E395 /* Build configuration list for PBXNativeTarget "Documents ObjC" */;
+			buildPhases = (
+				FFB24C372227524D0096E395 /* Sources */,
+				FFB24C382227524D0096E395 /* Frameworks */,
+				FFB24C392227524D0096E395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Documents ObjC";
+			productName = "Documents ObjC";
+			productReference = FFB24C3B2227524D0096E395 /* Documents ObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFB24C332227524D0096E395 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Lisa M Sampson";
+				TargetAttributes = {
+					FFB24C3A2227524D0096E395 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FFB24C362227524D0096E395 /* Build configuration list for PBXProject "Documents ObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFB24C322227524D0096E395;
+			productRefGroup = FFB24C3C2227524D0096E395 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFB24C3A2227524D0096E395 /* Documents ObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFB24C392227524D0096E395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB24C4B2227524E0096E395 /* LaunchScreen.storyboard in Resources */,
+				FFB24C482227524E0096E395 /* Assets.xcassets in Resources */,
+				FFB24C462227524D0096E395 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFB24C372227524D0096E395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB24C612227594D0096E395 /* NSString+WordCount.m in Sources */,
+				FFB24C5B222757C60096E395 /* LMSDocumentsTableViewController.m in Sources */,
+				FFB24C5E222757F40096E395 /* LMSDocumentViewController.m in Sources */,
+				FFB24C4E2227524E0096E395 /* main.m in Sources */,
+				FFB24C402227524D0096E395 /* AppDelegate.m in Sources */,
+				FFB24C682227629F0096E395 /* LMSDocumentController.m in Sources */,
+				FFB24C6522275FD70096E395 /* LMSDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFB24C442227524D0096E395 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB24C452227524D0096E395 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFB24C492227524E0096E395 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB24C4A2227524E0096E395 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFB24C4F2227524E0096E395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFB24C502227524E0096E395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFB24C522227524E0096E395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LA5UAXN45;
+				INFOPLIST_FILE = "$(SRCROOT)/Documents ObjC/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lisamsampson.Documents-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFB24C532227524E0096E395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LA5UAXN45;
+				INFOPLIST_FILE = "$(SRCROOT)/Documents ObjC/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lisamsampson.Documents-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFB24C362227524D0096E395 /* Build configuration list for PBXProject "Documents ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB24C4F2227524E0096E395 /* Debug */,
+				FFB24C502227524E0096E395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB24C512227524E0096E395 /* Build configuration list for PBXNativeTarget "Documents ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB24C522227524E0096E395 /* Debug */,
+				FFB24C532227524E0096E395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFB24C332227524D0096E395 /* Project object */;
+}
